@@ -1,0 +1,1247 @@
+{
+    "widgetHeading": "<b lang='es'>Vocabulario 1-1</b>",
+    "widgetInstruction": "Here is the complete list of active vocabulary words for this section to talk about <b>social network profiles</b>.",
+    "allignmentType": "vertical",
+    "defaultCount": 1,
+    "headers": [{
+            "type": "heading",
+            "content": "<strong lang='es' style='color:#FFFFFF'>LOS PERFILES</strong>",
+            "backgroundColor": "#7C3483",
+            "sortOrder": 1
+        },
+        {
+            "type": "heading",
+            "content": "<strong style='color:#FFFFFF'><i>PROFILES</i></strong>",
+            "backgroundColor": "#7C3483",
+            "sortOrder": 2
+        },
+        {
+            "type": "audio",
+            "backgroundColor": "#7C3483",
+            "audioId": "786",
+            "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_1.mp3",
+            "sortOrder": 3
+        }
+    ],
+    "body": [{
+            "rowIndex": 1,
+            "cells": [{
+                    "type": "text",
+                    "content": "<span lang='es'>el calendario de eventos</span>",
+                    "sortOrder": 1
+                }, {
+                    "type": "text",
+                    "content": "<i>calendar of events</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_2.mp3",
+                    "audioId": "001",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 2,
+            "cells": [{
+                    "type": "text",
+                    "content": "<span lang='es'>la cronología</span>",
+                    "sortOrder": 1
+                },
+                {
+                    "type": "text",
+                    "content": "<i>timeline</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_3.mp3",
+                    "audioId": "002",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 3,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el estado</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>status (marital, emotional state)</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_4.mp3",
+                    "audioId": "003",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 4,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la foto/la fotografía</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>picture/photograph</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_5.mp3",
+                    "audioId": "004",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 5,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el perfil</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>profile</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_6.mp3",
+                    "audioId": "005",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 6,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la red social</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>the social network</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_7.mp3",
+                    "audioId": "006",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 7,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el video</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>video</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_8.mp3",
+                    "audioId": "007",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 8,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong lang='es' style='color:#FFFFFF'>LAS ACCIONES</strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "backgroundColor": "#7C3483",
+                    "content": "<strong style='color:#FFFFFF'><i>ACTIONS</i></strong>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "backgroundColor": "#7C3483",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_9.mp3",
+                    "audioId": "787",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 9,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>actualizar</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>to update</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_10.mp3",
+                    "audioId": "009",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 10,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>crear</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>to create</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_11.mp3",
+                    "audioId": "010",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 11,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>editar</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>to edit</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_12.mp3",
+                    "audioId": "011",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 12,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>mandar un mensaje/mandar un mensaje de texto</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>to send a message/to send a text message</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_13.mp3",
+                    "audioId": "012",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 13,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong lang='es' style='color:#FFFFFF'>LA INFORMACIÓN BÁSICA</strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong style='color:#FFFFFF'><i>BASIC INFORMATION</i></strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_14.mp3",
+                    "audioId": "788",
+                    "backgroundColor": "#7C3483",
+
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 14,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el apellido/los apellidos</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>last name/last names</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_15.mp3",
+                    "audioId": "014",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 15,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la dirección de correo electrónico/el e-mail</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>email address</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_16.mp3",
+                    "audioId": "015",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 16,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la edad</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>age</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_17.mp3",
+                    "audioId": "016",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 17,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el nombre</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>first name</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_18.mp3",
+                    "audioId": "017",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 18,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el teléfono/el número de teléfono</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>telephone/telephone number</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_19.mp3",
+                    "audioId": "018",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 19,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong lang='es' style='color:#FFFFFF'>LA BIOGRAFÍA</strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong style='color:#FFFFFF'><i>BIOGRAPHY</i></strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_20.mp3",
+                    "backgroundColor": "#7C3483",
+                    "audioId": "789",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 20,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la ciudad</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>city</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_21.mp3",
+                    "audioId": "020",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 21,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el cumpleaños</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>birthday</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_22.mp3",
+                    "audioId": "021",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 22,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la escuela secundaria</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>high school</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_23.mp3",
+                    "audioId": "022",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 23,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el estado</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>state (of a territory)</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_24.mp3",
+                    "audioId": "023",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 24,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la fecha de nacimiento</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>birthdate</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_25.mp3",
+                    "audioId": "024",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 25,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el país</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>country</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_26.mp3",
+                    "audioId": "025",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 26,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>el trabajo</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>work</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_27.mp3",
+                    "audioId": "026",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 27,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>la universidad</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>university/college</i>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_28.mp3",
+                    "audioId": "027",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 28,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong lang='es' style='color:#FFFFFF'>YO SOY…</strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong style='color:#FFFFFF'><i>I AM…</i></strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_29.mp3",
+                    "backgroundColor": "#7C3483",
+                    "audioId": "790",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 29,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>activo/activa</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>active</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_30.mp3",
+                    "audioId": "029",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 30,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>atlético/atlética</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>athletic</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_31.mp3",
+                    "audioId": "030",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 31,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>aventurero/aventurera</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>adventurous</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_32.mp3",
+                    "audioId": "031",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 32,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>cómico/cómica</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>funny, comical</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_33.mp3",
+                    "audioId": "032",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 33,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>estudioso/estudiosa</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>studious</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_34.mp3",
+                    "audioId": "033",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 34,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>generoso/generosa</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>generous</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_35.mp3",
+                    "audioId": "034",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 35,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>inteligente</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>intelligent</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_36.mp3",
+                    "audioId": "035",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 36,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>sedentario/sedentaria</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>sedentary</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_37.mp3",
+                    "audioId": "036",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 37,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>tímido/tímida</span>",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>timid </i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_38.mp3",
+                    "audioId": "037",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 38,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>trabajador/trabajadora</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>hard-working</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_39.mp3",
+                    "audioId": "038",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 39,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong lang='es' style='color:#FFFFFF'>AHORA ESTOY…</strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "backgroundColor": "#7C3483",
+                    "content": "<strong style='color:#FFFFFF'><i>RIGHT NOW I AM…</i></strong>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_40.mp3",
+                    "audioId": "791",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 40,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>aburrido/aburrida</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>bored</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_41.mp3",
+                    "audioId": "040",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 41,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>cansado/cansada</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>tired</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_42.mp3",
+                    "audioId": "041",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 42,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>contento/contenta</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>happy</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_43.mp3",
+                    "audioId": "042",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 43,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>emocionado/emocionada</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>excited, emotional</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_44.mp3",
+                    "audioId": "043",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 44,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>enojado/enojada</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>angry</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_45.mp3",
+                    "audioId": "044",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 45,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>nervioso/nerviosa</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>nervous</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_46.mp3",
+                    "audioId": "045",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 46,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>ocupado/ocupada</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>busy, occupied</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_47.mp3",
+                    "audioId": "046",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 47,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>relajado/relajada</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>relaxed</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_48.mp3",
+                    "audioId": "047",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 48,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<strong lang='es' style='color:#FFFFFF'>AHORA TENGO…</strong>",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "backgroundColor": "#7C3483",
+                    "content": "<strong style='color:#FFFFFF'><i>RIGHT NOW I’M…</i></strong>",
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_49.mp3",
+                    "audioId": "792",
+                    "backgroundColor": "#7C3483",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 49,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>(…) años</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>(…) years old</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_50.mp3",
+                    "audioId": "049",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 50,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>calor</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>hot</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_51.mp3",
+                    "audioId": "050",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 51,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>frío</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>cold</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_52.mp3",
+                    "audioId": "051",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 52,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>hambre</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>hungry</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_53.mp3",
+                    "audioId": "052",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 53,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>miedo</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>scared</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_54.mp3",
+                    "audioId": "053",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 54,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>sueño</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>sleepy</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_55.mp3",
+                    "audioId": "054",
+                    "sortOrder": 3
+                }
+            ]
+        }, {
+            "rowIndex": 55,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>sed</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>thirsty</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_56.mp3",
+                    "audioId": "055",
+                    "sortOrder": 3
+                }
+            ]
+        },
+        {
+            "rowIndex": 56,
+            "cells": [{
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<span lang='es'>vergüenza</span>",
+
+                    "sortOrder": 1
+                }, {
+                    "buttonText": true,
+                    "type": "text",
+                    "content": "<i>embarrassed</i>",
+
+                    "sortOrder": 2
+                },
+                {
+                    "type": "audio",
+                    "contentSrc": "https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_57.mp3",
+                    "audioId": "056",
+                    "sortOrder": 3
+                }
+            ]
+        }
+
+    ]
+}
