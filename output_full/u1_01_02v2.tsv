@@ -1,0 +1,53 @@
+#separator:tab
+#html:false
+#tags column:3
+el calendario de eventos	calendar of events	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles
+la cronología	timeline	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles
+el estado	status (marital, emotional state)	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles
+la foto/la fotografía	picture/photograph	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles
+el perfil	profile	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles
+la red social	the social network	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles
+el video	video	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles
+actualizar	to update	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones
+crear	to create	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones
+editar	to edit	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones
+mandar un mensaje/mandar un mensaje de texto	to send a message/to send a text message	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones
+el apellido/los apellidos	last name/last names	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica
+la dirección de correo electrónico/el e-mail	email address	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica
+la edad	age	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica
+el nombre	first name	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica
+el teléfono/el número de teléfono	telephone/telephone number	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica
+la ciudad	city	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+el cumpleaños	birthday	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+la escuela secundaria	high school	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+el estado	state (of a territory)	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+la fecha de nacimiento	birthdate	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+el país	country	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+el trabajo	work	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+la universidad	university/college	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia
+activo/activa	active	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+atlético/atlética	athletic	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+aventurero/aventurera	adventurous	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+cómico/cómica	funny, comical	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+estudioso/estudiosa	studious	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+generoso/generosa	generous	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+inteligente	intelligent	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+sedentario/sedentaria	sedentary	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+tímido/tímida	timid	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+trabajador/trabajadora	hard-working	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy
+aburrido/aburrida	bored	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+cansado/cansada	tired	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+contento/contenta	happy	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+emocionado/emocionada	excited, emotional	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+enojado/enojada	angry	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+nervioso/nerviosa	nervous	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+ocupado/ocupada	busy, occupied	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+relajado/relajada	relaxed	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy
+(…) años	(…) years old	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo
+calor	hot	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo
+frío	cold	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo
+hambre	hungry	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo
+miedo	scared	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo
+sueño	sleepy	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo
+sed	thirsty	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo
+vergüenza	embarrassed	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo

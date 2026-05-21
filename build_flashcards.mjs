@@ -1,0 +1,68 @@
+// Bundles every *.tsv file in the repo into the <script id="bundled-tsvs">
+// block inside flashcards.html, so the app's library auto-populates without
+// any folder/file picker. Re-run this whenever you regenerate TSVs.
+//
+//   node build_flashcards.mjs
+//   node build_flashcards.mjs --root ./output_full   # narrower scope
+
+import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
+import { join, relative } from 'node:path';
+import { parseArgs } from 'node:util';
+
+const { values } = parseArgs({
+  options: {
+    root:   { type: 'string', default: '.' },
+    html:   { type: 'string', default: './flashcards.html' },
+    skip:   { type: 'string', default: '.git,node_modules,output_test' },
+  },
+});
+
+const skipDirs = new Set(values.skip.split(',').map(s => s.trim()).filter(Boolean));
+
+function walk(dir, root) {
+  const out = [];
+  for (const name of readdirSync(dir)) {
+    if (skipDirs.has(name)) continue;
+    const p = join(dir, name);
+    const s = statSync(p);
+    if (s.isDirectory()) out.push(...walk(p, root));
+    else if (name.toLowerCase().endsWith('.tsv')) {
+      out.push({
+        path: relative(root, p).split(/[\\/]/).join('/'),
+        content: readFileSync(p, 'utf8'),
+      });
+    }
+  }
+  return out;
+}
+
+const tsvs = walk(values.root, values.root)
+  // Skip the file we'd produce if someone happens to TSV-name flashcards output.
+  .filter(t => !/(^|\/)flashcards\b/i.test(t.path));
+
+// Stable, friendly order: combined files first, then by path.
+tsvs.sort((a, b) => {
+  const ac = /contrasena_all/i.test(a.path) ? 0 : 1;
+  const bc = /contrasena_all/i.test(b.path) ? 0 : 1;
+  if (ac !== bc) return ac - bc;
+  return a.path.localeCompare(b.path);
+});
+
+const html = readFileSync(values.html, 'utf8');
+
+// JSON inside a <script type="application/json"> block is text content, so the
+// only character we have to escape is '</' to prevent premature tag closure.
+const json = JSON.stringify(tsvs).replace(/<\//g, '<\\/');
+
+const re = /<script id="bundled-tsvs" type="application\/json">[\s\S]*?<\/script>/;
+if (!re.test(html)) {
+  console.error('FAIL: could not find <script id="bundled-tsvs"> placeholder in ' + values.html);
+  process.exit(1);
+}
+
+const updated = html.replace(re, `<script id="bundled-tsvs" type="application/json">${json}</script>`);
+writeFileSync(values.html, updated, 'utf8');
+
+const sizes = tsvs.reduce((s, t) => s + t.content.length, 0);
+console.log(`Bundled ${tsvs.length} TSV file${tsvs.length===1?'':'s'} (${sizes.toLocaleString()} chars of TSV → ${json.length.toLocaleString()} chars of JSON) into ${values.html}`);
+for (const t of tsvs) console.log(`  ${t.path}  (${t.content.length.toLocaleString()} chars)`);

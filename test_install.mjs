@@ -4,44 +4,40 @@
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 
-const bk = readFileSync(new URL('./bookmarklet.js', import.meta.url), 'utf8').trim();
 const html = readFileSync(new URL('./install.html', import.meta.url), 'utf8');
-const m = html.match(/<script id="src" type="text\/plain">([\s\S]*?)<\/script>/);
-if (!m) { console.error('FAIL: could not find embedded source block'); process.exit(1); }
-const embedded = m[1].trim();
 
-if (embedded !== bk) {
-  console.error('FAIL: embedded source diverges from bookmarklet.js');
-  // Show first divergence point.
-  for (let i = 0; i < Math.max(embedded.length, bk.length); i++) {
-    if (embedded[i] !== bk[i]) {
-      console.error(`  first diff at index ${i}: embedded=${JSON.stringify(embedded.slice(i, i+40))} bookmarklet=${JSON.stringify(bk.slice(i, i+40))}`);
-      break;
+function checkPair(label, srcFile, blockId) {
+  const bk = readFileSync(new URL(srcFile, import.meta.url), 'utf8').trim();
+  const re = new RegExp('<script id="' + blockId + '" type="text\\/plain">([\\s\\S]*?)<\\/script>');
+  const m = html.match(re);
+  if (!m) { console.error(`FAIL [${label}]: could not find <script id="${blockId}"> block`); process.exit(1); }
+  const embedded = m[1].trim();
+
+  if (embedded !== bk) {
+    console.error(`FAIL [${label}]: embedded source diverges from ${srcFile}`);
+    for (let i = 0; i < Math.max(embedded.length, bk.length); i++) {
+      if (embedded[i] !== bk[i]) {
+        console.error(`  first diff at index ${i}: embedded=${JSON.stringify(embedded.slice(i, i+40))} source=${JSON.stringify(bk.slice(i, i+40))}`);
+        break;
+      }
     }
+    process.exit(1);
   }
-  process.exit(1);
-}
-console.log('OK: embedded source matches bookmarklet.js exactly (' + bk.length + ' chars)');
+  console.log(`OK [${label}]: embedded source matches ${srcFile} exactly (${bk.length} chars)`);
 
-// Replicate install.html's JS-side encoding.
-const url = 'javascript:' + encodeURIComponent(embedded);
-console.log('OK: bookmarklet URL length = ' + url.length + ' (browsers handle multi-KB javascript: URLs)');
+  const url = 'javascript:' + encodeURIComponent(embedded);
+  console.log(`OK [${label}]: bookmarklet URL length = ${url.length}`);
 
-// Decode back and confirm it parses as JS.
-const decoded = decodeURIComponent(url.replace(/^javascript:/, ''));
-try {
-  new vm.Script(decoded);
-  console.log('OK: decoded bookmarklet body parses as JavaScript');
-} catch (e) {
-  console.error('FAIL: decoded body does not parse: ' + e.message);
-  process.exit(1);
+  const decoded = decodeURIComponent(url.replace(/^javascript:/, ''));
+  try { new vm.Script(decoded); }
+  catch (e) { console.error(`FAIL [${label}]: decoded body does not parse: ${e.message}`); process.exit(1); }
+  console.log(`OK [${label}]: decoded body parses as JavaScript`);
+
+  if (/[\x00-\x1f]/.test(url)) { console.error(`FAIL [${label}]: URL contains control chars`); process.exit(1); }
+  console.log(`OK [${label}]: no control chars in URL`);
 }
 
-// Sanity: does the URL contain anything that would break a browser parser?
-if (/[\x00-\x1f]/.test(url)) {
-  console.error('FAIL: bookmarklet URL contains control chars');
-  process.exit(1);
-}
-console.log('OK: no control chars in URL');
+checkPair('single', './bookmarklet.js', 'src');
+checkPair('bulk',   './bulk_bookmarklet.js', 'src-bulk');
 
 console.log('\nAll checks passed.');

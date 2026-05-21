@@ -23,17 +23,33 @@
 
 <div class="bm-wrap">
   <a id="bm" class="bm" href="#" title="Drag me to your bookmarks bar">Contraseña → Anki</a>
-  <p class="hint" style="margin: 0.75rem 0 0;">Drag this button up to your browser's bookmarks bar.</p>
+  <p class="hint" style="margin: 0.75rem 0 0;">Single lesson — drag to bookmarks, then click while viewing any show_hide lesson page.</p>
+</div>
+
+<div class="bm-wrap">
+  <a id="bm-bulk" class="bm" href="#" title="Drag me to your bookmarks bar">Contraseña → Anki (bulk)</a>
+  <p class="hint" style="margin: 0.75rem 0 0;">All lessons at once — drag to bookmarks, click on any show_hide page, accept the prefilled ID list (or edit it). Produces a single <code>contrasena_all.tsv</code>.</p>
 </div>
 
 <h2>How to use it</h2>
 <ol>
-  <li>Drag the purple button above onto your bookmarks bar (you only do this once).</li>
+  <li>Drag a purple button above onto your bookmarks bar (you only do this once).</li>
   <li>Open any Contraseña <code>show_hide</code> lesson, e.g.
     <br><code style="font-size:12px">https://s3.us-east-2.amazonaws.com/contrasena/interactives/show_hide/index2.html?id=u1_01_02v2</code></li>
-  <li>Click the bookmark. A <code>&lt;lesson-id&gt;.tsv</code> file downloads and an alert tells you how many cards were exported.</li>
+  <li>Click the bookmark.
+    <ul>
+      <li><strong>Single</strong>: downloads <code>&lt;lesson-id&gt;.tsv</code> for the current page.</li>
+      <li><strong>Bulk</strong>: prompts with a list of all known lesson IDs, then downloads one <code>contrasena_all.tsv</code> with everything.</li>
+    </ul>
+  </li>
   <li>In Anki Desktop: <strong>File → Import</strong> → pick the TSV file. When prompted, choose a deck (e.g. "Spanish"). Anki will read the column types from the file header automatically.</li>
 </ol>
+
+<h2>Bulk grabber (Node script)</h2>
+<p class="hint">If you'd rather run this from a terminal, <code>grab_all.mjs</code> brute-forces the lesson namespace and writes per-lesson TSVs plus a combined <code>contrasena_all.tsv</code>:</p>
+<pre>node grab_all.mjs                       # brute-force u1..u6 (default)
+node grab_all.mjs --ids ids.txt          # explicit list, one ID per line
+node grab_all.mjs --units 3 --out ./out  # narrower sweep, custom dir</pre>
 
 <h2>What ends up in Anki</h2>
 <ul>
@@ -55,13 +71,17 @@
   <li>Sign in on Anki Desktop (Sync button) and AnkiDroid. Your deck syncs automatically.</li>
 </ol>
 
-<h2>Updating the bookmark</h2>
-<p class="hint">If you edit <code>bookmarklet.js</code>, also paste the new contents into the <code>&lt;script id="src"&gt;</code> block in this file, then reopen this page and drag the button to your bookmarks bar again (replacing the old one).</p>
+<h2>Updating the bookmarks</h2>
+<p class="hint">If you edit <code>bookmarklet.js</code> or <code>bulk_bookmarklet.js</code>, also paste the new contents into the matching <code>&lt;script id="src"&gt;</code> / <code>&lt;script id="src-bulk"&gt;</code> block in this file, then reopen this page and drag the button to your bookmarks bar again (replacing the old one).</p>
 
 <h2>Source</h2>
 <details>
-<summary>Show source</summary>
+<summary>Show single-lesson source</summary>
 <pre id="readable"></pre>
+</details>
+<details>
+<summary>Show bulk source</summary>
+<pre id="readable-bulk"></pre>
 </details>
 
 <script id="src" type="text/plain">
@@ -148,10 +168,103 @@ void (async () => {
 })();
 </script>
 
+<script id="src-bulk" type="text/plain">
+void (async () => {
+  try {
+    const baseUrl = new URL('data/', location.href).href;
+    const defaults = 'u1_01_01,u1_01_02,u1_01_02v2,u1_01_03,u1_01_03v2,u2_02_01,u2_02_04,u2_02_04v2,u2_02_05,u2_02_05v2,u4_04_01,u4_04_01v2,u4_04_02,u4_04_02v2,u4_04_06,u5_05_02,u5_05_02v2,u5_05_03,u5_05_03v2,u6_06_02,u6_06_02v2,u6_06_03,u6_06_03v2';
+    const input = prompt('Lesson IDs (comma/space separated). Leave default for the 23 known show_hide lessons:', defaults);
+    if (input === null) return;
+    const ids = input.split(/[\s,]+/).map(s => s.trim()).filter(Boolean);
+    if (!ids.length) { alert('No IDs provided.'); return; }
+
+    const SECTION_BG = '#7C3483';
+    const COMBINING_MARKS = new RegExp('[\\u0300-\\u036f]', 'g');
+    const stripHtml = (html) => {
+      const doc = new DOMParser().parseFromString(html || '', 'text/html');
+      return (doc.body.textContent || '').replace(/\s+/g, ' ').trim();
+    };
+    const tagify = (s) => s.toLowerCase()
+      .normalize('NFD').replace(COMBINING_MARKS, '')
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '') || 'unknown';
+    const safeCell = (s) => s.replace(/[\t\r\n]+/g, ' ');
+
+    const extract = (id, data) => {
+      let currentSection = 'unknown';
+      const headerCells = (data.headers || []).filter(c => (c.backgroundColor || '').toUpperCase() === SECTION_BG);
+      const firstHeading = headerCells.find(c => c.type !== 'audio' && c.sortOrder === 1)
+                        || headerCells.find(c => c.type !== 'audio');
+      if (firstHeading) {
+        const name = stripHtml(firstHeading.content);
+        if (name) currentSection = tagify(name);
+      }
+      const lines = [];
+      for (const row of data.body || []) {
+        const cells = row.cells || [];
+        const isHeader = cells.some(c => (c.backgroundColor || '').toUpperCase() === SECTION_BG);
+        if (isHeader) {
+          const spCell = cells.find(c => c.sortOrder === 1 && c.type === 'text')
+                      || cells.find(c => c.type === 'text');
+          const name = stripHtml(spCell ? spCell.content : '');
+          if (name) currentSection = tagify(name);
+          continue;
+        }
+        const sp = cells.find(c => c.sortOrder === 1 && c.type === 'text');
+        const en = cells.find(c => c.sortOrder === 2 && c.type === 'text');
+        const spanish = safeCell(stripHtml(sp ? sp.content : ''));
+        const english = safeCell(stripHtml(en ? en.content : ''));
+        if (!spanish && !english) continue;
+        const tags = 'Contrasena::lessons::' + tagify(id) + ' Contrasena::sections::' + currentSection;
+        lines.push(spanish + '\t' + english + '\t' + tags);
+      }
+      return lines;
+    };
+
+    const allLines = [];
+    const summary = [];
+    for (const id of ids) {
+      try {
+        const resp = await fetch(baseUrl + id + '/data.json');
+        if (!resp.ok) { summary.push(id + ': HTTP ' + resp.status); continue; }
+        const data = await resp.json();
+        const lines = extract(id, data);
+        summary.push(id + ': ' + lines.length + ' cards');
+        allLines.push(...lines);
+      } catch (e) {
+        summary.push(id + ': error ' + (e && e.message ? e.message : e));
+      }
+    }
+
+    if (!allLines.length) { alert('No cards extracted.\n\n' + summary.join('\n')); return; }
+
+    const header = '#separator:tab\n#html:false\n#tags column:3\n';
+    const tsv = header + allLines.join('\n') + '\n';
+    const blob = new Blob([tsv], { type: 'text/tab-separated-values;charset=utf-8' });
+    const blobUrl = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = blobUrl;
+    a.download = 'contrasena_all.tsv';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+
+    alert('Exported ' + allLines.length + ' cards from ' + ids.length + ' lessons.\n\n' + summary.join('\n'));
+  } catch (e) {
+    alert('Error: ' + (e && e.message ? e.message : e));
+  }
+})();
+</script>
+
 <script>
   const src = document.getElementById('src').textContent.trim();
   document.getElementById('readable').textContent = src;
   document.getElementById('bm').href = 'javascript:' + encodeURIComponent(src);
+
+  const srcBulk = document.getElementById('src-bulk').textContent.trim();
+  document.getElementById('readable-bulk').textContent = srcBulk;
+  document.getElementById('bm-bulk').href = 'javascript:' + encodeURIComponent(srcBulk);
 </script>
 
 </body>
