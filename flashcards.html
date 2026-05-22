@@ -186,6 +186,51 @@
     color: var(--fg);
   }
   #card.flipped .face { color: var(--accent); }
+
+  /* Typing mode controls (inside #card) */
+  #typingWrap {
+    width: 100%;
+    max-width: 30rem;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  #typingWrap.hidden { display: none; }
+  #typingInput {
+    width: 100%;
+    font: inherit;
+    font-size: 1.4rem;
+    padding: 0.6rem 0.9rem;
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+    outline: none;
+  }
+  #typingInput:focus { border-color: var(--accent); }
+  #typingInput:disabled { background: #f6f4f9; color: var(--fg); }
+  #feedback { min-height: 1.4em; font-size: 1.05rem; font-weight: 600; }
+  #feedback .ok { color: #1f8a3b; }
+  #feedback .bad { color: #b22; }
+  #feedback .bad .ans { color: var(--accent); margin-left: 0.4rem; }
+  #feedback .hint-line { color: var(--muted); font-weight: 400; font-size: 0.9rem; margin-top: 0.2rem; }
+  #showAnswerBtn {
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  #showAnswerBtn:hover { border-color: var(--accent); color: var(--accent); }
+  #showAnswerBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+  /* In typing mode, the card itself isn't clickable-to-flip */
+  #card.mode-typing { cursor: default; }
+  #card.mode-typing .side-label { display: none; }
+  #card.mode-typing .face { font-size: 1.6rem; margin-bottom: 0.5rem; }
   #cardarea .hint {
     position: absolute;
     bottom: 1rem;
@@ -340,6 +385,14 @@
     </div>
 
     <div class="field">
+      <span class="lbl">6. Study mode</span>
+      <div class="radio-group" id="mode">
+        <label><input type="radio" name="mode" value="flashcard" checked><span>Flashcard (flip)</span></label>
+        <label><input type="radio" name="mode" value="typing"><span>Typing (recall)</span></label>
+      </div>
+    </div>
+
+    <div class="field">
       <div class="check-group">
         <label><input type="checkbox" id="shuffle" checked><span>Shuffle cards within each set</span></label>
       </div>
@@ -385,8 +438,14 @@
     <div id="card">
       <span class="side-label" id="sideLabel">FRONT</span>
       <div class="face" id="face">—</div>
+      <div id="typingWrap" class="hidden">
+        <input id="typingInput" type="text" placeholder="Type the answer…"
+               autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
+        <div id="feedback"></div>
+        <button id="showAnswerBtn" type="button">Show answer (?)</button>
+      </div>
     </div>
-    <div class="hint">Click card to flip · click off-card to advance · <kbd>Space</kbd> flip · <kbd>Enter</kbd> / <kbd>→</kbd> next · <kbd>←</kbd> back · <kbd>N</kbd> next set · <kbd>R</kbd> shuffle · <kbd>Esc</kbd> setup</div>
+    <div class="hint" id="hint">Click card to flip · click off-card to advance · <kbd>Space</kbd> flip · <kbd>Enter</kbd> / <kbd>→</kbd> next · <kbd>←</kbd> back · <kbd>N</kbd> next set · <kbd>R</kbd> shuffle · <kbd>Esc</kbd> setup</div>
   </div>
   <div id="bottombar"></div>
 </section>
@@ -398,12 +457,18 @@
 const state = {
   allCards: [],
   lessonIndex: new Map(),       // lesson -> Map(section -> Card[])
-  setup: null,                  // { lesson, section, direction, chunkSize, shuffle }
+  setup: null,                  // { lesson, section, direction, chunkSize, shuffle, mode }
   queue: [],                    // current section/lesson cards after direction-expansion + shuffle
   setIndex: 0,                  // 0-based chunk index within queue
   cardIndex: 0,                 // 0-based card index within current set
   flipped: false,
+  typing: { submitted: false, correct: false },
 };
+
+function resetCardState() {
+  state.flipped = false;
+  state.typing = { submitted: false, correct: false };
+}
 
 // ---------- DOM ----------
 const $ = (id) => document.getElementById(id);
@@ -428,6 +493,10 @@ const prevMeta = $('prevMeta');
 const prevBody = $('prevBody');
 const prevStudy = $('prevStudy');
 const prevClose = $('prevClose');
+const typingWrap = $('typingWrap');
+const typingInput = $('typingInput');
+const feedback = $('feedback');
+const showAnswerBtn = $('showAnswerBtn');
 
 // Pending TSV waiting for the user to confirm "Study this →" in the modal.
 let pendingTSV = null;
@@ -675,6 +744,10 @@ function shuffle(arr) {
 function expandDirection(cards, dir) {
   const out = [];
   for (const c of cards) {
+    // Skip cards where either side is missing — they show as blank prompts in
+    // typing mode and are useless in flip mode too. A few lessons (notably
+    // u1_01_01) have these from a bad TSV extraction upstream.
+    if (!c.spanish || !c.english) continue;
     if (dir === 'sp_en') out.push({ ...c, front: c.spanish, back: c.english });
     else if (dir === 'en_sp') out.push({ ...c, front: c.english, back: c.spanish });
     else { // both
@@ -701,6 +774,7 @@ function startStudy() {
   const section = sectionSel.value;
   const direction = document.querySelector('input[name=dir]:checked').value;
   const chunkSize = parseInt(document.querySelector('input[name=chunk]:checked').value, 10);
+  const mode = document.querySelector('input[name=mode]:checked').value;
   const doShuffle = $('shuffle').checked;
 
   let base = gatherCards(lesson, section);
@@ -710,13 +784,19 @@ function startStudy() {
     return;
   }
   let queue = expandDirection(base, direction);
+  if (!queue.length) {
+    statusEl.classList.add('err');
+    statusEl.textContent = `That lesson/section has ${base.length} cards but all of them are missing one side (likely a bad TSV extraction — try a different lesson).`;
+    return;
+  }
+  const skipped = base.length - base.filter(c => c.spanish && c.english).length;
   if (doShuffle) shuffle(queue);
 
-  state.setup = { lesson, section, direction, chunkSize, shuffle: doShuffle };
+  state.setup = { lesson, section, direction, chunkSize, shuffle: doShuffle, mode, skipped };
   state.queue = queue;
   state.setIndex = 0;
   state.cardIndex = 0;
-  state.flipped = false;
+  resetCardState();
 
   setupEl.style.display = 'none';
   studyEl.classList.add('active');
@@ -739,15 +819,84 @@ function currentCard() {
 
 function render() {
   const c = currentCard();
-  const { start, end, size, setCount, chunk } = setBounds();
+  const { size, setCount } = setBounds();
   if (!c) return;
-  face.textContent = state.flipped ? c.back : c.front;
-  sideLabel.textContent = state.flipped ? 'BACK' : 'FRONT';
-  card.classList.toggle('flipped', state.flipped);
+  const isTyping = state.setup.mode === 'typing';
+  card.classList.toggle('mode-typing', isTyping);
+
+  if (isTyping) {
+    face.textContent = c.front;
+    typingWrap.classList.remove('hidden');
+    if (state.typing.submitted) {
+      typingInput.disabled = true;
+      showAnswerBtn.disabled = true;
+      feedback.innerHTML = state.typing.correct
+        ? '<span class="ok">✓ Correct</span><div class="hint-line">Press <kbd>Enter</kbd> to continue</div>'
+        : '<span class="bad">✗ Answer:<span class="ans">' + escapeHtml(c.back) + '</span></span><div class="hint-line">Press <kbd>Enter</kbd> to continue</div>';
+    } else {
+      typingInput.disabled = false;
+      showAnswerBtn.disabled = false;
+      typingInput.value = '';
+      feedback.innerHTML = '';
+      // Defer focus so the click that triggered next() doesn't immediately blur it.
+      setTimeout(() => typingInput.focus(), 0);
+    }
+  } else {
+    typingWrap.classList.add('hidden');
+    face.textContent = state.flipped ? c.back : c.front;
+    sideLabel.textContent = state.flipped ? 'BACK' : 'FRONT';
+    card.classList.toggle('flipped', state.flipped);
+  }
+
   $('crumbLesson').textContent = state.setup.lesson;
-  $('crumbSection').textContent = state.setup.section === '__ALL__' ? '(all sections)' : state.setup.section;
+  const sectionLabel = state.setup.section === '__ALL__' ? '(all sections)' : state.setup.section;
+  $('crumbSection').textContent = state.setup.skipped
+    ? `${sectionLabel} (${state.setup.skipped} skipped — missing data)`
+    : sectionLabel;
   $('crumbCard').textContent = `${state.cardIndex + 1} / ${size}`;
   $('crumbSet').textContent = `${state.setIndex + 1} / ${setCount}`;
+}
+
+// ---------- Typing-mode logic ----------
+const COMBINING = /[̀-ͯ]/g;
+function normalizeAnswer(s) {
+  return String(s).toLowerCase()
+    .normalize('NFD').replace(COMBINING, '')
+    .replace(/[¿?¡!.,;:"']/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+// Accept any "/" or "," separated alternative as a correct answer, and (for
+// each alternative) accept it with the leading article dropped — so typing
+// "calendario de eventos" matches "el calendario de eventos".
+function checkMatch(guess, expected) {
+  const g = normalizeAnswer(guess);
+  if (!g) return false;
+  const alts = expected.split(/[\/,]/).map(s => s.trim()).filter(Boolean);
+  for (const alt of alts) {
+    const n = normalizeAnswer(alt);
+    if (n === g) return true;
+    const noArticle = n.replace(/^(el|la|los|las|un|una|the|a|an) /, '');
+    if (noArticle === g) return true;
+  }
+  return false;
+}
+
+function submitTyping() {
+  if (state.typing.submitted) return;
+  const guess = typingInput.value.trim();
+  if (!guess) return;
+  const c = currentCard();
+  state.typing.correct = checkMatch(guess, c.back);
+  state.typing.submitted = true;
+  render();
+}
+
+function revealAnswer() {
+  if (state.typing.submitted) return;
+  state.typing.correct = false;
+  state.typing.submitted = true;
+  render();
 }
 
 function flip() {
@@ -756,10 +905,16 @@ function flip() {
 }
 
 function next() {
+  // In typing mode, Enter on an unsubmitted card means "submit"; Enter on a
+  // submitted card means "advance". next() is only called for the advance step.
+  if (state.setup.mode === 'typing' && !state.typing.submitted) {
+    submitTyping();
+    return;
+  }
   const { size } = setBounds();
   if (state.cardIndex + 1 < size) {
     state.cardIndex++;
-    state.flipped = false;
+    resetCardState();
     render();
     return;
   }
@@ -771,17 +926,15 @@ function next() {
 function prev() {
   if (state.cardIndex > 0) {
     state.cardIndex--;
-    state.flipped = false;
+    resetCardState();
     render();
   }
 }
 
 function reshuffleCurrentSet() {
   if (!state.setup.shuffle) {
-    // Even with shuffle off, looping back to card 1 of the same set is the
-    // expected "redo" behavior.
     state.cardIndex = 0;
-    state.flipped = false;
+    resetCardState();
     render();
     return;
   }
@@ -790,7 +943,7 @@ function reshuffleCurrentSet() {
   shuffle(slice);
   state.queue.splice(start, end - start, ...slice);
   state.cardIndex = 0;
-  state.flipped = false;
+  resetCardState();
   render();
 }
 
@@ -807,7 +960,7 @@ function nextSet() {
   if (state.setIndex + 1 < setCount) {
     state.setIndex++;
     state.cardIndex = 0;
-    state.flipped = false;
+    resetCardState();
     render();
     flashTopbar();
     return;
@@ -834,7 +987,7 @@ function nextSet() {
   state.queue = queue;
   state.setIndex = 0;
   state.cardIndex = 0;
-  state.flipped = false;
+  resetCardState();
   render();
   flashTopbar();
 }
@@ -859,13 +1012,31 @@ function backToSetup(msg) {
 // ---------- Interaction ----------
 card.addEventListener('click', (e) => {
   e.stopPropagation();   // prevent the cardarea background handler from also firing
+  if (state.setup?.mode === 'typing') return;
   flip();
 });
-cardarea.addEventListener('click', () => next());
+cardarea.addEventListener('click', () => {
+  if (state.setup?.mode === 'typing') return;
+  next();
+});
 
 $('toSetup').addEventListener('click', () => backToSetup());
 $('reshuffle').addEventListener('click', reshuffle);
 nextSetBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSet(); });
+showAnswerBtn.addEventListener('click', (e) => { e.stopPropagation(); revealAnswer(); });
+
+// Typing input owns its own keydown so we don't fight the document handler.
+typingInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    if (state.typing.submitted) next();
+    else submitTyping();
+  } else if (e.key === 'Escape') {
+    e.preventDefault();
+    backToSetup();
+  }
+  // All other keys (letters, space, accents, backspace, arrows) flow normally.
+});
 
 document.addEventListener('keydown', (e) => {
   if (preview.classList.contains('show')) {
@@ -874,9 +1045,14 @@ document.addEventListener('keydown', (e) => {
     return;
   }
   if (!studyEl.classList.contains('active')) return;
+  // While typing-input is focused, the input handles its own keys. Don't grab
+  // letters/space/etc. from under the user.
+  if (e.target === typingInput) return;
+
   switch (e.key) {
     case ' ':
     case 'Spacebar':
+      if (state.setup.mode === 'typing') return; // no flip in typing mode
       e.preventDefault();
       flip();
       break;
@@ -902,6 +1078,9 @@ document.addEventListener('keydown', (e) => {
     case 'N':
       e.preventDefault();
       nextSet();
+      break;
+    case '?':
+      if (state.setup.mode === 'typing') { e.preventDefault(); revealAnswer(); }
       break;
   }
 });
