@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#7C3483">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Contraseña">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon.svg">
 <title>Contraseña Flashcards</title>
 <style>
   :root {
@@ -543,6 +551,7 @@ async function loadTSVText(text, label) {
     if (!cards.length) throw new Error('No cards found. Expected tab-separated columns: Spanish / English / tags.');
     state.allCards = cards;
     state.lessonIndex = buildIndex(cards);
+    state.loadedPath = label;
     populateLessons();
     selectors.classList.remove('field-hidden');
     statusEl.classList.remove('err');
@@ -674,6 +683,7 @@ prevStudy.addEventListener('click', async () => {
 });
 
 // ---------- Bundled-data autoload ----------
+let bundledEntries = [];
 function loadBundled() {
   const tag = $('bundled-tsvs');
   if (!tag) return;
@@ -684,10 +694,80 @@ function loadBundled() {
     library.innerHTML = '<div class="lib-empty">No bundled TSVs. Run <code>node build_flashcards.mjs</code> in the repo, or use the disk fallback below.</div>';
     return;
   }
-  const entries = bundle.map(b => makeEntry(b.path, b.content)).filter(e => e.cardCount > 0);
-  renderLibrary(entries);
+  bundledEntries = bundle.map(b => makeEntry(b.path, b.content)).filter(e => e.cardCount > 0);
+  renderLibrary(bundledEntries);
 }
 loadBundled();
+
+// ---------- Persistence ----------
+const STORAGE_KEY = 'contrasena-flashcards:setup-v1';
+
+function saveSetup() {
+  if (!state.allCards.length) return;
+  try {
+    const dirRadio = document.querySelector('input[name=dir]:checked');
+    const chunkRadio = document.querySelector('input[name=chunk]:checked');
+    const modeRadio = document.querySelector('input[name=mode]:checked');
+    localStorage.setItem(STORAGE_KEY, JSON.stringify({
+      tsvPath: state.loadedPath || null,
+      lesson: lessonSel.value || null,
+      section: sectionSel.value || null,
+      direction: dirRadio ? dirRadio.value : null,
+      chunkSize: chunkRadio ? chunkRadio.value : null,
+      mode: modeRadio ? modeRadio.value : null,
+      shuffle: !!$('shuffle').checked,
+    }));
+  } catch (_) { /* private mode / quota: silent */ }
+}
+
+async function restoreSetup() {
+  let saved;
+  try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null'); }
+  catch (_) { saved = null; }
+  if (!saved || !saved.tsvPath) return;
+  const entry = bundledEntries.find(e => e.relPath === saved.tsvPath);
+  if (!entry) return;
+
+  // Visually mark the matching library row.
+  for (const node of library.querySelectorAll('.lib-item')) {
+    const name = node.querySelector('.name')?.textContent;
+    if (name && entry.relPath.endsWith(name)) { node.classList.add('selected'); break; }
+  }
+
+  const ok = await loadTSVText(entry.text, entry.relPath);
+  if (!ok) return;
+
+  if (saved.lesson && [...lessonSel.options].some(o => o.value === saved.lesson)) {
+    lessonSel.value = saved.lesson;
+    populateSections();
+  }
+  if (saved.section && [...sectionSel.options].some(o => o.value === saved.section)) {
+    sectionSel.value = saved.section;
+  }
+  for (const [name, val] of [['dir', saved.direction], ['chunk', saved.chunkSize], ['mode', saved.mode]]) {
+    if (!val) continue;
+    const r = document.querySelector(`input[name="${name}"][value="${val}"]`);
+    if (r) r.checked = true;
+  }
+  if (typeof saved.shuffle === 'boolean') $('shuffle').checked = saved.shuffle;
+}
+
+// Save on any meaningful change to the setup form.
+['lesson', 'section', 'shuffle'].forEach(id => $(id).addEventListener('change', saveSetup));
+document.querySelectorAll('input[name=dir], input[name=chunk], input[name=mode]')
+  .forEach(el => el.addEventListener('change', saveSetup));
+
+restoreSetup();
+
+// ---------- Service worker registration ----------
+// Only register on http(s) origins — file:// double-clicks still work without it.
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js').catch((e) => {
+      console.warn('service worker registration failed:', e);
+    });
+  });
+}
 
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

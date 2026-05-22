@@ -12,7 +12,8 @@ import { parseArgs } from 'node:util';
 const { values } = parseArgs({
   options: {
     root:   { type: 'string', default: '.' },
-    html:   { type: 'string', default: './flashcards.html' },
+    html:   { type: 'string', default: './index.html' },
+    sw:     { type: 'string', default: './service-worker.js' },
     skip:   { type: 'string', default: '.git,node_modules,output_test' },
   },
 });
@@ -66,3 +67,23 @@ writeFileSync(values.html, updated, 'utf8');
 const sizes = tsvs.reduce((s, t) => s + t.content.length, 0);
 console.log(`Bundled ${tsvs.length} TSV file${tsvs.length===1?'':'s'} (${sizes.toLocaleString()} chars of TSV → ${json.length.toLocaleString()} chars of JSON) into ${values.html}`);
 for (const t of tsvs) console.log(`  ${t.path}  (${t.content.length.toLocaleString()} chars)`);
+
+// Stamp the service worker so the PWA cache invalidates on every rebuild.
+// Replaces both the placeholder `__BUILD_TIMESTAMP__` and any previously
+// stamped ISO timestamp inside the CACHE_VERSION literal.
+try {
+  const swPath = values.sw;
+  const swText = readFileSync(swPath, 'utf8');
+  const ts = new Date().toISOString().replace(/[:.]/g, '-');
+  const versionRe = /(const CACHE_VERSION = ')([^']+)(';)/;
+  if (versionRe.test(swText)) {
+    const newSw = swText.replace(versionRe, `$1${ts}$3`);
+    writeFileSync(swPath, newSw, 'utf8');
+    console.log(`Stamped ${swPath} with CACHE_VERSION = '${ts}'`);
+  } else {
+    console.warn(`Note: ${swPath} has no CACHE_VERSION literal to stamp.`);
+  }
+} catch (e) {
+  if (e.code === 'ENOENT') console.warn(`Note: ${values.sw} not found; skipping SW stamp.`);
+  else throw e;
+}
