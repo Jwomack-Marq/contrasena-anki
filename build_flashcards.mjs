@@ -61,20 +61,31 @@ if (!re.test(html)) {
   process.exit(1);
 }
 
-const updated = html.replace(re, `<script id="bundled-tsvs" type="application/json">${json}</script>`);
+// Single timestamp shared between the SW cache version and the visible build
+// stamp in the HTML, so a user can read the version on screen and know it
+// matches the cache they got served.
+const ts = new Date().toISOString().replace(/[:.]/g, '-');
+
+// Stamp `__BUILD_TIMESTAMP__` (or a previously-stamped value) inside the HTML
+// build-version spans, so the version is visible in the UI.
+let updated = html.replace(re, `<script id="bundled-tsvs" type="application/json">${json}</script>`);
+const buildStampRe = /(<span id="buildStamp(?:Bottom)?">)[^<]*(<\/span>)/g;
+const beforeStamp = updated;
+updated = updated.replace(buildStampRe, `$1${ts}$2`);
+const stampedHtml = beforeStamp !== updated;
 writeFileSync(values.html, updated, 'utf8');
 
 const sizes = tsvs.reduce((s, t) => s + t.content.length, 0);
 console.log(`Bundled ${tsvs.length} TSV file${tsvs.length===1?'':'s'} (${sizes.toLocaleString()} chars of TSV → ${json.length.toLocaleString()} chars of JSON) into ${values.html}`);
+if (stampedHtml) console.log(`Stamped ${values.html} build version = '${ts}'`);
+else console.warn(`Note: ${values.html} has no <span id="buildStamp"> to stamp.`);
 for (const t of tsvs) console.log(`  ${t.path}  (${t.content.length.toLocaleString()} chars)`);
 
 // Stamp the service worker so the PWA cache invalidates on every rebuild.
-// Replaces both the placeholder `__BUILD_TIMESTAMP__` and any previously
-// stamped ISO timestamp inside the CACHE_VERSION literal.
+// Same timestamp as the HTML for easy cross-checking.
 try {
   const swPath = values.sw;
   const swText = readFileSync(swPath, 'utf8');
-  const ts = new Date().toISOString().replace(/[:.]/g, '-');
   const versionRe = /(const CACHE_VERSION = ')([^']+)(';)/;
   if (versionRe.test(swText)) {
     const newSw = swText.replace(versionRe, `$1${ts}$3`);
