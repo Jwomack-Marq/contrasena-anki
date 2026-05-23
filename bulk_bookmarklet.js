@@ -39,13 +39,17 @@ void (async () => {
           if (name) currentSection = tagify(name);
           continue;
         }
-        const sp = cells.find(c => c.sortOrder === 1 && c.type === 'text');
-        const en = cells.find(c => c.sortOrder === 2 && c.type === 'text');
+        const textCells = cells.filter(c => c.type === 'text');
+        const sp = textCells.find(c => /lang=['"]es['"]/i.test(c.content || ''))
+                || textCells.find(c => c.sortOrder === 1)
+                || textCells[0];
+        const en = textCells.find(c => c !== sp && c.sortOrder === (sp ? sp.sortOrder + 1 : 2))
+                || textCells.find(c => c !== sp);
         const au = cells.find(c => c.type === 'audio');
         const spanish = safeCell(stripHtml(sp ? sp.content : ''));
         const english = safeCell(stripHtml(en ? en.content : ''));
         const audioUrl = au && au.contentSrc ? au.contentSrc : '';
-        if (!spanish && !english) continue;
+        if (!spanish || !english) continue;
         const tags = 'Contrasena::lessons::' + tagify(id) + ' Contrasena::sections::' + currentSection;
         lines.push(spanish + '\t' + english + '\t' + tags + '\t' + audioUrl);
       }

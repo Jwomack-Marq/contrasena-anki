@@ -55,13 +55,22 @@ function extractCards(id, data) {
       if (name) currentSection = tagify(name);
       continue;
     }
-    const sp = cells.find(c => c.sortOrder === 1 && c.type === 'text');
-    const en = cells.find(c => c.sortOrder === 2 && c.type === 'text');
+    // Detect the Spanish column via `lang='es'` on the cell's HTML content.
+    // Contraseña tags Spanish text consistently this way. This handles lessons
+    // (e.g. u1_01_01 "False Friends") where Spanish is in sortOrder 2, not 1.
+    const textCells = cells.filter(c => c.type === 'text');
+    const sp = textCells.find(c => /lang=['"]es['"]/i.test(c.content || ''))
+            || textCells.find(c => c.sortOrder === 1)
+            || textCells[0];
+    // English is the next text cell after Spanish (preferring sortOrder+1).
+    const en = textCells.find(c => c !== sp && c.sortOrder === (sp ? sp.sortOrder + 1 : 2))
+            || textCells.find(c => c !== sp);
     const au = cells.find(c => c.type === 'audio');
     const spanish = safeCell(stripHtml(sp ? sp.content : ''));
     const english = safeCell(stripHtml(en ? en.content : ''));
     const audioUrl = au && au.contentSrc ? au.contentSrc : '';
-    if (!spanish && !english) continue;
+    // Drop cards missing either side — they're useless for any drill mode.
+    if (!spanish || !english) continue;
     const tags = 'Contrasena::lessons::' + tagify(id) + ' Contrasena::sections::' + currentSection;
     // Column 4 is the Spanish pronunciation URL (may be empty). Anki imports
     // ignore extra columns past `#tags column:3`, so this doesn't break Anki.
