@@ -2,7 +2,7 @@
 // `CACHE_VERSION` is rewritten on every `node build_flashcards.mjs` so each
 // rebuild invalidates the app cache and clients pick up new content within
 // two opens (first open: stale, background refresh; second open: fresh).
-const CACHE_VERSION = '2026-05-23T16-58-14-604Z';
+const CACHE_VERSION = '2026-05-23T17-08-41-823Z';
 const CACHE_NAME = 'contrasena-flashcards-' + CACHE_VERSION;
 // Long-lived, content-addressed by URL — audio never changes, so we keep
 // this cache across rebuilds.
