@@ -2,7 +2,7 @@
 // `CACHE_VERSION` is rewritten on every `node build_flashcards.mjs` so each
 // rebuild invalidates the app cache and clients pick up new content within
 // two opens (first open: stale, background refresh; second open: fresh).
-const CACHE_VERSION = '2026-05-23T16-08-10-399Z';
+const CACHE_VERSION = '2026-05-23T16-25-00-567Z';
 const CACHE_NAME = 'contrasena-flashcards-' + CACHE_VERSION;
 // Long-lived, content-addressed by URL — audio never changes, so we keep
 // this cache across rebuilds.
@@ -36,7 +36,31 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
 
-  // Same-origin: stale-while-revalidate.
+  // Same-origin navigation / HTML: network-first so new builds apply on the
+  // very next open when online. Falls back to cache offline.
+  const isNavigation = req.mode === 'navigate' ||
+                       (req.headers.get('accept') || '').includes('text/html');
+  if (url.origin === self.location.origin && isNavigation) {
+    event.respondWith((async () => {
+      try {
+        const resp = await fetch(req);
+        if (resp && resp.ok && resp.type === 'basic') {
+          const cache = await caches.open(CACHE_NAME);
+          cache.put(req, resp.clone());
+        }
+        return resp;
+      } catch (_) {
+        const cache = await caches.open(CACHE_NAME);
+        return (await cache.match(req)) ||
+               (await cache.match('./index.html')) ||
+               (await cache.match('./')) ||
+               new Response('Offline and not cached.', { status: 503 });
+      }
+    })());
+    return;
+  }
+
+  // Other same-origin (manifest, icon, sw.js): stale-while-revalidate.
   if (url.origin === self.location.origin) {
     event.respondWith((async () => {
       const cache = await caches.open(CACHE_NAME);
