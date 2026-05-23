@@ -1,9 +1,9 @@
 #separator:tab
 #html:false
 #tags column:3
-/a/ [accented]	clase	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown
-/a/ [unaccented]	biblioteca	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown
-/e/ [accented]	centro	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown
-/e/ [unaccented]	ordenado	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown
-/o/ [accented]	salón	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown
-/o/ [unaccented]	viejo	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown
+/a/ [accented]	clase	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_clase.mp3
+/a/ [unaccented]	biblioteca	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_biblioteca.mp3
+/e/ [accented]	centro	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_centro.mp3
+/e/ [unaccented]	ordenado	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_ordenado.mp3
+/o/ [accented]	salón	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_salon.mp3
+/o/ [unaccented]	viejo	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_viejo.mp3

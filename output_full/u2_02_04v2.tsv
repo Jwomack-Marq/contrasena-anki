@@ -1,30 +1,30 @@
 #separator:tab
 #html:false
 #tags column:3
-¡Buenos días!	Good morning!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos
-¡Buenas tardes!	Good afternoon!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos
-¡Buenas noches!	Good evening!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos
-¡Hola!	Hi!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos
-¡Adiós! / ¡Chau!	Goodbye! /Bye!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas
-¡Hasta luego!	See you later!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas
-¡Hasta mañana!	See you tomorrow!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas
-¡Hasta pronto!	See you soon!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas
-¡Nos vemos!	See you!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas
-¿Cómo se llama (usted) / Cómo te llamas (tú)?	What is your name? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Me llamo…	My name is…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-¿Cómo está (usted)? / ¿Cómo estás (tú)?	How are you? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-¿Qué pasa? / ¿Qué hay de nuevo?	What’s up? / What’s new?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-¿Qué tal?	How are you?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Muy bien./ No Muy bien.	Very well./Not Very well.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Regular. / Así así.	OK.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-¿De dónde es (usted)? / ¿De dónde eres (tú)?	Where are you from? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Soy de…	I’m from…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-¿Qué estudia (usted) / Qué estudias (tú)?	What do you study? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Estudio…	I study...	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-¿Cuál es su especialización / ¿Cuál es tu especialización?	What‘s your major?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Mi especialización es…	My major is…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-No sé.	I don’t know.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-¿Y usted / tú?	And you? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Gracias.	Thank you.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Mucho gusto.	Pleased to meet you.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
-Igualmente.	Likewise.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas
+¡Buenos días!	Good morning!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_2.mp3
+¡Buenas tardes!	Good afternoon!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_3.mp3
+¡Buenas noches!	Good evening!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_4.mp3
+¡Hola!	Hi!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_5.mp3
+¡Adiós! / ¡Chau!	Goodbye! /Bye!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_7.mp3
+¡Hasta luego!	See you later!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_8.mp3
+¡Hasta mañana!	See you tomorrow!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_9.mp3
+¡Hasta pronto!	See you soon!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_10.mp3
+¡Nos vemos!	See you!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_11.mp3
+¿Cómo se llama (usted) / Cómo te llamas (tú)?	What is your name? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_13.mp3
+Me llamo…	My name is…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_14.mp3
+¿Cómo está (usted)? / ¿Cómo estás (tú)?	How are you? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_15.mp3
+¿Qué pasa? / ¿Qué hay de nuevo?	What’s up? / What’s new?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_16.mp3
+¿Qué tal?	How are you?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_17.mp3
+Muy bien./ No Muy bien.	Very well./Not Very well.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_18.mp3
+Regular. / Así así.	OK.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_19.mp3
+¿De dónde es (usted)? / ¿De dónde eres (tú)?	Where are you from? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_20.mp3
+Soy de…	I’m from…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_21.mp3
+¿Qué estudia (usted) / Qué estudias (tú)?	What do you study? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_22.mp3
+Estudio…	I study...	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_23.mp3
+¿Cuál es su especialización / ¿Cuál es tu especialización?	What‘s your major?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_24.mp3
+Mi especialización es…	My major is…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_25.mp3
+No sé.	I don’t know.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_26.mp3
+¿Y usted / tú?	And you? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_27.mp3
+Gracias.	Thank you.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_28.mp3
+Mucho gusto.	Pleased to meet you.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_29.mp3
+Igualmente.	Likewise.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_30.mp3

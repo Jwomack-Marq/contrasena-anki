@@ -1,34 +1,34 @@
 #separator:tab
 #html:false
 #tags column:3
-alto/alta	tall	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-atlético/atlética	athletic	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-bajo/baja	short (height)	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-bonito/bonita	pretty	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-corto/corta	short (length)	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-débil	weak	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-ddelgado/delgada	thin	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-feo/fea	ugly	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-fuerte	strong	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-gordo/gorda (affectionate: gordito/a)	fat	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-grande	big	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-guapo/guapa	handsome/attractive	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-joven	young	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-largo/a	long	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-mayor (form of respect)	older	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-menor	younger	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-moreno/morena	dark skinned / dark haired	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-las pecas	freckles	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-pelirrojo/pelirroja	redhead	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-pequeño/a	small/little	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-rizado/rizada	curly	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-rubio/rubia	blonde	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-viejo/vieja	old	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas
-contar (o>ue)	to tell	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
-entender (e>ie)	to understand	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
-parecerse a/parecerse a alguien	to look like/to look like someone	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
-pensar (e>ie)	to think	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
-poder (o>ue)	to be able to	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
-preferir (e>ie)	to prefer	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
-sonreír (e>i)	to smile	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
-soñar/soñar con (o>ue)	to dream/to dream about	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas
+alto/alta	tall	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_2.mp3
+atlético/atlética	athletic	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_3.mp3
+bajo/baja	short (height)	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_4.mp3
+bonito/bonita	pretty	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_5.mp3
+corto/corta	short (length)	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_6.mp3
+débil	weak	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_7.mp3
+ddelgado/delgada	thin	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_8.mp3
+feo/fea	ugly	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_9.mp3
+fuerte	strong	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_10.mp3
+gordo/gorda (affectionate: gordito/a)	fat	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_11.mp3
+grande	big	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_12.mp3
+guapo/guapa	handsome/attractive	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_13.mp3
+joven	young	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_14.mp3
+largo/a	long	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_15.mp3
+mayor (form of respect)	older	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_16.mp3
+menor	younger	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_17.mp3
+moreno/morena	dark skinned / dark haired	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_18.mp3
+las pecas	freckles	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_19.mp3
+pelirrojo/pelirroja	redhead	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_20.mp3
+pequeño/a	small/little	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_21.mp3
+rizado/rizada	curly	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_22.mp3
+rubio/rubia	blonde	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_23.mp3
+viejo/vieja	old	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_24.mp3
+contar (o>ue)	to tell	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_26.mp3
+entender (e>ie)	to understand	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_27.mp3
+parecerse a/parecerse a alguien	to look like/to look like someone	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_28.mp3
+pensar (e>ie)	to think	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_29.mp3
+poder (o>ue)	to be able to	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_30.mp3
+preferir (e>ie)	to prefer	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_31.mp3
+sonreír (e>i)	to smile	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_32.mp3
+soñar/soñar con (o>ue)	to dream/to dream about	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_33.mp3

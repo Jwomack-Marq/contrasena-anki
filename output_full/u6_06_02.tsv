@@ -1,35 +1,35 @@
 #separator:tab
 #html:false
 #tags column:3
-el/la abuelo/a	grandfather/grandmother	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la esposo/a	husband/wife	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la gato/a	cat	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la gemelo/a	twin	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la hermanastro/a	step-brother/sister	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la hermano/a	brother/sister	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la hijastro/a	step-son/daughter	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-los hijos/las hijas	sons/daughters	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-la madrastra	stepmother	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-la madre (la mamá)	mother	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la medio/a hermano/a	half-brother/sister	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la nieto/a	grandson/granddaughter	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la niño/a	boy/girl	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el padrastro	stepfather	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el padre (el papá)	father	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-los padres	parents	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-los parientes	relatives	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la perro/a	dog	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la primo/a	cousin	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la tío/a	to uncle/aunt	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-LOS ESTADOS	STATUS	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar) casado/a	(to be) married	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar) divorciado/a	(to be) divorced	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar) muerto/a	(to be) dead	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar de) novio/a	(to have) a boyfriend/girlfriend (romantic interest)	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar en) pareja	(to have) a partner	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar) separado/a	(to be) separated	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar) solo/a	(to be) alone	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-(estar) soltero/a	(to be) single	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el/la hijo/a adoptado/a	adopted son/daughter	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-el matrimonio igualitario	same-sex marriage	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
-la unión legal/la unión civil	legal union/civil union	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown
+el/la abuelo/a	grandfather/grandmother	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_2.mp3
+el/la esposo/a	husband/wife	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_3.mp3
+el/la gato/a	cat	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_4.mp3
+el/la gemelo/a	twin	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_5.mp3
+el/la hermanastro/a	step-brother/sister	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_6.mp3
+el/la hermano/a	brother/sister	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_7.mp3
+el/la hijastro/a	step-son/daughter	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_8.mp3
+los hijos/las hijas	sons/daughters	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_9.mp3
+la madrastra	stepmother	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_10.mp3
+la madre (la mamá)	mother	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_11.mp3
+el/la medio/a hermano/a	half-brother/sister	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_12.mp3
+el/la nieto/a	grandson/granddaughter	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_13.mp3
+el/la niño/a	boy/girl	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_14.mp3
+el padrastro	stepfather	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_15.mp3
+el padre (el papá)	father	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_16.mp3
+los padres	parents	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_17.mp3
+los parientes	relatives	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_18.mp3
+el/la perro/a	dog	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_19.mp3
+el/la primo/a	cousin	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_20.mp3
+el/la tío/a	to uncle/aunt	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_21.mp3
+LOS ESTADOS	STATUS	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_22.mp3
+(estar) casado/a	(to be) married	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_23.mp3
+(estar) divorciado/a	(to be) divorced	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_24.mp3
+(estar) muerto/a	(to be) dead	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_25.mp3
+(estar de) novio/a	(to have) a boyfriend/girlfriend (romantic interest)	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_26.mp3
+(estar en) pareja	(to have) a partner	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_27.mp3
+(estar) separado/a	(to be) separated	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_28.mp3
+(estar) solo/a	(to be) alone	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_29.mp3
+(estar) soltero/a	(to be) single	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_30.mp3
+el/la hijo/a adoptado/a	adopted son/daughter	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_31.mp3
+el matrimonio igualitario	same-sex marriage	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_32.mp3
+la unión legal/la unión civil	legal union/civil union	Contrasena::lessons::u6_06_02 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_33.mp3

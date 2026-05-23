@@ -57,11 +57,15 @@ function extractCards(id, data) {
     }
     const sp = cells.find(c => c.sortOrder === 1 && c.type === 'text');
     const en = cells.find(c => c.sortOrder === 2 && c.type === 'text');
+    const au = cells.find(c => c.type === 'audio');
     const spanish = safeCell(stripHtml(sp ? sp.content : ''));
     const english = safeCell(stripHtml(en ? en.content : ''));
+    const audioUrl = au && au.contentSrc ? au.contentSrc : '';
     if (!spanish && !english) continue;
     const tags = 'Contrasena::lessons::' + tagify(id) + ' Contrasena::sections::' + currentSection;
-    lines.push(spanish + '\t' + english + '\t' + tags);
+    // Column 4 is the Spanish pronunciation URL (may be empty). Anki imports
+    // ignore extra columns past `#tags column:3`, so this doesn't break Anki.
+    lines.push(spanish + '\t' + english + '\t' + tags + '\t' + audioUrl);
   }
   return lines;
 }
