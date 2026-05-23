@@ -2,7 +2,7 @@
 // `CACHE_VERSION` is rewritten on every `node build_flashcards.mjs` so each
 // rebuild invalidates the cache and clients pick up new content within two
 // opens (first open: stale, background refresh; second open: fresh).
-const CACHE_VERSION = '2026-05-22T12-32-06-055Z';
+const CACHE_VERSION = '2026-05-23T15-00-38-844Z';
 const CACHE_NAME = 'contrasena-flashcards-' + CACHE_VERSION;
 const ASSETS = [
   './',

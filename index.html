@@ -434,9 +434,10 @@
 <section id="study">
   <div id="topbar">
     <div class="crumbs">
-      <b id="crumbLesson">—</b> · <span id="crumbSection">—</span> · card <b id="crumbCard">0 / 0</b> · set <b id="crumbSet">0 / 0</b>
+      <b id="crumbLesson">—</b> · <span id="crumbSection">—</span> · <b id="crumbDir">—</b> · card <b id="crumbCard">0 / 0</b> · set <b id="crumbSet">0 / 0</b>
     </div>
     <div class="right">
+      <button id="swapDirBtn" title="Swap direction (S)">⇄ Swap (S)</button>
       <button id="reshuffle" title="Shuffle this set (R)">Shuffle (R)</button>
       <button id="nextSetBtn" title="Next set (N)">Next set (N) →</button>
       <button id="toSetup" title="Back to setup (Esc)">Setup (Esc)</button>
@@ -453,7 +454,7 @@
         <button id="showAnswerBtn" type="button">Show answer (?)</button>
       </div>
     </div>
-    <div class="hint" id="hint">Click card to flip · click off-card to advance · <kbd>Space</kbd> flip · <kbd>Enter</kbd> / <kbd>→</kbd> next · <kbd>←</kbd> back · <kbd>N</kbd> next set · <kbd>R</kbd> shuffle · <kbd>Esc</kbd> setup</div>
+    <div class="hint" id="hint">Click card to flip · click off-card to advance · <kbd>Space</kbd> flip · <kbd>Enter</kbd> / <kbd>→</kbd> next · <kbd>←</kbd> back · <kbd>S</kbd> swap direction · <kbd>N</kbd> next set · <kbd>R</kbd> shuffle · <kbd>Esc</kbd> setup</div>
   </div>
   <div id="bottombar"></div>
 </section>
@@ -933,8 +934,36 @@ function render() {
   $('crumbSection').textContent = state.setup.skipped
     ? `${sectionLabel} (${state.setup.skipped} skipped — missing data)`
     : sectionLabel;
+  $('crumbDir').textContent = directionLabel(state.setup.direction);
   $('crumbCard').textContent = `${state.cardIndex + 1} / ${size}`;
   $('crumbSet').textContent = `${state.setIndex + 1} / ${setCount}`;
+}
+
+function directionLabel(dir) {
+  return dir === 'sp_en' ? 'Sp→En' : dir === 'en_sp' ? 'En→Sp' : 'Both';
+}
+
+// Swap the front/back of every card in the current queue. Works in any mode:
+// preserves your position, the current set, and any shuffle ordering — just
+// reverses each card's prompt/answer. For sp_en ↔ en_sp this toggles direction;
+// for "Both (mixed)" it inverts each pairing but stays a mixed set.
+function swapDirection() {
+  if (!state.queue.length || !state.setup) return;
+  for (const c of state.queue) {
+    const t = c.front; c.front = c.back; c.back = t;
+  }
+  if (state.setup.direction === 'sp_en') state.setup.direction = 'en_sp';
+  else if (state.setup.direction === 'en_sp') state.setup.direction = 'sp_en';
+  // 'both' stays 'both' — the queue is already bidirectional.
+
+  // Keep the setup form radio in sync so it reflects current state when the
+  // user goes back to setup, and so saveSetup persists the swap.
+  const r = document.querySelector(`input[name="dir"][value="${state.setup.direction}"]`);
+  if (r) { r.checked = true; saveSetup(); }
+
+  resetCardState();
+  render();
+  flashTopbar();
 }
 
 // ---------- Typing-mode logic ----------
@@ -1103,6 +1132,7 @@ cardarea.addEventListener('click', () => {
 $('toSetup').addEventListener('click', () => backToSetup());
 $('reshuffle').addEventListener('click', reshuffle);
 nextSetBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSet(); });
+$('swapDirBtn').addEventListener('click', (e) => { e.stopPropagation(); swapDirection(); });
 showAnswerBtn.addEventListener('click', (e) => { e.stopPropagation(); revealAnswer(); });
 
 // Typing input owns its own keydown so we don't fight the document handler.
@@ -1158,6 +1188,11 @@ document.addEventListener('keydown', (e) => {
     case 'N':
       e.preventDefault();
       nextSet();
+      break;
+    case 's':
+    case 'S':
+      e.preventDefault();
+      swapDirection();
       break;
     case '?':
       if (state.setup.mode === 'typing') { e.preventDefault(); revealAnswer(); }
