@@ -190,23 +190,30 @@
   #playBtn {
     position: absolute;
     top: 0.6rem;
-    right: 0.7rem;
-    width: 2.4rem;
-    height: 2.4rem;
+    right: 0.6rem;
+    /* 3rem ≈ 48px — meets Android/iOS minimum tap-target size. */
+    width: 3rem;
+    height: 3rem;
     border: 1px solid var(--border);
     border-radius: 50%;
     background: white;
     color: var(--accent);
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     line-height: 1;
     display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     user-select: none;
+    /* Suppress mobile double-tap zoom and 300ms click delay. */
+    touch-action: manipulation;
+    /* Make sure the button sits above any card layers. */
+    z-index: 2;
+    -webkit-tap-highlight-color: rgba(124, 52, 131, 0.25);
   }
   #playBtn.shown { display: inline-flex; }
   #playBtn:hover, #playBtn:focus-visible { border-color: var(--accent); background: #fbf9fd; outline: none; }
+  #playBtn:active { background: #ede4f4; }
   #playBtn.playing { background: var(--accent); color: white; border-color: var(--accent); }
   #card .face {
     font-size: 1.9rem;
@@ -1188,7 +1195,13 @@ $('toSetup').addEventListener('click', () => backToSetup());
 $('reshuffle').addEventListener('click', reshuffle);
 nextSetBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSet(); });
 $('swapDirBtn').addEventListener('click', (e) => { e.stopPropagation(); swapDirection(); });
-playBtn.addEventListener('click', (e) => { e.stopPropagation(); playCurrentAudio(); });
+// Belt-and-braces propagation handling — stop the event at every phase a
+// mobile browser might use to trigger the card's flip handler. Some Android
+// Chrome builds were observed firing the card's click before the button's.
+['pointerdown', 'mousedown', 'touchstart', 'click'].forEach((evt) => {
+  playBtn.addEventListener(evt, (e) => { e.stopPropagation(); }, { passive: true });
+});
+playBtn.addEventListener('click', (e) => { e.preventDefault(); playCurrentAudio(); });
 showAnswerBtn.addEventListener('click', (e) => { e.stopPropagation(); revealAnswer(); });
 
 // Typing input owns its own keydown so we don't fight the document handler.
