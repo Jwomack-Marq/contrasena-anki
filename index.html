@@ -238,6 +238,7 @@
   #card.swiping-left  { transform: translateX(-110%); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
   #card.swiping-right { transform: translateX( 110%); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
   #card.swiping-up    { transform: translateY(-110%); opacity: 0; transition: transform 200ms ease-in, opacity 200ms ease-in; }
+  #card.swiping-down  { transform: translateY( 110%); opacity: 0; transition: transform 200ms ease-in, opacity 200ms ease-in; }
   @keyframes contrasena-slide-in-right {
     from { transform: translateX( 110%); opacity: 0; }
     to   { transform: translateX(0);     opacity: 1; }
@@ -246,8 +247,13 @@
     from { transform: translateX(-110%); opacity: 0; }
     to   { transform: translateX(0);     opacity: 1; }
   }
-  #card.entering-from-right { animation: contrasena-slide-in-right 200ms ease-out; }
-  #card.entering-from-left  { animation: contrasena-slide-in-left  200ms ease-out; }
+  @keyframes contrasena-slide-in-bottom {
+    from { transform: translateY( 110%); opacity: 0; }
+    to   { transform: translateY(0);     opacity: 1; }
+  }
+  #card.entering-from-right  { animation: contrasena-slide-in-right  200ms ease-out; }
+  #card.entering-from-left   { animation: contrasena-slide-in-left   200ms ease-out; }
+  #card.entering-from-bottom { animation: contrasena-slide-in-bottom 200ms ease-out; }
   #card .side-label {
     position: absolute;
     top: 0.75rem;
@@ -667,7 +673,7 @@
     <button id="nextBtn" class="nav-arrow" type="button" title="Next card (→)" aria-label="Next card">→</button>
     <div class="hint" id="hint">
       <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>N</kbd> next set · <kbd>Esc</kbd> setup</span>
-      <span class="hint-mobile">Tap to flip · Swipe ← → to change card · Swipe ↑ for setup</span>
+      <span class="hint-mobile">Tap to flip · Swipe ← → to change card · Swipe ↑ next set · Swipe ↓ setup</span>
     </div>
   </div>
   <div id="bottombar">
@@ -1474,11 +1480,13 @@ function animateAndThen(direction, action) {
     done = true;
     card.classList.remove(outClass);
     action();
-    // Slide the new card in from the opposite side (horizontal swipes only —
-    // an up-swipe leaves the study screen entirely, so no entry animation).
+    // Slide the new card in from the opposite side, so the transition feels
+    // like a card stack. Down-swipe is the exception: it leaves the study
+    // screen for setup, so no entry animation.
     let inClass = null;
     if (direction === 'left')       inClass = 'entering-from-right';
     else if (direction === 'right') inClass = 'entering-from-left';
+    else if (direction === 'up')    inClass = 'entering-from-bottom';
     if (inClass) {
       card.classList.add(inClass);
       const cleanup = () => card.classList.remove(inClass);
@@ -1518,8 +1526,15 @@ cardareaEl.addEventListener('touchend', (e) => {
     else        animateAndThen('right', prev);
     return;
   }
-  // Upward swipe — return to setup, with confirmation.
+  // Upward swipe — advance to the next set.
   if (dy < -60 && absY > absX * 1.5) {
+    swipeJustHappened = true;
+    setTimeout(() => { swipeJustHappened = false; }, 500);
+    animateAndThen('up', nextSet);
+    return;
+  }
+  // Downward swipe — return to setup, with confirmation.
+  if (dy > 60 && absY > absX * 1.5) {
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
     openReturnToSetupConfirm();
@@ -1545,8 +1560,9 @@ function closeConfirmModal() {
 
 confirmOk.addEventListener('click', () => {
   closeConfirmModal();
-  // Animate the card up and off, then return to setup.
-  animateAndThen('up', () => backToSetup());
+  // Animate the card down and off (matching the down-swipe direction), then
+  // return to setup.
+  animateAndThen('down', () => backToSetup());
 });
 confirmCancel.addEventListener('click', closeConfirmModal);
 // Backdrop click cancels.
