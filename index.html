@@ -166,8 +166,9 @@
   #topbar button:active { background: #ede4f4; }
   /* Every event the user fires inside a button MUST target the button itself
      (event delegation). Without this, taps on the emoji glyph could be
-     swallowed by Android's text-selection layer. */
-  #topbar button > *, #playBtn > * { pointer-events: none; }
+     swallowed by Android's text-selection layer. Descendant selector (not
+     direct child) so nested wrappers like .kbd-hint inherit the rule. */
+  #topbar button *, #playBtn * { pointer-events: none; }
 
   #cardarea {
     flex: 1;
@@ -178,6 +179,7 @@
     gap: 0.5rem;
     padding: 1.5rem 0.5rem;
     position: relative;
+    touch-action: pan-y;
   }
   .nav-arrow {
     flex: 0 0 3rem;
@@ -424,6 +426,43 @@
   table.cards td.num { color: var(--muted); width: 3rem; text-align: right; font-variant-numeric: tabular-nums; }
   table.cards td.section { color: var(--muted); font-size: 0.82rem; white-space: nowrap; }
 
+  /* ---------- Mobile (≤ 640px) ---------- */
+  .hint-mobile { display: none; }
+
+  @media (max-width: 640px) {
+    #topbar {
+      padding: 0.4rem 0.6rem;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      flex-wrap: wrap;
+    }
+    #topbar .crumbs {
+      flex: 1 1 100%;
+      font-size: 0.75rem;
+      line-height: 1.4;
+    }
+    #topbar .right {
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    #topbar button {
+      padding: 0.35rem 0.6rem;
+      font-size: 0.8rem;
+    }
+    .kbd-hint { display: none; }
+
+    #cardarea { padding: 0.75rem 0.25rem 2.5rem; gap: 0.25rem; }
+    .nav-arrow { flex: 0 0 2.5rem; width: 2.5rem; height: 2.5rem; font-size: 1.25rem; }
+    #card { padding: 1.25rem 1rem; min-height: 11rem; }
+    #card .face { font-size: 1.5rem; }
+    #cardarea .hint { bottom: 0.4rem; font-size: 0.78rem; padding: 0 0.5rem; }
+
+    .hint-desktop { display: none; }
+    .hint-mobile  { display: inline; }
+  }
+
 </style>
 </head>
 <body>
@@ -531,11 +570,11 @@
       <b id="crumbLesson">—</b> · <span id="crumbSection">—</span> · <b id="crumbDir">—</b> · card <b id="crumbCard">0 / 0</b> · set <b id="crumbSet">0 / 0</b>
     </div>
     <div class="right">
-      <button id="topPlayBtn" title="Play Spanish pronunciation (P)" aria-label="Play pronunciation"><span aria-hidden="true">🔊 Play (P)</span></button>
-      <button id="swapDirBtn" title="Swap direction (S)"><span aria-hidden="true">⇄ Swap (S)</span></button>
-      <button id="reshuffle" title="Shuffle this set (R)"><span aria-hidden="true">Shuffle (R)</span></button>
-      <button id="nextSetBtn" title="Next set (N)"><span aria-hidden="true">Next set (N) →</span></button>
-      <button id="toSetup" title="Back to setup (Esc)"><span aria-hidden="true">Setup (Esc)</span></button>
+      <button id="topPlayBtn" title="Play Spanish pronunciation (P)" aria-label="Play pronunciation"><span aria-hidden="true">🔊 Play<span class="kbd-hint"> (P)</span></span></button>
+      <button id="swapDirBtn" title="Swap direction (S)"><span aria-hidden="true">⇄ Swap<span class="kbd-hint"> (S)</span></span></button>
+      <button id="reshuffle" title="Shuffle this set (R)"><span aria-hidden="true">Shuffle<span class="kbd-hint"> (R)</span></span></button>
+      <button id="nextSetBtn" title="Next set (N)"><span aria-hidden="true">Next set<span class="kbd-hint"> (N)</span> →</span></button>
+      <button id="toSetup" title="Back to setup (Esc)"><span aria-hidden="true">Setup<span class="kbd-hint"> (Esc)</span></span></button>
     </div>
   </div>
   <div id="cardarea">
@@ -552,7 +591,10 @@
       </div>
     </div>
     <button id="nextBtn" class="nav-arrow" type="button" title="Next card (→)" aria-label="Next card">→</button>
-    <div class="hint" id="hint">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>N</kbd> next set · <kbd>Esc</kbd> setup</div>
+    <div class="hint" id="hint">
+      <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>N</kbd> next set · <kbd>Esc</kbd> setup</span>
+      <span class="hint-mobile">Tap card to flip · Swipe ← → to change card</span>
+    </div>
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status">Audio status will show here when you press the 🔊 button.</span>
@@ -1322,6 +1364,7 @@ function clickFromPlayBtn(e) {
 }
 
 card.addEventListener('click', (e) => {
+  if (swipeJustHappened) return;
   if (clickFromPlayBtn(e)) return;
   if (state.setup?.mode === 'typing') return;
   flip();
@@ -1332,6 +1375,41 @@ card.addEventListener('click', (e) => {
 // gamble.
 prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
 nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
+
+// ---------- Swipe gestures (mobile) ----------
+// Horizontal swipe on the card area navigates between cards. Listeners stay
+// passive:true so we don't regress the Android touch tuning called out
+// elsewhere in this file. Synthesized post-touch clicks are suppressed via the
+// swipeJustHappened flag checked at the top of the card click handler above.
+let swipeStart = null;
+let swipeJustHappened = false;
+const cardareaEl = $('cardarea');
+
+cardareaEl.addEventListener('touchstart', (e) => {
+  if (state.setup?.mode === 'typing') return;
+  if (e.touches.length !== 1) return;
+  if (e.target.closest('button, input, #typingWrap')) return;
+  const t = e.touches[0];
+  // Skip iOS edge back-swipe zone so we don't fight the OS gesture.
+  if (t.clientX < 20) return;
+  swipeStart = { x: t.clientX, y: t.clientY, t: Date.now() };
+}, { passive: true });
+
+cardareaEl.addEventListener('touchend', (e) => {
+  if (!swipeStart) return;
+  const t = e.changedTouches[0];
+  const dx = t.clientX - swipeStart.x;
+  const dy = t.clientY - swipeStart.y;
+  const dt = Date.now() - swipeStart.t;
+  swipeStart = null;
+  if (dt < 600 && Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+    swipeJustHappened = true;
+    setTimeout(() => { swipeJustHappened = false; }, 400);
+    if (dx < 0) next(); else prev();
+  }
+}, { passive: true });
+
+cardareaEl.addEventListener('touchcancel', () => { swipeStart = null; }, { passive: true });
 
 $('toSetup').addEventListener('click', () => backToSetup());
 $('reshuffle').addEventListener('click', reshuffle);
