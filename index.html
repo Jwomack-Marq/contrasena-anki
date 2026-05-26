@@ -179,7 +179,12 @@
     gap: 0.5rem;
     padding: 1.5rem 0.5rem;
     position: relative;
-    touch-action: pan-y;
+    /* touch-action: none claims all touch gestures (horizontal and vertical)
+       so the browser doesn't show/hide its URL bar or scroll while we're
+       interpreting swipes. The page itself has no scrollable content inside
+       #cardarea so we lose nothing. */
+    touch-action: none;
+    overflow: hidden;
   }
   .nav-arrow {
     flex: 0 0 3rem;
@@ -227,6 +232,11 @@
     transition: transform 80ms;
   }
   #card:active { transform: scale(0.99); }
+  /* Swipe-out animations — the card slides off-screen in the swipe direction
+     before next()/prev() rerenders the new card in the default position. */
+  #card.swiping-left  { transform: translateX(-110%); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
+  #card.swiping-right { transform: translateX( 110%); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
+  #card.swiping-up    { transform: translateY(-110%); opacity: 0; transition: transform 200ms ease-in, opacity 200ms ease-in; }
   #card .side-label {
     position: absolute;
     top: 0.75rem;
@@ -426,6 +436,47 @@
   table.cards td.num { color: var(--muted); width: 3rem; text-align: right; font-variant-numeric: tabular-nums; }
   table.cards td.section { color: var(--muted); font-size: 0.82rem; white-space: nowrap; }
 
+  /* ---------- Confirm modal (used by swipe-up-to-setup) ---------- */
+  #confirmModal {
+    position: fixed;
+    inset: 0;
+    background: rgba(28, 28, 34, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+    padding: 1rem;
+  }
+  #confirmModal.show { display: flex; }
+  #confirmModal .panel {
+    background: white;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 22rem;
+    padding: 1.25rem 1.25rem 1rem;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #confirmModal h3 { margin: 0; font-size: 1.1rem; color: var(--accent); }
+  #confirmModal p  { margin: 0; color: var(--fg); font-size: 0.95rem; }
+  #confirmModal .actions { display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.25rem; }
+  #confirmModal button {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font: inherit;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(124, 52, 131, 0.25);
+  }
+  #confirmModal button.primary { background: var(--accent); color: white; border-color: var(--accent); }
+  #confirmModal button.primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+  #confirmModal button:hover { border-color: var(--accent); color: var(--accent); }
+  #confirmModal button.primary:hover { color: white; }
+
   /* ---------- Mobile (≤ 640px) ---------- */
   .hint-mobile { display: none; }
 
@@ -564,6 +615,18 @@
   </div>
 </div>
 
+<!-- Confirmation modal: shown when the user swipes up to return to setup. -->
+<div id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+  <div class="panel">
+    <h3 id="confirmTitle">Return to setup?</h3>
+    <p id="confirmBody">You'll leave this study session and go back to the main page.</p>
+    <div class="actions">
+      <button id="confirmCancel" type="button">Cancel</button>
+      <button id="confirmOk" class="primary" type="button">Return to setup</button>
+    </div>
+  </div>
+</div>
+
 <section id="study">
   <div id="topbar">
     <div class="crumbs">
@@ -593,7 +656,7 @@
     <button id="nextBtn" class="nav-arrow" type="button" title="Next card (→)" aria-label="Next card">→</button>
     <div class="hint" id="hint">
       <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>N</kbd> next set · <kbd>Esc</kbd> setup</span>
-      <span class="hint-mobile">Tap card to flip · Swipe ← → to change card</span>
+      <span class="hint-mobile">Tap to flip · Swipe ← → to change card · Swipe ↑ for setup</span>
     </div>
   </div>
   <div id="bottombar">
@@ -1377,13 +1440,31 @@ prevBtn.addEventListener('click', (e) => { e.stopPropagation(); prev(); });
 nextBtn.addEventListener('click', (e) => { e.stopPropagation(); next(); });
 
 // ---------- Swipe gestures (mobile) ----------
-// Horizontal swipe on the card area navigates between cards. Listeners stay
-// passive:true so we don't regress the Android touch tuning called out
-// elsewhere in this file. Synthesized post-touch clicks are suppressed via the
-// swipeJustHappened flag checked at the top of the card click handler above.
+// Horizontal swipe on the card area navigates between cards; upward swipe
+// returns to setup (with confirmation). Listeners stay passive:true so we
+// don't regress the Android touch tuning called out elsewhere in this file.
+// Synthesized post-touch clicks are suppressed via the swipeJustHappened flag
+// checked at the top of the card click handler above.
 let swipeStart = null;
 let swipeJustHappened = false;
 const cardareaEl = $('cardarea');
+
+// Animate the card sliding off in the swipe direction, then run the action.
+// Uses transitionend with a setTimeout fallback in case the transition is
+// interrupted (e.g. tab backgrounded mid-animation).
+function animateAndThen(direction, action) {
+  const cls = 'swiping-' + direction;
+  card.classList.add(cls);
+  let done = false;
+  const finish = () => {
+    if (done) return;
+    done = true;
+    card.classList.remove(cls);
+    action();
+  };
+  card.addEventListener('transitionend', finish, { once: true });
+  setTimeout(finish, 260);
+}
 
 cardareaEl.addEventListener('touchstart', (e) => {
   if (state.setup?.mode === 'typing') return;
@@ -1402,14 +1483,59 @@ cardareaEl.addEventListener('touchend', (e) => {
   const dy = t.clientY - swipeStart.y;
   const dt = Date.now() - swipeStart.t;
   swipeStart = null;
-  if (dt < 600 && Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+  if (dt >= 600) return;
+  const absX = Math.abs(dx);
+  const absY = Math.abs(dy);
+  // Horizontal swipe — change cards.
+  if (absX > 40 && absX > absY * 1.5) {
     swipeJustHappened = true;
-    setTimeout(() => { swipeJustHappened = false; }, 400);
-    if (dx < 0) next(); else prev();
+    setTimeout(() => { swipeJustHappened = false; }, 500);
+    if (dx < 0) animateAndThen('left', next);
+    else        animateAndThen('right', prev);
+    return;
+  }
+  // Upward swipe — return to setup, with confirmation.
+  if (dy < -60 && absY > absX * 1.5) {
+    swipeJustHappened = true;
+    setTimeout(() => { swipeJustHappened = false; }, 500);
+    openReturnToSetupConfirm();
   }
 }, { passive: true });
 
 cardareaEl.addEventListener('touchcancel', () => { swipeStart = null; }, { passive: true });
+
+// ---------- Confirm modal (return-to-setup) ----------
+const confirmModal = $('confirmModal');
+const confirmOk = $('confirmOk');
+const confirmCancel = $('confirmCancel');
+
+function openReturnToSetupConfirm() {
+  confirmModal.classList.add('show');
+  // Focus the cancel button so a stray Enter doesn't immediately destroy the
+  // session — primary action requires an intentional tap.
+  setTimeout(() => confirmCancel.focus(), 0);
+}
+function closeConfirmModal() {
+  confirmModal.classList.remove('show');
+}
+
+confirmOk.addEventListener('click', () => {
+  closeConfirmModal();
+  // Animate the card up and off, then return to setup.
+  animateAndThen('up', () => backToSetup());
+});
+confirmCancel.addEventListener('click', closeConfirmModal);
+// Backdrop click cancels.
+confirmModal.addEventListener('click', (e) => {
+  if (e.target === confirmModal) closeConfirmModal();
+});
+// Escape cancels.
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && confirmModal.classList.contains('show')) {
+    e.stopPropagation();
+    closeConfirmModal();
+  }
+}, true);
 
 $('toSetup').addEventListener('click', () => backToSetup());
 $('reshuffle').addEventListener('click', reshuffle);
