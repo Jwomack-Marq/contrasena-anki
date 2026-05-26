@@ -233,10 +233,21 @@
   }
   #card:active { transform: scale(0.99); }
   /* Swipe-out animations — the card slides off-screen in the swipe direction
-     before next()/prev() rerenders the new card in the default position. */
+     before next()/prev() rerenders. The new card then slides in from the
+     opposite side, like a card-stack/carousel. */
   #card.swiping-left  { transform: translateX(-110%); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
   #card.swiping-right { transform: translateX( 110%); opacity: 0; transition: transform 180ms ease-in, opacity 180ms ease-in; }
   #card.swiping-up    { transform: translateY(-110%); opacity: 0; transition: transform 200ms ease-in, opacity 200ms ease-in; }
+  @keyframes contrasena-slide-in-right {
+    from { transform: translateX( 110%); opacity: 0; }
+    to   { transform: translateX(0);     opacity: 1; }
+  }
+  @keyframes contrasena-slide-in-left {
+    from { transform: translateX(-110%); opacity: 0; }
+    to   { transform: translateX(0);     opacity: 1; }
+  }
+  #card.entering-from-right { animation: contrasena-slide-in-right 200ms ease-out; }
+  #card.entering-from-left  { animation: contrasena-slide-in-left  200ms ease-out; }
   #card .side-label {
     position: absolute;
     top: 0.75rem;
@@ -1449,18 +1460,31 @@ let swipeStart = null;
 let swipeJustHappened = false;
 const cardareaEl = $('cardarea');
 
-// Animate the card sliding off in the swipe direction, then run the action.
-// Uses transitionend with a setTimeout fallback in case the transition is
-// interrupted (e.g. tab backgrounded mid-animation).
+// Animate the card sliding off in the swipe direction, run the action (which
+// re-renders the next card), then slide the new card in from the OPPOSITE
+// side — like a card stack. Uses transitionend / animationend with a
+// setTimeout fallback in case animations are interrupted (e.g. tab
+// backgrounded mid-animation).
 function animateAndThen(direction, action) {
-  const cls = 'swiping-' + direction;
-  card.classList.add(cls);
+  const outClass = 'swiping-' + direction;
+  card.classList.add(outClass);
   let done = false;
   const finish = () => {
     if (done) return;
     done = true;
-    card.classList.remove(cls);
+    card.classList.remove(outClass);
     action();
+    // Slide the new card in from the opposite side (horizontal swipes only —
+    // an up-swipe leaves the study screen entirely, so no entry animation).
+    let inClass = null;
+    if (direction === 'left')       inClass = 'entering-from-right';
+    else if (direction === 'right') inClass = 'entering-from-left';
+    if (inClass) {
+      card.classList.add(inClass);
+      const cleanup = () => card.classList.remove(inClass);
+      card.addEventListener('animationend', cleanup, { once: true });
+      setTimeout(cleanup, 260);
+    }
   };
   card.addEventListener('transitionend', finish, { once: true });
   setTimeout(finish, 260);
