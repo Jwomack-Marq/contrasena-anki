@@ -90,28 +90,34 @@
   #status { color: var(--muted); font-size: 0.9rem; margin-top: 0.5rem; min-height: 1.2em; }
   #status.err { color: #b22; }
 
-  /* ---------- TSV library ---------- */
-  #library {
-    margin: 0.5rem 0 0;
-    max-height: 22rem;
-    overflow-y: auto;
+  /* ---------- Deck chooser: tabs + lists ---------- */
+  .tabs { margin: 0.5rem 0 0; }
+  .tab-bar { display: flex; gap: 0.25rem; border-bottom: 2px solid var(--border); }
+  .tab-btn {
+    appearance: none; background: none; border: none; cursor: pointer;
+    padding: 0.5rem 0.9rem; font: inherit; color: var(--muted);
+    border-bottom: 2px solid transparent; margin-bottom: -2px;
+  }
+  .tab-btn:hover { color: var(--accent); }
+  .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); font-weight: 600; }
+  .tab-panel { display: none; padding-top: 0.85rem; }
+  .tab-panel.active { display: block; }
+  .deck-list {
+    margin-top: 0.4rem;
     border: 1px solid var(--border);
     border-radius: 8px;
     background: white;
+    max-height: 22rem;
+    overflow-y: auto;
   }
-  #library:empty { display: none; }
-  .lib-group {
-    padding: 0.4rem 0.75rem;
-    background: #f1ecf6;
-    color: var(--accent-dark);
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
+  .preview-head { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+  .preview-head h2 { margin: 0; font-size: 1.15rem; color: var(--accent); }
+  .preview-head .meta { color: var(--muted); font-size: 0.85rem; }
+  .preview-body {
+    max-height: 20rem; overflow: auto;
+    border: 1px solid var(--border); border-radius: 8px; margin-top: 0.5rem;
   }
+  .preview-actions { display: flex; gap: 0.5rem; margin-top: 0.85rem; }
   .lib-item {
     padding: 0.55rem 0.75rem;
     border-bottom: 1px solid var(--border);
@@ -388,45 +394,6 @@
     font-size: 0.78rem;
   }
 
-  /* ---------- Preview modal ---------- */
-  #preview {
-    position: fixed;
-    inset: 0;
-    background: rgba(28, 28, 34, 0.55);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 20;
-    padding: 1rem;
-  }
-  #preview.show { display: flex; }
-  #preview .panel {
-    background: white;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 56rem;
-    max-height: 86vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
-  }
-  #preview .head {
-    padding: 0.9rem 1.1rem;
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  #preview .head h2 { margin: 0; font-size: 1.15rem; color: var(--accent); }
-  #preview .head .meta { color: var(--muted); font-size: 0.85rem; }
-  #preview .head .actions { display: flex; gap: 0.5rem; }
-  #preview .body {
-    overflow: auto;
-    flex: 1;
-  }
   table.cards {
     width: 100%;
     border-collapse: collapse;
@@ -498,6 +465,7 @@
   .hint-mobile { display: none; }
 
   @media (max-width: 640px) {
+    .tab-btn { padding: 0.5rem 0.6rem; }
     #topbar {
       padding: 0.4rem 0.6rem;
       gap: 0.4rem;
@@ -542,9 +510,60 @@
   <h1>Contraseña Flashcards <span class="build-tag">Build <span id="buildStamp">2026-05-27T14-47-55-632Z</span></span></h1>
   <p class="hint">Pick a TSV below and click it to preview. Run <code>node build_flashcards.mjs</code> after regenerating TSVs to refresh this list.</p>
 
-  <div class="field">
-    <span class="lbl">1. Choose a TSV</span>
-    <div id="library"><div class="lib-empty">Loading bundled TSVs…</div></div>
+  <div id="deckTabs" class="tabs">
+    <div class="tab-bar" role="tablist">
+      <button type="button" class="tab-btn active" data-tab="vocab">Vocabulary</button>
+      <button type="button" class="tab-btn" data-tab="grammar">Grammar</button>
+      <button type="button" class="tab-btn" data-tab="options">Options</button>
+    </div>
+
+    <div class="tab-panel active" data-panel="vocab">
+      <div class="field"><label class="lbl" for="unitVocab">Unit</label>
+        <select id="unitVocab"></select></div>
+      <div id="libVocab" class="deck-list"><div class="lib-empty">Loading…</div></div>
+    </div>
+
+    <div class="tab-panel" data-panel="grammar">
+      <div class="field"><label class="lbl" for="unitGrammar">Unit</label>
+        <select id="unitGrammar"></select></div>
+      <div id="libGrammar" class="deck-list"><div class="lib-empty">Loading…</div></div>
+    </div>
+
+    <div class="tab-panel" data-panel="options">
+      <div class="field"><span class="lbl">Direction</span>
+        <div class="radio-group" id="direction">
+          <label><input type="radio" name="dir" value="sp_en" checked><span>Sp → En</span></label>
+          <label><input type="radio" name="dir" value="en_sp"><span>En → Sp</span></label>
+          <label><input type="radio" name="dir" value="both"><span>Both (mixed)</span></label>
+        </div></div>
+      <div class="field"><span class="lbl">Cards per set</span>
+        <div class="radio-group" id="chunk">
+          <label><input type="radio" name="chunk" value="3"><span>3</span></label>
+          <label><input type="radio" name="chunk" value="5" checked><span>5</span></label>
+          <label><input type="radio" name="chunk" value="10"><span>10</span></label>
+          <label><input type="radio" name="chunk" value="0"><span>All</span></label>
+        </div></div>
+      <div class="field"><span class="lbl">Study mode</span>
+        <div class="radio-group" id="mode">
+          <label><input type="radio" name="mode" value="flashcard" checked><span>Flashcard (flip)</span></label>
+          <label><input type="radio" name="mode" value="typing"><span>Typing (recall)</span></label>
+        </div></div>
+      <div class="field"><div class="check-group">
+        <label><input type="checkbox" id="shuffle" checked><span>Shuffle cards within each set</span></label>
+      </div></div>
+    </div>
+  </div>
+
+  <div id="deckPreview" class="field-hidden">
+    <div class="section-divider"></div>
+    <div class="preview-head"><h2 id="previewTitle">—</h2><span class="meta" id="previewMeta">—</span></div>
+    <div class="field"><label class="lbl" for="previewSection">Section</label>
+      <select id="previewSection"></select></div>
+    <div id="previewBody" class="preview-body"></div>
+    <div class="field preview-actions">
+      <button id="confirmStudy" class="primary">Confirm →</button>
+      <button id="cancelPreview">Cancel</button>
+    </div>
   </div>
 
   <details class="field">
@@ -561,76 +580,8 @@
     </div>
   </details>
 
-  <div id="selectors" class="field-hidden">
-    <div class="section-divider"></div>
-
-    <div class="field">
-      <label class="lbl" for="lesson">2. Lesson</label>
-      <select id="lesson"><option>(load a TSV first)</option></select>
-    </div>
-
-    <div class="field">
-      <label class="lbl" for="section">3. Section</label>
-      <select id="section"><option>(pick a lesson)</option></select>
-    </div>
-
-    <div class="field">
-      <span class="lbl">4. Direction</span>
-      <div class="radio-group" id="direction">
-        <label><input type="radio" name="dir" value="sp_en" checked><span>Sp → En</span></label>
-        <label><input type="radio" name="dir" value="en_sp"><span>En → Sp</span></label>
-        <label><input type="radio" name="dir" value="both"><span>Both (mixed)</span></label>
-      </div>
-    </div>
-
-    <div class="field">
-      <span class="lbl">5. Cards per set</span>
-      <div class="radio-group" id="chunk">
-        <label><input type="radio" name="chunk" value="3"><span>3</span></label>
-        <label><input type="radio" name="chunk" value="5" checked><span>5</span></label>
-        <label><input type="radio" name="chunk" value="10"><span>10</span></label>
-        <label><input type="radio" name="chunk" value="0"><span>All</span></label>
-      </div>
-    </div>
-
-    <div class="field">
-      <span class="lbl">6. Study mode</span>
-      <div class="radio-group" id="mode">
-        <label><input type="radio" name="mode" value="flashcard" checked><span>Flashcard (flip)</span></label>
-        <label><input type="radio" name="mode" value="typing"><span>Typing (recall)</span></label>
-      </div>
-    </div>
-
-    <div class="field">
-      <div class="check-group">
-        <label><input type="checkbox" id="shuffle" checked><span>Shuffle cards within each set</span></label>
-      </div>
-    </div>
-
-    <div class="field">
-      <button id="start" class="primary">Start →</button>
-    </div>
-  </div>
-
-  <div id="status">No TSV loaded yet.</div>
+  <div id="status">No deck selected yet.</div>
 </section>
-
-<!-- Preview modal: shows a full table of cards for the chosen TSV. -->
-<div id="preview">
-  <div class="panel">
-    <div class="head">
-      <div>
-        <h2 id="prevTitle">TSV</h2>
-        <div class="meta" id="prevMeta">—</div>
-      </div>
-      <div class="actions">
-        <button id="prevStudy" class="primary">Study this →</button>
-        <button id="prevClose">Close</button>
-      </div>
-    </div>
-    <div class="body" id="prevBody"></div>
-  </div>
-</div>
 
 <!-- Confirmation modal: shown when the user swipes up to return to setup. -->
 <div id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
@@ -688,7 +639,6 @@
 // ---------- State ----------
 const state = {
   allCards: [],
-  lessonIndex: new Map(),       // lesson -> Map(section -> Card[])
   setup: null,                  // { lesson, section, direction, chunkSize, shuffle, mode }
   queue: [],                    // current section/lesson cards after direction-expansion + shuffle
   setIndex: 0,                  // 0-based chunk index within queue
@@ -708,23 +658,24 @@ const setupEl = $('setup');
 const studyEl = $('study');
 const fileInput = $('file');
 const folderInput = $('folder');
-const library = $('library');
-const lessonSel = $('lesson');
-const sectionSel = $('section');
-const startBtn = $('start');
+const deckTabs = $('deckTabs');
+const unitVocabSel = $('unitVocab');
+const unitGrammarSel = $('unitGrammar');
+const libVocab = $('libVocab');
+const libGrammar = $('libGrammar');
 const statusEl = $('status');
 const nextSetBtn = $('nextSetBtn');
 const card = $('card');
 const face = $('face');
 const sideLabel = $('sideLabel');
 const cardarea = $('cardarea');
-const selectors = $('selectors');
-const preview = $('preview');
-const prevTitle = $('prevTitle');
-const prevMeta = $('prevMeta');
-const prevBody = $('prevBody');
-const prevStudy = $('prevStudy');
-const prevClose = $('prevClose');
+const deckPreview = $('deckPreview');
+const previewTitle = $('previewTitle');
+const previewMeta = $('previewMeta');
+const previewSectionSel = $('previewSection');
+const previewBody = $('previewBody');
+const confirmBtn = $('confirmStudy');
+const cancelPreviewBtn = $('cancelPreview');
 const typingWrap = $('typingWrap');
 const typingInput = $('typingInput');
 const feedback = $('feedback');
@@ -734,9 +685,6 @@ const topPlayBtn = $('topPlayBtn');
 const prevBtn = $('prevBtn');
 const nextBtn = $('nextBtn');
 let currentAudio = null;   // tracks the <Audio> currently playing so we can cancel
-
-// Pending TSV waiting for the user to confirm "Study this →" in the modal.
-let pendingTSV = null;
 
 // ---------- TSV parsing ----------
 function parseTSV(text) {
@@ -761,63 +709,99 @@ function parseTSV(text) {
   return cards;
 }
 
-function buildIndex(cards) {
-  const idx = new Map();
-  for (const c of cards) {
-    if (!idx.has(c.lesson)) idx.set(c.lesson, new Map());
-    const secMap = idx.get(c.lesson);
-    if (!secMap.has(c.section)) secMap.set(c.section, []);
-    secMap.get(c.section).push(c);
-  }
-  return idx;
+// ---------- Setup wiring: tabs, unit filter, deck lists ----------
+function setupTabs() {
+  deckTabs.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tab = btn.dataset.tab;
+      deckTabs.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b === btn));
+      deckTabs.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === tab));
+      saveSetup();
+    });
+  });
 }
 
-// ---------- Setup wiring ----------
-// `loadTSVText` parses + indexes a TSV and exposes the selectors. Called from
-// the preview modal's "Study this →" button and from the disk-fallback pickers.
-async function loadTSVText(text, label) {
-  try {
-    const cards = parseTSV(text);
-    if (!cards.length) throw new Error('No cards found. Expected tab-separated columns: Spanish / English / tags.');
-    state.allCards = cards;
-    state.lessonIndex = buildIndex(cards);
-    state.loadedPath = label;
-    populateLessons();
-    selectors.classList.remove('field-hidden');
-    statusEl.classList.remove('err');
-    statusEl.textContent = `Loaded ${cards.length} cards across ${state.lessonIndex.size} lessons from ${label}. Pick a lesson/section and click Start.`;
-    selectors.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    return true;
-  } catch (err) {
-    statusEl.classList.add('err');
-    statusEl.textContent = 'Error: ' + err.message;
-    return false;
-  }
+// Derive a coarse "unit" from a lesson id: u1_01_01 -> u1, grammar_2_1 -> u2.
+function unitOf(lesson) {
+  let m = /^u(\d+)_/.exec(lesson);          if (m) return 'u' + m[1];
+  m = /^grammar[_-](\d+)/i.exec(lesson);    if (m) return 'u' + m[1];
+  return 'other';
 }
+const unitLabel = (u) => u === 'all' ? 'All units' : u === 'other' ? 'Other' : 'Unit ' + u.slice(1);
+const entryUnits = (e) => new Set(e.cards.map(c => unitOf(c.lesson)));
+const isGrammarEntry = (e) => /grammar/i.test(e.relPath);
+const categoryEntries = (cat) =>
+  bundledEntries.filter(e => cat === 'grammar' ? isGrammarEntry(e) : !isGrammarEntry(e));
+
+function populateUnitDropdown(sel, entries) {
+  const units = new Set();
+  for (const e of entries) for (const u of entryUnits(e)) units.add(u);
+  const prev = sel.value;
+  sel.innerHTML = '';
+  for (const u of ['all', ...[...units].sort()]) {
+    const o = document.createElement('option');
+    o.value = u; o.textContent = unitLabel(u); sel.appendChild(o);
+  }
+  if (prev && [...sel.options].some(o => o.value === prev)) sel.value = prev;
+}
+
+function renderDeckList(cat) {
+  const container = cat === 'grammar' ? libGrammar : libVocab;
+  const sel = cat === 'grammar' ? unitGrammarSel : unitVocabSel;
+  const unit = sel.value || 'all';
+  const entries = categoryEntries(cat).sort((a, b) => {     // combined files first, then path
+    const ac = /contrasena_all/i.test(a.relPath) ? 0 : 1;
+    const bc = /contrasena_all/i.test(b.relPath) ? 0 : 1;
+    return ac !== bc ? ac - bc : a.relPath.localeCompare(b.relPath);
+  });
+  // A deck matches a specific unit only if it's single-unit — the combined
+  // all-units file shows only under "All units".
+  const shown = entries.filter(e => {
+    if (unit === 'all') return true;
+    const us = entryUnits(e);
+    return us.size === 1 && us.has(unit);
+  });
+  container.innerHTML = '';
+  if (!shown.length) {
+    container.innerHTML = `<div class="lib-empty">No ${cat === 'grammar' ? 'grammar' : 'vocabulary'} decks for this unit.</div>`;
+    return;
+  }
+  for (const e of shown) container.appendChild(makeLibItem(e));
+}
+
+function renderDeckTabs() {
+  populateUnitDropdown(unitVocabSel, categoryEntries('vocab'));
+  populateUnitDropdown(unitGrammarSel, categoryEntries('grammar'));
+  renderDeckList('vocab');
+  renderDeckList('grammar');
+}
+unitVocabSel.addEventListener('change', () => { renderDeckList('vocab'); saveSetup(); });
+unitGrammarSel.addEventListener('change', () => { renderDeckList('grammar'); saveSetup(); });
 
 // Disk fallbacks (collapsible <details>) — preserved for non-bundled TSVs.
 fileInput.addEventListener('change', async (e) => {
   const f = e.target.files[0];
   if (!f) return;
   const text = await f.text();
-  openPreview({ relPath: f.name, text });
+  openDeckPreview(makeEntry(f.name, text));
 });
 
 folderInput.addEventListener('change', async (e) => {
   const files = [...e.target.files].filter(f => f.name.toLowerCase().endsWith('.tsv'));
   if (!files.length) {
-    library.innerHTML = '<div class="lib-empty">No <code>.tsv</code> files found in that folder.</div>';
+    statusEl.classList.add('err');
+    statusEl.textContent = 'No .tsv files found in that folder.';
     return;
   }
-  library.innerHTML = '<div class="lib-empty">Scanning ' + files.length + ' TSV file' + (files.length===1?'':'s') + '…</div>';
   const entries = [];
   for (const f of files) {
-    try {
-      const text = await f.text();
-      entries.push(makeEntry(f.webkitRelativePath || f.name, text));
-    } catch (_) { /* skip unreadable */ }
+    try { const t = await f.text(); entries.push(makeEntry(f.webkitRelativePath || f.name, t)); }
+    catch (_) { /* skip unreadable */ }
   }
-  renderLibrary(entries);
+  bundledEntries = entries;
+  renderDeckTabs();
+  statusEl.classList.remove('err');
+  statusEl.textContent = `Loaded ${entries.length} deck${entries.length===1?'':'s'} from disk.`;
 });
 
 function makeEntry(relPath, text) {
@@ -833,84 +817,71 @@ function makeEntry(relPath, text) {
   };
 }
 
-function renderLibrary(entries) {
-  if (!entries.length) {
-    library.innerHTML = '<div class="lib-empty">No TSV files bundled. Run <code>node build_flashcards.mjs</code> in the repo to bundle them, or use "Or load a different TSV" below.</div>';
-    return;
-  }
-  // Combined files first, then by relative path.
-  entries.sort((a, b) => {
-    const aCombined = /contrasena_all/i.test(a.relPath) ? 0 : 1;
-    const bCombined = /contrasena_all/i.test(b.relPath) ? 0 : 1;
-    if (aCombined !== bCombined) return aCombined - bCombined;
-    return a.relPath.localeCompare(b.relPath);
+function makeLibItem(e) {
+  const item = document.createElement('div');
+  item.className = 'lib-item';
+  const name = e.relPath.includes('/') ? e.relPath.slice(e.relPath.lastIndexOf('/') + 1) : e.relPath;
+  const previewHtml = e.preview.map(p =>
+    `<div><span>${escapeHtml(p.spanish || '—')}</span> → ${escapeHtml(p.english || '—')}</div>`
+  ).join('');
+  item.innerHTML =
+    `<div class="name">${escapeHtml(name)}</div>` +
+    `<div class="meta">${e.cardCount} cards · ${e.lessonCount} lesson${e.lessonCount===1?'':'s'} · ${e.sectionCount} section${e.sectionCount===1?'':'s'}</div>` +
+    `<div class="preview">${previewHtml}</div>`;
+  item.addEventListener('click', () => {
+    document.querySelectorAll('.lib-item.selected').forEach(n => n.classList.remove('selected'));
+    item.classList.add('selected');
+    openDeckPreview(e);
   });
-  const groups = new Map();
-  for (const e of entries) {
-    const dir = e.relPath.includes('/') ? e.relPath.slice(0, e.relPath.lastIndexOf('/')) : '(root)';
-    if (!groups.has(dir)) groups.set(dir, []);
-    groups.get(dir).push(e);
-  }
-  library.innerHTML = '';
-  for (const [dir, list] of groups) {
-    const g = document.createElement('div');
-    g.className = 'lib-group';
-    g.textContent = dir + '  (' + list.length + ')';
-    library.appendChild(g);
-    for (const e of list) {
-      const item = document.createElement('div');
-      item.className = 'lib-item';
-      const name = e.relPath.includes('/') ? e.relPath.slice(e.relPath.lastIndexOf('/') + 1) : e.relPath;
-      const previewHtml = e.preview.map(p =>
-        `<div><span>${escapeHtml(p.spanish || '—')}</span> → ${escapeHtml(p.english || '—')}</div>`
-      ).join('');
-      item.innerHTML =
-        `<div class="name">${escapeHtml(name)}</div>` +
-        `<div class="meta">${e.cardCount} cards · ${e.lessonCount} lesson${e.lessonCount===1?'':'s'} · ${e.sectionCount} section${e.sectionCount===1?'':'s'}</div>` +
-        `<div class="preview">${previewHtml}</div>`;
-      item.addEventListener('click', () => {
-        document.querySelectorAll('.lib-item.selected').forEach(n => n.classList.remove('selected'));
-        item.classList.add('selected');
-        openPreview(e);
-      });
-      library.appendChild(item);
-    }
-  }
+  return item;
 }
 
-// ---------- Preview modal ----------
-function openPreview(entry) {
-  const cards = entry.cards || parseTSV(entry.text);
-  pendingTSV = { text: entry.text, label: entry.relPath };
-  prevTitle.textContent = entry.relPath;
+// ---------- Inline preview + confirm ----------
+let selectedEntry = null;
+function openDeckPreview(entry) {
+  selectedEntry = entry;
+  state.loadedPath = entry.relPath;
+  const cards = entry.cards;
+  const name = entry.relPath.includes('/') ? entry.relPath.slice(entry.relPath.lastIndexOf('/') + 1) : entry.relPath;
+  previewTitle.textContent = name;
   const lessons = new Set(cards.map(c => c.lesson));
   const sections = new Set(cards.map(c => c.lesson + '/' + c.section));
-  prevMeta.textContent = `${cards.length} cards · ${lessons.size} lesson${lessons.size===1?'':'s'} · ${sections.size} section${sections.size===1?'':'s'}`;
+  previewMeta.textContent = `${cards.length} cards · ${lessons.size} lesson${lessons.size===1?'':'s'} · ${sections.size} section${sections.size===1?'':'s'}`;
 
-  // Build the table.
-  const rows = cards.map((c, i) =>
-    `<tr><td class="num">${i+1}</td><td>${escapeHtml(c.spanish)}</td><td>${escapeHtml(c.english)}</td><td class="section">${escapeHtml(c.section)}</td></tr>`
-  ).join('');
-  prevBody.innerHTML =
-    '<table class="cards"><thead><tr>' +
-      '<th></th><th>Spanish</th><th>English</th><th>Section</th>' +
-    '</tr></thead><tbody>' + rows + '</tbody></table>';
-  preview.classList.add('show');
+  // Section dropdown: aggregate distinct section names with counts.
+  const counts = new Map();
+  for (const c of cards) counts.set(c.section, (counts.get(c.section) || 0) + 1);
+  previewSectionSel.innerHTML = '';
+  const allOpt = document.createElement('option');
+  allOpt.value = '__ALL__';
+  allOpt.textContent = `All sections (${cards.length} cards)`;
+  previewSectionSel.appendChild(allOpt);
+  for (const [s, n] of [...counts.entries()].sort()) {
+    const o = document.createElement('option');
+    o.value = s; o.textContent = `${s} (${n})`; previewSectionSel.appendChild(o);
+  }
+
+  previewBody.innerHTML =
+    '<table class="cards"><thead><tr><th></th><th>Spanish</th><th>English</th><th>Section</th></tr></thead><tbody>' +
+    cards.map((c, i) =>
+      `<tr><td class="num">${i+1}</td><td>${escapeHtml(c.spanish)}</td><td>${escapeHtml(c.english)}</td><td class="section">${escapeHtml(c.section)}</td></tr>`
+    ).join('') +
+    '</tbody></table>';
+
+  deckPreview.classList.remove('field-hidden');
+  deckPreview.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  statusEl.classList.remove('err');
+  statusEl.textContent = `${name} ready — pick a section and confirm.`;
+  saveSetup();
 }
 
-function closePreview() {
-  preview.classList.remove('show');
-  pendingTSV = null;
-}
-
-prevClose.addEventListener('click', closePreview);
-preview.addEventListener('click', (e) => { if (e.target === preview) closePreview(); });
-prevStudy.addEventListener('click', async () => {
-  if (!pendingTSV) return;
-  const { text, label } = pendingTSV;
-  closePreview();
-  await loadTSVText(text, label);
+cancelPreviewBtn.addEventListener('click', () => {
+  deckPreview.classList.add('field-hidden');
+  selectedEntry = null;
+  document.querySelectorAll('.lib-item.selected').forEach(n => n.classList.remove('selected'));
 });
+confirmBtn.addEventListener('click', startStudyFromSelection);
+previewSectionSel.addEventListener('change', saveSetup);
 
 // ---------- Bundled-data autoload ----------
 let bundledEntries = [];
@@ -921,27 +892,32 @@ function loadBundled() {
   try { bundle = JSON.parse(tag.textContent || '[]'); }
   catch (e) { console.error('bundled-tsvs parse error:', e); bundle = []; }
   if (!Array.isArray(bundle) || !bundle.length) {
-    library.innerHTML = '<div class="lib-empty">No bundled TSVs. Run <code>node build_flashcards.mjs</code> in the repo, or use the disk fallback below.</div>';
+    const msg = '<div class="lib-empty">No bundled TSVs. Run <code>node build_flashcards.mjs</code>, or use the disk fallback below.</div>';
+    libVocab.innerHTML = msg;
+    libGrammar.innerHTML = msg;
     return;
   }
   bundledEntries = bundle.map(b => makeEntry(b.path, b.content)).filter(e => e.cardCount > 0);
-  renderLibrary(bundledEntries);
+  renderDeckTabs();
 }
+setupTabs();
 loadBundled();
 
 // ---------- Persistence ----------
 const STORAGE_KEY = 'contrasena-flashcards:setup-v1';
 
 function saveSetup() {
-  if (!state.allCards.length) return;
   try {
     const dirRadio = document.querySelector('input[name=dir]:checked');
     const chunkRadio = document.querySelector('input[name=chunk]:checked');
     const modeRadio = document.querySelector('input[name=mode]:checked');
+    const activeTab = deckTabs.querySelector('.tab-btn.active')?.dataset.tab || 'vocab';
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
-      tsvPath: state.loadedPath || null,
-      lesson: lessonSel.value || null,
-      section: sectionSel.value || null,
+      tab: activeTab,
+      unitVocab: unitVocabSel.value || 'all',
+      unitGrammar: unitGrammarSel.value || 'all',
+      tsvPath: selectedEntry ? state.loadedPath : null,
+      section: selectedEntry ? previewSectionSel.value : null,
       direction: dirRadio ? dirRadio.value : null,
       chunkSize: chunkRadio ? chunkRadio.value : null,
       mode: modeRadio ? modeRadio.value : null,
@@ -950,40 +926,53 @@ function saveSetup() {
   } catch (_) { /* private mode / quota: silent */ }
 }
 
-async function restoreSetup() {
+function restoreSetup() {
   let saved;
   try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null'); }
   catch (_) { saved = null; }
-  if (!saved || !saved.tsvPath) return;
-  const entry = bundledEntries.find(e => e.relPath === saved.tsvPath);
-  if (!entry) return;
+  if (!saved) return;
 
-  // Visually mark the matching library row.
-  for (const node of library.querySelectorAll('.lib-item')) {
-    const name = node.querySelector('.name')?.textContent;
-    if (name && entry.relPath.endsWith(name)) { node.classList.add('selected'); break; }
-  }
-
-  const ok = await loadTSVText(entry.text, entry.relPath);
-  if (!ok) return;
-
-  if (saved.lesson && [...lessonSel.options].some(o => o.value === saved.lesson)) {
-    lessonSel.value = saved.lesson;
-    populateSections();
-  }
-  if (saved.section && [...sectionSel.options].some(o => o.value === saved.section)) {
-    sectionSel.value = saved.section;
-  }
+  // Study options — independent of any loaded deck.
   for (const [name, val] of [['dir', saved.direction], ['chunk', saved.chunkSize], ['mode', saved.mode]]) {
     if (!val) continue;
     const r = document.querySelector(`input[name="${name}"][value="${val}"]`);
     if (r) r.checked = true;
   }
   if (typeof saved.shuffle === 'boolean') $('shuffle').checked = saved.shuffle;
+
+  // Unit dropdowns + filtered lists.
+  if (saved.unitVocab && [...unitVocabSel.options].some(o => o.value === saved.unitVocab)) {
+    unitVocabSel.value = saved.unitVocab; renderDeckList('vocab');
+  }
+  if (saved.unitGrammar && [...unitGrammarSel.options].some(o => o.value === saved.unitGrammar)) {
+    unitGrammarSel.value = saved.unitGrammar; renderDeckList('grammar');
+  }
+
+  // Active tab.
+  const tabBtn = saved.tab && deckTabs.querySelector(`.tab-btn[data-tab="${saved.tab}"]`);
+  if (tabBtn) {
+    deckTabs.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b === tabBtn));
+    deckTabs.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === saved.tab));
+  }
+
+  // Re-open the last previewed deck (does NOT auto-start study).
+  if (saved.tsvPath) {
+    const entry = bundledEntries.find(e => e.relPath === saved.tsvPath);
+    if (entry) {
+      openDeckPreview(entry);
+      if (saved.section && [...previewSectionSel.options].some(o => o.value === saved.section)) {
+        previewSectionSel.value = saved.section;
+      }
+      const name = entry.relPath.includes('/') ? entry.relPath.slice(entry.relPath.lastIndexOf('/') + 1) : entry.relPath;
+      for (const node of deckTabs.querySelectorAll('.lib-item')) {
+        if (node.querySelector('.name')?.textContent === name) { node.classList.add('selected'); break; }
+      }
+    }
+  }
 }
 
-// Save on any meaningful change to the setup form.
-['lesson', 'section', 'shuffle'].forEach(id => $(id).addEventListener('change', saveSetup));
+// Save on any meaningful change to the options form.
+$('shuffle').addEventListener('change', saveSetup);
 document.querySelectorAll('input[name=dir], input[name=chunk], input[name=mode]')
   .forEach(el => el.addEventListener('change', saveSetup));
 
@@ -1011,45 +1000,6 @@ function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 }
 
-function populateLessons() {
-  const lessons = [...state.lessonIndex.keys()].sort();
-  lessonSel.innerHTML = '';
-  for (const l of lessons) {
-    const opt = document.createElement('option');
-    opt.value = l;
-    opt.textContent = l;
-    lessonSel.appendChild(opt);
-  }
-  lessonSel.disabled = false;
-  lessonSel.value = lessons[0];
-  populateSections();
-}
-
-function populateSections() {
-  const lesson = lessonSel.value;
-  const secMap = state.lessonIndex.get(lesson);
-  sectionSel.innerHTML = '';
-  if (!secMap) return;
-  const allOpt = document.createElement('option');
-  allOpt.value = '__ALL__';
-  let total = 0;
-  for (const arr of secMap.values()) total += arr.length;
-  allOpt.textContent = `All sections (${total} cards)`;
-  sectionSel.appendChild(allOpt);
-  for (const [s, arr] of [...secMap.entries()].sort()) {
-    const opt = document.createElement('option');
-    opt.value = s;
-    opt.textContent = `${s} (${arr.length})`;
-    sectionSel.appendChild(opt);
-  }
-  sectionSel.disabled = false;
-  startBtn.disabled = false;
-}
-
-lessonSel.addEventListener('change', populateSections);
-
-startBtn.addEventListener('click', startStudy);
-
 // ---------- Study mode ----------
 function shuffle(arr) {
   for (let i = arr.length - 1; i > 0; i--) {
@@ -1076,41 +1026,32 @@ function expandDirection(cards, dir) {
   return out;
 }
 
-function gatherCards(lesson, section) {
-  const secMap = state.lessonIndex.get(lesson);
-  if (!secMap) return [];
-  if (section === '__ALL__') {
-    const out = [];
-    for (const [, arr] of [...secMap.entries()].sort()) out.push(...arr);
-    return out;
-  }
-  return secMap.get(section) || [];
-}
-
-function startStudy() {
-  const lesson = lessonSel.value;
-  const section = sectionSel.value;
+function startStudyFromSelection() {
+  if (!selectedEntry) return;
+  const sectionVal = previewSectionSel.value;
+  const base = sectionVal === '__ALL__'
+    ? selectedEntry.cards
+    : selectedEntry.cards.filter(c => c.section === sectionVal);
   const direction = document.querySelector('input[name=dir]:checked').value;
   const chunkSize = parseInt(document.querySelector('input[name=chunk]:checked').value, 10);
   const mode = document.querySelector('input[name=mode]:checked').value;
   const doShuffle = $('shuffle').checked;
 
-  let base = gatherCards(lesson, section);
-  if (!base.length) {
-    statusEl.classList.add('err');
-    statusEl.textContent = 'That lesson/section has no cards.';
-    return;
-  }
   let queue = expandDirection(base, direction);
   if (!queue.length) {
     statusEl.classList.add('err');
-    statusEl.textContent = `That lesson/section has ${base.length} cards but all of them are missing one side (likely a bad TSV extraction — try a different lesson).`;
+    statusEl.textContent = 'That deck/section has no usable cards (each needs both a Spanish and English side).';
     return;
   }
   const skipped = base.length - base.filter(c => c.spanish && c.english).length;
   if (doShuffle) shuffle(queue);
 
-  state.setup = { lesson, section, direction, chunkSize, shuffle: doShuffle, mode, skipped };
+  const ls = new Set(selectedEntry.cards.map(c => c.lesson));
+  const lessonLabel = ls.size === 1
+    ? [...ls][0]
+    : selectedEntry.relPath.split('/').pop().replace(/\.tsv$/i, '');
+  state.allCards = selectedEntry.cards;
+  state.setup = { lesson: lessonLabel, section: sectionVal, direction, chunkSize, shuffle: doShuffle, mode, skipped };
   state.queue = queue;
   state.setIndex = 0;
   state.cardIndex = 0;
@@ -1120,6 +1061,7 @@ function startStudy() {
   studyEl.classList.add('active');
   render();
   prefetchLessonAudio();
+  saveSetup();
 }
 
 // Ask the service worker to background-fetch every audio URL in the current
@@ -1391,25 +1333,23 @@ function nextSet() {
     flashTopbar();
     return;
   }
-  // End of section — advance to next section if any.
+  // End of section — advance to the next section in the same deck, if any.
   const { lesson, section, direction, shuffle: doShuffle } = state.setup;
-  if (section === '__ALL__') {
-    backToSetup(`Finished all sections of ${lesson}.`);
+  if (section === '__ALL__' || !selectedEntry) {
+    backToSetup(`Finished ${lesson}.`);
     return;
   }
-  const secMap = state.lessonIndex.get(lesson);
-  const sections = [...secMap.keys()].sort();
+  const sections = [...new Set(selectedEntry.cards.map(c => c.section))].sort();
   const i = sections.indexOf(section);
   if (i === -1 || i + 1 >= sections.length) {
     backToSetup(`Finished ${lesson}.`);
     return;
   }
   const nextSection = sections[i + 1];
-  state.setup.section = nextSection;
-  sectionSel.value = nextSection;
-  let base = gatherCards(lesson, nextSection);
+  const base = selectedEntry.cards.filter(c => c.section === nextSection);
   let queue = expandDirection(base, direction);
   if (doShuffle) shuffle(queue);
+  state.setup.section = nextSection;
   state.queue = queue;
   state.setIndex = 0;
   state.cardIndex = 0;
@@ -1432,7 +1372,7 @@ function backToSetup(msg) {
   studyEl.classList.remove('active');
   setupEl.style.display = '';
   statusEl.classList.remove('err');
-  statusEl.textContent = msg || `Loaded ${state.allCards.length} cards across ${state.lessonIndex.size} lessons.`;
+  statusEl.textContent = msg || 'Pick a deck to study.';
 }
 
 // ---------- Interaction ----------
@@ -1607,11 +1547,6 @@ typingInput.addEventListener('keydown', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
-  if (preview.classList.contains('show')) {
-    if (e.key === 'Escape') { e.preventDefault(); closePreview(); }
-    else if (e.key === 'Enter') { e.preventDefault(); prevStudy.click(); }
-    return;
-  }
   if (!studyEl.classList.contains('active')) return;
   // While typing-input is focused, the input handles its own keys. Don't grab
   // letters/space/etc. from under the user.
