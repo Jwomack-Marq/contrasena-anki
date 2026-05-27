@@ -68,39 +68,94 @@ function parseTables(html) {
   return tables;
 }
 
-// These pages have 2+ tables (a Q&A examples table AND the conjugation table).
-// Select the one whose header's first cell names the subject column.
-function pickConjugationTable(tables) {
-  const SUBJ = /\b(sujeto|subject|pronombre|pronoun)\b/i;
-  for (const rows of tables) {
-    const head = rows[0] || [];
-    if (head.length >= 2 && SUBJ.test(head[0]) && rows.length >= 2) return rows;
-  }
-  return null;
-}
+// Strip a trailing English gloss from a verb header: "Estudiar (To Study)" -> "Estudiar".
+const cleanVerb = (v) => String(v || '').replace(/\s*\([^)]*\)\s*$/, '').trim();
+// Column headers that are conjugation patterns / glosses, not actual verbs.
+// Skipping them avoids junk cards like "Verb Ending — yo → -o", unnamed
+// "Conjugated Form — yo → como", or the possessive page's Singular/Plural/English.
+const GENERIC_COL = /^(verb\s+)?ending$|^conjugated\s+form$|^forms?$|^singular\s+form$|^plural\s+form$|^english$/i;
 
-function extractCards(url, html) {
-  const id = lessonIdFromUrl(url);
-  const rows = pickConjugationTable(parseTables(html));
-  if (!rows) return { id, lines: [], warn: 'no conjugation table found' };
-  const verbs = rows[0].slice(1);   // e.g. ["ser", "estar"]
-  const lines = [];
+// Strategy 1 — a clean person×verb grid: header "Sujeto | verb | verb…", then
+// one row per subject pronoun. Pick the table whose header names the subject
+// column (these pages also have an unrelated Q&A examples table).
+function gridPairs(tables) {
+  const SUBJ = /\b(sujeto|subject|pronombre|pronoun)\b/i;
+  let rows = null;
+  for (const t of tables) {
+    const head = t[0] || [];
+    if (head.length >= 2 && SUBJ.test(head[0]) && t.length >= 2) { rows = t; break; }
+  }
+  if (!rows) return [];
+  const verbs = rows[0].slice(1).map(cleanVerb);   // e.g. ["ser", "estar"]
+  const pairs = [];
   for (let r = 1; r < rows.length; r++) {
     const cols = rows[r];
     const subject = cols[0] || '';
     if (!subject) continue;
     for (let c = 1; c < cols.length && c <= verbs.length; c++) {
-      const verb = verbs[c - 1];
-      const form = cols[c] || '';
-      if (!verb || !form) continue;   // drop blank cells
-      const spanish = safeCell(form);                          // "soy"
-      const english = safeCell(verb + ' — ' + subject);        // "ser — yo (I)"
-      const tags = 'Contrasena::lessons::' + id +
-                   ' Contrasena::sections::' + tagify(verb);
-      lines.push(spanish + '\t' + english + '\t' + tags + '\t'); // audioUrl empty
+      const verb = verbs[c - 1], form = cols[c] || '';
+      if (!verb || GENERIC_COL.test(verb) || !form) continue;
+      pairs.push({ verb, subject, form });
     }
   }
-  return { id, lines, warn: lines.length ? '' : 'table found but 0 cards' };
+  return pairs;
+}
+
+// Strategy 2 — some pages (saber/conocer, haber) don't use a grid: a "Forms"
+// row holds each verb's whole conjugation as pronoun-delimited text in one
+// cell, e.g. "yo sé tú sabes él/ella; Ud. sabe …". Split by the six canonical
+// subject pronouns.
+const SUBJECTS = [
+  { re: 'yo',                       label: 'yo (I)' },
+  { re: 't[úu]',                    label: 'tú (you, informal)' },
+  { re: 'él/ella[;/] *Ud\\.?',      label: 'él/ella; Ud. (he/she/it; you, formal)' },
+  { re: 'nosotros/nosotras',        label: 'nosotros/nosotras (we)' },
+  { re: 'vosotros/vosotras',        label: 'vosotros/vosotras (you all, informal)' },
+  { re: 'ellos/ellas[;/] *Uds\\.?', label: 'ellos/ellas; Uds. (they; you, formal)' },
+];
+function parseFormsCell(text) {
+  const found = [];
+  for (const s of SUBJECTS) {
+    const m = new RegExp(s.re, 'i').exec(text);
+    if (m) found.push({ idx: m.index, end: m.index + m[0].length, label: s.label });
+  }
+  found.sort((a, b) => a.idx - b.idx);
+  const out = [];
+  for (let i = 0; i < found.length; i++) {
+    const start = found[i].end;
+    const stop = i + 1 < found.length ? found[i + 1].idx : text.length;
+    const form = text.slice(start, stop).replace(/^[\s—:.\-]+/, '').trim();
+    if (form) out.push({ subject: found[i].label, form });
+  }
+  return out;
+}
+function formsRowPairs(tables) {
+  for (const rows of tables) {
+    const header = rows[0] || [];
+    const formsRow = rows.find(r => /^(forms?|conjugat)/i.test(r[0] || ''));
+    if (header.length < 2 || !formsRow) continue;
+    const pairs = [];
+    for (let c = 1; c < header.length && c < formsRow.length; c++) {
+      const verb = cleanVerb(header[c]);
+      if (!verb || GENERIC_COL.test(verb)) continue;
+      for (const { subject, form } of parseFormsCell(formsRow[c])) pairs.push({ verb, subject, form });
+    }
+    if (pairs.length) return pairs;
+  }
+  return [];
+}
+
+function extractCards(url, html) {
+  const id = lessonIdFromUrl(url);
+  const tables = parseTables(html);
+  let pairs = gridPairs(tables);
+  if (!pairs.length) pairs = formsRowPairs(tables);
+  if (!pairs.length) return { id, lines: [], warn: 'no conjugation table found' };
+  const lines = pairs.map(({ verb, subject, form }) =>
+    safeCell(form) + '\t' + safeCell(verb + ' — ' + subject) +
+    '\t' + 'Contrasena::lessons::' + id + ' Contrasena::sections::' + tagify(verb) + '\t'
+  );
+  return { id, lines, warn: '' };
 }
 
 async function fetchPage(url) {

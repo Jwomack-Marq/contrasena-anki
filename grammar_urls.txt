@@ -1,1 +1,19 @@
+# Contraseña grammar pages that yield conjugation cards (one URL per line).
+# Run: node grab_grammar.mjs --urls grammar_urls.txt
+#
+# Grid-style pages (Sujeto | verb | verb):
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Grammar_1-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u2/Grammar_2-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u3/Grammar_3-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u4/Grammar_4-2.html
+# Forms-row page (Category | Saber | Conocer):
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u5/Grammar_5-2.html
+#
+# Skipped (not clean conjugation grids):
+#   u1/Grammar_1-2  Gender Agreement (not conjugation)
+#   u2/Grammar_2-2  Asking Questions (not conjugation)
+#   u3/Grammar_3-1  Telling Time (not conjugation)
+#   u4/Grammar_4-1  haber vs ser/estar (only re-extracts ser/estar; "hay" is invariant)
+#   u5/Grammar_5-1  -er/-ir endings pattern page (verb not named in grid header)
+#   u6/Grammar_6-1  Possessive Adjectives (columns aren't verbs -> junk cards)
+#   u6/Grammar_6-2  Stem-changing verbs (conjugations buried in a "Step 3" cell)

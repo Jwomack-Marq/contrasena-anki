@@ -1,0 +1,57 @@
+#separator:tab
+#html:false
+#tags column:3
+soy	ser — yo (I)	Contrasena::lessons::grammar_1_1 Contrasena::sections::ser	
+estoy	estar — yo (I)	Contrasena::lessons::grammar_1_1 Contrasena::sections::estar	
+eres	ser — tú (you, informal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::ser	
+estás	estar — tú (you, informal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::estar	
+es	ser — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::ser	
+está	estar — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::estar	
+somos	ser — nosotros/nosotras (we)	Contrasena::lessons::grammar_1_1 Contrasena::sections::ser	
+estamos	estar — nosotros/nosotras (we)	Contrasena::lessons::grammar_1_1 Contrasena::sections::estar	
+sois	ser — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::ser	
+estáis	estar — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::estar	
+son	ser — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::ser	
+están	estar — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_1_1 Contrasena::sections::estar	
+soy	ser — yo (I)	Contrasena::lessons::grammar_2_1 Contrasena::sections::ser	
+estoy	estar — yo (I)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
+eres	ser — tú (you, informal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::ser	
+estás	estar — tú (you, informal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
+es	ser — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::ser	
+está	estar — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
+somos	ser — nosotros/nosotras (we)	Contrasena::lessons::grammar_2_1 Contrasena::sections::ser	
+estamos	estar — nosotros/nosotras (we)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
+sois	ser — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::ser	
+estáis	estar — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
+son	ser — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::ser	
+están	estar — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
+voy	ir — yo	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tengo	tener — yo	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+vas	ir — tú	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tienes	tener — tú	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+va	ir — él/ella; Ud.	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tiene	tener — él/ella; Ud.	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+vamos	ir — nosotros/nosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tenemos	tener — nosotros/nosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+vais	ir — vosotros/vosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tenéis	tener — vosotros/vosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+van	ir — ellos/ellas; Uds.	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tienen	tener — ellos/ellas; Uds.	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+estudio	Estudiar — yo	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
+estudias	Estudiar — tú	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
+estudia	Estudiar — él/ella; Ud.	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
+estudiamos	Estudiar — nosotros/nosotras	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
+estudiáis	Estudiar — vosotros/vosotras	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
+estudian	Estudiar — ellos/ellas; Uds.	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
+sé	Saber — yo (I)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabes	Saber — tú (you, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabe	Saber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabemos	Saber — nosotros/nosotras (we)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabéis	Saber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+saben	Saber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+conozco	Conocer — yo (I)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conoces	Conocer — tú (you, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conoce	Conocer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conocemos	Conocer — nosotros/nosotras (we)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conocéis	Conocer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conocen	Conocer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
