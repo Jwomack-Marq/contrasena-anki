@@ -31,6 +31,11 @@
   <p class="hint" style="margin: 0.75rem 0 0;">All lessons at once — drag to bookmarks, click on any show_hide page, accept the prefilled ID list (or edit it). Produces a single <code>contrasena_all.tsv</code>.</p>
 </div>
 
+<div class="bm-wrap">
+  <a id="bm-grammar" class="bm" href="#" title="Drag me to your bookmarks bar">Contraseña Grammar → Anki</a>
+  <p class="hint" style="margin: 0.75rem 0 0;">Conjugation tables — drag to bookmarks, then click while viewing a grammar <code>Grammar_*.html</code> page. Produces a TSV of "{verb} — {subject}" → conjugation cards, one section per verb.</p>
+</div>
+
 <h2>How to use it</h2>
 <ol>
   <li>Drag a purple button above onto your bookmarks bar (you only do this once).</li>
@@ -72,7 +77,7 @@ node grab_all.mjs --units 3 --out ./out  # narrower sweep, custom dir</pre>
 </ol>
 
 <h2>Updating the bookmarks</h2>
-<p class="hint">If you edit <code>bookmarklet.js</code> or <code>bulk_bookmarklet.js</code>, also paste the new contents into the matching <code>&lt;script id="src"&gt;</code> / <code>&lt;script id="src-bulk"&gt;</code> block in this file, then reopen this page and drag the button to your bookmarks bar again (replacing the old one).</p>
+<p class="hint">If you edit <code>bookmarklet.js</code>, <code>bulk_bookmarklet.js</code>, or <code>grammar_bookmarklet.js</code>, also paste the new contents into the matching <code>&lt;script id="src"&gt;</code> / <code>&lt;script id="src-bulk"&gt;</code> / <code>&lt;script id="src-grammar"&gt;</code> block in this file, then reopen this page and drag the button to your bookmarks bar again (replacing the old one).</p>
 
 <h2>Source</h2>
 <details>
@@ -82,6 +87,10 @@ node grab_all.mjs --units 3 --out ./out  # narrower sweep, custom dir</pre>
 <details>
 <summary>Show bulk source</summary>
 <pre id="readable-bulk"></pre>
+</details>
+<details>
+<summary>Show grammar source</summary>
+<pre id="readable-grammar"></pre>
 </details>
 
 <script id="src" type="text/plain">
@@ -269,6 +278,68 @@ void (async () => {
 })();
 </script>
 
+<script id="src-grammar" type="text/plain">
+void (async () => {
+  try {
+    const COMBINING_MARKS = new RegExp('[\\u0300-\\u036f]', 'g');
+    const tagify = (s) => s.toLowerCase()
+      .normalize('NFD').replace(COMBINING_MARKS, '')
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, '') || 'unknown';
+    const safeCell = (s) => s.replace(/[\t\r\n]+/g, ' ');
+    const cellText = (el) => (el.textContent || '').replace(/\s+/g, ' ').trim();
+
+    // Grammar_2-1.html -> grammar_2_1
+    const file = (location.pathname.split('/').pop() || 'grammar').replace(/\.html?$/i, '');
+    const id = tagify(file);
+
+    // Pages have 2+ tables (a Q&A examples table AND the conjugation table).
+    // Pick the one whose header's first cell names the subject column.
+    const SUBJ = /\b(sujeto|subject|pronombre|pronoun)\b/i;
+    let rows = null;
+    for (const table of document.querySelectorAll('table')) {
+      const grid = Array.from(table.querySelectorAll('tr'))
+        .map(tr => Array.from(tr.querySelectorAll('td,th')).map(cellText));
+      const head = grid[0] || [];
+      if (head.length >= 2 && SUBJ.test(head[0]) && grid.length >= 2) { rows = grid; break; }
+    }
+    if (!rows) { alert('No conjugation table found on this page.'); return; }
+
+    const verbs = rows[0].slice(1);
+    const lines = [];
+    for (let r = 1; r < rows.length; r++) {
+      const cols = rows[r];
+      const subject = cols[0] || '';
+      if (!subject) continue;
+      for (let c = 1; c < cols.length && c <= verbs.length; c++) {
+        const verb = verbs[c - 1];
+        const form = cols[c] || '';
+        if (!verb || !form) continue;
+        const tags = 'Contrasena::lessons::' + id + ' Contrasena::sections::' + tagify(verb);
+        lines.push(safeCell(form) + '\t' + safeCell(verb + ' — ' + subject) + '\t' + tags + '\t');
+      }
+    }
+    if (!lines.length) { alert('Conjugation table found but produced 0 cards.'); return; }
+
+    const header = '#separator:tab\n#html:false\n#tags column:3\n';
+    const tsv = header + lines.join('\n') + '\n';
+    const blob = new Blob([tsv], { type: 'text/tab-separated-values;charset=utf-8' });
+    const blobUrl = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = blobUrl;
+    a.download = id + '.tsv';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+
+    alert('Exported ' + lines.length + ' cards to ' + id + '.tsv\nNow in Anki: File → Import → pick this file.');
+  } catch (e) {
+    alert('Error: ' + (e && e.message ? e.message : e));
+  }
+})();
+</script>
+
 <script>
   const src = document.getElementById('src').textContent.trim();
   document.getElementById('readable').textContent = src;
@@ -277,6 +348,10 @@ void (async () => {
   const srcBulk = document.getElementById('src-bulk').textContent.trim();
   document.getElementById('readable-bulk').textContent = srcBulk;
   document.getElementById('bm-bulk').href = 'javascript:' + encodeURIComponent(srcBulk);
+
+  const srcGrammar = document.getElementById('src-grammar').textContent.trim();
+  document.getElementById('readable-grammar').textContent = srcGrammar;
+  document.getElementById('bm-grammar').href = 'javascript:' + encodeURIComponent(srcGrammar);
 </script>
 
 </body>

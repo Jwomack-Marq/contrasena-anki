@@ -37,7 +37,8 @@ function checkPair(label, srcFile, blockId) {
   console.log(`OK [${label}]: no control chars in URL`);
 }
 
-checkPair('single', './bookmarklet.js', 'src');
-checkPair('bulk',   './bulk_bookmarklet.js', 'src-bulk');
+checkPair('single',  './bookmarklet.js', 'src');
+checkPair('bulk',    './bulk_bookmarklet.js', 'src-bulk');
+checkPair('grammar', './grammar_bookmarklet.js', 'src-grammar');
 
 console.log('\nAll checks passed.');
