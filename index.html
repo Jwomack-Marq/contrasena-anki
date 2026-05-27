@@ -861,12 +861,7 @@ function openDeckPreview(entry) {
     o.value = s; o.textContent = `${s} (${n})`; previewSectionSel.appendChild(o);
   }
 
-  previewBody.innerHTML =
-    '<table class="cards"><thead><tr><th></th><th>Spanish</th><th>English</th><th>Section</th></tr></thead><tbody>' +
-    cards.map((c, i) =>
-      `<tr><td class="num">${i+1}</td><td>${escapeHtml(c.spanish)}</td><td>${escapeHtml(c.english)}</td><td class="section">${escapeHtml(c.section)}</td></tr>`
-    ).join('') +
-    '</tbody></table>';
+  renderPreviewTable();
 
   deckPreview.classList.remove('field-hidden');
   deckPreview.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -875,13 +870,28 @@ function openDeckPreview(entry) {
   saveSetup();
 }
 
+// Rebuild the preview table for the currently-selected section.
+function renderPreviewTable() {
+  if (!selectedEntry) return;
+  const sectionVal = previewSectionSel.value;
+  const cards = sectionVal === '__ALL__'
+    ? selectedEntry.cards
+    : selectedEntry.cards.filter(c => c.section === sectionVal);
+  previewBody.innerHTML =
+    '<table class="cards"><thead><tr><th></th><th>Spanish</th><th>English</th><th>Section</th></tr></thead><tbody>' +
+    cards.map((c, i) =>
+      `<tr><td class="num">${i+1}</td><td>${escapeHtml(c.spanish)}</td><td>${escapeHtml(c.english)}</td><td class="section">${escapeHtml(c.section)}</td></tr>`
+    ).join('') +
+    '</tbody></table>';
+}
+
 cancelPreviewBtn.addEventListener('click', () => {
   deckPreview.classList.add('field-hidden');
   selectedEntry = null;
   document.querySelectorAll('.lib-item.selected').forEach(n => n.classList.remove('selected'));
 });
 confirmBtn.addEventListener('click', startStudyFromSelection);
-previewSectionSel.addEventListener('change', saveSetup);
+previewSectionSel.addEventListener('change', () => { renderPreviewTable(); saveSetup(); });
 
 // ---------- Bundled-data autoload ----------
 let bundledEntries = [];
@@ -962,6 +972,7 @@ function restoreSetup() {
       openDeckPreview(entry);
       if (saved.section && [...previewSectionSel.options].some(o => o.value === saved.section)) {
         previewSectionSel.value = saved.section;
+        renderPreviewTable();
       }
       const name = entry.relPath.includes('/') ? entry.relPath.slice(entry.relPath.lastIndexOf('/') + 1) : entry.relPath;
       for (const node of deckTabs.querySelectorAll('.lib-item')) {
