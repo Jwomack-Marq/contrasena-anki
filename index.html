@@ -257,9 +257,58 @@
     from { transform: translateY( 110%); opacity: 0; }
     to   { transform: translateY(0);     opacity: 1; }
   }
+  @keyframes contrasena-slide-in-top {
+    from { transform: translateY(-110%); opacity: 0; }
+    to   { transform: translateY(0);     opacity: 1; }
+  }
   #card.entering-from-right  { animation: contrasena-slide-in-right  200ms ease-out; }
   #card.entering-from-left   { animation: contrasena-slide-in-left   200ms ease-out; }
   #card.entering-from-bottom { animation: contrasena-slide-in-bottom 200ms ease-out; }
+  #card.entering-from-top    { animation: contrasena-slide-in-top    200ms ease-out; }
+
+  /* Brief centered toast shown when a swipe gesture fires, so the user can see
+     what action the gesture triggered (e.g. "↑ Next set"). */
+  .swipe-toast {
+    position: fixed;
+    top: 30%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    background: rgba(124, 52, 131, 0.92);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 180ms ease-out, transform 180ms ease-out;
+    z-index: 25;
+    white-space: nowrap;
+  }
+  .swipe-toast.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  /* Top-left back-to-setup arrow in the topbar. */
+  #topbar .back-arrow {
+    background: white;
+    border: 1px solid var(--border);
+    color: var(--accent);
+    font-size: 1.25rem;
+    line-height: 1;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(124, 52, 131, 0.25);
+    flex: 0 0 auto;
+  }
+  #topbar .back-arrow:hover, #topbar .back-arrow:focus-visible { border-color: var(--accent); background: #fbf9fd; outline: none; }
+  #topbar .back-arrow:active { background: #ede4f4; }
   #card .side-label {
     position: absolute;
     top: 0.75rem;
@@ -420,47 +469,6 @@
   table.cards td.num { color: var(--muted); width: 3rem; text-align: right; font-variant-numeric: tabular-nums; }
   table.cards td.section { color: var(--muted); font-size: 0.82rem; white-space: nowrap; }
 
-  /* ---------- Confirm modal (used by swipe-up-to-setup) ---------- */
-  #confirmModal {
-    position: fixed;
-    inset: 0;
-    background: rgba(28, 28, 34, 0.55);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 30;
-    padding: 1rem;
-  }
-  #confirmModal.show { display: flex; }
-  #confirmModal .panel {
-    background: white;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 22rem;
-    padding: 1.25rem 1.25rem 1rem;
-    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  #confirmModal h3 { margin: 0; font-size: 1.1rem; color: var(--accent); }
-  #confirmModal p  { margin: 0; color: var(--fg); font-size: 0.95rem; }
-  #confirmModal .actions { display: flex; gap: 0.5rem; justify-content: flex-end; margin-top: 0.25rem; }
-  #confirmModal button {
-    background: white;
-    border: 1px solid var(--border);
-    padding: 0.5rem 0.9rem;
-    border-radius: 6px;
-    cursor: pointer;
-    font: inherit;
-    touch-action: manipulation;
-    -webkit-tap-highlight-color: rgba(124, 52, 131, 0.25);
-  }
-  #confirmModal button.primary { background: var(--accent); color: white; border-color: var(--accent); }
-  #confirmModal button.primary:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
-  #confirmModal button:hover { border-color: var(--accent); color: var(--accent); }
-  #confirmModal button.primary:hover { color: white; }
-
   /* ---------- Mobile (≤ 640px) ---------- */
   .hint-mobile { display: none; }
 
@@ -583,20 +591,12 @@
   <div id="status">No deck selected yet.</div>
 </section>
 
-<!-- Confirmation modal: shown when the user swipes up to return to setup. -->
-<div id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
-  <div class="panel">
-    <h3 id="confirmTitle">Return to setup?</h3>
-    <p id="confirmBody">You'll leave this study session and go back to the main page.</p>
-    <div class="actions">
-      <button id="confirmCancel" type="button">Cancel</button>
-      <button id="confirmOk" class="primary" type="button">Return to setup</button>
-    </div>
-  </div>
-</div>
+<!-- Brief floating label shown when a swipe gesture fires. -->
+<div id="swipeToast" class="swipe-toast" aria-hidden="true"></div>
 
 <section id="study">
   <div id="topbar">
+    <button id="backArrow" class="back-arrow" type="button" title="Back to setup (Esc)" aria-label="Back to setup">←</button>
     <div class="crumbs">
       <b id="crumbLesson">—</b> · <span id="crumbSection">—</span> · <b id="crumbDir">—</b> · card <b id="crumbCard">0 / 0</b> · set <b id="crumbSet">0 / 0</b>
     </div>
@@ -624,7 +624,7 @@
     <button id="nextBtn" class="nav-arrow" type="button" title="Next card (→)" aria-label="Next card">→</button>
     <div class="hint" id="hint">
       <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>N</kbd> next set · <kbd>Esc</kbd> setup</span>
-      <span class="hint-mobile">Tap to flip · Swipe ← → to change card · Swipe ↑ next set · Swipe ↓ setup</span>
+      <span class="hint-mobile">Tap to flip · Swipe ← → card · Swipe ↑ next set · Swipe ↓ prev set</span>
     </div>
   </div>
   <div id="bottombar">
@@ -1369,6 +1369,20 @@ function nextSet() {
   flashTopbar();
 }
 
+// Step back to the previous set. No cross-section navigation — at setIndex 0
+// we stay put (the toast tells the user we hit the start).
+function prevSet() {
+  if (state.setIndex > 0) {
+    state.setIndex--;
+    state.cardIndex = 0;
+    resetCardState();
+    render();
+    flashTopbar();
+    return true;
+  }
+  return false;
+}
+
 // Brief visual blip to acknowledge a silent advancement.
 let flashTimer = null;
 function flashTopbar() {
@@ -1438,6 +1452,7 @@ function animateAndThen(direction, action) {
     if (direction === 'left')       inClass = 'entering-from-right';
     else if (direction === 'right') inClass = 'entering-from-left';
     else if (direction === 'up')    inClass = 'entering-from-bottom';
+    else if (direction === 'down')  inClass = 'entering-from-top';
     if (inClass) {
       card.classList.add(inClass);
       const cleanup = () => card.classList.remove(inClass);
@@ -1481,53 +1496,38 @@ cardareaEl.addEventListener('touchend', (e) => {
   if (dy < -60 && absY > absX * 1.5) {
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
+    showSwipeToast('↑ Next set');
     animateAndThen('up', nextSet);
     return;
   }
-  // Downward swipe — return to setup, with confirmation.
+  // Downward swipe — step back to the previous set.
   if (dy > 60 && absY > absX * 1.5) {
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
-    openReturnToSetupConfirm();
+    if (state.setIndex > 0) {
+      showSwipeToast('↓ Previous set');
+      animateAndThen('down', prevSet);
+    } else {
+      // Already at the first set — show a toast but don't animate (would slide
+      // the same card back into place, which looks like a glitch).
+      showSwipeToast('Already at first set');
+    }
   }
 }, { passive: true });
 
 cardareaEl.addEventListener('touchcancel', () => { swipeStart = null; }, { passive: true });
 
-// ---------- Confirm modal (return-to-setup) ----------
-const confirmModal = $('confirmModal');
-const confirmOk = $('confirmOk');
-const confirmCancel = $('confirmCancel');
-
-function openReturnToSetupConfirm() {
-  confirmModal.classList.add('show');
-  // Focus the cancel button so a stray Enter doesn't immediately destroy the
-  // session — primary action requires an intentional tap.
-  setTimeout(() => confirmCancel.focus(), 0);
-}
-function closeConfirmModal() {
-  confirmModal.classList.remove('show');
+// ---------- Swipe toast ----------
+const swipeToast = $('swipeToast');
+let swipeToastTimer = null;
+function showSwipeToast(text) {
+  swipeToast.textContent = text;
+  swipeToast.classList.add('show');
+  clearTimeout(swipeToastTimer);
+  swipeToastTimer = setTimeout(() => swipeToast.classList.remove('show'), 700);
 }
 
-confirmOk.addEventListener('click', () => {
-  closeConfirmModal();
-  // Animate the card down and off (matching the down-swipe direction), then
-  // return to setup.
-  animateAndThen('down', () => backToSetup());
-});
-confirmCancel.addEventListener('click', closeConfirmModal);
-// Backdrop click cancels.
-confirmModal.addEventListener('click', (e) => {
-  if (e.target === confirmModal) closeConfirmModal();
-});
-// Escape cancels.
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && confirmModal.classList.contains('show')) {
-    e.stopPropagation();
-    closeConfirmModal();
-  }
-}, true);
-
+$('backArrow').addEventListener('click', () => backToSetup());
 $('toSetup').addEventListener('click', () => backToSetup());
 $('reshuffle').addEventListener('click', reshuffle);
 nextSetBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSet(); });
