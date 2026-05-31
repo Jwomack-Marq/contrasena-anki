@@ -1,0 +1,51 @@
+#separator:tab
+#html:false
+#tags column:3
+almorzar	to have lunch	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	
+desayunar	to have breakfast	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	
+dormir	to sleep / to fall asleep	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	
+cenar	to have supper	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	
+regresar / regresar a casa	to return / to return home	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	
+ayudar	to help	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+bailar	to dance	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+cocinar	to cook	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+correr	to run	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+descansar	to rest	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+ensayar	to practice	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+escuchar / escuchar música	to listen / to listen to music	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+estar libre	to be free	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+estudiar	to study	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+hablar	to speak / to talk	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+hacer ejercicio	to do exercise	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+hacer una videollamada	to make a videocall	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+ir / ir al gimnasio / ir al picnic / ir al cine / ir de	to go / to go to the gym / to go on a picnic / to go to	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+compras	the movies / to go shopping	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+jugar al... / jugar al videojuego / jugar al tenis / jugar	to play... / to play a videogame / to play tennis / to	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+al fútbol	play soccer	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+lavar / lavar la ropa	to wash / to wash clothes	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+limpiar / limpiar la casa	to clean / to clean the house	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+llegar	to arrive	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+pintar	to paint	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+practicar / practicar yoga	to practice, to do / to practice yoga, to do yoga	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+preparar	to prepare	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+quedar con	to arrange to meet with	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+salir / salir a	to go out, to leave / to leave for	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+tomar / tomar algo	to have a drink / to drink something	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+trabajar / trabajar en	to work / to work on	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+ver	to see	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+¿Qué tal...?	How about…? / What about…?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
+¿Qué te parece?	What do you think?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
+¿Qué vas a hacer...?	What are you doing? / What are you going to do?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
+Tengo que... [inf. tener que]	I have to… [inf. to have to]	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
+¿Tienes planes?	Do you have plans?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
+¡Ay, no!	Oh no!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	
+¡Buena idea!	Good idea!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	
+¡Qué lástima!	What a shame!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	
+¿A qué hora?	At what time?	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
+en punto	on the dot	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
+por la mañana	in the morning	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
+por la tarde	in the afternoon	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
+por la noche	at night	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
+tarde	late / afternoon	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
+temprano	early	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
+todos los días	every day	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	

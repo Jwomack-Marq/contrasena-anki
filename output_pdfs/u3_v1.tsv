@@ -1,0 +1,26 @@
+#separator:tab
+#html:false
+#tags column:3
+lunes	Monday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+martes	Tuesday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+miércoles	Wednesday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+jueves	Thursday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+viernes	Friday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+sábado	Saturday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+domingo	Sunday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+enero	January	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+febrero	February	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+marzo	March	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+abril	April	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+mayo	May	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+junio	June	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+julio	July	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+agosto	August	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+septiembre	September	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+octubre	October	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+noviembre	November	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+diciembre	December	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+el otoño	fall	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	
+el invierno	winter	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	
+la primavera	spring	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	
+el verano	summer	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	

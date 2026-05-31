@@ -1,0 +1,17 @@
+{
+  "name": "contrasena-anki",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Contraseña → Anki flashcard scrapers + PWA",
+  "scripts": {
+    "build": "node build_flashcards.mjs",
+    "grab:vocab": "node grab_all.mjs",
+    "grab:grammar": "node grab_grammar.mjs --urls grammar_urls.txt",
+    "grab:pdfs": "node grab_pdfs.mjs --urls pdf_urls.txt",
+    "test": "node test_extract.mjs && node test_grammar_extract.mjs && node test_pdf_extract.mjs && node test_install.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^4.10.38"
+  }
+}
