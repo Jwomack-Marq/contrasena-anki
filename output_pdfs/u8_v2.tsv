@@ -1,0 +1,43 @@
+#separator:tab
+#html:false
+#tags column:3
+el desayuno	breakfast	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
+el almuerzo	lunch	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
+la merienda	snack	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
+la cena	supper	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
+la cuchara	spoon	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
+el cuchillo	knife	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
+el plato	plate	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
+el plato hondo	bowl	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
+el tenedor	fork	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
+batir	to beat / to shake	Contrasena::lessons::u8_v2 Contrasena::sections::para_preparar_comida	
+calentar (e>ie)	to warm / to heat up	Contrasena::lessons::u8_v2 Contrasena::sections::para_preparar_comida	
+cortar	to cut	Contrasena::lessons::u8_v2 Contrasena::sections::para_preparar_comida	
+freír (e>i)	to fry	Contrasena::lessons::u8_v2 Contrasena::sections::para_preparar_comida	
+hervir (e>ie)	to boil	Contrasena::lessons::u8_v2 Contrasena::sections::para_preparar_comida	
+mezclar	to mix	Contrasena::lessons::u8_v2 Contrasena::sections::para_preparar_comida	
+pelar	to peel	Contrasena::lessons::u8_v2 Contrasena::sections::para_preparar_comida	
+la ensalada / la ensalada mixta	salad / mixed salad	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+el sándwich / el bocadillo (Spain)	sandwich / submarine sandwich	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+la sopa	soup	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+a la parrilla	grilled	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+al horno	baked	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+al vapor	steamed	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+crudo/cruda	raw	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+frito/frita	fried	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+vegano/vegana	vegan	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+vegetariano/vegetariana	vegetarian	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+servir (e>i) frío / servir (e>i) caliente / servir (e>i) a	to serve cold / to serve hot / to serve room	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+temperatura ambiente	temperature	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+agridulce	sweet and sour, bittersweet	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+agrio/agria, amargo/amarga	bitter	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+casero/casera	homemade	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+dulce	sweet	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+grasoso/grasosa	fatty	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+liviano/liviana	light	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+picante	spicy	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+rico/rica	delicious	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+sano/sana	healthy	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+suave	smooth	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+sabe a / sabe a ajo / sabe a pollo	tastes like / tastes like garlic / tastes like chicken	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
+sabe bien / sabe mal	tastes good / tastes bad	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	

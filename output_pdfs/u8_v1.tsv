@@ -1,0 +1,36 @@
+#separator:tab
+#html:false
+#tags column:3
+la carne de res /la carne de res picada	beef/ground beef	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+el chorizo	(type of) sausage	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+los huevos	eggs	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+el jamón	ham	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+los mariscos	shellfish	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+el pavo	turkey	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+el pescado	fish	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+el pollo	chicken	Contrasena::lessons::u8_v1 Contrasena::sections::las_proteinas	
+las aceitunas	olives	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+el ajo	garlic	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+la banana / el plátano	banana	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+la cebolla	onion	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+el champiñón	mushroom	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+las fresas	strawberries	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+la lechuga	lettuce	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+la manzana	apple	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+la naranja	orange	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+las papas (Lat. Am.) / las patatas (Spain)	potatoes	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+el pimiento	pepper	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+el tomate	tomato	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+las uvas	grapes	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+la zanahoria	carrot	Contrasena::lessons::u8_v1 Contrasena::sections::las_frutas_y_las_verduras	
+el arroz	rice	Contrasena::lessons::u8_v1 Contrasena::sections::los_granos	
+el pan tostado / el pan blanco / el pan integral	toast / white bread / wheat bread	Contrasena::lessons::u8_v1 Contrasena::sections::los_granos	
+la leche / la leche de soja / la leche de almendra	milk / soy milk / almond milk	Contrasena::lessons::u8_v1 Contrasena::sections::los_productos_lacteos	
+la mantequilla	butter	Contrasena::lessons::u8_v1 Contrasena::sections::los_productos_lacteos	
+el queso	cheese	Contrasena::lessons::u8_v1 Contrasena::sections::los_productos_lacteos	
+el yogur	yogurt	Contrasena::lessons::u8_v1 Contrasena::sections::los_productos_lacteos	
+el aceite / el aceite de oliva	oil / olive oil	Contrasena::lessons::u8_v1 Contrasena::sections::los_condimentos	
+con / sin	with / without	Contrasena::lessons::u8_v1 Contrasena::sections::los_condimentos	
+la pimienta	pepper	Contrasena::lessons::u8_v1 Contrasena::sections::los_condimentos	
+la sal	salt	Contrasena::lessons::u8_v1 Contrasena::sections::los_condimentos	
+el vinagre	vinegar	Contrasena::lessons::u8_v1 Contrasena::sections::los_condimentos	

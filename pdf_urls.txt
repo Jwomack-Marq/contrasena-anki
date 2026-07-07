@@ -1,5 +1,5 @@
 # Contraseña vocabulary PDFs — one URL per line.
-# These cover all 6 units (2 PDFs each) and are the most complete vocab source,
+# These cover all 12 units (2 PDFs each) and are the most complete vocab source,
 # including unit 3 which is absent from the show_hide JSON endpoint.
 # Run: node grab_pdfs.mjs --urls pdf_urls.txt
 https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_01-1.pdf
@@ -14,3 +14,15 @@ https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_05-1.p
 https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_05-2.pdf
 https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_06-1.pdf
 https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_06-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_07-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_07-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_08-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_08-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_09-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_09-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_10-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_10-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_11-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_11-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_12-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_12-2.pdf

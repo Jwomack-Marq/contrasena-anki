@@ -1,0 +1,44 @@
+#separator:tab
+#html:false
+#tags column:3
+escalar montañas	to mountain climb	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+esquiar	to ski	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+montar a caballo	to ride horseback	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+nadar	to swim	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+pasear en bicicleta	to ride a bike	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+patinar / patina en línea / patinar sobre hielo	to skate / to rollerblade, to in-line skate / to ice-skate	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+JUGAR (U>UE) AL…	TO PLAY…	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el básquetbol	basketball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el béisbol	baseball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el fútbol	soccer	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el fútbol americano	American football	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el golf	golf	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el hockey	hockey	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el tenis	tennis	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el vóleibol	volleyball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+PRACTICAR/HACER…	TO PRACTICE/TO DO…	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+la caminata	walking/hiking	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el ciclismo	cycling	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el esquí acuático	water skiing	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+la natación	swimming	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el surf	surfing	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el yoga	yoga	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+empatar	to tie	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
+ganar	to win	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
+perder (e>ie)	to lose	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
+el atleta/la atleta	athlete	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
+el corredor/la corredora	runner	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
+el entrenador/la entrenadora	trainer	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
+el equipo	team	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
+el jugador/la jugadora	player	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
+el campo	field / course	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+cancha / la cancha de tenis / la cancha de fútbol	court, field / tennis court / soccer field	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+la carrera	race	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+la competición/la competencia	competition	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+el estadio	stadium	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+la liga	league	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+el partido	game/match	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+la pelota	ball	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+las pesas	weights	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+la piscina	swimming pool	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	
+la final/la semifinal	final game/semifinal game	Contrasena::lessons::u7_v1 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	

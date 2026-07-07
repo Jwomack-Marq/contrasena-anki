@@ -10,3 +10,15 @@ https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_05-1.p
 https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_05-2.pdf
 https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_06-1.pdf
 https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_06-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_07-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_07-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_08-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_08-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_09-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_09-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_10-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_10-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_11-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_11-2.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_12-1.pdf
+https://contrasena.s3.us-east-2.amazonaws.com/pdfs/Contrasena_Vocabulario_12-2.pdf
