@@ -1,19 +1,30 @@
 # Contraseña grammar pages that yield conjugation cards (one URL per line).
 # Run: node grab_grammar.mjs --urls grammar_urls.txt
 #
-# Grid-style pages (Sujeto | verb | verb):
+# The parser detects verb grids by subject pronouns in the first column, reads
+# every table on a page, and also pulls preterite forms-lists, present-tense
+# gerunds, and command forms (informal/formal, affirmative/negative).
+#
+# Units 1-5 — present tense (ser/estar, tener/ir, saber/conocer):
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Grammar_1-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u2/Grammar_2-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u3/Grammar_3-2.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u4/Grammar_4-2.html
-# Forms-row page (Category | Saber | Conocer):
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u5/Grammar_5-2.html
+# Units 7-12 — irregular present, commands, gerunds, preterite, imperfect:
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u7/Grammar_7-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u7/Grammar_7-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u9/Grammar_9-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u10/Grammar_10-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u10/Grammar_10-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Grammar_12-1.html
 #
-# Skipped (not clean conjugation grids):
-#   u1/Grammar_1-2  Gender Agreement (not conjugation)
-#   u2/Grammar_2-2  Asking Questions (not conjugation)
-#   u3/Grammar_3-1  Telling Time (not conjugation)
-#   u4/Grammar_4-1  haber vs ser/estar (only re-extracts ser/estar; "hay" is invariant)
-#   u5/Grammar_5-1  -er/-ir endings pattern page (verb not named in grid header)
-#   u6/Grammar_6-1  Possessive Adjectives (columns aren't verbs -> junk cards)
-#   u6/Grammar_6-2  Stem-changing verbs (conjugations buried in a "Step 3" cell)
+# Kept in the list but currently yield nothing (parser prints "skipped"):
+#   u4/Grammar_4-2  page changed; present-tense grid gone (existing TSV retained)
+#   u6/Grammar_6-1  Possessive Adjectives (not conjugation)
+#   u6/Grammar_6-2  Stem-changing verbs (full forms buried in a "Step 3" cell)
+#   u8/Grammar_8-1  Word-order / gustar pattern (not conjugation)
+#   u8/Grammar_8-2  Regular preterite endings (verb not named in grid header)
+#   u9/Grammar_9-1  Reflexive verbs (run-on cells, no clean grid)
+#   u11/Grammar_11-* Object pronouns (not conjugation)
+#   u12/Grammar_12-2 Comparatives (not conjugation)

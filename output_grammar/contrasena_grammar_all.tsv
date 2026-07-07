@@ -25,33 +25,269 @@ sois	ser — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_
 estáis	estar — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
 son	ser — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::ser	
 están	estar — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_2_1 Contrasena::sections::estar	
-voy	ir — yo	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
-tengo	tener — yo	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
-vas	ir — tú	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
-tienes	tener — tú	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
-va	ir — él/ella; Ud.	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
-tiene	tener — él/ella; Ud.	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
-vamos	ir — nosotros/nosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
-tenemos	tener — nosotros/nosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
-vais	ir — vosotros/vosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
-tenéis	tener — vosotros/vosotras	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
-van	ir — ellos/ellas; Uds.	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
-tienen	tener — ellos/ellas; Uds.	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
-estudio	Estudiar — yo	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
-estudias	Estudiar — tú	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
-estudia	Estudiar — él/ella; Ud.	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
-estudiamos	Estudiar — nosotros/nosotras	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
-estudiáis	Estudiar — vosotros/vosotras	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
-estudian	Estudiar — ellos/ellas; Uds.	Contrasena::lessons::grammar_4_2 Contrasena::sections::estudiar	
-sé	Saber — yo (I)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
-sabes	Saber — tú (you, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
-sabe	Saber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
-sabemos	Saber — nosotros/nosotras (we)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
-sabéis	Saber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
-saben	Saber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
-conozco	Conocer — yo (I)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
-conoces	Conocer — tú (you, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
-conoce	Conocer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
-conocemos	Conocer — nosotros/nosotras (we)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
-conocéis	Conocer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
-conocen	Conocer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+voy	ir — yo (I)	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tengo	tener — yo (I)	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+vas	ir — tú (you, informal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tienes	tener — tú (you, informal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+va	ir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tiene	tener — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+vamos	ir — nosotros/nosotras (we)	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tenemos	tener — nosotros/nosotras (we)	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+vais	ir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tenéis	tener — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+van	ir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::ir	
+tienen	tener — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_3_2 Contrasena::sections::tener	
+sé	saber — yo (I)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabes	saber — tú (you, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabe	saber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabemos	saber — nosotros/nosotras (we)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+sabéis	saber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+saben	saber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::saber	
+conozco	conocer — yo (I)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conoces	conocer — tú (you, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conoce	conocer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conocemos	conocer — nosotros/nosotras (we)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conocéis	conocer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+conocen	conocer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_5_2 Contrasena::sections::conocer	
+caigo	caer — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::caer	
+doy	dar — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::dar	
+hago	hacer — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::hacer	
+pongo	poner — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::poner	
+salgo	salir — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::salir	
+traigo	traer — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::traer	
+caes	caer — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::caer	
+das	dar — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::dar	
+haces	hacer — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::hacer	
+pones	poner — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::poner	
+sales	salir — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::salir	
+traes	traer — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::traer	
+cae	caer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::caer	
+da	dar — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::dar	
+hace	hacer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::hacer	
+pone	poner — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::poner	
+sale	salir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::salir	
+trae	traer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::traer	
+caemos	caer — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::caer	
+damos	dar — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::dar	
+hacemos	hacer — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::hacer	
+ponemos	poner — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::poner	
+salimos	salir — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::salir	
+traemos	traer — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::traer	
+caéis	caer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::caer	
+dais	dar — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::dar	
+hacéis	hacer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::hacer	
+ponéis	poner — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::poner	
+salís	salir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::salir	
+traéis	traer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::traer	
+caen	caer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::caer	
+dan	dar — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::dar	
+hacen	hacer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::hacer	
+ponen	poner — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::poner	
+salen	salir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::salir	
+traen	traer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::traer	
+tengo	tener — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::tener	
+sigo	seguir — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::seguir	
+vengo	venir — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::venir	
+tienes	tener — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::tener	
+sigues	seguir — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::seguir	
+vienes	venir — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::venir	
+tiene	tener — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::tener	
+sigue	seguir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::seguir	
+viene	venir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::venir	
+tenemos	tener — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::tener	
+seguimos	seguir — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::seguir	
+venimos	venir — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::venir	
+tenéis	tener — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::tener	
+seguís	seguir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::seguir	
+venís	venir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::venir	
+tienen	tener — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::tener	
+siguen	seguir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::seguir	
+vienen	venir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::venir	
+oigo	oír — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::oir	
+construyo	construir — yo (I)	Contrasena::lessons::grammar_7_1 Contrasena::sections::construir	
+oyes	oír — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::oir	
+construyes	construir — tú (you, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::construir	
+oye	oír — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::oir	
+construye	construir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::construir	
+oímos	oír — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::oir	
+construimos	construir — nosotros/nosotras (we)	Contrasena::lessons::grammar_7_1 Contrasena::sections::construir	
+oís	oír — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::oir	
+construís	construir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::construir	
+oyen	oír — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::oir	
+construyen	construir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_7_1 Contrasena::sections::construir	
+di	decir — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::decir	
+haz	hacer — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::hacer	
+ve	ir — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::ir	
+pon	poner — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::poner	
+sal	salir — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::salir	
+sé	ser — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::ser	
+ten	tener — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::tener	
+ven	venir — tú command (affirmative)	Contrasena::lessons::grammar_7_2 Contrasena::sections::venir	
+Ud. tenga Uds. tengan	tener — formal command (affirmative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::tener	
+Ud. no tenga Uds. no tengan	tener — formal command (negative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::tener	
+Ud. haga Uds. hagan	hacer — formal command (affirmative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::hacer	
+Ud. no haga Uds. no hagan	hacer — formal command (negative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::hacer	
+Ud. diga Uds. digan	decir — formal command (affirmative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::decir	
+Ud. no diga Uds. no digan	decir — formal command (negative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::decir	
+saque saquen	sacar — formal command (affirmative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::sacar	
+no saque no saquen	sacar — formal command (negative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::sacar	
+llegue lleguen	llegar — formal command (affirmative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::llegar	
+no llegue no lleguen	llegar — formal command (negative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::llegar	
+comience comiencen	comenzar — formal command (affirmative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::comenzar	
+no comience no comiencen	comenzar — formal command (negative)	Contrasena::lessons::grammar_9_2 Contrasena::sections::comenzar	
+dé	dar — formal command (Ud.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::dar	
+den	dar — formal command (Uds.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::dar	
+esté	estar — formal command (Ud.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::estar	
+estén	estar — formal command (Uds.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::estar	
+vaya	ir — formal command (Ud.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::ir	
+vayan	ir — formal command (Uds.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::ir	
+sepa	saber — formal command (Ud.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::saber	
+sepan	saber — formal command (Uds.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::saber	
+sea	ser — formal command (Ud.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::ser	
+sean	ser — formal command (Uds.)	Contrasena::lessons::grammar_9_2 Contrasena::sections::ser	
+preparando	preparar — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::preparar	
+defendiendo	defender — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::defender	
+asistiendo	asistir — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::asistir	
+cayendo	caer — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::caer	
+leyendo	leer — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::leer	
+diciendo	decir — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::decir	
+viniendo	venir — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::venir	
+durmiendo	dormir — present participle (gerund)	Contrasena::lessons::grammar_10_1 Contrasena::sections::dormir	
+pedí	pedir — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::pedir	
+sentí	sentir — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::sentir	
+dormí	dormir — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dormir	
+pediste	pedir — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::pedir	
+sentiste	sentir — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::sentir	
+dormiste	dormir — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dormir	
+pidió	pedir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::pedir	
+sintió	sentir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::sentir	
+durmió	dormir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dormir	
+pedimos	pedir — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::pedir	
+sentimos	sentir — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::sentir	
+dormimos	dormir — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dormir	
+pedisteis	pedir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::pedir	
+sentisteis	sentir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::sentir	
+dormisteis	dormir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dormir	
+pidieron	pedir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::pedir	
+sintieron	sentir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::sentir	
+durmieron	dormir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dormir	
+-e	Common ending — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::common_ending	
+-iste	Common ending — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::common_ending	
+-o	Common ending — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::common_ending	
+-imos	Common ending — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::common_ending	
+-isteis	Common ending — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::common_ending	
+-ieron	Common ending — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::common_ending	
+fui	ser — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ser	
+fui	ir — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ir	
+di	dar — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dar	
+vi	ver — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ver	
+fuiste	ser — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ser	
+fuiste	ir — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ir	
+diste	dar — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dar	
+viste	ver — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ver	
+fue	ser — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ser	
+fue	ir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ir	
+dio	dar — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dar	
+vio	ver — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ver	
+fuimos	ser — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ser	
+fuimos	ir — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ir	
+dimos	dar — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dar	
+vimos	ver — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ver	
+fuisteis	ser — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ser	
+fuisteis	ir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ir	
+disteis	dar — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dar	
+visteis	ver — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ver	
+fueron	ser — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ser	
+fueron	ir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ir	
+dieron	dar — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::dar	
+vieron	ver — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::ver	
+hice	hacer — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::hacer	
+hiciste	hacer — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::hacer	
+hizo	hacer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::hacer	
+hicimos	hacer — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::hacer	
+hicisteis	hacer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::hacer	
+hicieron	hacer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::hacer	
+quise	querer — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::querer	
+quisiste	querer — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::querer	
+quiso	querer — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::querer	
+quisimos	querer — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::querer	
+quisisteis	querer — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::querer	
+quisieron	querer — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::querer	
+vine	venir — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::venir	
+viniste	venir — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::venir	
+vino	venir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::venir	
+vinimos	venir — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::venir	
+vinisteis	venir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::venir	
+vinieron	venir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::venir	
+estuve	estar — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::estar	
+estuviste	estar — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::estar	
+estuvo	estar — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::estar	
+estuvimos	estar — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::estar	
+estuvisteis	estar — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::estar	
+estuvieron	estar — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::estar	
+pude	poder — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poder	
+pudiste	poder — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poder	
+pudo	poder — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poder	
+pudimos	poder — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poder	
+pudisteis	poder — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poder	
+pudieron	poder — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poder	
+puse	poner — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poner	
+pusiste	poner — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poner	
+puso	poner — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poner	
+pusimos	poner — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poner	
+pusisteis	poner — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poner	
+pusieron	poner — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::poner	
+supe	saber — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::saber	
+supiste	saber — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::saber	
+supo	saber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::saber	
+supimos	saber — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::saber	
+supisteis	saber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::saber	
+supieron	saber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::saber	
+tuve	tener — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::tener	
+tuviste	tener — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::tener	
+tuvo	tener — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::tener	
+tuvimos	tener — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::tener	
+tuvisteis	tener — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::tener	
+tuvieron	tener — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::tener	
+dije	decir — yo (I)	Contrasena::lessons::grammar_10_2 Contrasena::sections::decir	
+dijiste	decir — tú (you, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::decir	
+dijo	decir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::decir	
+dijimos	decir — nosotros/nosotras (we)	Contrasena::lessons::grammar_10_2 Contrasena::sections::decir	
+dijisteis	decir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::decir	
+dijeron	decir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_10_2 Contrasena::sections::decir	
+montaba	Montar — yo (I)	Contrasena::lessons::grammar_12_1 Contrasena::sections::montar	
+montabas	Montar — tú (you, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::montar	
+montaba	Montar — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::montar	
+montábamos	Montar — nosotros/nosotras (we)	Contrasena::lessons::grammar_12_1 Contrasena::sections::montar	
+montabais	Montar — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::montar	
+montaban	Montar — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::montar	
+protegía	Proteger — yo (I)	Contrasena::lessons::grammar_12_1 Contrasena::sections::proteger	
+protegías	Proteger — tú (you, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::proteger	
+protegía	Proteger — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::proteger	
+protegíamos	Proteger — nosotros/nosotras (we)	Contrasena::lessons::grammar_12_1 Contrasena::sections::proteger	
+protegíais	Proteger — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::proteger	
+protegían	Proteger — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::proteger	
+escribía	Escribir — yo (I)	Contrasena::lessons::grammar_12_1 Contrasena::sections::escribir	
+escribías	Escribir — tú (you, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::escribir	
+escribía	Escribir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::escribir	
+escribíamos	Escribir — nosotros/nosotras (we)	Contrasena::lessons::grammar_12_1 Contrasena::sections::escribir	
+escribíais	Escribir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::escribir	
+escribían	Escribir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::escribir	
+iba	ir — yo (I)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ir	
+era	ser — yo (I)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ser	
+veía	ver — yo (I)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ver	
+ibas	ir — tú (you, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ir	
+eras	ser — tú (you, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ser	
+veías	ver — tú (you, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ver	
+iba	ir — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ir	
+era	ser — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ser	
+veía	ver — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ver	
+íbamos	ir — nosotros/nosotras (we)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ir	
+éramos	ser — nosotros/nosotras (we)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ser	
+veíamos	ver — nosotros/nosotras (we)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ver	
+ibais	ir — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ir	
+erais	ser — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ser	
+veíais	ver — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ver	
+iban	ir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ir	
+eran	ser — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ser	
+veían	ver — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ver	
