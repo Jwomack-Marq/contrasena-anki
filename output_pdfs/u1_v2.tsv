@@ -1,7 +1,6 @@
 #separator:tab
 #html:false
 #tags column:3
-LOS NÚMEROS DEL 0 AL 20	NUMBERS 0-20	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 0	zero	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 1	one	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 2	two	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -23,7 +22,6 @@ LOS NÚMEROS DEL 0 AL 20	NUMBERS 0-20	Contrasena::lessons::u1_v2 Contrasena::sec
 18	eighteen	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 19	nineteen	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 20	twenty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 21 AL 39	NUMBERS 21–39	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 21	twenty-one	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 22	twenty-two	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 23	twenty-three	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -43,9 +41,8 @@ LOS NÚMEROS DEL 21 AL 39	NUMBERS 21–39	Contrasena::lessons::u1_v2 Contrasena:
 37	thirty-seven	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 38	thirty-eight	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 39	thirty-nine	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 10 AL 90	NUMBERS 10-90	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 10	ten	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-veinte	20	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+20	twenty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 30	thirty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 40	forty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 50	fifty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -53,7 +50,6 @@ veinte	20	Contrasena::lessons::u1_v2 Contrasena::sections::unknown
 70	seventy	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 80	eighty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 90	ninety	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 100 AL 900	NUMBERS 100-900	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 100	one hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 200	two hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 300	three hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -63,10 +59,9 @@ LOS NÚMEROS DEL 100 AL 900	NUMBERS 100-900	Contrasena::lessons::u1_v2 Contrasen
 700	seven hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 800	eight hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 900	nine hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 1.000 AL 10.000	NUMBERS 1,000-10,000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 1000	one thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 2000	two thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-tres mil	3000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+3000	three thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 4000	four thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 5000	five thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 6000	six thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -74,13 +69,12 @@ tres mil	3000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown
 8000	eight thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 9000	nine thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 10000	ten thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 10.000 A 2.000.000	NUMBERS 10,000-2,000,000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 10.000	ten thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 20.000	twenty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 30.000	thirty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 40.000	forty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-cincuenta mil	50.000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-sesenta mil	60.000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+50.000	fifty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+60.000	sixty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 70.000	seventy thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 80.000	eighty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 90.000	ninety thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	

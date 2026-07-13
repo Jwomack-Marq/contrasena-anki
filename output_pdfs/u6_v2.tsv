@@ -1,29 +1,29 @@
 #separator:tab
 #html:false
 #tags column:3
-alto/alta	tall	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-atlético/atlética	athletic	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-bajo/baja	short (height)	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-bonito/bonita	pretty	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-corto/corta	short (length)	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-débil	weak	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-delgado/delgada	thin	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-feo/fea	ugly	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-fuerte	strong	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-gordo/gorda (affectionate: gordito/gordita)	fat	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-grande	big	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-guapo/guapa	handsome/attractive	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-joven	young	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-largo/larga	long	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-mayor (form of respect)	older	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-menor	younger	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-moreno/morena	dark skinned / dark haired	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-las pecas	freckles	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-pelirrojo/pelirroja	redhead	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-pequeño/pequeña	small/little	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-rizado/rizada	curly	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-rubio/rubia	blonde	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-viejo/vieja	old	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
+alto/alta	tall	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+atlético/atlética	athletic	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+bajo/baja	short (height)	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+bonito/bonita	pretty	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+corto/corta	short (length)	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+débil	weak	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+delgado/delgada	thin	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+feo/fea	ugly	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+fuerte	strong	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+gordo/gorda (affectionate: gordito/gordita)	fat	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+grande	big	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+guapo/guapa	handsome/attractive	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+joven	young	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+largo/larga	long	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+mayor (form of respect)	older	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+menor	younger	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+moreno/morena	dark skinned / dark haired	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+las pecas	freckles	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+pelirrojo/pelirroja	redhead	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+pequeño/pequeña	small/little	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+rizado/rizada	curly	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+rubio/rubia	blonde	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+viejo/vieja	old	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
 contar (o>ue)	to tell	Contrasena::lessons::u6_v2 Contrasena::sections::para_hablar_de_las_personas	
 entender (e>ie)	to understand	Contrasena::lessons::u6_v2 Contrasena::sections::para_hablar_de_las_personas	
 parecerse a / parecerse a alguien	to look like / to look like someone	Contrasena::lessons::u6_v2 Contrasena::sections::para_hablar_de_las_personas	

@@ -14,17 +14,17 @@ el pañuelo	scarf / handkerchief	Contrasena::lessons::u11_v2 Contrasena::section
 la pulsera	bracelet	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
 el reloj	watch	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
 el sombrero	hat	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-LOS ESTILOS	Styles	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-ajustado / ajustada	tight	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-arreglado / arreglada	put together	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-arriesgado / arriesgada	daring	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-clásico / clásica	classic, conservative	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-cómodo / cómoda	comfortable	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-deportivo / deportiva	sporty	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-elegante	elegant	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-entallado / entallada	fitted	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-holgado / holgada	loose	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-informal	casual	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-profesional	professional	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-recto / recta	straight	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-relajado / relajada	relaxed	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
+ajustado / ajustada	tight	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+arreglado / arreglada	put together	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+arriesgado / arriesgada	daring	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+clásico / clásica	classic, conservative	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+cómodo / cómoda	comfortable	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+deportivo / deportiva	sporty	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+elegante	elegant	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+entallado / entallada	fitted	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+formal	formal	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+holgado / holgada	loose	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+informal	casual	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+profesional	professional	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+recto / recta	straight	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+relajado / relajada	relaxed	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	

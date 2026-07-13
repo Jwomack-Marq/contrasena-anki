@@ -6,7 +6,7 @@ la arquitectura	architecture	Contrasena::lessons::u2_v2 Contrasena::sections::lo
 el arte	art	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el derecho	law	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el español	Spanish	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la filosofía	philosophy	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la filosofìa	philosophy	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la historia	history	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 los idiomas	languages	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el inglés	English	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
@@ -14,22 +14,24 @@ la literatura	literature	Contrasena::lessons::u2_v2 Contrasena::sections::los_cu
 la música	music	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la pedagogía	pedagogy	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el periodismo	journalism	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-Las ciencias naturales y formales	Natural and Formal Sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+Las Ciencias Naturales y Formales	Natural and Formal Sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la biología	biology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 las ciencias naturales	natural sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la computación / la informática	computer science	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la física	physics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la matemática	mathematics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la matemática / las matemáticas	mathematics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la medicina	medicine	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la química	chemistry	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-Las ciencias sociales	Social Sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+Las Ciencias / Las Ciencias Políticas / Las Ciencias Sociales	Science / Political Science / Social Science	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la administración de empresas	business administration	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+las ciencias / las ciencias políticas / las ciencias sociales	science / political science / social science	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 las comunicaciones	communications / public relations	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la contabilidad	accounting	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la economía	economics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la geografía	geography	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la economìa	economics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la geografìa	geography	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el mercadeo	marketing	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la psicología	psychology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la sociología	sociology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la sociologìa	sociology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el curso	course	Contrasena::lessons::u2_v2 Contrasena::sections::para_hablar_de_los_cursos	
 el departamento	department	Contrasena::lessons::u2_v2 Contrasena::sections::para_hablar_de_los_cursos	
 el examen	exam	Contrasena::lessons::u2_v2 Contrasena::sections::para_hablar_de_los_cursos	

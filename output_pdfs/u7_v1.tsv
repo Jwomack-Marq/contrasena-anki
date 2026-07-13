@@ -7,25 +7,24 @@ montar a caballo	to ride horseback	Contrasena::lessons::u7_v1 Contrasena::sectio
 nadar	to swim	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
 pasear en bicicleta	to ride a bike	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
 patinar / patina en línea / patinar sobre hielo	to skate / to rollerblade, to in-line skate / to ice-skate	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-JUGAR (U>UE) AL…	TO PLAY…	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el básquetbol	basketball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el béisbol	baseball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el fútbol	soccer	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el fútbol americano	American football	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el golf	golf	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el hockey	hockey	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el tenis	tennis	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el vóleibol	volleyball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-PRACTICAR/HACER…	TO PRACTICE/TO DO…	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-la caminata	walking/hiking	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el ciclismo	cycling	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el esquí acuático	water skiing	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-la natación	swimming	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el surf	surfing	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el yoga	yoga	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el básquetbol	basketball	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el béisbol	baseball	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el fútbol	soccer	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el fútbol americano	American football	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el golf	golf	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el hockey	hockey	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el tenis	tennis	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el vóleibol	volleyball	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+la caminata	walking/hiking	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el ciclismo	cycling	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el esquí acuático	water skiing	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+la natación	swimming	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el surf	surfing	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el yoga	yoga	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
 empatar	to tie	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
 ganar	to win	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
 perder (e>ie)	to lose	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
+el aficionado / la aficionada / ser un aficionado / ser una aficionada	sports fan / to be a sports fan	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
 el atleta/la atleta	athlete	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
 el corredor/la corredora	runner	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
 el entrenador/la entrenadora	trainer	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	

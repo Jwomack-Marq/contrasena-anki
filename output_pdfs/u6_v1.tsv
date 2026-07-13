@@ -1,29 +1,32 @@
 #separator:tab
 #html:false
 #tags column:3
-el abuelo / la abuela	grandfather / grandmother	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el esposo / la esposa	husband / wife	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el gato / la gata	cat	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el gemelo / la gemela	twin	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el hermanastro / la hermanastra	step-brother / step-sister	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el hermano / la hermana	brother / sister	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el hijastro / la hijastra	step-son / step-daughter	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-los hijos / las hijas	sons / daughters	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-la madrastra	stepmother	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-la madre / la mamá	mother	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el medio hermano / la media hermana	half-brother / half-sister	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el nieto / la nieta	grandson / granddaughter	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el niño / la niña	boy / girl	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el padrastro	stepfather	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el padre / el papá	father	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-los padres	parents	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-los parientes	relatives	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el perro / la perra	dog	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el primo / la prima	cousin	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-uncle/aunt	el tío / la tía	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
+el abuelo / la abuela	grandfather / grandmother	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el esposo / la esposa	husband / wife	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el gato / la gata	cat	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el gemelo / la gemela	twin	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el hermanastro / la hermanastra	step-brother / step-sister	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el hermano / la hermana	brother / sister	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el hijastro / la hijastra	step-son / step-daughter	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+los hijos / las hijas	sons / daughters	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+la madrastra	stepmother	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+la madre / la mamá	mother	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el medio hermano / la media hermana	half-brother / half-sister	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el nieto / la nieta	grandson / granddaughter	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el niño / la niña	boy / girl	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el padrastro	stepfather	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el padre / el papá	father	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+los padres	parents	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+los parientes	relatives	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el perro / la perra	dog	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el primo / la prima	cousin	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el tío / la tía	uncle/aunt	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
 casado / casada / estar casado / estar casada	married / to be married	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
+divorciado / divorciada / estar divorciado / estar divorciada	divorced / to be divorced	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 muerto / muerta / estar muerto / estar muerta	dead / to be dead	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
+novio / novia / estar de novio / estar de novia	boyfriend / girlfriend / to have a boyfriend / to have a girlfriend (romantic interest)	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 pareja / estar en pareja	partner / to have a partner	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
+separado / separada / estar separado / estar separada	separated / to be separated	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 solo / sola	alone / to be alone	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 soltero / soltera / estar soltero / estar soltera	single / to be single	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 el hijo adoptado / la hija adoptada	adopted son / daughter	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	

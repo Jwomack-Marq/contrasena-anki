@@ -1,3 +1,9 @@
+# Contraseña vocabulary — static ADA HTML pages (one URL per line).
+# This is the authoritative vocab source: clean two-column Spanish|English tables,
+# real UTF-8 accents, correct column order. It replaces the older PDF extraction
+# (grab_pdfs.mjs), which had reversed columns, section headers leaked as cards,
+# and split/truncated entries. Covers all 12 units, both parts.
+# Run: node grab_vocab_html.mjs --urls vocab_html_urls.txt --out ./output_pdfs
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Contrasena_Vocabulario_01-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Contrasena_Vocabulario_01-2.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u2/Contrasena_Vocabulario_02-1.html

@@ -23,12 +23,12 @@ comprar	to buy	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios
 ganar dinero	to earn money	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
 invertir	to invest	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
 vender	to sell	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el arquitecto/la arquitecta	architect	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el científico/la científica	scientist	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el diseñador/la diseñadora	designer	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el ecologista/la ecologista	ecologist	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el ingeniero/la ingeniera	engineer	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el programador de computación/la programadora	computer programmer	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-analizar	analyze	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-diseñar	design	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-programar	program	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
+el arquitecto/la arquitecta	architect	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el científico/la científica	scientist	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el diseñador/la diseñadora	designer	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el ecologista/la ecologista	ecologist	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el ingeniero/la ingeniera	engineer	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el programador de computación/la programadora de computación	computer programmer	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+analizar	analyze	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+diseñar	design	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+programar	program	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	

@@ -4,6 +4,7 @@
 el desayuno	breakfast	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 el almuerzo	lunch	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 la merienda	snack	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
+la comida / la comida principal	meal / main meal / dinner (served midday in many Hispanic countries)	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 la cena	supper	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 la cuchara	spoon	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
 el cuchillo	knife	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
@@ -27,8 +28,7 @@ crudo/cruda	raw	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_la
 frito/frita	fried	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
 vegano/vegana	vegan	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
 vegetariano/vegetariana	vegetarian	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
-servir (e>i) frío / servir (e>i) caliente / servir (e>i) a	to serve cold / to serve hot / to serve room	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
-temperatura ambiente	temperature	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+servir (e>i) frío / servir (e>i) caliente / servir (e>i) a temperatura ambiente	to serve cold / to serve hot / to serve room temperature	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
 agridulce	sweet and sour, bittersweet	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
 agrio/agria, amargo/amarga	bitter	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
 casero/casera	homemade	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	

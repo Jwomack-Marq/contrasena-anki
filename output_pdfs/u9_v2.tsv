@@ -1,44 +1,48 @@
 #separator:tab
 #html:false
 #tags column:3
-el bienestar	well-being	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-el examen físico	physical exam	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-el médico/la médica	doctor	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-la sala de urgencias / la	emergency room /	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-sala de espera	waiting room	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-la anorexia nervosa	anorexia nervosa	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la ansiedad	anxiety	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la bulimia	bulimia	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la falta de atención	attention deficit	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la gripe	flu	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la herida	wound	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la hiperactividad	hyperactivity	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la presión alta / la presión baja	high blood pressure /low blood pressure	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-el resfriado	cold	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-tener fiebre	to have a fever	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-tener dolor de…	to have a pain/ache in…	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la tos	cough	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-el trastorno / el trastorno psicológico	disorder / psychological disorder	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-grave	serious	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-sano/sana	healthy	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-roto/rota	broken	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la curita / la tirita / la venda	bandaid / bandaid (Spain) / bandage	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
+el bienestar	well-being	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+el examen físico	physical exam	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+el médico/la médica	doctor	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+la sala de urgencias / la sala de espera	emergency room / waiting room	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+la alergia / ser alérgico / ser alérgica	allergy / to be allergic	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la anorexia nervosa	anorexia nervosa	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la ansiedad	anxiety	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la bulimia	bulimia	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la cita/la cita médica	appointment/medical appointment	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la congestión	congestion	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la depresión	depression	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+estar enfermo / estar enferma	to be sick	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la falta de atención	attention deficit	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la gripe	flu	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la herida	wound	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la hiperactividad	hyperactivity	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la presión alta / la presión baja	high blood pressure /low blood pressure	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+el resfriado	cold	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+tener fiebre	to have a fever	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+tener dolor de…	to have a pain/ache in…	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la tos	cough	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+el trastorno / el trastorno psicológico	disorder / psychological disorder	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+grave	serious	Contrasena::lessons::u9_v2 Contrasena::sections::para_describir_estados	
+sano/sana	healthy	Contrasena::lessons::u9_v2 Contrasena::sections::para_describir_estados	
+roto/rota	broken	Contrasena::lessons::u9_v2 Contrasena::sections::para_describir_estados	
+la curita/la tirita/la venda(Spain)] / la venda	bandaid / bandaid (Spain) / bandage	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 el jarabe	syrup	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 el medicamento	medication, medicine	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la pastilla	pill	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la receta	prescription	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la terapia / la psicoterapia	therapy/ psychotherapy	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la vacuna	immunization / vaccine	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-adelgazar	to lose weight	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-cuidarse	to take care of oneself	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-descansar	to rest	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-engordar	to gain weight	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-evitar	to avoid	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-lavarse las manos	to wash one's hands	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-mantener la buena salud	to maintain good health	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-mantenerse (e:ie) en forma	to stay in good shape	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-preocuparse / preocuparse por	to worry / to worry about	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-to prevent an illness	prevenir una enfermedad	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-seguir (e:i) las recomendaciones	to follow the recommendations	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-tratar / tratar de (+ infinitive)	to try / to try to do something	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-vacunarse / ponerse una vacuna	to get vaccinated	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
+adelgazar	to lose weight	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+cuidarse	to take care of oneself	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+descansar	to rest	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+engordar	to gain weight	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+evitar	to avoid	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+lavarse las manos	to wash one's hands	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+mantener (e>ie) la buena salud	to maintain good health	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+mantenerse (e>ie) en forma	to stay in good shape	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+preocuparse / preocuparse por	to worry / to worry about	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+prevenir (e>ie) una enfermedad	to prevent an illness	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+seguir (e>i) las recomendaciones	to follow the recommendations	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+tratar / tratar de (+ infinitive)	to try / to try to do something	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+vacunarse / ponerse una vacuna	to get vaccinated	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	

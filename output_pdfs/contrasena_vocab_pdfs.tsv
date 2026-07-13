@@ -4,57 +4,55 @@
 el calendario de eventos	calendar of events	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
 la cronología	timeline	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
 el estado	status	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
-la foto / la fotografía	picture/photograph	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
+la foto / la fotografía	picture / photograph	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
 el perfil	profile	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
 la red social	the social network	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
 el video	video	Contrasena::lessons::u1_v1 Contrasena::sections::los_perfiles	
+activo / activa	active	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+atlético / atlética	athletic	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+aventurero / aventurera	adventurous	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+cómico / cómica	funny, comical	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+estudioso / estudiosa	studious	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+generoso / generosa	generous	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+inteligente	intelligent	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+sedentario / sedentaria	sedentary	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+tímido / tímida	timid	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
+trabajador / trabajadora	hard-working	Contrasena::lessons::u1_v1 Contrasena::sections::yo_soy	
 actualizar	to update	Contrasena::lessons::u1_v1 Contrasena::sections::las_acciones	
-to create	crear	Contrasena::lessons::u1_v1 Contrasena::sections::las_acciones	
+crear	to create	Contrasena::lessons::u1_v1 Contrasena::sections::las_acciones	
 editar	to edit	Contrasena::lessons::u1_v1 Contrasena::sections::las_acciones	
 mandar un mensaje / mandar un mensaje de texto	to send a message / to send a text message	Contrasena::lessons::u1_v1 Contrasena::sections::las_acciones	
+aburrido / aburrida	bored	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
+cansado / cansada	tired	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
+contento / contenta	happy	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
+emocionado / emocionada	excited, emotional	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
+enojado / enojada	angry	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
+nervioso / nerviosa	nervous	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
+ocupado / ocupada	busy, occupied	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
+relajado / relajada	relaxed	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_estoy	
 el apellido / los apellidos	last name / last names	Contrasena::lessons::u1_v1 Contrasena::sections::la_informacion_basica	
 la dirección de correo electrónico / el e-mail	email address	Contrasena::lessons::u1_v1 Contrasena::sections::la_informacion_basica	
-age	la edad	Contrasena::lessons::u1_v1 Contrasena::sections::la_informacion_basica	
+la edad	age	Contrasena::lessons::u1_v1 Contrasena::sections::la_informacion_basica	
 el nombre	first name	Contrasena::lessons::u1_v1 Contrasena::sections::la_informacion_basica	
 el teléfono / el número de teléfono	telephone / telephone number	Contrasena::lessons::u1_v1 Contrasena::sections::la_informacion_basica	
+(...) años	(...) years old	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+calor	hot	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+frío	cold	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+hambre	hungry	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+miedo	scared	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+sed	thirsty	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+sueño	sleepy	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+vergüenza	embarrassed	Contrasena::lessons::u1_v1 Contrasena::sections::ahora_tengo	
+el apellido / los apellidos	last name / last names	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
+la dirección de correo electrónico / el e-mail	email address	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
 la ciudad	city	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
 el cumpleaños	birthday	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
 la escuela secundaria	high school	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
 el estado	state	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-birthdate	la fecha de nacimiento	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
+la fecha de nacimiento	birthdate	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
 el país	country	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-work	el trabajo	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-university/college	la universidad	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-YO SOY…	I AM…	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-activo/activa	active	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-atlético/atlética	athletic	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-aventurero/aventurera	adventurous	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-cómico/cómica	funny, comical	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-estudioso/estudiosa	studious	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-generoso/generosa	generous	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-inteligente	intelligent	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-sedentario/sedentaria	sedentary	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-tímido/tímida	timid	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-trabajador/trabajadora	hard-working	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-AHORA ESTOY…	RIGHT NOW I AM…	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-aburrido / aburrida	bored	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-cansado / cansada	tired	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-contento / contenta	happy	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-emocionado / emocionada	excited, emotional	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-enojado / enojada	angry	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-nervioso / nerviosa	nervous	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-ocupado / ocupada	busy, occupied	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-relajado / relajada	relaxed	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-AHORA TENGO…	RIGHT NOW I’M…	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-(…) años	(…) years old	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-calor	hot	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-frío	cold	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-hambre	hungry	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-scared	miedo	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-sleepy	sueño	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-sed	thirsty	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-vergüenza	embarrassed	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
-LOS NÚMEROS DEL 0 AL 20	NUMBERS 0-20	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+el trabajo	work	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
+la universidad	university / college	Contrasena::lessons::u1_v1 Contrasena::sections::la_biografia	
 0	zero	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 1	one	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 2	two	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -76,7 +74,6 @@ LOS NÚMEROS DEL 0 AL 20	NUMBERS 0-20	Contrasena::lessons::u1_v2 Contrasena::sec
 18	eighteen	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 19	nineteen	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 20	twenty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 21 AL 39	NUMBERS 21–39	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 21	twenty-one	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 22	twenty-two	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 23	twenty-three	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -96,9 +93,8 @@ LOS NÚMEROS DEL 21 AL 39	NUMBERS 21–39	Contrasena::lessons::u1_v2 Contrasena:
 37	thirty-seven	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 38	thirty-eight	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 39	thirty-nine	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 10 AL 90	NUMBERS 10-90	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 10	ten	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-veinte	20	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+20	twenty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 30	thirty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 40	forty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 50	fifty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -106,7 +102,6 @@ veinte	20	Contrasena::lessons::u1_v2 Contrasena::sections::unknown
 70	seventy	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 80	eighty	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 90	ninety	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 100 AL 900	NUMBERS 100-900	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 100	one hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 200	two hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 300	three hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -116,10 +111,9 @@ LOS NÚMEROS DEL 100 AL 900	NUMBERS 100-900	Contrasena::lessons::u1_v2 Contrasen
 700	seven hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 800	eight hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 900	nine hundred	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 1.000 AL 10.000	NUMBERS 1,000-10,000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 1000	one thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 2000	two thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-tres mil	3000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+3000	three thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 4000	four thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 5000	five thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 6000	six thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -127,13 +121,12 @@ tres mil	3000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown
 8000	eight thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 9000	nine thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 10000	ten thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-LOS NÚMEROS DEL 10.000 A 2.000.000	NUMBERS 10,000-2,000,000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 10.000	ten thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 20.000	twenty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 30.000	thirty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 40.000	forty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-cincuenta mil	50.000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
-sesenta mil	60.000	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+50.000	fifty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
+60.000	sixty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 70.000	seventy thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 80.000	eighty thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
 90.000	ninety thousand	Contrasena::lessons::u1_v2 Contrasena::sections::unknown	
@@ -159,6 +152,7 @@ Regular. / Así así.	OK.	Contrasena::lessons::u2_v1 Contrasena::sections::las_p
 Soy de…	I'm from…	Contrasena::lessons::u2_v1 Contrasena::sections::las_preguntas_y_respuestas	
 ¿Qué estudia (usted)? / ¿Qué estudias (tú)?	What do you study? (formal / informal)	Contrasena::lessons::u2_v1 Contrasena::sections::las_preguntas_y_respuestas	
 Estudio…	I study…	Contrasena::lessons::u2_v1 Contrasena::sections::las_preguntas_y_respuestas	
+¿Cuál es su especialización? / ¿Cuál es tu especialización?	What's your major? (formal / informal)	Contrasena::lessons::u2_v1 Contrasena::sections::las_preguntas_y_respuestas	
 Mi especialización es…	My major is…	Contrasena::lessons::u2_v1 Contrasena::sections::las_preguntas_y_respuestas	
 No sé.	I don't know.	Contrasena::lessons::u2_v1 Contrasena::sections::las_preguntas_y_respuestas	
 ¿Y usted? / ¿Y tú?	And you? (formal / informal)	Contrasena::lessons::u2_v1 Contrasena::sections::las_preguntas_y_respuestas	
@@ -170,7 +164,7 @@ la arquitectura	architecture	Contrasena::lessons::u2_v2 Contrasena::sections::lo
 el arte	art	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el derecho	law	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el español	Spanish	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la filosofía	philosophy	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la filosofìa	philosophy	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la historia	history	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 los idiomas	languages	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el inglés	English	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
@@ -178,22 +172,24 @@ la literatura	literature	Contrasena::lessons::u2_v2 Contrasena::sections::los_cu
 la música	music	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la pedagogía	pedagogy	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el periodismo	journalism	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-Las ciencias naturales y formales	Natural and Formal Sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+Las Ciencias Naturales y Formales	Natural and Formal Sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la biología	biology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 las ciencias naturales	natural sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la computación / la informática	computer science	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la física	physics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la matemática	mathematics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la matemática / las matemáticas	mathematics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la medicina	medicine	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la química	chemistry	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-Las ciencias sociales	Social Sciences	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+Las Ciencias / Las Ciencias Políticas / Las Ciencias Sociales	Science / Political Science / Social Science	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la administración de empresas	business administration	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+las ciencias / las ciencias políticas / las ciencias sociales	science / political science / social science	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 las comunicaciones	communications / public relations	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la contabilidad	accounting	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la economía	economics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la geografía	geography	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la economìa	economics	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la geografìa	geography	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el mercadeo	marketing	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 la psicología	psychology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
-la sociología	sociology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
+la sociologìa	sociology	Contrasena::lessons::u2_v2 Contrasena::sections::los_cursos_y_las_especializaciones	
 el curso	course	Contrasena::lessons::u2_v2 Contrasena::sections::para_hablar_de_los_cursos	
 el departamento	department	Contrasena::lessons::u2_v2 Contrasena::sections::para_hablar_de_los_cursos	
 el examen	exam	Contrasena::lessons::u2_v2 Contrasena::sections::para_hablar_de_los_cursos	
@@ -244,10 +240,8 @@ estudiar	to study	Contrasena::lessons::u3_v2 Contrasena::sections::otras_activid
 hablar	to speak / to talk	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 hacer ejercicio	to do exercise	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 hacer una videollamada	to make a videocall	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-ir / ir al gimnasio / ir al picnic / ir al cine / ir de	to go / to go to the gym / to go on a picnic / to go to	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-compras	the movies / to go shopping	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-jugar al... / jugar al videojuego / jugar al tenis / jugar	to play... / to play a videogame / to play tennis / to	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-al fútbol	play soccer	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+ir / ir al gimnasio / ir al picnic / ir al cine / ir de compras	to go / to go to the gym / to go on a picnic / to go to the movies / to go shopping	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+jugar al... / jugar al videojuego / jugar al tenis / jugar al fútbol	to play... / to play a videogame / to play tennis / to play soccer	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 lavar / lavar la ropa	to wash / to wash clothes	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 limpiar / limpiar la casa	to clean / to clean the house	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 llegar	to arrive	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
@@ -263,6 +257,7 @@ ver	to see	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades
 ¿Qué te parece?	What do you think?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 ¿Qué vas a hacer...?	What are you doing? / What are you going to do?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 Tengo que... [inf. tener que]	I have to… [inf. to have to]	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
+Tengo ganas de… / Tengo ganas de algo [inf. tener ganas de]	I feel like… / I feel like doing something [inf. to feel like]	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 ¿Tienes planes?	Do you have plans?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 ¡Ay, no!	Oh no!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	
 ¡Buena idea!	Good idea!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	
@@ -275,25 +270,25 @@ por la noche	at night	Contrasena::lessons::u3_v2 Contrasena::sections::expresion
 tarde	late / afternoon	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
 temprano	early	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
 todos los días	every day	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	
-el apartamento	the apartment	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el aula / el aula virtual	the classroom / the virtual classroom	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la biblioteca	the library	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la cafetería	the cafeteria	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el campus / el campus virtual	the campus / the virtual campus	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la casa	the house	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el centro estudiantil	the student center	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la clase	the class	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el compañero de cuarto/la compañera de cuarto	the roommate	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el cuarto	the room	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el edificio	the building	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el gimnasio	the gym	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el laboratorio	the lab	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la librería	the bookstore	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la oficina	the office	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la residencia estudiantil	the dormitory	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la reunión	the meeting	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-el salón de clase	the classroom	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
-la tienda/la tienda virtual	the store/the online store	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y	
+el apartamento	the apartment	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el aula / el aula virtual	the classroom / the virtual classroom	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la biblioteca	the library	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la cafetería	the cafeteria	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el campus / el campus virtual	the campus / the virtual campus	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la casa	the house	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el centro estudiantil	the student center	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la clase	the class	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el compañero de cuarto/la compañera de cuarto	the roommate	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el cuarto	the room	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el edificio	the building	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el gimnasio	the gym	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el laboratorio	the lab	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la librería	the bookstore	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la oficina	the office	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la residencia estudiantil	the dormitory	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la reunión	the meeting	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+el salón de clase	the classroom	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
+la tienda/la tienda virtual	the store/the online store	Contrasena::lessons::u4_v1 Contrasena::sections::las_personas_y_los_lugares	
 el bolígrafo, la pluma	the pen	Contrasena::lessons::u4_v1 Contrasena::sections::en_el_salon_de_clase	
 el cuaderno	the notebook	Contrasena::lessons::u4_v1 Contrasena::sections::en_el_salon_de_clase	
 el escritorio	the desk	Contrasena::lessons::u4_v1 Contrasena::sections::en_el_salon_de_clase	
@@ -335,38 +330,38 @@ tomar / tomar una clase	to take / to take a class	Contrasena::lessons::u4_v1 Con
 gustar	to be pleasing to someone	Contrasena::lessons::u4_v2 Contrasena::sections::gustos_likes_dislikes	
 Me gusta…/Me gustan…	I like… (singular/plural)	Contrasena::lessons::u4_v2 Contrasena::sections::gustos_likes_dislikes	
 No me gusta…/No me gustan...	I don’t like… (singular/plural)	Contrasena::lessons::u4_v2 Contrasena::sections::gustos_likes_dislikes	
-abierto/abierta	open	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-alegre	happy	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-amable	friendly	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-bondadoso/bondadosa	kind/good	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-bueno/buena	good	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-capaz	capable	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-cariñoso/cariñosa	caring	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-chistoso/chistosa	funny	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-compasivo/compasiva	compassionate	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-comprensivo/comprensiva	understanding	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-creativo/creativa	creative	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-entusiasta	enthusiastic	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-fácil	easy	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-fiel	faithful	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-gracioso/graciosa	funny	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-honesto/honesta	honest	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-imaginativo/imaginativa	imaginative	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-inteligente	intelligent	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-leal	loyal	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-listo/lista	bright, smart	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-mejor	best	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-nuevo/nueva	new	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-paciente	patient	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-pacífico/pacífica	peaceful	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-positivo/positiva	positive	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-responsable	responsible	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-sensible	sensitive	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-simpático/simpática	kind, nice	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-talentoso/talentosa	talented	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-tranquilo/tranquila	calm, quiet	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-único/única	unique	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
-valiente	brave	Contrasena::lessons::u5_v1 Contrasena::sections::positive_qualities	
+abierto/abierta	open	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+alegre	happy	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+amable	friendly	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+bondadoso/bondadosa	kind/good	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+bueno/buena	good	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+capaz	capable	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+cariñoso/cariñosa	caring	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+chistoso/chistosa	funny	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+compasivo/compasiva	compassionate	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+comprensivo/comprensiva	understanding	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+creativo/creativa	creative	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+entusiasta	enthusiastic	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+fácil	easy	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+fiel	faithful	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+gracioso/graciosa	funny	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+honesto/honesta	honest	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+imaginativo/imaginativa	imaginative	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+inteligente	intelligent	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+leal	loyal	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+listo/lista	bright, smart	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+mejor	best	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+nuevo/nueva	new	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+paciente	patient	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+pacífico/pacífica	peaceful	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+positivo/positiva	positive	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+responsable	responsible	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+sensible	sensitive	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+simpático/simpática	kind, nice	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+talentoso/talentosa	talented	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+tranquilo/tranquila	calm, quiet	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+único/única	unique	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
+valiente	brave	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_positivas	
 aburrido/aburrida	boring	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_negativas	
 cerrado/cerrada	closed; close-minded	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_negativas	
 egoísta	selfish	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_negativas	
@@ -375,86 +370,89 @@ insensible	insensitive	Contrasena::lessons::u5_v1 Contrasena::sections::cualidad
 malo/mala	bad	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_negativas	
 nervioso/nerviosa	nervous	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_negativas	
 triste	sad	Contrasena::lessons::u5_v1 Contrasena::sections::cualidades_negativas	
-acompañar	to accompany	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-admirar	to admire	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-apoyar	to support	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-ayudar	to help	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-comer	to eat	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-compartir	to share	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-comprender	to understand	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-conocer	to know	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-crear	to create	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-creer	to believe	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-cumplir	to complete, finish	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-escoger	to choose	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-escribir	to write	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-exigir	to demand	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-insistir / insistir en	to insist / to insist on	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-merecer	to deserve	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-nominar	to nominate	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-permitir	to allow	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-preservar	to preserve	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-recibir	to receive	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-resolver	to resolve	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-saber	to know	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
-vivir	to live	Contrasena::lessons::u5_v2 Contrasena::sections::to_talk_about_admired_people	
+acompañar	to accompany	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+admirar	to admire	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+apoyar	to support	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+ayudar	to help	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+comer	to eat	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+compartir	to share	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+comprender	to understand	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+conocer	to know	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+crear	to create	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+creer	to believe	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+cumplir	to complete, finish	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+escoger	to choose	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+escribir	to write	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+exigir	to demand	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+insistir / insistir en	to insist / to insist on	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+merecer	to deserve	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+nominar	to nominate	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+permitir	to allow	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+preservar	to preserve	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+recibir	to receive	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+resolver	to resolve	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+saber	to know	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
+vivir	to live	Contrasena::lessons::u5_v2 Contrasena::sections::para_hablar_de_personas_admiradas	
 Querido/Querida:	Dear,	Contrasena::lessons::u5_v2 Contrasena::sections::expresiones_para_cartas_formales	
 Estimado/Estimada:	Dear, (formal; lit. “Esteemed,”)	Contrasena::lessons::u5_v2 Contrasena::sections::expresiones_para_cartas_formales	
 Por la presente, quisiera nominar a...	Herein I'd like to nominate...	Contrasena::lessons::u5_v2 Contrasena::sections::expresiones_para_cartas_formales	
 Quedo a su disposición para...	Please feel free to contact me should you...	Contrasena::lessons::u5_v2 Contrasena::sections::expresiones_para_cartas_formales	
 Atentamente,	Sincerely,	Contrasena::lessons::u5_v2 Contrasena::sections::expresiones_para_cartas_formales	
 Saludos cordiales,	Best regards,	Contrasena::lessons::u5_v2 Contrasena::sections::expresiones_para_cartas_formales	
-el abuelo / la abuela	grandfather / grandmother	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el esposo / la esposa	husband / wife	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el gato / la gata	cat	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el gemelo / la gemela	twin	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el hermanastro / la hermanastra	step-brother / step-sister	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el hermano / la hermana	brother / sister	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el hijastro / la hijastra	step-son / step-daughter	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-los hijos / las hijas	sons / daughters	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-la madrastra	stepmother	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-la madre / la mamá	mother	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el medio hermano / la media hermana	half-brother / half-sister	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el nieto / la nieta	grandson / granddaughter	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el niño / la niña	boy / girl	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el padrastro	stepfather	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el padre / el papá	father	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-los padres	parents	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-los parientes	relatives	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el perro / la perra	dog	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-el primo / la prima	cousin	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
-uncle/aunt	el tío / la tía	Contrasena::lessons::u6_v1 Contrasena::sections::family_members	
+el abuelo / la abuela	grandfather / grandmother	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el esposo / la esposa	husband / wife	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el gato / la gata	cat	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el gemelo / la gemela	twin	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el hermanastro / la hermanastra	step-brother / step-sister	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el hermano / la hermana	brother / sister	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el hijastro / la hijastra	step-son / step-daughter	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+los hijos / las hijas	sons / daughters	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+la madrastra	stepmother	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+la madre / la mamá	mother	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el medio hermano / la media hermana	half-brother / half-sister	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el nieto / la nieta	grandson / granddaughter	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el niño / la niña	boy / girl	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el padrastro	stepfather	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el padre / el papá	father	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+los padres	parents	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+los parientes	relatives	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el perro / la perra	dog	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el primo / la prima	cousin	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
+el tío / la tía	uncle/aunt	Contrasena::lessons::u6_v1 Contrasena::sections::los_miembros_de_la_familia	
 casado / casada / estar casado / estar casada	married / to be married	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
+divorciado / divorciada / estar divorciado / estar divorciada	divorced / to be divorced	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 muerto / muerta / estar muerto / estar muerta	dead / to be dead	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
+novio / novia / estar de novio / estar de novia	boyfriend / girlfriend / to have a boyfriend / to have a girlfriend (romantic interest)	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 pareja / estar en pareja	partner / to have a partner	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
+separado / separada / estar separado / estar separada	separated / to be separated	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 solo / sola	alone / to be alone	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 soltero / soltera / estar soltero / estar soltera	single / to be single	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 el hijo adoptado / la hija adoptada	adopted son / daughter	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 el matrimonio igualitario	same-sex marriage	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
 la unión legal / la unión civil	legal union / civil union	Contrasena::lessons::u6_v1 Contrasena::sections::los_estados	
-alto/alta	tall	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-atlético/atlética	athletic	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-bajo/baja	short (height)	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-bonito/bonita	pretty	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-corto/corta	short (length)	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-débil	weak	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-delgado/delgada	thin	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-feo/fea	ugly	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-fuerte	strong	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-gordo/gorda (affectionate: gordito/gordita)	fat	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-grande	big	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-guapo/guapa	handsome/attractive	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-joven	young	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-largo/larga	long	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-mayor (form of respect)	older	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-menor	younger	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-moreno/morena	dark skinned / dark haired	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-las pecas	freckles	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-pelirrojo/pelirroja	redhead	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-pequeño/pequeña	small/little	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-rizado/rizada	curly	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-rubio/rubia	blonde	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
-viejo/vieja	old	Contrasena::lessons::u6_v2 Contrasena::sections::physical_characteristics	
+alto/alta	tall	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+atlético/atlética	athletic	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+bajo/baja	short (height)	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+bonito/bonita	pretty	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+corto/corta	short (length)	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+débil	weak	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+delgado/delgada	thin	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+feo/fea	ugly	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+fuerte	strong	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+gordo/gorda (affectionate: gordito/gordita)	fat	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+grande	big	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+guapo/guapa	handsome/attractive	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+joven	young	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+largo/larga	long	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+mayor (form of respect)	older	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+menor	younger	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+moreno/morena	dark skinned / dark haired	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+las pecas	freckles	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+pelirrojo/pelirroja	redhead	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+pequeño/pequeña	small/little	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+rizado/rizada	curly	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+rubio/rubia	blonde	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
+viejo/vieja	old	Contrasena::lessons::u6_v2 Contrasena::sections::las_caracteristicas_fisicas	
 contar (o>ue)	to tell	Contrasena::lessons::u6_v2 Contrasena::sections::para_hablar_de_las_personas	
 entender (e>ie)	to understand	Contrasena::lessons::u6_v2 Contrasena::sections::para_hablar_de_las_personas	
 parecerse a / parecerse a alguien	to look like / to look like someone	Contrasena::lessons::u6_v2 Contrasena::sections::para_hablar_de_las_personas	
@@ -469,25 +467,24 @@ montar a caballo	to ride horseback	Contrasena::lessons::u7_v1 Contrasena::sectio
 nadar	to swim	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
 pasear en bicicleta	to ride a bike	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
 patinar / patina en línea / patinar sobre hielo	to skate / to rollerblade, to in-line skate / to ice-skate	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-JUGAR (U>UE) AL…	TO PLAY…	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el básquetbol	basketball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el béisbol	baseball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el fútbol	soccer	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el fútbol americano	American football	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el golf	golf	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el hockey	hockey	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el tenis	tennis	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el vóleibol	volleyball	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-PRACTICAR/HACER…	TO PRACTICE/TO DO…	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-la caminata	walking/hiking	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el ciclismo	cycling	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el esquí acuático	water skiing	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-la natación	swimming	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el surf	surfing	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
-el yoga	yoga	Contrasena::lessons::u7_v1 Contrasena::sections::las_actividades_y_los_deportes	
+el básquetbol	basketball	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el béisbol	baseball	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el fútbol	soccer	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el fútbol americano	American football	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el golf	golf	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el hockey	hockey	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el tenis	tennis	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+el vóleibol	volleyball	Contrasena::lessons::u7_v1 Contrasena::sections::jugar_u_ue_al	
+la caminata	walking/hiking	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el ciclismo	cycling	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el esquí acuático	water skiing	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+la natación	swimming	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el surf	surfing	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
+el yoga	yoga	Contrasena::lessons::u7_v1 Contrasena::sections::practicar_hacer	
 empatar	to tie	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
 ganar	to win	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
 perder (e>ie)	to lose	Contrasena::lessons::u7_v1 Contrasena::sections::los_resultados	
+el aficionado / la aficionada / ser un aficionado / ser una aficionada	sports fan / to be a sports fan	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
 el atleta/la atleta	athlete	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
 el corredor/la corredora	runner	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
 el entrenador/la entrenadora	trainer	Contrasena::lessons::u7_v1 Contrasena::sections::las_personas	
@@ -560,6 +557,7 @@ el vinagre	vinegar	Contrasena::lessons::u8_v1 Contrasena::sections::los_condimen
 el desayuno	breakfast	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 el almuerzo	lunch	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 la merienda	snack	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
+la comida / la comida principal	meal / main meal / dinner (served midday in many Hispanic countries)	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 la cena	supper	Contrasena::lessons::u8_v2 Contrasena::sections::las_comidas	
 la cuchara	spoon	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
 el cuchillo	knife	Contrasena::lessons::u8_v2 Contrasena::sections::los_utensilios	
@@ -583,8 +581,7 @@ crudo/cruda	raw	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_la
 frito/frita	fried	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
 vegano/vegana	vegan	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
 vegetariano/vegetariana	vegetarian	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
-servir (e>i) frío / servir (e>i) caliente / servir (e>i) a	to serve cold / to serve hot / to serve room	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
-temperatura ambiente	temperature	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
+servir (e>i) frío / servir (e>i) caliente / servir (e>i) a temperatura ambiente	to serve cold / to serve hot / to serve room temperature	Contrasena::lessons::u8_v2 Contrasena::sections::los_platos_y_las_preparaciones	
 agridulce	sweet and sour, bittersweet	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
 agrio/agria, amargo/amarga	bitter	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
 casero/casera	homemade	Contrasena::lessons::u8_v2 Contrasena::sections::para_describir_las_comidas	
@@ -618,47 +615,51 @@ el corazón	heart	Contrasena::lessons::u9_v1 Contrasena::sections::las_partes_de
 el hueso	bone	Contrasena::lessons::u9_v1 Contrasena::sections::las_partes_del_cuerpo	
 los pulmones	lungs	Contrasena::lessons::u9_v1 Contrasena::sections::las_partes_del_cuerpo	
 la sangre	blood	Contrasena::lessons::u9_v1 Contrasena::sections::las_partes_del_cuerpo	
-el bienestar	well-being	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-el examen físico	physical exam	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-el médico/la médica	doctor	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-la sala de urgencias / la	emergency room /	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-sala de espera	waiting room	Contrasena::lessons::u9_v2 Contrasena::sections::unknown	
-la anorexia nervosa	anorexia nervosa	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la ansiedad	anxiety	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la bulimia	bulimia	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la falta de atención	attention deficit	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la gripe	flu	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la herida	wound	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la hiperactividad	hyperactivity	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la presión alta / la presión baja	high blood pressure /low blood pressure	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-el resfriado	cold	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-tener fiebre	to have a fever	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-tener dolor de…	to have a pain/ache in…	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la tos	cough	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-el trastorno / el trastorno psicológico	disorder / psychological disorder	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-grave	serious	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-sano/sana	healthy	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-roto/rota	broken	Contrasena::lessons::u9_v2 Contrasena::sections::enfermedades	
-la curita / la tirita / la venda	bandaid / bandaid (Spain) / bandage	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
+el bienestar	well-being	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+el examen físico	physical exam	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+el médico/la médica	doctor	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+la sala de urgencias / la sala de espera	emergency room / waiting room	Contrasena::lessons::u9_v2 Contrasena::sections::la_salud_y_las_enfermedades	
+la alergia / ser alérgico / ser alérgica	allergy / to be allergic	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la anorexia nervosa	anorexia nervosa	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la ansiedad	anxiety	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la bulimia	bulimia	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la cita/la cita médica	appointment/medical appointment	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la congestión	congestion	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la depresión	depression	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+estar enfermo / estar enferma	to be sick	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la falta de atención	attention deficit	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la gripe	flu	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la herida	wound	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la hiperactividad	hyperactivity	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la presión alta / la presión baja	high blood pressure /low blood pressure	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+el resfriado	cold	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+tener fiebre	to have a fever	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+tener dolor de…	to have a pain/ache in…	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+la tos	cough	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+el trastorno / el trastorno psicológico	disorder / psychological disorder	Contrasena::lessons::u9_v2 Contrasena::sections::los_sintomas_y_las_enfermedades	
+grave	serious	Contrasena::lessons::u9_v2 Contrasena::sections::para_describir_estados	
+sano/sana	healthy	Contrasena::lessons::u9_v2 Contrasena::sections::para_describir_estados	
+roto/rota	broken	Contrasena::lessons::u9_v2 Contrasena::sections::para_describir_estados	
+la curita/la tirita/la venda(Spain)] / la venda	bandaid / bandaid (Spain) / bandage	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 el jarabe	syrup	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 el medicamento	medication, medicine	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la pastilla	pill	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la receta	prescription	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la terapia / la psicoterapia	therapy/ psychotherapy	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
 la vacuna	immunization / vaccine	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-adelgazar	to lose weight	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-cuidarse	to take care of oneself	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-descansar	to rest	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-engordar	to gain weight	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-evitar	to avoid	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-lavarse las manos	to wash one's hands	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-mantener la buena salud	to maintain good health	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-mantenerse (e:ie) en forma	to stay in good shape	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-preocuparse / preocuparse por	to worry / to worry about	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-to prevent an illness	prevenir una enfermedad	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-seguir (e:i) las recomendaciones	to follow the recommendations	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-tratar / tratar de (+ infinitive)	to try / to try to do something	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
-vacunarse / ponerse una vacuna	to get vaccinated	Contrasena::lessons::u9_v2 Contrasena::sections::los_tratamientos	
+adelgazar	to lose weight	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+cuidarse	to take care of oneself	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+descansar	to rest	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+engordar	to gain weight	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+evitar	to avoid	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+lavarse las manos	to wash one's hands	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+mantener (e>ie) la buena salud	to maintain good health	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+mantenerse (e>ie) en forma	to stay in good shape	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+preocuparse / preocuparse por	to worry / to worry about	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+prevenir (e>ie) una enfermedad	to prevent an illness	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+seguir (e>i) las recomendaciones	to follow the recommendations	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+tratar / tratar de (+ infinitive)	to try / to try to do something	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
+vacunarse / ponerse una vacuna	to get vaccinated	Contrasena::lessons::u9_v2 Contrasena::sections::para_mantenerse_sano	
 el cirujano / la cirujana	surgeon	Contrasena::lessons::u10_v1 Contrasena::sections::la_salud	
 el consejero / la consejera	counselor	Contrasena::lessons::u10_v1 Contrasena::sections::la_salud	
 el dentista / la dentista	dentist	Contrasena::lessons::u10_v1 Contrasena::sections::la_salud	
@@ -681,15 +682,15 @@ comprar	to buy	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios
 ganar dinero	to earn money	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
 invertir	to invest	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
 vender	to sell	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el arquitecto/la arquitecta	architect	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el científico/la científica	scientist	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el diseñador/la diseñadora	designer	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el ecologista/la ecologista	ecologist	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el ingeniero/la ingeniera	engineer	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-el programador de computación/la programadora	computer programmer	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-analizar	analyze	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-diseñar	design	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
-programar	program	Contrasena::lessons::u10_v1 Contrasena::sections::los_negocios	
+el arquitecto/la arquitecta	architect	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el científico/la científica	scientist	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el diseñador/la diseñadora	designer	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el ecologista/la ecologista	ecologist	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el ingeniero/la ingeniera	engineer	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+el programador de computación/la programadora de computación	computer programmer	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+analizar	analyze	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+diseñar	design	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
+programar	program	Contrasena::lessons::u10_v1 Contrasena::sections::las_ciencias_la_ingenieria_el_diseno_y_la_computacion	
 el investigador / la investigadora	researcher	Contrasena::lessons::u10_v2 Contrasena::sections::la_educacion	
 el maestro / la maestra	teacher	Contrasena::lessons::u10_v2 Contrasena::sections::la_educacion	
 el profesor / la profesora	professor	Contrasena::lessons::u10_v2 Contrasena::sections::la_educacion	
@@ -709,10 +710,10 @@ el militar / la militar	soldier	Contrasena::lessons::u10_v2 Contrasena::sections
 el policía / la policía	police officer	Contrasena::lessons::u10_v2 Contrasena::sections::la_seguridad_publica_y_la_ley	
 defender (e>ie)	to defend	Contrasena::lessons::u10_v2 Contrasena::sections::la_seguridad_publica_y_la_ley	
 proteger	to protect	Contrasena::lessons::u10_v2 Contrasena::sections::la_seguridad_publica_y_la_ley	
-el consultor / la consultora / el consultor de	consultant / marketing consultant	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
+el consultor / la consultora / el consultor de mercadeo / la consultora de mercadeo	consultant / marketing consultant	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
 el periodista / la periodista	journalist	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
 el publicista / la publicista	advertising agent	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
-el relacionista público / la relacionista	public relations agent	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
+el relacionista público / la relacionista pública	public relations agent	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
 convencer	to convince	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
 informar	to inform	Contrasena::lessons::u10_v2 Contrasena::sections::los_medios_de_comunicacion	
 el abrigo	coat / overcoat	Contrasena::lessons::u11_v1 Contrasena::sections::las_prendas_de_vestir	
@@ -773,20 +774,20 @@ el pañuelo	scarf / handkerchief	Contrasena::lessons::u11_v2 Contrasena::section
 la pulsera	bracelet	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
 el reloj	watch	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
 el sombrero	hat	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-LOS ESTILOS	Styles	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-ajustado / ajustada	tight	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-arreglado / arreglada	put together	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-arriesgado / arriesgada	daring	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-clásico / clásica	classic, conservative	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-cómodo / cómoda	comfortable	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-deportivo / deportiva	sporty	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-elegante	elegant	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-entallado / entallada	fitted	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-holgado / holgada	loose	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-informal	casual	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-profesional	professional	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-recto / recta	straight	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
-relajado / relajada	relaxed	Contrasena::lessons::u11_v2 Contrasena::sections::los_accesorios	
+ajustado / ajustada	tight	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+arreglado / arreglada	put together	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+arriesgado / arriesgada	daring	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+clásico / clásica	classic, conservative	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+cómodo / cómoda	comfortable	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+deportivo / deportiva	sporty	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+elegante	elegant	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+entallado / entallada	fitted	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+formal	formal	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+holgado / holgada	loose	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+informal	casual	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+profesional	professional	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+recto / recta	straight	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
+relajado / relajada	relaxed	Contrasena::lessons::u11_v2 Contrasena::sections::los_estilos	
 el cañón	canyon	Contrasena::lessons::u12_v1 Contrasena::sections::los_lugares	
 la cascada	waterfall	Contrasena::lessons::u12_v1 Contrasena::sections::los_lugares	
 el desierto	desert	Contrasena::lessons::u12_v1 Contrasena::sections::los_lugares	
@@ -796,13 +797,12 @@ la playa	beach	Contrasena::lessons::u12_v1 Contrasena::sections::los_lugares
 ir en autobús	to go by bus / to go on a bus	Contrasena::lessons::u12_v1 Contrasena::sections::los_medios_de_transporte	
 ir en carro (Am. Lat.) / ir en coche (Esp.)	to go by car / to go in a car	Contrasena::lessons::u12_v1 Contrasena::sections::los_medios_de_transporte	
 ir en tren	to go by train / to go on a train	Contrasena::lessons::u12_v1 Contrasena::sections::los_medios_de_transporte	
-andar en bicicleta /	to ride a bike / to ride a mountain bike	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
-andar en bicicleta de	montaña	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
+andar en bicicleta / andar en bicicleta de montaña	to ride a bike / to ride a mountain bike	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 bucear	to go scuba diving	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 explorar una cueva	to explore a cave	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 hacer paracaidismo / practicar paracaidismo	to go skydiving	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 hacer senderismo / practicar senderismo	to go trekking	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
-hacer vía ferrata	to walk/climb a mountain route equipped with fixed	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
+hacer vía ferrata	to walk/climb a mountain route equipped with fixed ladders, cables, and bridges	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 montar a caballo	to ride a horse	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 observar la puesta del sol	watch the sunset	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 practicar tirolesa	to do zip lining	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	

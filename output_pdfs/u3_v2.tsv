@@ -18,10 +18,8 @@ estudiar	to study	Contrasena::lessons::u3_v2 Contrasena::sections::otras_activid
 hablar	to speak / to talk	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 hacer ejercicio	to do exercise	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 hacer una videollamada	to make a videocall	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-ir / ir al gimnasio / ir al picnic / ir al cine / ir de	to go / to go to the gym / to go on a picnic / to go to	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-compras	the movies / to go shopping	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-jugar al... / jugar al videojuego / jugar al tenis / jugar	to play... / to play a videogame / to play tennis / to	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
-al fútbol	play soccer	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+ir / ir al gimnasio / ir al picnic / ir al cine / ir de compras	to go / to go to the gym / to go on a picnic / to go to the movies / to go shopping	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
+jugar al... / jugar al videojuego / jugar al tenis / jugar al fútbol	to play... / to play a videogame / to play tennis / to play soccer	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 lavar / lavar la ropa	to wash / to wash clothes	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 limpiar / limpiar la casa	to clean / to clean the house	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
 llegar	to arrive	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	
@@ -37,6 +35,7 @@ ver	to see	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades
 ¿Qué te parece?	What do you think?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 ¿Qué vas a hacer...?	What are you doing? / What are you going to do?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 Tengo que... [inf. tener que]	I have to… [inf. to have to]	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
+Tengo ganas de… / Tengo ganas de algo [inf. tener ganas de]	I feel like… / I feel like doing something [inf. to feel like]	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 ¿Tienes planes?	Do you have plans?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	
 ¡Ay, no!	Oh no!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	
 ¡Buena idea!	Good idea!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	

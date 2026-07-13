@@ -10,13 +10,12 @@ la playa	beach	Contrasena::lessons::u12_v1 Contrasena::sections::los_lugares
 ir en autobús	to go by bus / to go on a bus	Contrasena::lessons::u12_v1 Contrasena::sections::los_medios_de_transporte	
 ir en carro (Am. Lat.) / ir en coche (Esp.)	to go by car / to go in a car	Contrasena::lessons::u12_v1 Contrasena::sections::los_medios_de_transporte	
 ir en tren	to go by train / to go on a train	Contrasena::lessons::u12_v1 Contrasena::sections::los_medios_de_transporte	
-andar en bicicleta /	to ride a bike / to ride a mountain bike	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
-andar en bicicleta de	montaña	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
+andar en bicicleta / andar en bicicleta de montaña	to ride a bike / to ride a mountain bike	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 bucear	to go scuba diving	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 explorar una cueva	to explore a cave	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 hacer paracaidismo / practicar paracaidismo	to go skydiving	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 hacer senderismo / practicar senderismo	to go trekking	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
-hacer vía ferrata	to walk/climb a mountain route equipped with fixed	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
+hacer vía ferrata	to walk/climb a mountain route equipped with fixed ladders, cables, and bridges	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 montar a caballo	to ride a horse	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 observar la puesta del sol	watch the sunset	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
 practicar tirolesa	to do zip lining	Contrasena::lessons::u12_v1 Contrasena::sections::las_actividades	
