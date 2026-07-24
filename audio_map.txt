@@ -1,0 +1,817 @@
+#lesson	section	spanish_normalized_key	audioUrl	source
+u10_v1	la_salud	el cirujano la cirujana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_2.mp3	groundtruth
+u10_v1	la_salud	el consejero la consejera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_3.mp3	groundtruth
+u10_v1	la_salud	el dentista la dentista	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_4.mp3	groundtruth
+u10_v1	la_salud	el director del hospital la directora del hospital	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_5.mp3	groundtruth
+u10_v1	la_salud	el enfermero la enfermera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_6.mp3	groundtruth
+u10_v1	la_salud	el farmaceutico la farmaceutica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_7.mp3	groundtruth
+u10_v1	la_salud	el fisioterapeuta la fisioterapeuta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_8.mp3	groundtruth
+u10_v1	la_salud	el medico la medica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_9.mp3	groundtruth
+u10_v1	la_salud	el psicologo la psicologa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_10.mp3	groundtruth
+u10_v1	la_salud	cuidar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_11.mp3	groundtruth
+u10_v1	la_salud	curar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_12.mp3	groundtruth
+u10_v1	la_salud	preparar preparar medicamentos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_13.mp3	groundtruth
+u10_v1	los_negocios	el asesor financiero la asesora financiera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_15.mp3	groundtruth
+u10_v1	los_negocios	el contador la contadora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_16.mp3	groundtruth
+u10_v1	los_negocios	el ejecutivo la ejecutiva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_17.mp3	groundtruth
+u10_v1	los_negocios	el gerente la gerente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_18.mp3	groundtruth
+u10_v1	los_negocios	aconsejar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_19.mp3	groundtruth
+u10_v1	los_negocios	administrar administrar una compania	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_20.mp3	groundtruth
+u10_v1	los_negocios	comprar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_21.mp3	groundtruth
+u10_v1	los_negocios	ganar dinero	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_22.mp3	groundtruth
+u10_v1	los_negocios	invertir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_23.mp3	groundtruth
+u10_v1	los_negocios	vender	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_24.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	el arquitecto la arquitecta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_26.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	el cientifico la cientifica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_27.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	el disenador la disenadora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_28.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	el ecologista la ecologista	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_29.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	el ingeniero la ingeniera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_30.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	el programador de computacion la programadora de computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_31.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	analizar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_32.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	disenar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_33.mp3	groundtruth
+u10_v1	las_ciencias_la_ingenieria_el_diseno_y_la_computacion	programar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_34.mp3	groundtruth
+u10_v2	la_educacion	el investigador la investigadora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_2.mp3	groundtruth
+u10_v2	la_educacion	el maestro la maestra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_3.mp3	groundtruth
+u10_v2	la_educacion	el profesor la profesora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_4.mp3	groundtruth
+u10_v2	la_educacion	educar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_5.mp3	groundtruth
+u10_v2	la_educacion	ensenar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_6.mp3	groundtruth
+u10_v2	la_educacion	investigar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_7.mp3	groundtruth
+u10_v2	la_educacion	mejorar mejorar la sociedad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_8.mp3	groundtruth
+u10_v2	la_educacion	motivar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_9.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	el abogado la abogada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_11.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	el agente federal la agente federal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_12.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	el defensor publico la defensora publica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_13.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	el fiscal la fiscal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_14.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	las fuerzas armadas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_15.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	el juez la jueza	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_16.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	la ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_17.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	el militar la militar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_18.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	el policia la policia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_19.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	defender e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_20.mp3	groundtruth
+u10_v2	la_seguridad_publica_y_la_ley	proteger	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_21.mp3	groundtruth
+u10_v2	los_medios_de_comunicacion	el consultor la consultora el consultor de mercadeo la consultora de mercadeo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_23.mp3	groundtruth
+u10_v2	los_medios_de_comunicacion	el periodista la periodista	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_24.mp3	groundtruth
+u10_v2	los_medios_de_comunicacion	el publicista la publicista	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_25.mp3	groundtruth
+u10_v2	los_medios_de_comunicacion	el relacionista publico la relacionista publica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_26.mp3	groundtruth
+u10_v2	los_medios_de_comunicacion	convencer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_27.mp3	groundtruth
+u10_v2	los_medios_de_comunicacion	informar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_28.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	el abrigo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_2.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	los calcetines	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_3.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	la camisa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_4.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	la camiseta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_5.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	el chaleco	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_6.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	la chaqueta el saco	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_7.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	la falda la minifalda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_8.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	las mallas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_9.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	las medias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_10.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	los pantalones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_11.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	los pantalones cortos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_12.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	la sudadera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_13.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	el sueter	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_14.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	el traje de bano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_15.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	el vestido	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_16.mp3	groundtruth
+u11_v1	las_prendas_de_vestir	los vaqueros los jeans	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_17.mp3	groundtruth
+u11_v1	el_calzado	las botas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_19.mp3	groundtruth
+u11_v1	el_calzado	las chanclas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_20.mp3	groundtruth
+u11_v1	el_calzado	las sandalias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_21.mp3	groundtruth
+u11_v1	el_calzado	las zapatillas las zapatillas de tenis	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_22.mp3	groundtruth
+u11_v1	el_calzado	los zapatos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_23.mp3	groundtruth
+u11_v1	el_calzado	los zapatos de tacon los tacones altos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_24.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	la cintura	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_26.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	el conjunto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_27.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	el estilo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_28.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	el gluteo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_29.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	la moda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_30.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	el numero	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_31.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	el pecho	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_32.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	la silueta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_33.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	la talla	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_34.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	el toque personal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_35.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	destacar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_36.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	disimular	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_37.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	elegir j	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_38.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	llevar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_39.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	quedarle bien quedarle mal quedar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_40.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	me queda bien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_41.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	no me queda bien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_42.mp3	groundtruth
+u11_v1	para_decir_como_queda_la_ropa	te queda muy bien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_43.mp3	groundtruth
+u11_v1	para_comprar	comprar comprar en linea	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_45.mp3	groundtruth
+u11_v1	para_comprar	devolver o>ue	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_46.mp3	groundtruth
+u11_v1	para_comprar	pagar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_47.mp3	groundtruth
+u11_v1	para_comprar	probar probarse ue	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_48.mp3	groundtruth
+u11_v1	para_comprar	quedarselo quedarselos quedarsela quedarselas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_49.mp3	groundtruth
+u11_v2	los_accesorios	el anillo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_2.mp3	groundtruth
+u11_v2	los_accesorios	el bolso	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_3.mp3	groundtruth
+u11_v2	los_accesorios	la bufanda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_4.mp3	groundtruth
+u11_v2	los_accesorios	el cinturon	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_5.mp3	groundtruth
+u11_v2	los_accesorios	el collar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_6.mp3	groundtruth
+u11_v2	los_accesorios	la corbata	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_7.mp3	groundtruth
+u11_v2	los_accesorios	las gafas las gafas de sol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_8.mp3	groundtruth
+u11_v2	los_accesorios	el gorro	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_9.mp3	groundtruth
+u11_v2	los_accesorios	el maletin	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_10.mp3	groundtruth
+u11_v2	los_accesorios	el panuelo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_11.mp3	groundtruth
+u11_v2	los_accesorios	la pulsera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_12.mp3	groundtruth
+u11_v2	los_accesorios	el reloj	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_13.mp3	groundtruth
+u11_v2	los_accesorios	el sombrero	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_14.mp3	groundtruth
+u11_v2	los_estilos	ajustado ajustada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_16.mp3	groundtruth
+u11_v2	los_estilos	arreglado arreglada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_17.mp3	groundtruth
+u11_v2	los_estilos	arriesgado arriesgada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_18.mp3	groundtruth
+u11_v2	los_estilos	clasico clasica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_19.mp3	groundtruth
+u11_v2	los_estilos	comodo comoda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_20.mp3	groundtruth
+u11_v2	los_estilos	deportivo deportiva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_21.mp3	groundtruth
+u11_v2	los_estilos	elegante	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_22.mp3	groundtruth
+u11_v2	los_estilos	entallado entallada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_23.mp3	groundtruth
+u11_v2	los_estilos	formal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_24.mp3	groundtruth
+u11_v2	los_estilos	holgado holgada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_25.mp3	groundtruth
+u11_v2	los_estilos	informal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_26.mp3	groundtruth
+u11_v2	los_estilos	profesional	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_27.mp3	groundtruth
+u11_v2	los_estilos	recto recta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_28.mp3	groundtruth
+u11_v2	los_estilos	relajado relajada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_29.mp3	groundtruth
+u12_v1	los_lugares	el canon	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_2.mp3	groundtruth
+u12_v1	los_lugares	la cascada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_3.mp3	groundtruth
+u12_v1	los_lugares	el desierto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_4.mp3	groundtruth
+u12_v1	los_lugares	la montana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_5.mp3	groundtruth
+u12_v1	los_lugares	el paisaje	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_6.mp3	groundtruth
+u12_v1	los_lugares	la playa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_7.mp3	groundtruth
+u12_v1	los_medios_de_transporte	ir en autobus	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_9.mp3	groundtruth
+u12_v1	los_medios_de_transporte	ir en carro am lat ir en coche esp	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_10.mp3	groundtruth
+u12_v1	los_medios_de_transporte	ir en tren	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_11.mp3	groundtruth
+u12_v1	las_actividades	andar en bicicleta andar en bicicleta de montana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_13.mp3	groundtruth
+u12_v1	las_actividades	bucear	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_14.mp3	groundtruth
+u12_v1	las_actividades	explorar una cueva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_15.mp3	groundtruth
+u12_v1	las_actividades	hacer paracaidismo practicar paracaidismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_16.mp3	groundtruth
+u12_v1	las_actividades	hacer senderismo practicar senderismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_17.mp3	groundtruth
+u12_v1	las_actividades	hacer via ferrata	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_18.mp3	groundtruth
+u12_v1	las_actividades	montar a caballo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_19.mp3	groundtruth
+u12_v1	las_actividades	observar la puesta del sol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_20.mp3	groundtruth
+u12_v1	las_actividades	practicar tirolesa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_21.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	el ave singular las aves plural	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_23.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la biodiversidad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_24.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	el cambio climatico	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_25.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la conciencia ambiental	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_26.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la contaminacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_27.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la deforestacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_28.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la ecologia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_29.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la especie la especie en peligro de extincion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_30.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la inundacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_31.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	el medioambiente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_32.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la naturaleza	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_33.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la poblacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_34.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	los recursos naturales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_35.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	el santuario natural	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_36.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la sequia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_37.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la tierra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_38.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	la tortuga la tortuga marina	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_39.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	concientizar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_40.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	dejar huella	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_41.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	preservar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_42.mp3	groundtruth
+u12_v1	medioambiente_y_el_ecoturismo	proteger j	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_43.mp3	groundtruth
+u12_v2	palabras_indefinidas	algo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_2.mp3	groundtruth
+u12_v2	palabras_indefinidas	alguien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_3.mp3	groundtruth
+u12_v2	palabras_indefinidas	algun alguno algunos alguna algunas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_4.mp3	groundtruth
+u12_v2	palabras_indefinidas	alguna vez	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_5.mp3	groundtruth
+u12_v2	palabras_indefinidas	o o	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_6.mp3	groundtruth
+u12_v2	palabras_indefinidas	siempre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_7.mp3	groundtruth
+u12_v2	palabras_indefinidas	tambien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_8.mp3	groundtruth
+u12_v2	palabras_negativas	nada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_10.mp3	groundtruth
+u12_v2	palabras_negativas	nadie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_11.mp3	groundtruth
+u12_v2	palabras_negativas	ningun ninguno ninguna	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_12.mp3	groundtruth
+u12_v2	palabras_negativas	ni ni	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_13.mp3	groundtruth
+u12_v2	palabras_negativas	nunca	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_14.mp3	groundtruth
+u12_v2	palabras_negativas	tampoco	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_15.mp3	groundtruth
+u1_v1	los_perfiles	el calendario de eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_2.mp3	groundtruth
+u1_v1	los_perfiles	la cronologia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_3.mp3	groundtruth
+u1_v1	los_perfiles	el estado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_4.mp3	groundtruth
+u1_v1	los_perfiles	la foto la fotografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_5.mp3	groundtruth
+u1_v1	los_perfiles	el perfil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_6.mp3	groundtruth
+u1_v1	los_perfiles	la red social	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_7.mp3	groundtruth
+u1_v1	los_perfiles	el video	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_8.mp3	groundtruth
+u1_v1	yo_soy	activo activa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_30.mp3	groundtruth
+u1_v1	yo_soy	atletico atletica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_31.mp3	groundtruth
+u1_v1	yo_soy	aventurero aventurera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_32.mp3	groundtruth
+u1_v1	yo_soy	comico comica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_33.mp3	groundtruth
+u1_v1	yo_soy	estudioso estudiosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_34.mp3	groundtruth
+u1_v1	yo_soy	generoso generosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_35.mp3	groundtruth
+u1_v1	yo_soy	inteligente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_36.mp3	groundtruth
+u1_v1	yo_soy	sedentario sedentaria	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_37.mp3	groundtruth
+u1_v1	yo_soy	timido timida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_38.mp3	groundtruth
+u1_v1	yo_soy	trabajador trabajadora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_39.mp3	groundtruth
+u1_v1	las_acciones	actualizar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_10.mp3	groundtruth
+u1_v1	las_acciones	crear	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_11.mp3	groundtruth
+u1_v1	las_acciones	editar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_12.mp3	groundtruth
+u1_v1	las_acciones	mandar un mensaje mandar un mensaje de texto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_13.mp3	groundtruth
+u1_v1	ahora_estoy	aburrido aburrida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_41.mp3	groundtruth
+u1_v1	ahora_estoy	cansado cansada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_42.mp3	groundtruth
+u1_v1	ahora_estoy	contento contenta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_43.mp3	groundtruth
+u1_v1	ahora_estoy	emocionado emocionada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_44.mp3	groundtruth
+u1_v1	ahora_estoy	enojado enojada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_45.mp3	groundtruth
+u1_v1	ahora_estoy	nervioso nerviosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_46.mp3	groundtruth
+u1_v1	ahora_estoy	ocupado ocupada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_47.mp3	groundtruth
+u1_v1	ahora_estoy	relajado relajada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_48.mp3	groundtruth
+u1_v1	la_informacion_basica	el apellido los apellidos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_15.mp3	groundtruth
+u1_v1	la_informacion_basica	la direccion de correo electronico el e-mail	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_16.mp3	groundtruth
+u1_v1	la_informacion_basica	la edad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_17.mp3	groundtruth
+u1_v1	la_informacion_basica	el nombre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_18.mp3	groundtruth
+u1_v1	la_informacion_basica	el telefono el numero de telefono	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_19.mp3	groundtruth
+u1_v1	ahora_tengo	anos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_50.mp3	groundtruth
+u1_v1	ahora_tengo	calor	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_51.mp3	groundtruth
+u1_v1	ahora_tengo	frio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_52.mp3	groundtruth
+u1_v1	ahora_tengo	hambre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_53.mp3	groundtruth
+u1_v1	ahora_tengo	miedo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_54.mp3	groundtruth
+u1_v1	ahora_tengo	sed	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_56.mp3	groundtruth
+u1_v1	ahora_tengo	sueno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_55.mp3	groundtruth
+u1_v1	ahora_tengo	verguenza	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_57.mp3	groundtruth
+u1_v1	la_biografia	el apellido los apellidos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_15.mp3	groundtruth
+u1_v1	la_biografia	la direccion de correo electronico el e-mail	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_16.mp3	groundtruth
+u1_v1	la_biografia	la ciudad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_21.mp3	groundtruth
+u1_v1	la_biografia	el cumpleanos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_22.mp3	groundtruth
+u1_v1	la_biografia	la escuela secundaria	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_23.mp3	groundtruth
+u1_v1	la_biografia	el estado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_24.mp3	groundtruth
+u1_v1	la_biografia	la fecha de nacimiento	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_25.mp3	groundtruth
+u1_v1	la_biografia	el pais	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_26.mp3	groundtruth
+u1_v1	la_biografia	el trabajo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_27.mp3	groundtruth
+u1_v1	la_biografia	la universidad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_28.mp3	groundtruth
+u1_v2	unknown	cero	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_1.mp3	groundtruth
+u1_v2	unknown	uno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_2.mp3	groundtruth
+u1_v2	unknown	dos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_3.mp3	groundtruth
+u1_v2	unknown	tres	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_4.mp3	groundtruth
+u1_v2	unknown	cuatro	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_5.mp3	groundtruth
+u1_v2	unknown	cinco	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_6.mp3	groundtruth
+u1_v2	unknown	seis	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_7.mp3	groundtruth
+u1_v2	unknown	siete	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_8.mp3	groundtruth
+u1_v2	unknown	ocho	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_9.mp3	groundtruth
+u1_v2	unknown	nueve	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_10.mp3	groundtruth
+u1_v2	unknown	diez	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_11.mp3	groundtruth
+u1_v2	unknown	once	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_12.mp3	groundtruth
+u1_v2	unknown	doce	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_13.mp3	groundtruth
+u1_v2	unknown	trece	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_14.mp3	groundtruth
+u1_v2	unknown	catorce	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_15.mp3	groundtruth
+u1_v2	unknown	quince	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_16.mp3	groundtruth
+u1_v2	unknown	dieciseis	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_17.mp3	groundtruth
+u1_v2	unknown	diecisiete	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_18.mp3	groundtruth
+u1_v2	unknown	dieciocho	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_19.mp3	groundtruth
+u1_v2	unknown	diecinueve	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_20.mp3	groundtruth
+u1_v2	unknown	veinte	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_21.mp3	groundtruth
+u1_v2	unknown	veintiuno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_23.mp3	groundtruth
+u1_v2	unknown	veintidos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_24.mp3	groundtruth
+u1_v2	unknown	veintitres	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_25.mp3	groundtruth
+u1_v2	unknown	veinticuatro	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_26.mp3	groundtruth
+u1_v2	unknown	veinticinco	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_27.mp3	groundtruth
+u1_v2	unknown	veintiseis	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_28.mp3	groundtruth
+u1_v2	unknown	veintisiete	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_29.mp3	groundtruth
+u1_v2	unknown	veintiocho	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_30.mp3	groundtruth
+u1_v2	unknown	veintinueve	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_31.mp3	groundtruth
+u1_v2	unknown	treinta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_32.mp3	groundtruth
+u1_v2	unknown	treinta y uno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_33.mp3	groundtruth
+u1_v2	unknown	treinta y dos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_34.mp3	groundtruth
+u1_v2	unknown	treinta y tres	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_35.mp3	groundtruth
+u1_v2	unknown	treinta y cuatro	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_36.mp3	groundtruth
+u1_v2	unknown	treinta y cinco	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_37.mp3	groundtruth
+u1_v2	unknown	treinta y seis	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_38.mp3	groundtruth
+u1_v2	unknown	treinta y siete	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_39.mp3	groundtruth
+u1_v2	unknown	treinta y ocho	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_40.mp3	groundtruth
+u1_v2	unknown	treinta y nueve	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_41.mp3	groundtruth
+u1_v2	unknown	diez	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_43.mp3	groundtruth
+u1_v2	unknown	veinte	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_44.mp3	groundtruth
+u1_v2	unknown	treinta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_45.mp3	groundtruth
+u1_v2	unknown	cuarenta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_46.mp3	groundtruth
+u1_v2	unknown	cincuenta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_47.mp3	groundtruth
+u1_v2	unknown	sesenta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_48.mp3	groundtruth
+u1_v2	unknown	setenta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_49.mp3	groundtruth
+u1_v2	unknown	ochenta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_50.mp3	groundtruth
+u1_v2	unknown	noventa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_51.mp3	groundtruth
+u1_v2	unknown	cien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_53.mp3	groundtruth
+u1_v2	unknown	doscientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_54.mp3	groundtruth
+u1_v2	unknown	trescientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_55.mp3	groundtruth
+u1_v2	unknown	cuatrocientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_56.mp3	groundtruth
+u1_v2	unknown	quinientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_57.mp3	groundtruth
+u1_v2	unknown	seiscientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_58.mp3	groundtruth
+u1_v2	unknown	setecientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_59.mp3	groundtruth
+u1_v2	unknown	ochocientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_60.mp3	groundtruth
+u1_v2	unknown	novecientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_61.mp3	groundtruth
+u1_v2	unknown	mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_63.mp3	groundtruth
+u1_v2	unknown	dos mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_64.mp3	groundtruth
+u1_v2	unknown	tres mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_65.mp3	groundtruth
+u1_v2	unknown	cuatro mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_66.mp3	groundtruth
+u1_v2	unknown	cinco mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_67.mp3	groundtruth
+u1_v2	unknown	seis mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_68.mp3	groundtruth
+u1_v2	unknown	siete mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_69.mp3	groundtruth
+u1_v2	unknown	ocho mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_70.mp3	groundtruth
+u1_v2	unknown	nueve mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_71.mp3	groundtruth
+u1_v2	unknown	diez mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_72.mp3	groundtruth
+u1_v2	unknown	diez mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_74.mp3	groundtruth
+u1_v2	unknown	veinte mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_75.mp3	groundtruth
+u1_v2	unknown	treinta mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_76.mp3	groundtruth
+u1_v2	unknown	cuarenta mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_77.mp3	groundtruth
+u1_v2	unknown	cincuenta mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_78.mp3	groundtruth
+u1_v2	unknown	sesenta mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_79.mp3	groundtruth
+u1_v2	unknown	setenta mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_80.mp3	groundtruth
+u1_v2	unknown	ochenta mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_81.mp3	groundtruth
+u1_v2	unknown	noventa mil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_82.mp3	groundtruth
+u1_v2	unknown	un millon	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_83.mp3	groundtruth
+u1_v2	unknown	dos millones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_84.mp3	groundtruth
+u2_v1	los_saludos	buenos dias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_2.mp3	groundtruth
+u2_v1	los_saludos	buenos tardes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_3.mp3	groundtruth
+u2_v1	los_saludos	buenas noches	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_4.mp3	groundtruth
+u2_v1	los_saludos	hola	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_5.mp3	groundtruth
+u2_v1	las_despedidas	adios chau	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_7.mp3	groundtruth
+u2_v1	las_despedidas	hasta luego	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_8.mp3	groundtruth
+u2_v1	las_despedidas	hasta manana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_9.mp3	groundtruth
+u2_v1	las_despedidas	hasta pronto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_10.mp3	groundtruth
+u2_v1	las_despedidas	nos vemos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_11.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	como se llama usted como te llamas tu	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_13.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	me llamo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_14.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	como esta usted como estas tu	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_15.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	que pasa que hay de nuevo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_16.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	que tal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_17.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	muy bien no muy bien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_18.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	regular asi asi	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_19.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	de donde es usted de donde eres tu	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_20.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	soy de	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_21.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	que estudia usted que estudias tu	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_22.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	estudio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_23.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	cual es su especializacion cual es tu especializacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_24.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	mi especializacion es	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_25.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	no se	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_26.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	y usted y tu	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_27.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	gracias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_28.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	mucho gusto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_29.mp3	groundtruth
+u2_v1	las_preguntas_y_respuestas	igualmente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_30.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	las humanidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_2.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la arquitectura	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_3.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	el arte	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_4.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	el derecho	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_5.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	el espanol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_6.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la filosofia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_7.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la historia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_8.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	los idiomas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_9.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	el ingles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_10.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la literatura	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_11.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la musica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_12.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la pedagogia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_13.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	el periodismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_14.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	las ciencias naturales y formales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_15.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la biologia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_16.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	las ciencias naturales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_17.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la computacion la informatica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_18.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la fisica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_19.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la matematica las matematicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_20.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la medicina	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_21.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la quimica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_22.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	las ciencias las ciencias politicas las ciencias sociales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_23.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la administracion de empresas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_24.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	las ciencias las ciencias politicas las ciencias sociales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_25.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	las comunicaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_26.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la contabilidad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_27.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la economia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_28.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la geografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_29.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	el mercadeo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_30.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la psicologia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_31.mp3	groundtruth
+u2_v2	los_cursos_y_las_especializaciones	la sociologia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_32.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	el curso	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_34.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	el departamento	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_35.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	el examen	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_36.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	el horario	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_37.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	la leccion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_38.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	el semestre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_39.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	el trimestre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_40.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	estudiar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_41.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	dificil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_42.mp3	groundtruth
+u2_v2	para_hablar_de_los_cursos	facil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_43.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el apartamento	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_2.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el aula el aula virtual	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_3.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la biblioteca	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_4.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la cafeteria	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_5.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el campus el campus virtual	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_6.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la casa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_7.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el centro estudiantil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_8.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_9.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el companero de cuarto la companera de cuarto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_10.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el cuarto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_11.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el edificio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_12.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el gimnasio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_13.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el laboratorio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_14.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la libreria	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_15.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la oficina	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_16.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la residencia estudiantil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_17.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la reunion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_18.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	el salon de clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_19.mp3	groundtruth
+u4_v1	las_personas_y_los_lugares	la tienda la tienda virtual	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_20.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	el boligrafo la pluma	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_22.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	el cuaderno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_23.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	el escritorio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_24.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	la fecha de entrega	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_25.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	el foro	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_26.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	el libro de texto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_27.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	la nota	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_28.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	la computadora la computadora portatil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_29.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	la prueba	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_30.mp3	groundtruth
+u4_v1	en_el_salon_de_clase	la tableta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_31.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	administrativo administrativa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_33.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	cerca de	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_34.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	desordenado desordenada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_35.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	lejos de	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_36.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	limpio limpia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_37.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	moderno moderna	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_38.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	nuevo nueva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_39.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	ordenado ordenada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_40.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	sucio sucia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_41.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	ultimo ultima	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_42.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	universitario universitaria	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_43.mp3	groundtruth
+u4_v1	para_describir_a_personas_y_lugares	viejo vieja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_44.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	aprender	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_46.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	buscar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_47.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	calificar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_48.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	caminar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_49.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	compartir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_50.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	comprar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_51.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	ensenar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_52.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	escribir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_53.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	hablar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_55.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	leer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_56.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	participar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_57.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	pasar pasar tiempo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_58.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	recibir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_59.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	sacar sacar un libro sacar una nota	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_60.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	terminar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_61.mp3	groundtruth
+u4_v1	para_hablar_de_lo_que_haces	tomar tomar una clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_62.mp3	groundtruth
+u4_v2	gustos_likes_dislikes	gustar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_2_1.mp3	groundtruth
+u4_v2	gustos_likes_dislikes	me gusta me gustan	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_2_2.mp3	groundtruth
+u4_v2	gustos_likes_dislikes	no me gusta no me gustan	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_2_3.mp3	groundtruth
+u5_v1	cualidades_positivas	abierto abierta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_2.mp3	groundtruth
+u5_v1	cualidades_positivas	alegre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_3.mp3	groundtruth
+u5_v1	cualidades_positivas	amable	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_4.mp3	groundtruth
+u5_v1	cualidades_positivas	bondadoso bondadosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_5.mp3	groundtruth
+u5_v1	cualidades_positivas	bueno buena	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_6.mp3	groundtruth
+u5_v1	cualidades_positivas	capaz	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_7.mp3	groundtruth
+u5_v1	cualidades_positivas	carinoso carinosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_8.mp3	groundtruth
+u5_v1	cualidades_positivas	chistoso chistosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_9.mp3	groundtruth
+u5_v1	cualidades_positivas	compasivo compasiva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_10.mp3	groundtruth
+u5_v1	cualidades_positivas	comprensivo comprensiva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_11.mp3	groundtruth
+u5_v1	cualidades_positivas	creativo creativa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_12.mp3	groundtruth
+u5_v1	cualidades_positivas	entusiasta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_13.mp3	groundtruth
+u5_v1	cualidades_positivas	facil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_14.mp3	groundtruth
+u5_v1	cualidades_positivas	fiel	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_15.mp3	groundtruth
+u5_v1	cualidades_positivas	gracioso graciosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_16.mp3	groundtruth
+u5_v1	cualidades_positivas	honesto honesta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_17.mp3	groundtruth
+u5_v1	cualidades_positivas	imaginativo imaginativa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_18.mp3	groundtruth
+u5_v1	cualidades_positivas	inteligente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_19.mp3	groundtruth
+u5_v1	cualidades_positivas	leal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_20.mp3	groundtruth
+u5_v1	cualidades_positivas	listo lista	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_21.mp3	groundtruth
+u5_v1	cualidades_positivas	mejor	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_22.mp3	groundtruth
+u5_v1	cualidades_positivas	nuevo nueva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_23.mp3	groundtruth
+u5_v1	cualidades_positivas	paciente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_24.mp3	groundtruth
+u5_v1	cualidades_positivas	pacifico pacifica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_25.mp3	groundtruth
+u5_v1	cualidades_positivas	positivo positiva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_26.mp3	groundtruth
+u5_v1	cualidades_positivas	responsable	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_27.mp3	groundtruth
+u5_v1	cualidades_positivas	sensible	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_28.mp3	groundtruth
+u5_v1	cualidades_positivas	simpatico simpatica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_29.mp3	groundtruth
+u5_v1	cualidades_positivas	talentoso talentosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_30.mp3	groundtruth
+u5_v1	cualidades_positivas	tranquilo tranquila	https://contrasena.s3.us-east-2.amazonaws.com/audio/u5/5_1_42.mp3	groundtruth
+u5_v1	cualidades_positivas	unico unica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_31.mp3	groundtruth
+u5_v1	cualidades_positivas	valiente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_32.mp3	groundtruth
+u5_v1	cualidades_negativas	aburrido aburrida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_34.mp3	groundtruth
+u5_v1	cualidades_negativas	cerrado cerrada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_35.mp3	groundtruth
+u5_v1	cualidades_negativas	egoista	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_36.mp3	groundtruth
+u5_v1	cualidades_negativas	incapaz	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_37.mp3	groundtruth
+u5_v1	cualidades_negativas	insensible	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_38.mp3	groundtruth
+u5_v1	cualidades_negativas	malo mala	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_39.mp3	groundtruth
+u5_v1	cualidades_negativas	nervioso nerviosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_40.mp3	groundtruth
+u5_v1	cualidades_negativas	triste	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_41.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	acompanar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_2.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	admirar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_3.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	apoyar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_4.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	ayudar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_5.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	comer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_6.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	compartir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_7.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	comprender	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_8.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	conocer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_9.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	crear	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_10.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	creer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_11.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	cumplir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_12.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	escoger	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_13.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	escribir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_14.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	exigir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_15.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	insistir insistir en	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_16.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	merecer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_17.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	nominar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_18.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	permitir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_19.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	preservar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_20.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	recibir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_21.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	resolver	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_22.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	saber	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_23.mp3	groundtruth
+u5_v2	para_hablar_de_personas_admiradas	vivir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_24.mp3	groundtruth
+u5_v2	expresiones_para_cartas_formales	querido querida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_26.mp3	groundtruth
+u5_v2	expresiones_para_cartas_formales	estimado estimada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_27.mp3	groundtruth
+u5_v2	expresiones_para_cartas_formales	por la presente quisiera nominar a	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_28.mp3	groundtruth
+u5_v2	expresiones_para_cartas_formales	quedo a su disposicion para	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_29.mp3	groundtruth
+u5_v2	expresiones_para_cartas_formales	atentamente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_30.mp3	groundtruth
+u5_v2	expresiones_para_cartas_formales	saludos cordiales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_31.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el abuelo la abuela	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_2.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el esposo la esposa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_3.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el gato la gata	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_4.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el gemelo la gemela	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_5.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el hermanastro la hermanastra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_6.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el hermano la hermana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_7.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el hijastro la hijastra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_8.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	los hijos las hijas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_9.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	la madrastra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_10.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	la madre la mama	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_11.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el medio hermano la media hermana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_12.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el nieto la nieta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_13.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el nino la nina	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_14.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el padrastro	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_15.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el padre el papa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_16.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	los padres	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_17.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	los parientes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_18.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el perro la perra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_19.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el primo la prima	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_20.mp3	groundtruth
+u6_v1	los_miembros_de_la_familia	el tio la tia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_21.mp3	groundtruth
+u6_v1	los_estados	casado casada estar casado estar casada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_23.mp3	groundtruth
+u6_v1	los_estados	divorciado divorciada estar divorciado estar divorciada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_24.mp3	groundtruth
+u6_v1	los_estados	muerto muerta estar muerto estar muerta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_25.mp3	groundtruth
+u6_v1	los_estados	novio novia estar de novio estar de novia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_26.mp3	groundtruth
+u6_v1	los_estados	pareja estar en pareja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_27.mp3	groundtruth
+u6_v1	los_estados	separado separada estar separado estar separada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_28.mp3	groundtruth
+u6_v1	los_estados	solo sola	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_29.mp3	groundtruth
+u6_v1	los_estados	soltero soltera estar soltero estar soltera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_30.mp3	groundtruth
+u6_v1	los_estados	el hijo adoptado la hija adoptada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_31.mp3	groundtruth
+u6_v1	los_estados	el matrimonio igualitario	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_32.mp3	groundtruth
+u6_v1	los_estados	la union legal la union civil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_33.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	alto alta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_2.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	atletico atletica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_3.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	bajo baja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_4.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	bonito bonita	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_5.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	corto corta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_6.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	debil	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_7.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	delgado delgada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_8.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	feo fea	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_9.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	fuerte	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_10.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	gordo gorda affectionate gordito gordita	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_11.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	grande	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_12.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	guapo guapa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_13.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	joven	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_14.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	largo larga	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_15.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	mayor form of respect	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_16.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	menor	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_17.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	moreno morena	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_18.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	las pecas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_19.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	pelirrojo pelirroja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_20.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	pequeno pequena	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_21.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	rizado rizada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_22.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	rubio rubia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_23.mp3	groundtruth
+u6_v2	las_caracteristicas_fisicas	viejo vieja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_24.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	contar o>ue	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_26.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	entender e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_27.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	parecerse a parecerse a alguien	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_28.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	pensar e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_29.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	poder o>ue	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_30.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	preferir e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_31.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	sonreir e>i	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_32.mp3	groundtruth
+u6_v2	para_hablar_de_las_personas	sonar sonar con o>ue	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_33.mp3	groundtruth
+u7_v1	las_actividades_y_los_deportes	escalar montanas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_2.mp3	groundtruth
+u7_v1	las_actividades_y_los_deportes	esquiar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_3.mp3	groundtruth
+u7_v1	las_actividades_y_los_deportes	montar a caballo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_4.mp3	groundtruth
+u7_v1	las_actividades_y_los_deportes	nadar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_5.mp3	groundtruth
+u7_v1	las_actividades_y_los_deportes	pasear en bicicleta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_6.mp3	groundtruth
+u7_v1	las_actividades_y_los_deportes	patinar patina en linea patinar sobre hielo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_7.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el basquetbol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_9.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el beisbol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_10.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el futbol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_11.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el futbol americano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_12.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el golf	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_13.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el hockey	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_14.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el tenis	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_15.mp3	groundtruth
+u7_v1	jugar_u_ue_al	el voleibol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_16.mp3	groundtruth
+u7_v1	practicar_hacer	la caminata	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_18.mp3	groundtruth
+u7_v1	practicar_hacer	el ciclismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_19.mp3	groundtruth
+u7_v1	practicar_hacer	el esqui acuatico	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_20.mp3	groundtruth
+u7_v1	practicar_hacer	la natacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_21.mp3	groundtruth
+u7_v1	practicar_hacer	el surf	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_22.mp3	groundtruth
+u7_v1	practicar_hacer	el yoga	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_23.mp3	groundtruth
+u7_v1	los_resultados	empatar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_25.mp3	groundtruth
+u7_v1	los_resultados	ganar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_26.mp3	groundtruth
+u7_v1	los_resultados	perder e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_27.mp3	groundtruth
+u7_v1	las_personas	el aficionado la aficionada ser un aficionado ser una aficionada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_29.mp3	groundtruth
+u7_v1	las_personas	el atleta la atleta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_30.mp3	groundtruth
+u7_v1	las_personas	el corredor la corredora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_31.mp3	groundtruth
+u7_v1	las_personas	el entrenador la entrenadora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_32.mp3	groundtruth
+u7_v1	las_personas	el equipo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_33.mp3	groundtruth
+u7_v1	las_personas	el jugador la jugadora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_34.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	el campo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_36.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	cancha la cancha de tenis la cancha de futbol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_37.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	la carrera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_38.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	la competicion la competencia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_39.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	el estadio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_40.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	la liga	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_41.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	el partido	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_42.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	la pelota	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_43.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	las pesas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_44.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	la piscina	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_45.mp3	groundtruth
+u7_v1	el_equipo_los_lugares_y_los_eventos	la final la semifinal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_46.mp3	groundtruth
+u7_v2	para_participar_en_deportes	aliviar el estres	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_2.mp3	groundtruth
+u7_v2	para_participar_en_deportes	apuntar apuntarse	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_3.mp3	groundtruth
+u7_v2	para_participar_en_deportes	conectar conectarse	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_4.mp3	groundtruth
+u7_v2	para_participar_en_deportes	contactar contactarse	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_5.mp3	groundtruth
+u7_v2	para_participar_en_deportes	entrenar entrenar en equipo entrenar solo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_6.mp3	groundtruth
+u7_v2	para_participar_en_deportes	juntar juntarse	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_7.mp3	groundtruth
+u7_v2	para_participar_en_deportes	participar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_8.mp3	groundtruth
+u7_v2	para_participar_en_deportes	poner en forma ponerse en forma	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_9.mp3	groundtruth
+u7_v2	para_participar_en_deportes	sentir e>ie sentirse e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_10.mp3	groundtruth
+u7_v2	las_emociones	conectado conectada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_12.mp3	groundtruth
+u7_v2	las_emociones	decepcionado decepcionada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_13.mp3	groundtruth
+u7_v2	las_emociones	deportivo deportiva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_14.mp3	groundtruth
+u7_v2	las_emociones	deprimido deprimida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_15.mp3	groundtruth
+u7_v2	las_emociones	desilusionado desilusionada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_16.mp3	groundtruth
+u7_v2	las_emociones	entusiasmado entusiasmada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_17.mp3	groundtruth
+u7_v2	las_emociones	equilibrado equilibrada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_18.mp3	groundtruth
+u7_v2	las_emociones	feliz	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_19.mp3	groundtruth
+u7_v2	las_emociones	frustrado frustrada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_20.mp3	groundtruth
+u7_v2	las_emociones	ilusionado ilusionada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_21.mp3	groundtruth
+u7_v2	las_emociones	motivado motivada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_22.mp3	groundtruth
+u8_v1	las_proteinas	la carne de res la carne de res picada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_2.mp3	groundtruth
+u8_v1	las_proteinas	el chorizo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_3.mp3	groundtruth
+u8_v1	las_proteinas	los huevos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_4.mp3	groundtruth
+u8_v1	las_proteinas	el jamon	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_5.mp3	groundtruth
+u8_v1	las_proteinas	los mariscos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_6.mp3	groundtruth
+u8_v1	las_proteinas	el pavo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_7.mp3	groundtruth
+u8_v1	las_proteinas	el pescado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_8.mp3	groundtruth
+u8_v1	las_proteinas	el pollo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_9.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	las aceitunas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_11.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	el ajo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_12.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	la banana el platano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_13.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	la cebolla	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_14.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	el champinon	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_15.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	las fresas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_16.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	la lechuga	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_17.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	la manzana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_18.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	la naranja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_19.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	las papas lat am las patatas spain	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_21.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	el pimiento	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_20.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	el tomate	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_22.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	las uvas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_23.mp3	groundtruth
+u8_v1	las_frutas_y_las_verduras	la zanahoria	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_24.mp3	groundtruth
+u8_v1	los_granos	el arroz	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_26.mp3	groundtruth
+u8_v1	los_granos	el pan tostado el pan blanco el pan integral	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_27.mp3	groundtruth
+u8_v1	los_productos_lacteos	la mantequilla	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_30.mp3	groundtruth
+u8_v1	los_productos_lacteos	el queso	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_31.mp3	groundtruth
+u8_v1	los_productos_lacteos	el yogur	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_32.mp3	groundtruth
+u8_v1	los_condimentos	el aceite el aceite de oliva	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_34.mp3	groundtruth
+u8_v1	los_condimentos	con sin	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_35.mp3	groundtruth
+u8_v1	los_condimentos	la pimienta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_36.mp3	groundtruth
+u8_v1	los_condimentos	la sal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_37.mp3	groundtruth
+u8_v1	los_condimentos	el vinagre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_38.mp3	groundtruth
+u8_v1	los_productos_lacteos	la leche la leche de soja la leche de almendra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_29.mp3	groundtruth
+u8_v2	las_comidas	el desayuno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_2.mp3	groundtruth
+u8_v2	las_comidas	el almuerzo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_3.mp3	groundtruth
+u8_v2	las_comidas	la merienda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_4.mp3	groundtruth
+u8_v2	las_comidas	la comida la comida principal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_5.mp3	groundtruth
+u8_v2	las_comidas	la cena	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_6.mp3	groundtruth
+u8_v2	los_utensilios	la cuchara	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_8.mp3	groundtruth
+u8_v2	los_utensilios	el cuchillo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_9.mp3	groundtruth
+u8_v2	los_utensilios	el plato	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_10.mp3	groundtruth
+u8_v2	los_utensilios	el plato hondo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_11.mp3	groundtruth
+u8_v2	los_utensilios	el tenedor	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_12.mp3	groundtruth
+u8_v2	para_preparar_comida	batir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_14.mp3	groundtruth
+u8_v2	para_preparar_comida	calentar e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_15.mp3	groundtruth
+u8_v2	para_preparar_comida	cortar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_16.mp3	groundtruth
+u8_v2	para_preparar_comida	freir e>i	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_17.mp3	groundtruth
+u8_v2	para_preparar_comida	hervir e>ie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_18.mp3	groundtruth
+u8_v2	para_preparar_comida	mezclar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_19.mp3	groundtruth
+u8_v2	para_preparar_comida	pelar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_20.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	la ensalada la ensalada mixta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_22.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	el sandwich el bocadillo spain	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_23.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	la sopa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_24.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	a la parrilla	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_25.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	al horno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_26.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	al vapor	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_27.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	crudo cruda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_28.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	frito frita	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_29.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	vegano vegana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_30.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	vegetariano vegetariana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_31.mp3	groundtruth
+u8_v2	los_platos_y_las_preparaciones	servir e>i frio servir e>i caliente servir e>i a temperatura ambiente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_32.mp3	groundtruth
+u8_v2	para_describir_las_comidas	agridulce	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_34.mp3	groundtruth
+u8_v2	para_describir_las_comidas	agrio agria amargo amarga	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_35.mp3	groundtruth
+u8_v2	para_describir_las_comidas	casero casera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_36.mp3	groundtruth
+u8_v2	para_describir_las_comidas	dulce	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_37.mp3	groundtruth
+u8_v2	para_describir_las_comidas	grasoso grasosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_38.mp3	groundtruth
+u8_v2	para_describir_las_comidas	liviano liviana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_39.mp3	groundtruth
+u8_v2	para_describir_las_comidas	picante	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_40.mp3	groundtruth
+u8_v2	para_describir_las_comidas	rico rica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_41.mp3	groundtruth
+u8_v2	para_describir_las_comidas	sano sana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_42.mp3	groundtruth
+u8_v2	para_describir_las_comidas	suave	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_43.mp3	groundtruth
+u8_v2	para_describir_las_comidas	sabe a sabe a ajo sabe a pollo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_44.mp3	groundtruth
+u8_v2	para_describir_las_comidas	sabe bien sabe mal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_45.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la cabeza	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_4.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la cara	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_5.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la boca	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_3.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la garganta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_11.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la nariz	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_14.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el oido la oreja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_15.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el ojo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_16.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el brazo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_2.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la espalda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_9.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el estomago	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_10.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la mano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_13.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el pie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_17.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el dedo de la mano el dedo del pie	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_8.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la pierna	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_18.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la rodilla	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_20.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el tobillo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_22.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el cerebro	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_6.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el corazon	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_7.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	el hueso	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_12.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	los pulmones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_19.mp3	groundtruth
+u9_v1	las_partes_del_cuerpo	la sangre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_21.mp3	groundtruth
+u9_v2	la_salud_y_las_enfermedades	el bienestar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_2.mp3	groundtruth
+u9_v2	la_salud_y_las_enfermedades	el examen fisico	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_3.mp3	groundtruth
+u9_v2	la_salud_y_las_enfermedades	el medico la medica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_4.mp3	groundtruth
+u9_v2	la_salud_y_las_enfermedades	la sala de urgencias la sala de espera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_5.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la alergia ser alergico ser alergica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_7.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la anorexia nervosa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_8.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la ansiedad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_9.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la bulimia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_10.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la cita la cita medica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_11.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la congestion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_12.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la depresion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_13.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	estar enfermo estar enferma	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_14.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la falta de atencion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_15.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la gripe	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_16.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la herida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_17.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la hiperactividad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_18.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la presion alta la presion baja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_19.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	el resfriado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_20.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	tener fiebre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_21.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	tener dolor de	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_22.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	la tos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_23.mp3	groundtruth
+u9_v2	los_sintomas_y_las_enfermedades	el trastorno el trastorno psicologico	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_24.mp3	groundtruth
+u9_v2	para_describir_estados	grave	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_26.mp3	groundtruth
+u9_v2	para_describir_estados	sano sana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_27.mp3	groundtruth
+u9_v2	para_describir_estados	roto rota	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_28.mp3	groundtruth
+u9_v2	los_tratamientos	la curita la tirita la venda spain ] la venda	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_30.mp3	groundtruth
+u9_v2	los_tratamientos	el jarabe	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_31.mp3	groundtruth
+u9_v2	los_tratamientos	el medicamento	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_32.mp3	groundtruth
+u9_v2	los_tratamientos	la pastilla	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_33.mp3	groundtruth
+u9_v2	los_tratamientos	la receta	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_34.mp3	groundtruth
+u9_v2	los_tratamientos	la terapia la psicoterapia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_35.mp3	groundtruth
+u9_v2	los_tratamientos	la vacuna	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_36.mp3	groundtruth
+u9_v2	para_mantenerse_sano	adelgazar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_38.mp3	groundtruth
+u9_v2	para_mantenerse_sano	cuidarse	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_39.mp3	groundtruth
+u9_v2	para_mantenerse_sano	descansar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_40.mp3	groundtruth
+u9_v2	para_mantenerse_sano	engordar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_41.mp3	groundtruth
+u9_v2	para_mantenerse_sano	evitar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_42.mp3	groundtruth
+u9_v2	para_mantenerse_sano	lavarse las manos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_43.mp3	groundtruth
+u9_v2	para_mantenerse_sano	mantener e>ie la buena salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_44.mp3	groundtruth
+u9_v2	para_mantenerse_sano	mantenerse e>ie en forma	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_45.mp3	groundtruth
+u9_v2	para_mantenerse_sano	preocuparse preocuparse por	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_46.mp3	groundtruth
+u9_v2	para_mantenerse_sano	prevenir e>ie una enfermedad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_47.mp3	groundtruth
+u9_v2	para_mantenerse_sano	seguir e>i las recomendaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_48.mp3	groundtruth
+u9_v2	para_mantenerse_sano	tratar tratar de + infinitive	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_49.mp3	groundtruth
+u9_v2	para_mantenerse_sano	vacunarse ponerse una vacuna	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_50.mp3	groundtruth
+u3_v2	actividades_diarias	almorzar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_2.mp3	inferred
+u3_v2	actividades_diarias	desayunar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_3.mp3	inferred
+u3_v2	actividades_diarias	dormir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_4.mp3	inferred
+u3_v2	actividades_diarias	cenar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_5.mp3	inferred
+u3_v2	actividades_diarias	regresar regresar a casa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_6.mp3	inferred
+u3_v2	otras_actividades	ayudar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_8.mp3	inferred
+u3_v2	otras_actividades	bailar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_9.mp3	inferred
+u3_v2	otras_actividades	cocinar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_10.mp3	inferred
+u3_v2	otras_actividades	correr	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_11.mp3	inferred
+u3_v2	otras_actividades	descansar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_12.mp3	inferred
+u3_v2	otras_actividades	ensayar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_13.mp3	inferred
+u3_v2	otras_actividades	escuchar escuchar musica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_14.mp3	inferred
+u3_v2	otras_actividades	estar libre	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_15.mp3	inferred
+u3_v2	otras_actividades	estudiar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_16.mp3	inferred
+u3_v2	otras_actividades	hablar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_17.mp3	inferred
+u3_v2	otras_actividades	hacer ejercicio	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_18.mp3	inferred
+u3_v2	otras_actividades	hacer una videollamada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_19.mp3	inferred
+u3_v2	otras_actividades	ir ir al gimnasio ir al picnic ir al cine ir de compras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_20.mp3	inferred
+u3_v2	otras_actividades	jugar al jugar al videojuego jugar al tenis jugar al futbol	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_21.mp3	inferred
+u3_v2	otras_actividades	lavar lavar la ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_22.mp3	inferred
+u3_v2	otras_actividades	limpiar limpiar la casa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_23.mp3	inferred
+u3_v2	otras_actividades	llegar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_24.mp3	inferred
+u3_v2	otras_actividades	pintar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_25.mp3	inferred
+u3_v2	otras_actividades	practicar practicar yoga	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_26.mp3	inferred
+u3_v2	otras_actividades	preparar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_27.mp3	inferred
+u3_v2	otras_actividades	quedar con	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_28.mp3	inferred
+u3_v2	otras_actividades	salir salir a	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_29.mp3	inferred
+u3_v2	otras_actividades	tomar tomar algo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_30.mp3	inferred
+u3_v2	otras_actividades	trabajar trabajar en	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_31.mp3	inferred
+u3_v2	otras_actividades	ver	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_32.mp3	inferred
+u3_v2	invitar_y_hacer_planes	que tal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_34.mp3	inferred
+u3_v2	invitar_y_hacer_planes	que te parece	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_35.mp3	inferred
+u3_v2	invitar_y_hacer_planes	que vas a hacer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_36.mp3	inferred
+u3_v2	invitar_y_hacer_planes	tengo que [inf tener que]	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_37.mp3	inferred
+u3_v2	invitar_y_hacer_planes	tengo ganas de tengo ganas de algo [inf tener ganas de]	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_38.mp3	inferred
+u3_v2	invitar_y_hacer_planes	tienes planes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_39.mp3	inferred
+u3_v2	aceptar_o_rechazar_una_invitacion	ay no	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_41.mp3	inferred
+u3_v2	aceptar_o_rechazar_una_invitacion	buena idea	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_42.mp3	inferred
+u3_v2	aceptar_o_rechazar_una_invitacion	que lastima	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_43.mp3	inferred
+u3_v2	expresiones_temporales	a que hora	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_45.mp3	inferred
+u3_v2	expresiones_temporales	en punto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_46.mp3	inferred
+u3_v2	expresiones_temporales	por la manana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_47.mp3	inferred
+u3_v2	expresiones_temporales	por la tarde	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_48.mp3	inferred
+u3_v2	expresiones_temporales	por la noche	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_49.mp3	inferred
+u3_v2	expresiones_temporales	tarde	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_50.mp3	inferred
+u3_v2	expresiones_temporales	temprano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_51.mp3	inferred
+u3_v2	expresiones_temporales	todos los dias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_52.mp3	inferred

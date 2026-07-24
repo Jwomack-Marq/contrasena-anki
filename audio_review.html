@@ -1,0 +1,53 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Audio backfill review</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; max-width: 60rem; margin: 2rem auto; padding: 0 1rem; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 2rem; }
+  td, th { border: 1px solid #ccc; padding: 0.4rem 0.6rem; text-align: left; }
+  h2 small { color: #666; font-weight: normal; }
+  .warn { background: #fff3cd; padding: 1rem; border-radius: 8px; }
+</style>
+<h1>Audio backfill review — inferred decks</h1>
+<p class="warn"><strong>Listen before trusting:</strong> every clip below must say the Spanish
+word next to it. These URLs were <em>inferred</em> from file positions, not read from an API.
+Pay special attention to the first and last word of each section — an alignment error shows
+there first. If a deck is wrong, delete its rows from <code>audio_map.txt</code> and re-run
+<code>node backfill_audio.mjs --apply</code>.</p>
+
+  <section>
+    <h2>u3_v2 <small>(header-first)</small></h2>
+    <table>
+      <tr><th>Section</th><th>Spanish</th><th>Clip</th></tr>
+      <tr><td>actividades_diarias</td><td><strong>almorzar</strong> — to have lunch</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_2.mp3"></audio></td></tr>
+      <tr><td>actividades_diarias</td><td><strong>dormir</strong> — to sleep / to fall asleep</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_4.mp3"></audio></td></tr>
+      <tr><td>actividades_diarias</td><td><strong>regresar / regresar a casa</strong> — to return / to return home</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_6.mp3"></audio></td></tr>
+      <tr><td>otras_actividades</td><td><strong>ayudar</strong> — to help</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_8.mp3"></audio></td></tr>
+      <tr><td>otras_actividades</td><td><strong>ir / ir al gimnasio / ir al picnic / ir al cine / ir de compras</strong> — to go / to go to the gym / to go on a picnic / to go to the movies / to go shopping</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_20.mp3"></audio></td></tr>
+      <tr><td>otras_actividades</td><td><strong>ver</strong> — to see</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_32.mp3"></audio></td></tr>
+      <tr><td>invitar_y_hacer_planes</td><td><strong>¿Qué tal...?</strong> — How about…? / What about…?</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_34.mp3"></audio></td></tr>
+      <tr><td>invitar_y_hacer_planes</td><td><strong>Tengo que... [inf. tener que]</strong> — I have to… [inf. to have to]</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_37.mp3"></audio></td></tr>
+      <tr><td>invitar_y_hacer_planes</td><td><strong>¿Tienes planes?</strong> — Do you have plans?</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_39.mp3"></audio></td></tr>
+      <tr><td>aceptar_o_rechazar_una_invitacion</td><td><strong>¡Ay, no!</strong> — Oh no!</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_41.mp3"></audio></td></tr>
+      <tr><td>aceptar_o_rechazar_una_invitacion</td><td><strong>¡Buena idea!</strong> — Good idea!</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_42.mp3"></audio></td></tr>
+      <tr><td>aceptar_o_rechazar_una_invitacion</td><td><strong>¡Qué lástima!</strong> — What a shame!</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_43.mp3"></audio></td></tr>
+      <tr><td>expresiones_temporales</td><td><strong>¿A qué hora?</strong> — At what time?</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_45.mp3"></audio></td></tr>
+      <tr><td>expresiones_temporales</td><td><strong>por la noche</strong> — at night</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_49.mp3"></audio></td></tr>
+      <tr><td>expresiones_temporales</td><td><strong>todos los días</strong> — every day</td>
+        <td><audio controls preload="none" src="https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_52.mp3"></audio></td></tr>
+    </table>
+  </section>

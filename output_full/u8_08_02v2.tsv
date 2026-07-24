@@ -1,0 +1,43 @@
+#separator:tab
+#html:false
+#tags column:3
+el desayuno	breakfast	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_2.mp3
+el almuerzo	lunch	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_3.mp3
+la merienda	snack	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_4.mp3
+la comida/la comida principal	meal/main meal/dinner (served midday in many Hispanic countries)	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_5.mp3
+la cena	supper	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_6.mp3
+la cuchara	spoon	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_8.mp3
+el cuchillo	knife	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_9.mp3
+el plato	plate	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_10.mp3
+el plato hondo	bowl	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_11.mp3
+el tenedor	fork	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_12.mp3
+batir	to beat / to shake	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_14.mp3
+calentar (e>ie)	to warm / to heat up	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_15.mp3
+cortar	to cut	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_16.mp3
+freír (e>i)	to fry	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_17.mp3
+hervir (e>ie)	to boil	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_18.mp3
+mezclar	to mix	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_19.mp3
+pelar	to peel	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_20.mp3
+la ensalada/la ensalada mixta	salad/mixed salad	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_22.mp3
+el sándwich / el bocadillo (Spain)	sandwich / submarine sandwich	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_23.mp3
+la sopa	soup	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_24.mp3
+a la parrilla	grilled	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_25.mp3
+al horno	baked	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_26.mp3
+al vapor	steamed	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_27.mp3
+crudo/cruda	raw	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_28.mp3
+frito/frita	fried	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_29.mp3
+vegano/vegana	vegan	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_30.mp3
+vegetariano/vegetariana	vegetarian	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_31.mp3
+servir (e>i) frío/caliente/a temperatura ambiente	to serve cold/hot/room temperature	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_32.mp3
+agridulce	sweet and sour, bittersweet	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_34.mp3
+agrio/agria, amargo/amarga	bitter	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_35.mp3
+casero/casera	homemade	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_36.mp3
+dulce	sweet	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_37.mp3
+grasoso/grasosa	fatty	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_38.mp3
+liviano/liviana	light	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_39.mp3
+picante	spicy	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_40.mp3
+rico/rica	delicious	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_41.mp3
+sano/sana	healthy	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_42.mp3
+suave	smooth	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_43.mp3
+Sabe a/sabe a ajo/sabe a pollo.	Tastes like/tastes like garlic/tastes like chicken.	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_44.mp3
+Sabe bien/ sabe mal.	Tastes good/tastes bad.	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_45.mp3
