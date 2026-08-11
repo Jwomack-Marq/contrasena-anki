@@ -2,11 +2,13 @@
 // `CACHE_VERSION` is rewritten on every `node build_flashcards.mjs` so each
 // rebuild invalidates the app cache and clients pick up new content within
 // two opens (first open: stale, background refresh; second open: fresh).
-const CACHE_VERSION = '2026-07-28T19-20-34-297Z';
+const CACHE_VERSION = '2026-08-11T12-15-07-790Z';
 const CACHE_NAME = 'contrasena-flashcards-' + CACHE_VERSION;
 // Long-lived, content-addressed by URL — audio never changes, so we keep
-// this cache across rebuilds.
-const AUDIO_CACHE = 'contrasena-audio-v1';
+// this cache across rebuilds. Must match AUDIO_CACHE in index.html.
+// v2: v1 could hold corrupt entries (S3 error pages cached as MP3s);
+// renaming flushes every client's audio cache once.
+const AUDIO_CACHE = 'contrasena-audio-v2';
 const AUDIO_HOST = 's3.us-east-2.amazonaws.com';
 const ASSETS = [
   './',
@@ -76,15 +78,30 @@ self.addEventListener('fetch', (event) => {
 
   // Contraseña audio: cache-first. Audio files never change.
   if (url.hostname === AUDIO_HOST && url.pathname.toLowerCase().endsWith('.mp3')) {
+    // A mid-file seek asks for a nonzero byte range, which a cached full
+    // response can't answer — serving one anyway makes the decoder fail
+    // (media error code 3) — so those requests go straight to the network.
+    const range = /bytes=(\d+)-/.exec(req.headers.get('range') || '');
+    if (range && range[1] !== '0') {
+      event.respondWith(fetch(req).catch(() =>
+        new Response('Audio offline and not cached.', { status: 503 })
+      ));
+      return;
+    }
     event.respondWith((async () => {
       const cache = await caches.open(AUDIO_CACHE);
-      const hit = await cache.match(req);
+      const hit = await cache.match(req, { ignoreVary: true });
       if (hit) return hit;
       try {
         // no-cors yields an opaque response — still cacheable and <audio>
-        // can play it back.
+        // can play it back. put() rejects partial (206) and mid-transfer
+        // truncated bodies, so those never poison the cache; a complete
+        // wrong body (S3 error page) can still slip in, which playback
+        // heals by evicting the entry and retrying (playMp3 in index.html).
         const resp = await fetch(req, { mode: 'no-cors' });
-        if (resp && (resp.ok || resp.type === 'opaque')) cache.put(req, resp.clone());
+        if (resp && (resp.ok || resp.type === 'opaque')) {
+          cache.put(req, resp.clone()).catch(() => {});
+        }
         return resp;
       } catch (_) {
         return new Response('Audio offline and not cached.', { status: 503 });

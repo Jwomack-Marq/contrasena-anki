@@ -697,7 +697,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-07-28T19-20-34-297Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-08-11T12-15-07-790Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -738,7 +738,7 @@
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-07-28T19-20-34-297Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-08-11T12-15-07-790Z</span></span>
   </div>
 </section>
 
@@ -1361,13 +1361,28 @@ function playCurrentAudio() {
     return;
   }
   stopTts();
+  playMp3(c.audioUrl, false);
+}
 
+// Must match AUDIO_CACHE in service-worker.js.
+const AUDIO_CACHE = 'contrasena-audio-v2';
+
+// The service worker caches MP3s forever, so a broken download or an S3 error
+// page stored there makes the same card fail on every play (decode error
+// code 3/4). Deleting the entry sends the next fetch back to the network.
+async function evictCachedAudio(url) {
+  if (!('caches' in window)) return false;
+  try { return await (await caches.open(AUDIO_CACHE)).delete(url); }
+  catch (_) { return false; }
+}
+
+function playMp3(srcUrl, isRetry) {
   if (currentAudio) { try { currentAudio.pause(); } catch (_) {} currentAudio = null; }
-  audioStatus('Loading: …' + c.audioUrl.slice(-30), 'info');
+  audioStatus('Loading: …' + srcUrl.slice(-30), 'info');
 
   const a = new Audio();
   a.preload = 'auto';
-  a.src = c.audioUrl;
+  a.src = srcUrl;
   currentAudio = a;
   playBtn.classList.add('playing');
   topPlayBtn.classList.add('playing');
@@ -1380,9 +1395,17 @@ function playCurrentAudio() {
   a.addEventListener('playing', () => audioStatus('Playing ▶', 'ok'));
   a.addEventListener('ended', () => { audioStatus('Done ✓', 'ok'); clear(); });
   a.addEventListener('error', () => {
-    const err = a.error;
-    audioStatus('audio error: code=' + (err && err.code), 'err');
+    const code = a.error && a.error.code;
+    const isCurrent = currentAudio === a;  // user may have moved to another card
     clear();
+    // 3 = decode, 4 = src unsupported: bad data, almost always a poisoned
+    // cache entry. Evict it and retry once from the network.
+    if (isCurrent && !isRetry && (code === 3 || code === 4)) {
+      audioStatus('Bad audio data (code=' + code + ') — clearing cached copy and retrying…', 'info');
+      evictCachedAudio(srcUrl).then(() => { if (currentAudio === null) playMp3(srcUrl, true); });
+      return;
+    }
+    audioStatus('audio error: code=' + code, 'err');
   });
   const playResult = a.play();
   if (playResult && playResult.catch) {
