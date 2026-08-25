@@ -22,3 +22,5 @@ https://contrasena.s3.us-east-2.amazonaws.com/ADA/u11/Contrasena_Vocabulario_11-
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u11/Contrasena_Vocabulario_11-2.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Contrasena_Vocabulario_12-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Contrasena_Vocabulario_12-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u13/Contrasena_Vocabulario_13-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u13/Contrasena_Vocabulario_13-2.html

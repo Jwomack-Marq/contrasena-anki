@@ -179,6 +179,60 @@ u12_v2	palabras_negativas	ningun ninguno ninguna	https://s3.us-east-2.amazonaws.
 u12_v2	palabras_negativas	ni ni	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_13.mp3	groundtruth
 u12_v2	palabras_negativas	nunca	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_14.mp3	groundtruth
 u12_v2	palabras_negativas	tampoco	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_15.mp3	groundtruth
+u13_v1	los_recuerdos	la anoranza	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_2.mp3	groundtruth
+u13_v1	los_recuerdos	la caja	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_3.mp3	groundtruth
+u13_v1	los_recuerdos	la chispa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_4.mp3	groundtruth
+u13_v1	los_recuerdos	el hilo el hilo de la identidad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_5.mp3	groundtruth
+u13_v1	los_recuerdos	el proceso retrospectivo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_6.mp3	groundtruth
+u13_v1	los_recuerdos	el recuerdo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_7.mp3	groundtruth
+u13_v1	los_recuerdos	dejar atras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_8.mp3	groundtruth
+u13_v1	los_recuerdos	provocar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_9.mp3	groundtruth
+u13_v1	los_recuerdos	quedar atras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_10.mp3	groundtruth
+u13_v1	las_emociones	la lagrima	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_12.mp3	groundtruth
+u13_v1	las_emociones	la mejilla	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_13.mp3	groundtruth
+u13_v1	las_emociones	la tristeza	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_14.mp3	groundtruth
+u13_v1	las_emociones	hundir en	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_15.mp3	groundtruth
+u13_v1	las_emociones	clavado clavada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_16.mp3	groundtruth
+u13_v1	las_emociones	nostalgico nostalgica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_17.mp3	groundtruth
+u13_v1	los_momentos_importantes	la bandera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_19.mp3	groundtruth
+u13_v1	los_momentos_importantes	la ceremonia de ciudadania	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_20.mp3	groundtruth
+u13_v1	los_momentos_importantes	el juramento	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_21.mp3	groundtruth
+u13_v1	los_momentos_importantes	nacer de nuevo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_22.mp3	groundtruth
+u13_v1	los_momentos_importantes	volver o>ue + infinitivo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_23.mp3	groundtruth
+u13_v1	las_expresiones_temporales	anos atras diez anos atras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_25.mp3	groundtruth
+u13_v1	las_expresiones_temporales	apenas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_26.mp3	groundtruth
+u13_v1	las_expresiones_temporales	de repente	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_27.mp3	groundtruth
+u13_v1	las_expresiones_temporales	despues de despues de la clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_28.mp3	groundtruth
+u13_v1	las_expresiones_temporales	ese dia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_29.mp3	groundtruth
+u13_v1	las_expresiones_temporales	esa tarde	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_30.mp3	groundtruth
+u13_v2	los_procesos	asimilar asimilarse	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_2.mp3	groundtruth
+u13_v2	los_procesos	cruzar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_3.mp3	groundtruth
+u13_v2	los_procesos	deportar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_4.mp3	groundtruth
+u13_v2	los_procesos	emigrar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_5.mp3	groundtruth
+u13_v2	los_procesos	heredar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_6.mp3	groundtruth
+u13_v2	los_procesos	inmigrar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_7.mp3	groundtruth
+u13_v2	los_procesos	mejorar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_8.mp3	groundtruth
+u13_v2	los_procesos	mudar mudarse	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_9.mp3	groundtruth
+u13_v2	las_personas_y_las_comunidades	el ciudadano la ciudadana	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_11.mp3	groundtruth
+u13_v2	las_personas_y_las_comunidades	la comunidad	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_12.mp3	groundtruth
+u13_v2	las_personas_y_las_comunidades	la generacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_13.mp3	groundtruth
+u13_v2	las_personas_y_las_comunidades	el indocumentado la indocumentada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_14.mp3	groundtruth
+u13_v2	las_personas_y_las_comunidades	el inmigrante la inmigrante	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_15.mp3	groundtruth
+u13_v2	las_personas_y_las_comunidades	la poblacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_16.mp3	groundtruth
+u13_v2	las_personas_y_las_comunidades	el refugiado la refugiada	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_17.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	la crisis	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_19.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	la democracia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_20.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	la dictadura	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_21.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	la frontera	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_22.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	el gobierno	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_23.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	la guerra	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_24.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	la migracion forzada la migracion voluntaria	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_25.mp3	groundtruth
+u13_v2	las_causas_y_el_contexto	la paz	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_26.mp3	groundtruth
+u13_v2	el_estatus_legal	la amnistia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_28.mp3	groundtruth
+u13_v2	el_estatus_legal	el asilo politico	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_29.mp3	groundtruth
+u13_v2	el_estatus_legal	la ley las leyes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_30.mp3	groundtruth
+u13_v2	el_estatus_legal	la naturalizacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_31.mp3	groundtruth
+u13_v2	el_estatus_legal	la tarjeta de residente permanente la tarjeta verde	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_32.mp3	groundtruth
 u1_v1	los_perfiles	el calendario de eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_2.mp3	groundtruth
 u1_v1	los_perfiles	la cronologia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_3.mp3	groundtruth
 u1_v1	los_perfiles	el estado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_4.mp3	groundtruth

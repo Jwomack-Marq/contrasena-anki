@@ -2,7 +2,7 @@
 # This is the authoritative vocab source: clean two-column Spanish|English tables,
 # real UTF-8 accents, correct column order. It replaces the older PDF extraction
 # (grab_pdfs.mjs), which had reversed columns, section headers leaked as cards,
-# and split/truncated entries. Covers all 12 units, both parts.
+# and split/truncated entries. Covers units 1-13, both parts.
 # Run: node grab_vocab_html.mjs --urls vocab_html_urls.txt --out ./output_pdfs
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Contrasena_Vocabulario_01-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Contrasena_Vocabulario_01-2.html
@@ -28,3 +28,5 @@ https://contrasena.s3.us-east-2.amazonaws.com/ADA/u11/Contrasena_Vocabulario_11-
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u11/Contrasena_Vocabulario_11-2.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Contrasena_Vocabulario_12-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Contrasena_Vocabulario_12-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u13/Contrasena_Vocabulario_13-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u13/Contrasena_Vocabulario_13-2.html
