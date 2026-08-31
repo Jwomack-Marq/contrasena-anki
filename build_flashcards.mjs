@@ -43,10 +43,10 @@ const tsvs = walk(values.root, values.root)
 
 // Stable, friendly order: combined files first, then by path.
 tsvs.sort((a, b) => {
-  const ac = /contrasena_all/i.test(a.path) ? 0 : 1;
-  const bc = /contrasena_all/i.test(b.path) ? 0 : 1;
+  const ac = /contrasena_all|all units/i.test(a.path) ? 0 : 1;
+  const bc = /contrasena_all|all units/i.test(b.path) ? 0 : 1;
   if (ac !== bc) return ac - bc;
-  return a.path.localeCompare(b.path);
+  return a.path.localeCompare(b.path, undefined, { numeric: true });
 });
 
 const html = readFileSync(values.html, 'utf8');

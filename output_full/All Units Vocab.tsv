@@ -1,0 +1,939 @@
+#separator:tab
+#html:false
+#tags column:3
+asistir	to attend	Contrasena::lessons::u1_01_01 Contrasena::sections::unknown	
+colegio	high school	Contrasena::lessons::u1_01_01 Contrasena::sections::unknown	
+éxito	success	Contrasena::lessons::u1_01_01 Contrasena::sections::unknown	
+grande	big	Contrasena::lessons::u1_01_01 Contrasena::sections::unknown	
+realizar	to achieve/accomplish	Contrasena::lessons::u1_01_01 Contrasena::sections::unknown	
+suceso	event	Contrasena::lessons::u1_01_01 Contrasena::sections::unknown	
+el calendario de eventos	calendar of events	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_2.mp3
+la cronología	timeline	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_3.mp3
+el estado	status (marital, emotional state)	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_4.mp3
+la foto/la fotografía	picture/photograph	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_5.mp3
+el perfil	profile	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_6.mp3
+la red social	the social network	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_7.mp3
+el video	video	Contrasena::lessons::u1_01_02v2 Contrasena::sections::los_perfiles	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_8.mp3
+actualizar	to update	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_10.mp3
+crear	to create	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_11.mp3
+editar	to edit	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_12.mp3
+mandar un mensaje/mandar un mensaje de texto	to send a message/to send a text message	Contrasena::lessons::u1_01_02v2 Contrasena::sections::las_acciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_13.mp3
+el apellido/los apellidos	last name/last names	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_15.mp3
+la dirección de correo electrónico/el e-mail	email address	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_16.mp3
+la edad	age	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_17.mp3
+el nombre	first name	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_18.mp3
+el teléfono/el número de teléfono	telephone/telephone number	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_informacion_basica	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_19.mp3
+la ciudad	city	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_21.mp3
+el cumpleaños	birthday	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_22.mp3
+la escuela secundaria	high school	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_23.mp3
+el estado	state (of a territory)	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_24.mp3
+la fecha de nacimiento	birthdate	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_25.mp3
+el país	country	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_26.mp3
+el trabajo	work	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_27.mp3
+la universidad	university/college	Contrasena::lessons::u1_01_02v2 Contrasena::sections::la_biografia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_28.mp3
+activo/activa	active	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_30.mp3
+atlético/atlética	athletic	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_31.mp3
+aventurero/aventurera	adventurous	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_32.mp3
+cómico/cómica	funny, comical	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_33.mp3
+estudioso/estudiosa	studious	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_34.mp3
+generoso/generosa	generous	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_35.mp3
+inteligente	intelligent	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_36.mp3
+sedentario/sedentaria	sedentary	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_37.mp3
+tímido/tímida	timid	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_38.mp3
+trabajador/trabajadora	hard-working	Contrasena::lessons::u1_01_02v2 Contrasena::sections::yo_soy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_39.mp3
+aburrido/aburrida	bored	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_41.mp3
+cansado/cansada	tired	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_42.mp3
+contento/contenta	happy	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_43.mp3
+emocionado/emocionada	excited, emotional	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_44.mp3
+enojado/enojada	angry	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_45.mp3
+nervioso/nerviosa	nervous	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_46.mp3
+ocupado/ocupada	busy, occupied	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_47.mp3
+relajado/relajada	relaxed	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_estoy	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_48.mp3
+(…) años	(…) years old	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_50.mp3
+calor	hot	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_51.mp3
+frío	cold	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_52.mp3
+hambre	hungry	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_53.mp3
+miedo	scared	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_54.mp3
+sueño	sleepy	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_55.mp3
+sed	thirsty	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_56.mp3
+vergüenza	embarrassed	Contrasena::lessons::u1_01_02v2 Contrasena::sections::ahora_tengo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_1_57.mp3
+cero	zero	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_1.mp3
+uno	one	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_2.mp3
+dos	two	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_3.mp3
+tres	three	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_4.mp3
+cuatro	four	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_5.mp3
+cinco	five	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_6.mp3
+seis	six	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_7.mp3
+siete	seven	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_8.mp3
+ocho	eight	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_9.mp3
+nueve	nine	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_10.mp3
+diez	ten	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_11.mp3
+once	eleven	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_12.mp3
+doce	twelve	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_13.mp3
+13	trece	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_14.mp3
+14	catorce	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_15.mp3
+15	quince	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_16.mp3
+16	dieciséis	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_17.mp3
+17	diecisiete	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_18.mp3
+18	dieciocho	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_19.mp3
+19	diecinueve	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_20.mp3
+20	veinte	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_21.mp3
+veintiuno	twenty-one	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_23.mp3
+veintidós	twenty-two	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_24.mp3
+veintitrés	twenty-three	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_25.mp3
+veinticuatro	twenty-four	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_26.mp3
+veinticinco	twenty-five	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_27.mp3
+veintiséis	twenty-six	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_28.mp3
+veintisiete	twenty-seven	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_29.mp3
+veintiocho	twenty-eight	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_30.mp3
+veintinueve	twenty-nine	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_31.mp3
+treinta	thirty	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_32.mp3
+treinta y uno	thirty-one	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_33.mp3
+treinta y dos	thirty-two	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_34.mp3
+treinta y tres	thirty-three	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_35.mp3
+treinta y cuatro	thirty-four	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_36.mp3
+treinta y cinco	thirty-five	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_37.mp3
+treinta y seis	thirty-six	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_38.mp3
+treinta y siete	thirty-seven	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_39.mp3
+treinta y ocho	thirty-eight	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_40.mp3
+treinta y nueve	thirty-nine	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_41.mp3
+diez	ten	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_43.mp3
+veinte	twenty	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_44.mp3
+treinta	thirty	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_45.mp3
+cuarenta	forty	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_46.mp3
+cincuenta	fifty	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_47.mp3
+sesenta	sixty	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_48.mp3
+setenta	seventy	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_49.mp3
+ochenta	eighty	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_50.mp3
+noventa	ninety	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_51.mp3
+cien	one hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_53.mp3
+doscientos	two hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_54.mp3
+trescientos	three hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_55.mp3
+cuatrocientos	four hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_56.mp3
+quinientos	five hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_57.mp3
+seiscientos	six hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_58.mp3
+setecientos	seven hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_59.mp3
+ochocientos	eight hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_60.mp3
+novecientos	nine hundred	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_61.mp3
+mil	one thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_63.mp3
+dos mil	two thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_64.mp3
+tres mil	three thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_65.mp3
+cuatro mil	four thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_66.mp3
+cinco mil	five thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_67.mp3
+seis mil	six thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_68.mp3
+siete mil	seven thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_69.mp3
+ocho mil	eight thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_70.mp3
+nueve mil	nine thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_71.mp3
+diez mil	ten thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_72.mp3
+diez mil	ten thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_74.mp3
+veinte mil	twenty thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_75.mp3
+treinta mil	thirty thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_76.mp3
+cuarenta mil	forty thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_77.mp3
+cincuenta mil	fifty thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_78.mp3
+sesenta mil	sixty thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_79.mp3
+setenta mil	seventy thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_80.mp3
+ochenta mil	eighty thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_81.mp3
+noventa mil	ninety thousand	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_82.mp3
+un millón	one million	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_83.mp3
+dos millones	two million	Contrasena::lessons::u1_01_03v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/1_2_84.mp3
+No entiendo.	I don’t understand.	Contrasena::lessons::u2_02_01 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/WIDGET_02-01.mp3
+¿Puedes repetirlo?	Can you repeat that?	Contrasena::lessons::u2_02_01 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/WIDGET_02-02.mp3
+¿Qué significa…?	What does… mean?	Contrasena::lessons::u2_02_01 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/WIDGET_02-03.mp3
+¿Cómo se dice… en inglés/en español?	How do you say… in English/in Spanish?	Contrasena::lessons::u2_02_01 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/WIDGET_02-04.mp3
+Más despacio (por favor).	Slower (please).	Contrasena::lessons::u2_02_01 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/WIDGET_02-05.mp3
+¡Buenos días!	Good morning!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_2.mp3
+¡Buenas tardes!	Good afternoon!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_3.mp3
+¡Buenas noches!	Good evening!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_4.mp3
+¡Hola!	Hi!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::los_saludos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_5.mp3
+¡Adiós! / ¡Chau!	Goodbye! /Bye!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_7.mp3
+¡Hasta luego!	See you later!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_8.mp3
+¡Hasta mañana!	See you tomorrow!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_9.mp3
+¡Hasta pronto!	See you soon!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_10.mp3
+¡Nos vemos!	See you!	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_despedidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_11.mp3
+¿Cómo se llama (usted) / Cómo te llamas (tú)?	What is your name? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_13.mp3
+Me llamo…	My name is…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_14.mp3
+¿Cómo está (usted)? / ¿Cómo estás (tú)?	How are you? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_15.mp3
+¿Qué pasa? / ¿Qué hay de nuevo?	What’s up? / What’s new?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_16.mp3
+¿Qué tal?	How are you?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_17.mp3
+Muy bien./ No Muy bien.	Very well./Not Very well.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_18.mp3
+Regular. / Así así.	OK.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_19.mp3
+¿De dónde es (usted)? / ¿De dónde eres (tú)?	Where are you from? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_20.mp3
+Soy de…	I’m from…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_21.mp3
+¿Qué estudia (usted) / Qué estudias (tú)?	What do you study? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_22.mp3
+Estudio…	I study...	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_23.mp3
+¿Cuál es su especialización / ¿Cuál es tu especialización?	What‘s your major?	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_24.mp3
+Mi especialización es…	My major is…	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_25.mp3
+No sé.	I don’t know.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_26.mp3
+¿Y usted / tú?	And you? (formal / informal)	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_27.mp3
+Gracias.	Thank you.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_28.mp3
+Mucho gusto.	Pleased to meet you.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_29.mp3
+Igualmente.	Likewise.	Contrasena::lessons::u2_02_04v2 Contrasena::sections::las_preguntas_y_respuestas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_1_30.mp3
+Las humanidades	Humanities	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_2.mp3
+la arquitectura	architecture	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_3.mp3
+el arte	art	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_4.mp3
+el derecho	law	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_5.mp3
+el español	Spanish	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_6.mp3
+la filosofía	philosophy	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_7.mp3
+la historia	history	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_8.mp3
+los idiomas	languages	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_9.mp3
+el inglés	English	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_10.mp3
+la literatura	literature	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_11.mp3
+la música	music	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_12.mp3
+la pedagogía	pedagogy	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_13.mp3
+el periodismo	journalism	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_14.mp3
+Las ciencias naturales y formales	Natural and Formal Sciences	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_15.mp3
+la biología	biology	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_16.mp3
+las ciencias naturales	natural sciences	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_17.mp3
+la computación / la informática	computer science	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_18.mp3
+la física	physics	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_19.mp3
+la matemática/las matemáticas	mathematics	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_20.mp3
+la medicina	medicine	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_21.mp3
+la química	chemistry	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_22.mp3
+las ciencias/ las ciencias políticas/ las ciencias sociales	science / political science / social science	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_23.mp3
+la administración de empresas	business administration	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_24.mp3
+las ciencias (políticas / sociales)	(political / social) science	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_25.mp3
+las comunicaciones	communications / public relations	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_26.mp3
+la contabilidad	accounting	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_27.mp3
+la economía	economics	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_28.mp3
+la geografía	geography	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_29.mp3
+el mercadeo	marketing	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_30.mp3
+la psicología	psychology	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_31.mp3
+la sociología	sociology	Contrasena::lessons::u2_02_05v2 Contrasena::sections::los_cursos_y_las_especializaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_32.mp3
+el curso	course	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_34.mp3
+el departamento	department	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_35.mp3
+el examen	exam	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_36.mp3
+el horario	schedule	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_37.mp3
+la lección	lesson	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_38.mp3
+el semestre	semester	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_39.mp3
+el trimestre	trimester	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_40.mp3
+estudiar	study	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_41.mp3
+difícil	difficult/hard	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_42.mp3
+fácil	easy	Contrasena::lessons::u2_02_05v2 Contrasena::sections::para_hablar_de_los_cursos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u2/2_2_43.mp3
+lunes	Monday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+martes	Tuesday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+miércoles	Wednesday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+jueves	Thursday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+viernes	Friday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+sábado	Saturday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+domingo	Sunday	Contrasena::lessons::u3_v1 Contrasena::sections::los_dias_de_la_semana	
+enero	January	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+febrero	February	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+marzo	March	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+abril	April	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+mayo	May	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+junio	June	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+julio	July	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+agosto	August	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+septiembre	September	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+octubre	October	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+noviembre	November	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+diciembre	December	Contrasena::lessons::u3_v1 Contrasena::sections::los_meses_del_ano	
+el otoño	fall	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	
+el invierno	winter	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	
+la primavera	spring	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	
+el verano	summer	Contrasena::lessons::u3_v1 Contrasena::sections::las_estaciones	
+almorzar	to have lunch	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_2.mp3
+desayunar	to have breakfast	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_3.mp3
+dormir	to sleep / to fall asleep	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_4.mp3
+cenar	to have supper	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_5.mp3
+regresar / regresar a casa	to return / to return home	Contrasena::lessons::u3_v2 Contrasena::sections::actividades_diarias	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_6.mp3
+ayudar	to help	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_8.mp3
+bailar	to dance	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_9.mp3
+cocinar	to cook	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_10.mp3
+correr	to run	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_11.mp3
+descansar	to rest	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_12.mp3
+ensayar	to practice	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_13.mp3
+escuchar / escuchar música	to listen / to listen to music	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_14.mp3
+estar libre	to be free	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_15.mp3
+estudiar	to study	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_16.mp3
+hablar	to speak / to talk	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_17.mp3
+hacer ejercicio	to do exercise	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_18.mp3
+hacer una videollamada	to make a videocall	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_19.mp3
+ir / ir al gimnasio / ir al picnic / ir al cine / ir de compras	to go / to go to the gym / to go on a picnic / to go to the movies / to go shopping	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_20.mp3
+jugar al... / jugar al videojuego / jugar al tenis / jugar al fútbol	to play... / to play a videogame / to play tennis / to play soccer	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_21.mp3
+lavar / lavar la ropa	to wash / to wash clothes	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_22.mp3
+limpiar / limpiar la casa	to clean / to clean the house	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_23.mp3
+llegar	to arrive	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_24.mp3
+pintar	to paint	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_25.mp3
+practicar / practicar yoga	to practice, to do / to practice yoga, to do yoga	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_26.mp3
+preparar	to prepare	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_27.mp3
+quedar con	to arrange to meet with	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_28.mp3
+salir / salir a	to go out, to leave / to leave for	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_29.mp3
+tomar / tomar algo	to have a drink / to drink something	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_30.mp3
+trabajar / trabajar en	to work / to work on	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_31.mp3
+ver	to see	Contrasena::lessons::u3_v2 Contrasena::sections::otras_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_32.mp3
+¿Qué tal...?	How about…? / What about…?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_34.mp3
+¿Qué te parece?	What do you think?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_35.mp3
+¿Qué vas a hacer...?	What are you doing? / What are you going to do?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_36.mp3
+Tengo que... [inf. tener que]	I have to… [inf. to have to]	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_37.mp3
+Tengo ganas de… / Tengo ganas de algo [inf. tener ganas de]	I feel like… / I feel like doing something [inf. to feel like]	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_38.mp3
+¿Tienes planes?	Do you have plans?	Contrasena::lessons::u3_v2 Contrasena::sections::invitar_y_hacer_planes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_39.mp3
+¡Ay, no!	Oh no!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_41.mp3
+¡Buena idea!	Good idea!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_42.mp3
+¡Qué lástima!	What a shame!	Contrasena::lessons::u3_v2 Contrasena::sections::aceptar_o_rechazar_una_invitacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_43.mp3
+¿A qué hora?	At what time?	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_45.mp3
+en punto	on the dot	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_46.mp3
+por la mañana	in the morning	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_47.mp3
+por la tarde	in the afternoon	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_48.mp3
+por la noche	at night	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_49.mp3
+tarde	late / afternoon	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_50.mp3
+temprano	early	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_51.mp3
+todos los días	every day	Contrasena::lessons::u3_v2 Contrasena::sections::expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u3/3_2_52.mp3
+/a/ [accented]	clase	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_clase.mp3
+/a/ [unaccented]	biblioteca	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_biblioteca.mp3
+/e/ [accented]	centro	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_centro.mp3
+/e/ [unaccented]	ordenado	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_ordenado.mp3
+/o/ [accented]	salón	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_salon.mp3
+/o/ [unaccented]	viejo	Contrasena::lessons::u4_04_06 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_viejo.mp3
+el apartamento	the apartment	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_2.mp3
+el aula/el aula virtual	the classroom/the virtual classroom	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_3.mp3
+la biblioteca	the library	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_4.mp3
+la cafetería	the cafeteria	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_5.mp3
+el campus/el campus virtual	the campus/the virtual campus	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_6.mp3
+la casa	the house	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_7.mp3
+el centro estudiantil	the student center	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_8.mp3
+la clase	the class	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_9.mp3
+el/la compañero/a de cuarto	the roommate	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_10.mp3
+el cuarto	the room	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_11.mp3
+el edificio	the building	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_12.mp3
+el gimnasio	the gym	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_13.mp3
+el laboratorio	the lab	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_14.mp3
+la librería	the bookstore	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_15.mp3
+la oficina	the office	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_16.mp3
+la residencia estudiantil	the dormitory	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_17.mp3
+la reunión	the meeting	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_18.mp3
+el salón de clase	the classroom	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_19.mp3
+la tienda/la tienda virtual	the store/the online store	Contrasena::lessons::u4_04_01v2 Contrasena::sections::las_personas_y_los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_20.mp3
+el bolígrafo, la pluma	the pen	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_22.mp3
+el cuaderno	the notebook	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_23.mp3
+el escritorio	the desk	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_24.mp3
+la fecha de entrega	the due date	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_25.mp3
+el foro	the discussion board	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_26.mp3
+el libro de texto	the textbook	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_27.mp3
+la nota	the grade	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_28.mp3
+la computadora/la computadora portátil	the computer/the laptop	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_29.mp3
+la prueba	the quiz	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_30.mp3
+la tableta	the tablet	Contrasena::lessons::u4_04_01v2 Contrasena::sections::en_el_salon_de_clase	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_31.mp3
+administrativo/administrativa	administrative	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_33.mp3
+cerca de	close to	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_34.mp3
+desordenado/desordenada	disorganized/messy	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_35.mp3
+lejos de	far from	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_36.mp3
+limpio/limpia	clean	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_37.mp3
+moderno/moderna	modern	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_38.mp3
+nuevo/nueva	new	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_39.mp3
+ordenado/ordenada	organized/neat	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_40.mp3
+sucio/sucia	dirty	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_41.mp3
+último/última	last (most recent)	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_42.mp3
+universitario/universitaria	university-	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_43.mp3
+viejo/vieja	old	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_describir_a_personas_y_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_44.mp3
+aprender	to learn	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_46.mp3
+buscar	to look for	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_47.mp3
+calificar	to grade	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_48.mp3
+caminar	to walk	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_49.mp3
+compartir	to share	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_50.mp3
+comprar	to buy	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_51.mp3
+enseñar	to teach	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_52.mp3
+escribir	to write	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_53.mp3
+hablar	to speak	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_55.mp3
+leer	to read	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_56.mp3
+participar	to participate	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_57.mp3
+pasar/pasar tiempo	to pass/to pass time	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_58.mp3
+recibir	to receive	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_59.mp3
+sacar/sacar un libro/sacar una nota	to take out/to take out a book/to get a grade	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_60.mp3
+terminar	to finish	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_61.mp3
+tomar/tomar una clase	to take/to take a class	Contrasena::lessons::u4_04_01v2 Contrasena::sections::para_hablar_de_lo_que_haces	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_1_62.mp3
+gustar	to be pleasing to someone	Contrasena::lessons::u4_04_02v2 Contrasena::sections::gustos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_2_1.mp3
+Me gusta.../Me gustan...	I like… (singular/plural)	Contrasena::lessons::u4_04_02v2 Contrasena::sections::gustos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_2_2.mp3
+No me gusta.../No me gustan...	I don’t like…(singular/plural)	Contrasena::lessons::u4_04_02v2 Contrasena::sections::gustos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u4/4_2_3.mp3
+abierto/abierta	open	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_2.mp3
+alegre	happy	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_3.mp3
+amable	friendly	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_4.mp3
+bondadoso/bondadosa	kind/good	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_5.mp3
+bueno/buena	good	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_6.mp3
+capaz	capable	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_7.mp3
+cariñoso/cariñosa	caring	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_8.mp3
+chistoso/chistosa	funny	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_9.mp3
+compasivo/compasiva	compassionate	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_10.mp3
+comprensivo/comprensiva	understanding	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_11.mp3
+creativo/creativa	creative	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_12.mp3
+entusiasta	enthusiastic	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_13.mp3
+fácil	easy	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_14.mp3
+fiel	faithful	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_15.mp3
+gracioso/graciosa	funny	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_16.mp3
+honesto/honesta	honest	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_17.mp3
+imaginativo/imaginativa	imaginative	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_18.mp3
+inteligente	intelligent	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_19.mp3
+leal	loyal	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_20.mp3
+listo/lista	bright, smart	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_21.mp3
+mejor	best	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_22.mp3
+nuevo/nueva	new	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_23.mp3
+paciente	patient	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_24.mp3
+pacífico/pacífica	peaceful	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_25.mp3
+positivo/a	positive	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_26.mp3
+responsable	responsible	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_27.mp3
+sensible	sensitive	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_28.mp3
+simpático/a	kind, nice	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_29.mp3
+talentoso/a	talented	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_30.mp3
+tranquilo/a	calm/quiet	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://contrasena.s3.us-east-2.amazonaws.com/audio/u5/5_1_42.mp3
+único/a	unique	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_31.mp3
+valiente	brave	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_positivas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_32.mp3
+aburrido/aburrida	boring	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_34.mp3
+cerrado/cerrada	closed;close-minded	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_35.mp3
+egoísta	selfish	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_36.mp3
+incapaz	incapable	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_37.mp3
+insensible	insensitive	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_38.mp3
+malo/mala	bad	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_39.mp3
+nervioso/nerviosa	nervous	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_40.mp3
+triste	sad	Contrasena::lessons::u5_05_02v2 Contrasena::sections::cualidades_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_1_41.mp3
+acompañar	to accompany	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_2.mp3
+admirar	to admire	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_3.mp3
+apoyar	to support	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_4.mp3
+ayudar	to help	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_5.mp3
+comer	to eat	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_6.mp3
+compartir	to share	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_7.mp3
+comprender	to understand	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_8.mp3
+conocer	to know	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_9.mp3
+crear	to create	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_10.mp3
+creer	to believe	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_11.mp3
+cumplir	to complete, finish	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_12.mp3
+escoger	to choose	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_13.mp3
+escribir	to write	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_14.mp3
+exigir	to demand	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_15.mp3
+insistir/insistir en	to insist/to insist on	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_16.mp3
+merecer	to deserve	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_17.mp3
+nominar	to nominate	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_18.mp3
+permitir	to allow	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_19.mp3
+preservar	to preserve	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_20.mp3
+recibir	to receive	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_21.mp3
+resolver	to resolve	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_22.mp3
+saber	to know	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_23.mp3
+vivir	to live	Contrasena::lessons::u5_05_03v2 Contrasena::sections::para_hablar_de_las_personas_admiradas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_24.mp3
+Querido/querida:	Dear,	Contrasena::lessons::u5_05_03v2 Contrasena::sections::expresiones_para_cartas_formales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_26.mp3
+Estimado/estimada:	Dear, (formal; lit. “Esteemed,”)	Contrasena::lessons::u5_05_03v2 Contrasena::sections::expresiones_para_cartas_formales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_27.mp3
+Por la presente, quisiera nominar a...	Herein I'd like to nominate...	Contrasena::lessons::u5_05_03v2 Contrasena::sections::expresiones_para_cartas_formales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_28.mp3
+Quedo a su disposición para...	Please feel free to contact me should you...	Contrasena::lessons::u5_05_03v2 Contrasena::sections::expresiones_para_cartas_formales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_29.mp3
+Atentamente,	Sincerely,	Contrasena::lessons::u5_05_03v2 Contrasena::sections::expresiones_para_cartas_formales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_30.mp3
+Saludos cordiales,	Best regards,	Contrasena::lessons::u5_05_03v2 Contrasena::sections::expresiones_para_cartas_formales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u5/5_2_31.mp3
+el abuelo/la abuela	grandfather/grandmother	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_2.mp3
+el esposo/la esposa	husband/wife	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_3.mp3
+el gato/la gata	cat	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_4.mp3
+el gemelo/la gemela	twin	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_5.mp3
+el hermanastro/la hermanastra	step-brother/step-sister	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_6.mp3
+el hermano/la hermana	brother/sister	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_7.mp3
+el hijastro/la hijastra	step-son/step-daughter	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_8.mp3
+los hijos/las hijas	sons/daughters	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_9.mp3
+la madrastra	stepmother	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_10.mp3
+la madre/la mamá	mother	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_11.mp3
+el medio hermano/la media hermana	half-brother/half-sister	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_12.mp3
+el nieto/la nieta	grandson/granddaughter	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_13.mp3
+el niño/la niña	boy/girl	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_14.mp3
+el padrastro	stepfather	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_15.mp3
+el padre/el papá	father	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_16.mp3
+los padres	parents	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_17.mp3
+los parientes	relatives	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_18.mp3
+el perro/la perra	dog	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_19.mp3
+el primo/la prima	cousin	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_20.mp3
+el tío/la tía	to uncle/aunt	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_miembros_de_la_familia	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_21.mp3
+casado/casada/estar casado/estar casada	married/to be married	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_23.mp3
+divorciado/divorciada/estar divorciado/estar divorciada	divorced/to be divorced	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_24.mp3
+muerto,muerta/estar muerto/estar muerta	dead/to be dead	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_25.mp3
+novio/novia/estar de novio/estar de novia	boyfriend/girlfriend/to have a boyfriend/to have a girlfriend (romantic interest)	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_26.mp3
+pareja/estar en pareja	partner/to have a partner	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_27.mp3
+separado/separada/estar separado/estar separada	separated/to be separated	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_28.mp3
+solo/sola	alone/to be alone	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_29.mp3
+soltero/soltera/estar soltero/estar soltera	single/to be single	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_30.mp3
+el hijo adoptado/la hija adoptada	adopted son/daughter	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_31.mp3
+el matrimonio igualitario	same-sex marriage	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_32.mp3
+la unión legal/la unión civil	legal union/civil union	Contrasena::lessons::u6_06_02v2 Contrasena::sections::los_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_1_33.mp3
+alto/alta	tall	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_2.mp3
+atlético/atlética	athletic	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_3.mp3
+bajo/baja	short (height)	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_4.mp3
+bonito/bonita	pretty	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_5.mp3
+corto/corta	short (length)	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_6.mp3
+débil	weak	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_7.mp3
+ddelgado/delgada	thin	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_8.mp3
+feo/fea	ugly	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_9.mp3
+fuerte	strong	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_10.mp3
+gordo/gorda (affectionate: gordito/a)	fat	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_11.mp3
+grande	big	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_12.mp3
+guapo/guapa	handsome/attractive	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_13.mp3
+joven	young	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_14.mp3
+largo/a	long	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_15.mp3
+mayor (form of respect)	older	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_16.mp3
+menor	younger	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_17.mp3
+moreno/morena	dark skinned / dark haired	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_18.mp3
+las pecas	freckles	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_19.mp3
+pelirrojo/pelirroja	redhead	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_20.mp3
+pequeño/a	small/little	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_21.mp3
+rizado/rizada	curly	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_22.mp3
+rubio/rubia	blonde	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_23.mp3
+viejo/vieja	old	Contrasena::lessons::u6_06_03v2 Contrasena::sections::las_caracteristicas_fisicas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_24.mp3
+contar (o>ue)	to tell	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_26.mp3
+entender (e>ie)	to understand	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_27.mp3
+parecerse a/parecerse a alguien	to look like/to look like someone	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_28.mp3
+pensar (e>ie)	to think	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_29.mp3
+poder (o>ue)	to be able to	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_30.mp3
+preferir (e>ie)	to prefer	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_31.mp3
+sonreír (e>i)	to smile	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_32.mp3
+soñar/soñar con (o>ue)	to dream/to dream about	Contrasena::lessons::u6_06_03v2 Contrasena::sections::para_hablar_de_las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u6/6_2_33.mp3
+escalar montañas	to mountain climb	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_actividades_y_los_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_2.mp3
+esquiar	to ski	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_actividades_y_los_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_3.mp3
+montar a caballo	to ride horseback	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_actividades_y_los_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_4.mp3
+nadar	to swim	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_actividades_y_los_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_5.mp3
+pasear en bicicleta	to ride a bike	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_actividades_y_los_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_6.mp3
+patinar/patinar en línea/patinar sobre hielo	to skate/to rollerblade/to in-line skate/to ice-skate	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_actividades_y_los_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_7.mp3
+(el) básquetbol	basketball	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_9.mp3
+(el) béisbol	baseball	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_10.mp3
+(el) fútbol	soccer	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_11.mp3
+(el) fútbol americano	American football	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_12.mp3
+(el) golf	golf	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_13.mp3
+(el) hockey	hockey	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_14.mp3
+(el) tenis	tennis	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_15.mp3
+(el) vóleibol	volleyball	Contrasena::lessons::u7_07_02v2 Contrasena::sections::jugar_u_ue_al	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_16.mp3
+la caminata	walking/hiking	Contrasena::lessons::u7_07_02v2 Contrasena::sections::practicar_hacer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_18.mp3
+(el) ciclismo	cycling	Contrasena::lessons::u7_07_02v2 Contrasena::sections::practicar_hacer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_19.mp3
+(el) esquí acuático	water skiing	Contrasena::lessons::u7_07_02v2 Contrasena::sections::practicar_hacer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_20.mp3
+(la) natación	swimming	Contrasena::lessons::u7_07_02v2 Contrasena::sections::practicar_hacer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_21.mp3
+(el) surf	surfing	Contrasena::lessons::u7_07_02v2 Contrasena::sections::practicar_hacer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_22.mp3
+(el) yoga	yoga	Contrasena::lessons::u7_07_02v2 Contrasena::sections::practicar_hacer	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_23.mp3
+empatar	to tie	Contrasena::lessons::u7_07_02v2 Contrasena::sections::los_resultados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_25.mp3
+ganar	to win	Contrasena::lessons::u7_07_02v2 Contrasena::sections::los_resultados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_26.mp3
+perder (e>ie)	to lose	Contrasena::lessons::u7_07_02v2 Contrasena::sections::los_resultados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_27.mp3
+el aficionado/la aficionada/ser un aficionado/ser una aficionada	sports fan/to be a sports fan	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_29.mp3
+el atleta/la atleta	athlete	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_30.mp3
+el corredor/la corredora	runner	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_31.mp3
+el entrenador/la entrenedora	trainer	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_32.mp3
+el equipo	team	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_33.mp3
+el jugador/la jugadora	player	Contrasena::lessons::u7_07_02v2 Contrasena::sections::las_personas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_34.mp3
+el campo	field / course	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_36.mp3
+la cancha/la cancha de tenis/la cancha de fútbol	court/field/tennis court/soccer fieldi>	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_37.mp3
+la carrera	race	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_38.mp3
+la competición/la competencia	competition	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_39.mp3
+el estadio	stadium	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_40.mp3
+la liga	league	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_41.mp3
+el partido	game/match	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_42.mp3
+la pelota	ball	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_43.mp3
+las pesas	weights	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_44.mp3
+la piscina	(swimming) pool	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_45.mp3
+la final/la semifinal	(semi)final game/semifinal game	Contrasena::lessons::u7_07_02v2 Contrasena::sections::el_equipo_los_lugares_y_los_eventos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_1_46.mp3
+aliviar el estrés	to relieve stress	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_2.mp3
+apuntar/apuntarse	to sign up	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_3.mp3
+conectar/conectarse	to connect	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_4.mp3
+contactar/contactarse	to contact	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_5.mp3
+entrenar/entrenar en equipo/entrenar solo	to train/to train with a team/to train alone	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_6.mp3
+juntar/juntarse	to get together	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_7.mp3
+participar	to participate	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_8.mp3
+poner en forma/ponerse en forma	to get in shape	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_9.mp3
+sentir (e>ie/sentirse (e>ie)	to feel	Contrasena::lessons::u7_07_03v2 Contrasena::sections::para_participar_en_deportes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_10.mp3
+conectado/conectada	connected	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_12.mp3
+decepcionado/decepcionada	disappointed	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_13.mp3
+deportivo/deportiva	sporty	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_14.mp3
+deprimido/deprimida	depressed	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_15.mp3
+desilusionado/desilusionada	disappointed	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_16.mp3
+entusiasmado/entusiasmada	enthusiastic / excited	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_17.mp3
+equilibrado/equilibrada	balanced	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_18.mp3
+feliz	happy	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_19.mp3
+frustrado/frustrada	frustrated	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_20.mp3
+ilusionado/ilusionada	excited	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_21.mp3
+motivado/motivada	motivated, excited	Contrasena::lessons::u7_07_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u7/7_2_22.mp3
+Ah,	Oh, / Uh,	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_1.mp3
+A ver…	Let’s see…	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_2.mp3
+Así pues,	So, / Therefore,	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_3.mp3
+Digo...	I say... / I mean...	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_4.mp3
+Eh...	Umm...	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_5.mp3
+Emm...	Umm...	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_6.mp3
+Es decir,	That is (to say),	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_7.mp3
+Este...	Umm...	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_8.mp3
+Esto es,	This is,	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_9.mp3
+Luego,	So, / Therefore,	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_10.mp3
+¿No?	Don’t you think?	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_11.mp3
+¿No crees?	Don’t you think?	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_12.mp3
+O sea,	In other words, / That is,	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_13.mp3
+Pues,	Since, / Well,	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_14.mp3
+Vale. (Spain)	OK.	Contrasena::lessons::u8_08_06v2 Contrasena::sections::unknown	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/destreza_8_15.mp3
+la carne de res/la carne de res picada	beef/ground beef	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_2.mp3
+el chorizo	(type of) sausage	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_3.mp3
+los huevos	eggs	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_4.mp3
+el jamón	ham	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_5.mp3
+los mariscos	shellfish	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_6.mp3
+el pavo	turkey	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_7.mp3
+el pescado	fish	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_8.mp3
+el pollo	chicken	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_proteinas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_9.mp3
+las aceitunas	olives	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_11.mp3
+el ajo	garlic	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_12.mp3
+la banana / el plátano	banana	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_13.mp3
+la cebolla	onion	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_14.mp3
+el champiñón	mushroom	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_15.mp3
+las fresas	strawberries	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_16.mp3
+la lechuga	lettuce	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_17.mp3
+la manzana	apple	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_18.mp3
+la naranja	orange	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_19.mp3
+las papas (Lat. Am.)/las patatas (Spain) / las patatas (Spain)	potatoes	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_21.mp3
+el pimiento	pepper	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_20.mp3
+el tomate	tomato	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_22.mp3
+las uvas	grapes	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_23.mp3
+la zanahoria	carrot	Contrasena::lessons::u8_08_01v2 Contrasena::sections::las_frutas_y_las_verduras	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_24.mp3
+el arroz	rice	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_granos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_26.mp3
+el pan tostado/el pan blanco/el pan integral	toast/white bread/wheat bread	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_granos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_27.mp3
+la mantequilla	butter	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_productos_lacteos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_30.mp3
+el queso	cheese	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_productos_lacteos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_31.mp3
+el yogur	yogurt	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_productos_lacteos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_32.mp3
+el aceite/el aceite de oliva	oil/olive oil/i>	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_condimentos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_34.mp3
+con / sin	with / without	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_condimentos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_35.mp3
+la pimienta	pepper	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_condimentos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_36.mp3
+la sal	salt	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_condimentos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_37.mp3
+el vinagre	vinegar	Contrasena::lessons::u8_08_01v2 Contrasena::sections::los_condimentos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_1_38.mp3
+el desayuno	breakfast	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_2.mp3
+el almuerzo	lunch	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_3.mp3
+la merienda	snack	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_4.mp3
+la comida/la comida principal	meal/main meal/dinner (served midday in many Hispanic countries)	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_5.mp3
+la cena	supper	Contrasena::lessons::u8_08_02v2 Contrasena::sections::las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_6.mp3
+la cuchara	spoon	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_8.mp3
+el cuchillo	knife	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_9.mp3
+el plato	plate	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_10.mp3
+el plato hondo	bowl	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_11.mp3
+el tenedor	fork	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_utensilios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_12.mp3
+batir	to beat / to shake	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_14.mp3
+calentar (e>ie)	to warm / to heat up	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_15.mp3
+cortar	to cut	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_16.mp3
+freír (e>i)	to fry	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_17.mp3
+hervir (e>ie)	to boil	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_18.mp3
+mezclar	to mix	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_19.mp3
+pelar	to peel	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_preparar_comida	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_20.mp3
+la ensalada/la ensalada mixta	salad/mixed salad	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_22.mp3
+el sándwich / el bocadillo (Spain)	sandwich / submarine sandwich	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_23.mp3
+la sopa	soup	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_24.mp3
+a la parrilla	grilled	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_25.mp3
+al horno	baked	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_26.mp3
+al vapor	steamed	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_27.mp3
+crudo/cruda	raw	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_28.mp3
+frito/frita	fried	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_29.mp3
+vegano/vegana	vegan	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_30.mp3
+vegetariano/vegetariana	vegetarian	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_31.mp3
+servir (e>i) frío/caliente/a temperatura ambiente	to serve cold/hot/room temperature	Contrasena::lessons::u8_08_02v2 Contrasena::sections::los_platos_y_las_preparaciones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_32.mp3
+agridulce	sweet and sour, bittersweet	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_34.mp3
+agrio/agria, amargo/amarga	bitter	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_35.mp3
+casero/casera	homemade	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_36.mp3
+dulce	sweet	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_37.mp3
+grasoso/grasosa	fatty	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_38.mp3
+liviano/liviana	light	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_39.mp3
+picante	spicy	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_40.mp3
+rico/rica	delicious	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_41.mp3
+sano/sana	healthy	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_42.mp3
+suave	smooth	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_43.mp3
+Sabe a/sabe a ajo/sabe a pollo.	Tastes like/tastes like garlic/tastes like chicken.	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_44.mp3
+Sabe bien/ sabe mal.	Tastes good/tastes bad.	Contrasena::lessons::u8_08_02v2 Contrasena::sections::para_describir_las_comidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u8/8_2_45.mp3
+la cabeza	head	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_4.mp3
+la cara	face	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_5.mp3
+la boca	mouth	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_3.mp3
+la garganta	throat	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_11.mp3
+la nariz	nose	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_14.mp3
+el oído / la oreja	inner ear / outer ear	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_15.mp3
+el ojo	eye	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_16.mp3
+el brazo	arm	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_2.mp3
+la espalda	back	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_9.mp3
+el estómago	stomach	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_10.mp3
+la mano	hand	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_13.mp3
+el pie	foot	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_17.mp3
+el dedo de la mano/el dedo del pie	finger / toe	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_8.mp3
+la pierna	leg	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_18.mp3
+la rodilla	knee	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_20.mp3
+el tobillo	ankle	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_22.mp3
+el cerebro	brain	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_6.mp3
+el corazón	heart	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_7.mp3
+el hueso	bone	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_12.mp3
+los pulmones	lungs	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_19.mp3
+la sangre	blood	Contrasena::lessons::u9_09_01v2 Contrasena::sections::las_partes_del_cuerpo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_1_21.mp3
+el bienestar	well-being	Contrasena::lessons::u9_09_02v2 Contrasena::sections::la_salud_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_2.mp3
+el examen físico	physical (exam)	Contrasena::lessons::u9_09_02v2 Contrasena::sections::la_salud_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_3.mp3
+el/la médico/a	doctor	Contrasena::lessons::u9_09_02v2 Contrasena::sections::la_salud_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_4.mp3
+la sala de urgencias/la sala de espera	emergency / waiting room	Contrasena::lessons::u9_09_02v2 Contrasena::sections::la_salud_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_5.mp3
+la alergia/ser alérgico/ser alérgico	allergy/to be allergic	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_7.mp3
+la anorexia nerviosa	anorexia nervosa	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_8.mp3
+la ansiedad	anxiety	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_9.mp3
+la bulimia	bulimia	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_10.mp3
+la cita/la cita médica	appointment/medical appointment	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_11.mp3
+la congestión	congestion	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_12.mp3
+la depresión	depression	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_13.mp3
+estar enfermo/estar enferma	to be sick	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_14.mp3
+la falta de atención	attention deficit	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_15.mp3
+la gripe	flu	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_16.mp3
+la herida	wound	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_17.mp3
+la hiperactividad	hyperactivity	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_18.mp3
+la presión alta/la presión baja	high blood pressure/low blood pressure	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_19.mp3
+el resfriado	cold	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_20.mp3
+tener (e>ie) fiebre	(to have) a fever	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_21.mp3
+tener dolor de…	to have a pain/ache in …	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_22.mp3
+la tos	cough	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_23.mp3
+el trastorno/el trastorno psicológico	disorder/psychological disorder	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_sintomas_y_las_enfermedades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_24.mp3
+grave	serious	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_describir_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_26.mp3
+sano/sana	healthy	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_describir_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_27.mp3
+roto/rota	broken	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_describir_estados	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_28.mp3
+la curita/la tirita/la venda(Spain)] / la venda	bandaid / bandaid (Spain)/bandage	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_tratamientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_30.mp3
+el jarabe	syrup	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_tratamientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_31.mp3
+el medicamento	medication, medicine	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_tratamientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_32.mp3
+la pastilla	pill	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_tratamientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_33.mp3
+la receta	prescription	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_tratamientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_34.mp3
+la terapia / la psicoterapia	therapy/psychotherapy	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_tratamientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_35.mp3
+la vacuna	immunization / vaccine	Contrasena::lessons::u9_09_02v2 Contrasena::sections::los_tratamientos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_36.mp3
+adelgazar	to lose weight	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_38.mp3
+cuidarse	to take care of oneself	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_39.mp3
+descansar	to rest	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_40.mp3
+engordar	to gain weight	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_41.mp3
+evitar	to avoid	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_42.mp3
+lavarse (las manos)	to wash one's hands	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_43.mp3
+mantener (e>ie) la buena salud	to maintain good health	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_44.mp3
+mantenerse (e>ie) en forma	to stay in good shape	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_45.mp3
+preocuparse/preocuparse por	to worry/to worry about	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_46.mp3
+prevenir (e>ie) una enfermedad	to prevent an illness	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_47.mp3
+seguir (e>i) las recomendaciones	to follow the recommendations	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_48.mp3
+tratar/tratar de (+infinitive)	to try/to try to do something	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_49.mp3
+vacunarse / ponerse una vacuna	to get vaccinated	Contrasena::lessons::u9_09_02v2 Contrasena::sections::para_mantenerse_e_ie_sano	https://s3.us-east-2.amazonaws.com/contrasena/audio/u9/9_2_50.mp3
+el cirujano/la cirujana	surgeon	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_2.mp3
+el consejero/la consejera	counselor	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_3.mp3
+el dentista/la dentista	dentist	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_4.mp3
+el director del hospital/la directora del hospital	hospital director	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_5.mp3
+el enfermero/la enfermera	nurse	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_6.mp3
+el farmacéutico/la farmaceútica	pharmacist	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_7.mp3
+el fisioterapeuta/la fisioterapeuta	physical therapist	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_8.mp3
+el médico/la médica	doctor (of medicine)	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_9.mp3
+el psicólogo/la psicóloga	psychologist	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_10.mp3
+cuidar	to care for	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_11.mp3
+curar	to cure	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_12.mp3
+preparar/preparar medicamentos	to prepare/to prepare medication	Contrasena::lessons::u10_03_01v2 Contrasena::sections::la_salud	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_13.mp3
+el asesor financiero/la asesora financiera	financial advisor	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_15.mp3
+el contador/la contadora	accountant	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_16.mp3
+el ejucutivo/la ejucutiva	executive	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_17.mp3
+el gerente/la gerente	manager	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_18.mp3
+aconsejar	to advise	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_19.mp3
+administrar/administrar una compañia	to run, to manage/to manage a company	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_20.mp3
+comprar	to buy	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_21.mp3
+ganar dinero	to earn money	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_22.mp3
+invertir (e>ie)	to invest	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_23.mp3
+vender	to sell	Contrasena::lessons::u10_03_01v2 Contrasena::sections::los_negocios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_24.mp3
+el arquitecto/la arquitecta	architect	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_26.mp3
+el científico/la científica	scientist	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_27.mp3
+el diseñador/la diseñadora	designer	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_28.mp3
+el ecologista/la ecologista	ecologist	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_29.mp3
+el ingeniero/la ingeniera	engineer	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_30.mp3
+el programador de computación/la programadora de computación	computer programmer	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_31.mp3
+analizar	analyze	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_32.mp3
+diseñar	design	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_33.mp3
+programar	program	Contrasena::lessons::u10_03_01v2 Contrasena::sections::las_ciencias_la_ingenieria_el_el_diseno_y_la_computacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_1_34.mp3
+el investigador/la investigadora	researcher	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_2.mp3
+el maestro/la maestra	teacher	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_3.mp3
+el profesor/la profesora	professor	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_4.mp3
+educar	to educate	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_5.mp3
+enseñar	to teach	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_6.mp3
+investigar	to research	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_7.mp3
+mejorar/mejorar la sociedad	to make better/to make society better	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_8.mp3
+motivar	to motivate	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_educacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_9.mp3
+el abogado/la abogada	lawyer	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_11.mp3
+el agente federal/la agente federal	federal agent	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_12.mp3
+el defensor público/la defensora pública	public defender	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_13.mp3
+el fiscal/la fiscal	prosecutor	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_14.mp3
+las fuerzas armadas	armed forces	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_15.mp3
+el juez/la juez	judge	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_16.mp3
+la ley	law	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_17.mp3
+el militar/la militar	soldier	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_18.mp3
+el policía/la policía	police officer	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_19.mp3
+defender (e>ie)	to defend	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_20.mp3
+proteger	to protect	Contrasena::lessons::u10_03_02v2 Contrasena::sections::la_seguridad_publica_y_la_ley	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_21.mp3
+el consultor/la consultora/el consultor de mercadeo/la consultora de mercadeo	consultant/marketing consultant	Contrasena::lessons::u10_03_02v2 Contrasena::sections::los_medios_de_comunicacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_23.mp3
+el periodista/la periodista	journalist	Contrasena::lessons::u10_03_02v2 Contrasena::sections::los_medios_de_comunicacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_24.mp3
+el publicista/la publicista	advertising agent	Contrasena::lessons::u10_03_02v2 Contrasena::sections::los_medios_de_comunicacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_25.mp3
+el relacionista público/la relacionista pública	public relations agent	Contrasena::lessons::u10_03_02v2 Contrasena::sections::los_medios_de_comunicacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_26.mp3
+convencer	to convince	Contrasena::lessons::u10_03_02v2 Contrasena::sections::los_medios_de_comunicacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_27.mp3
+informar	to inform	Contrasena::lessons::u10_03_02v2 Contrasena::sections::los_medios_de_comunicacion	https://s3.us-east-2.amazonaws.com/contrasena/audio/u10/10_2_28.mp3
+el abrigo	coat/overcoat	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_2.mp3
+los calcetines	socks	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_3.mp3
+la camisa	shirt	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_4.mp3
+la camiseta	t-shirt	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_5.mp3
+el chaleco	vest	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_6.mp3
+la chaqueta /el saco	jacket	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_7.mp3
+la falda/la minifalda	skirt/miniskirt	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_8.mp3
+las mallas	leggings	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_9.mp3
+las medias	tights / pantyhose	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_10.mp3
+los pantalones	pants	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_11.mp3
+los pantalones cortos	shorts	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_12.mp3
+la sudadera	sweatshirt	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_13.mp3
+el suéter	sweater	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_14.mp3
+el traje de baño	bathing suit	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_15.mp3
+el vestido	dress	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_16.mp3
+los vaqueros / los jeans	jeans	Contrasena::lessons::u11_11_04v2 Contrasena::sections::las_prendas_de_vestir	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_17.mp3
+las botas	boots	Contrasena::lessons::u11_11_04v2 Contrasena::sections::el_calzado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_19.mp3
+las chanclas	flip flops	Contrasena::lessons::u11_11_04v2 Contrasena::sections::el_calzado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_20.mp3
+las sandalias	sandals	Contrasena::lessons::u11_11_04v2 Contrasena::sections::el_calzado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_21.mp3
+las zapatillas/las zapatillas tenis	gym shoes / tennis shoes	Contrasena::lessons::u11_11_04v2 Contrasena::sections::el_calzado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_22.mp3
+los zapatos	shoes	Contrasena::lessons::u11_11_04v2 Contrasena::sections::el_calzado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_23.mp3
+los zapatos de tacón/ los tacones altos	high heels	Contrasena::lessons::u11_11_04v2 Contrasena::sections::el_calzado	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_24.mp3
+la cintura	waist	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_26.mp3
+el conjunto	outfit	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_27.mp3
+el estilo	style	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_28.mp3
+el glúteo	gluteus (to refer to “rear”)	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_29.mp3
+la moda	fashion	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_30.mp3
+el número	size (for shoes)	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_31.mp3
+el pecho	the chest	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_32.mp3
+la silueta	silhouette	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_33.mp3
+la talla	size (for clothing)	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_34.mp3
+el toque personal	(individual) touch	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_35.mp3
+destacar	to draw attention to/ to highlight	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_36.mp3
+disimular	to detract attention from / to downplay	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_37.mp3
+elegir (j)	to choose	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_38.mp3
+llevar	to wear	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_39.mp3
+quedarle bien/mal (quedar)	to look good/bad	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_40.mp3
+Me queda bien.	It looks good/fits well.	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_41.mp3
+No me queda bien.	It doesn't look good on me. / It doesn’t fit me well.	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_42.mp3
+¡Te queda muy bien!	It looks really good on you!	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_decir_como_queda_la_ropa	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_43.mp3
+comprar/comprar en línea	to buy/to buy online	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_comprar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_45.mp3
+devolver (o>ue)	to return	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_comprar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_46.mp3
+pagar	to pay	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_comprar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_47.mp3
+probar/probarse (ue)	to try on	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_comprar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_48.mp3
+quedárselo,quedárselos/quedársela,quedárselas	to keep it/them	Contrasena::lessons::u11_11_04v2 Contrasena::sections::para_comprar	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_1_49.mp3
+el anillo	ring	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_2.mp3
+el bolso	purse	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_3.mp3
+la bufanda	scarf	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_4.mp3
+el cinturón	belt	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_5.mp3
+el collar	necklace	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_6.mp3
+la corbata	tie	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_7.mp3
+las gafas/las gafas de sol	the glasses/the sunglasses	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_8.mp3
+el gorro	winter hat	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_9.mp3
+el maletín	briefcase	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_10.mp3
+el pañuelo	scarf / handkerchief	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_11.mp3
+la pulsera	bracelet	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_12.mp3
+el reloj	watch	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_13.mp3
+el sombrero	hat	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_accesorios	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_14.mp3
+ajustado/ajustada	tight	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_16.mp3
+arreglado/arreglada	put together	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_17.mp3
+arriesgado/arriesgada	daring	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_18.mp3
+clásico/clásica	classic / conservative	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_19.mp3
+cómodo/cómoda	comfortable	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_20.mp3
+deportivo/deportiva	sporty	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_21.mp3
+elegante	elegant	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_22.mp3
+entallado/entallada	fitted	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_23.mp3
+formal	formal	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_24.mp3
+holgado/holgada	loose	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_25.mp3
+informal	casual	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_26.mp3
+profesional	professional	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_27.mp3
+recto/recta	straight	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_28.mp3
+relajado/relajada	relaxed	Contrasena::lessons::u11_11_05v2 Contrasena::sections::los_estilos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u11/11_2_29.mp3
+el cañón	canyon	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_2.mp3
+la cascada	waterfall	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_3.mp3
+el desierto	desert	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_4.mp3
+la montaña	mountain	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_5.mp3
+el paisaje	landscape	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_6.mp3
+la playa	beach	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_lugares	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_7.mp3
+ir en autobús	to go by bus/to go on a bus	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_medios_de_transporte	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_9.mp3
+ir en carro (Am. Lat.) /coche (Esp.)	to go by car/to go in a car	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_medios_de_transporte	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_10.mp3
+ir en tren	to go by train/to go on a train	Contrasena::lessons::u12_12_03v2 Contrasena::sections::los_medios_de_transporte	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_11.mp3
+andar en bicicleta/andar en bicicleta de montaña	to ride a bike/to ride a mountain bike	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_13.mp3
+bucear	to go scuba diving	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_14.mp3
+explorar una cueva	to explore a cave	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_15.mp3
+hacer paracaidismo/practicar paracaidismo	to go skydiving	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_16.mp3
+hacer senderismo/practicar senderismo	to go trekking	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_17.mp3
+hacer vía ferrata	to walk/climb a mountain route equipped with fixed ladders, cables, and bridges	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_18.mp3
+montar a caballo	to ride a horse	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_19.mp3
+observar la puesta del sol	watch the sunset	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_20.mp3
+practicar tirolesa	to do zip lining	Contrasena::lessons::u12_12_03v2 Contrasena::sections::las_actividades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_21.mp3
+el ave (sing.), las aves (pl.)	bird, birds	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_23.mp3
+la biodiversidad	biodiversity	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_24.mp3
+el cambio climático	climate change	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_25.mp3
+la conciencia ambiental	environmental awareness	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_26.mp3
+la contaminación	pollution	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_27.mp3
+la deforestación	deforestation	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_28.mp3
+la ecología	ecology	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_29.mp3
+la especie/la especie en peligro de extinción	species/endangered species	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_30.mp3
+la inundación	flood	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_31.mp3
+el medioambiente	environment	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_32.mp3
+la naturaleza	nature	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_33.mp3
+la población	population	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_34.mp3
+los recursos naturales	natural resources	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_35.mp3
+el santuario natural	nature preserve	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_36.mp3
+la sequía	drought	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_37.mp3
+la tierra	land (when capitalized, refers to planet Earth)	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_38.mp3
+la tortuga/la tortuga marina	turtle/sea turtle	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_39.mp3
+concientizar	to raise awareness	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_40.mp3
+dejar huella	to leave a footprint	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_41.mp3
+preservar	to preserve	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_42.mp3
+proteger (j)	to protect	Contrasena::lessons::u12_12_03v2 Contrasena::sections::el_medioambiente_y_el_ecoturismo	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_1_43.mp3
+algo	something, anything	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_indefinidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_2.mp3
+alguien	someone, somebody, anyone	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_indefinidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_3.mp3
+algún,alguno,algunos/alguna,algunas	some, any	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_indefinidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_4.mp3
+alguna vez	sometimes, ever, once	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_indefinidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_5.mp3
+o… o	(either …) or	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_indefinidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_6.mp3
+siempre	always	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_indefinidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_7.mp3
+también	also, too	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_indefinidas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_8.mp3
+nada	Nothing, not anything	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_10.mp3
+nadie	no one, nobody, not anyone	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_11.mp3
+ningún, ninguno/ningunaa	no, none, not any	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_12.mp3
+ni… ni	neither … nor	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_13.mp3
+nunca	never, not ever	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_14.mp3
+tampoco	not either, neither	Contrasena::lessons::u12_12_04v2 Contrasena::sections::palabras_negativas	https://s3.us-east-2.amazonaws.com/contrasena/audio/u12/12_2_15.mp3
+ahora	now	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+antes	before	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+cuando	when	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+de repente	suddenly	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+después	after	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+durante	during	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+esa noche	that night	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+ese día	that day	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+en ese momento	at that moment	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+inmediatamente	immediately	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+luego	later	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+nunca	never	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+pronto	soon	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+siempre	always	Contrasena::lessons::u13_13_01 Contrasena::sections::unknown	
+la añoranza	longing	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_2.mp3
+la caja	box	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_3.mp3
+la chispa	spark	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_4.mp3
+el hilo/el hilo de la indentidad	thread/thread of identity	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_5.mp3
+el proceso retrospectivo	reflective process	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_6.mp3
+el recuerdo	memory	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_7.mp3
+dejar atrás	to leave behind	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_8.mp3
+provocar	to provoke	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_9.mp3
+quedar atrás	to be left behind	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_recuerdos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_10.mp3
+la lágrima	tear	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_12.mp3
+la mejilla	cheek	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_13.mp3
+la tristeza	sadness	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_14.mp3
+hundir en	to sink	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_15.mp3
+clavado/clavada	fixated	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_16.mp3
+nostálgico/nostálgica	nostalgic	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_emociones	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_17.mp3
+la bandera	flag	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_momentos_importantes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_19.mp3
+la ceremonia de ciudadanía	naturalization ceremony	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_momentos_importantes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_20.mp3
+el juramento	oath	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_momentos_importantes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_21.mp3
+nacer de nuevo	to be born again	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_momentos_importantes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_22.mp3
+volver (o>ue) + (infinitivo)	to (do something) again	Contrasena::lessons::u13_13_03v2 Contrasena::sections::los_momentos_importantes	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_23.mp3
+años atrás/diez años atrás	years ago/ten years ago	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_25.mp3
+apenas	barely	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_26.mp3
+de repente	suddenly	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_27.mp3
+después de/después de la clase	after/after class	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_28.mp3
+ese día	that day	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_29.mp3
+esa tarde	that afternoon	Contrasena::lessons::u13_13_03v2 Contrasena::sections::las_expresiones_temporales	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_1_30.mp3
+asimilar/asimilarse	to assimilate	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_2.mp3
+cruzar	to cross	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_3.mp3
+deportar	to deport	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_4.mp3
+emigrar	to emigrate (leave country of origin to move to another)	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_5.mp3
+heredar	to inherit	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_6.mp3
+inmigrar	to immigrate (come to a new country permanently)	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_7.mp3
+mejorar	to improve	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_8.mp3
+mudar(se)	to move (i.e., to a new place)	Contrasena::lessons::u13_13_04v2 Contrasena::sections::los_procesos	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_9.mp3
+el ciudadano/la ciudadana	citizen	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_personas_y_las_comunidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_11.mp3
+la comunidad	community	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_personas_y_las_comunidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_12.mp3
+la generación	generation	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_personas_y_las_comunidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_13.mp3
+el ciudadano/la indocumentada	undocumented person	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_personas_y_las_comunidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_14.mp3
+el inmigrante/la inmigrante	immigrant	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_personas_y_las_comunidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_15.mp3
+la población	population	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_personas_y_las_comunidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_16.mp3
+el refugiado/la refugiada	refugee	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_personas_y_las_comunidades	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_17.mp3
+la crisis	crisis	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_19.mp3
+la democracia	democracy	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_20.mp3
+la dictadura	dictatorship	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_21.mp3
+la frontera	border	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_22.mp3
+el gobierno	government	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_23.mp3
+la guerra	war	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_24.mp3
+la migración forzada/ la migración voluntaria	forced/voluntary migration	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_25.mp3
+la paz	peace	Contrasena::lessons::u13_13_04v2 Contrasena::sections::las_causas_y_el_contexto	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_26.mp3
+la amnistía	amnesty	Contrasena::lessons::u13_13_04v2 Contrasena::sections::el_estatus_legal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_28.mp3
+el asilo político	political asylum	Contrasena::lessons::u13_13_04v2 Contrasena::sections::el_estatus_legal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_29.mp3
+la ley / las leyes	law(s)	Contrasena::lessons::u13_13_04v2 Contrasena::sections::el_estatus_legal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_30.mp3
+la naturalización	naturalization	Contrasena::lessons::u13_13_04v2 Contrasena::sections::el_estatus_legal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_31.mp3
+la tarjeta de residente permanente/la tarjeta verde	permanent resident card (green card)	Contrasena::lessons::u13_13_04v2 Contrasena::sections::el_estatus_legal	https://s3.us-east-2.amazonaws.com/contrasena/audio/u13/13_2_32.mp3
