@@ -18,6 +18,17 @@ https://contrasena.s3.us-east-2.amazonaws.com/ADA/u9/Grammar_9-2.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u10/Grammar_10-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u10/Grammar_10-2.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Grammar_12-1.html
+# Units 14-18 — subjunctive, conditional and related forms:
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u14/Grammar_14-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u14/Grammar_14-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u15/Grammar_15-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u15/Grammar_15-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u16/Grammar_16-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u16/Grammar_16-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u17/Grammar_17-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u17/Grammar_17-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u18/Grammar_18-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u18/Grammar_18-2.html
 #
 # Kept in the list but currently yield nothing (parser prints "skipped"):
 #   u4/Grammar_4-2  page changed; present-tense grid gone (existing TSV retained)

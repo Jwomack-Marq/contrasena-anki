@@ -30,10 +30,11 @@ The last-used TSV / lesson / section / direction / chunk / mode is saved to `loc
 
 ## Deck naming
 
-`output_full/` holds exactly **one** TSV per deck, named the way it appears in the app:
-`Unit 3 Vocab 1.tsv`, `Unit 11 Vocab 2.tsv`, plus named extras (`Unit 2 Classroom
-Phrases.tsv`, `Unit 4 Pronunciation.tsv`, `Unit 8 Connectors.tsv`, `Unit 13 Time
-Expressions.tsv`) and the combined `All Units Vocab.tsv`.
+Vocabulary covers **units 1-18**. `output_full/` holds exactly **one** TSV per deck, named
+the way it appears in the app: `Unit 3 Vocab 1.tsv`, `Unit 11 Vocab 2.tsv`, plus named
+extras (`Unit 2 Classroom Phrases.tsv`, `Unit 4 Pronunciation.tsv`, `Unit 8
+Connectors.tsv`, `Unit 13 Time Expressions.tsv`, `Unit 16 Abbreviations.tsv`) and the
+combined `All Units Vocab.tsv`.
 
 Each lesson used to exist three times over — a v1 scrape, a v2 scrape, and a PDF scrape
 in `output_pdfs/`. The **v2 scrape won**: the v1 files carried section headings as fake
@@ -42,6 +43,14 @@ vocab rows and put digits on the Spanish side of the numbers deck. Unit 3 existe
 
 The unit filter in the app reads the `Contrasena::lessons::` tag inside each file, **not**
 the filename, so renaming a deck is safe; the tags still carry the original lesson ids.
+
+Every vocab deck carries real audio except **Unit 3 Vocab 1** and **Unit 16
+Abbreviations**, which fall back to browser text-to-speech.
+
+The show_hide API text is occasionally mistyped where the ADA pages are correct (e.g.
+`dorado/dorado`, `sencillo/secilla`, `comprometido/compremetida`). Units 14-18 were
+diffed word-for-word against the ADA pages on import and eight such typos were repaired.
+Re-scraping those units will reintroduce them — re-check before shipping a refresh.
 
 ## Refresh the data
 

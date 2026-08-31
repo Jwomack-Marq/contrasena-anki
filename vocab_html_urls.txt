@@ -2,7 +2,13 @@
 # This is the authoritative vocab source: clean two-column Spanish|English tables,
 # real UTF-8 accents, correct column order. It replaces the older PDF extraction
 # (grab_pdfs.mjs), which had reversed columns, section headers leaked as cards,
-# and split/truncated entries. Covers units 1-13, both parts.
+# and split/truncated entries. Covers units 1-18, both parts.
+#
+# NOTE: units 14-18 were NOT scraped from here — their decks come from the
+# show_hide API via grab_all.mjs, which carries real audio. These URLs are kept
+# as the authoritative word list used to verify those decks row-for-row.
+# Running the command below recreates audio-less duplicates in output_pdfs/ that
+# build_flashcards.mjs will bundle alongside the real decks — see README.
 # Run: node grab_vocab_html.mjs --urls vocab_html_urls.txt --out ./output_pdfs
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Contrasena_Vocabulario_01-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u1/Contrasena_Vocabulario_01-2.html
@@ -30,3 +36,13 @@ https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Contrasena_Vocabulario_12-
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u12/Contrasena_Vocabulario_12-2.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u13/Contrasena_Vocabulario_13-1.html
 https://contrasena.s3.us-east-2.amazonaws.com/ADA/u13/Contrasena_Vocabulario_13-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u14/Contrasena_Vocabulario_14-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u14/Contrasena_Vocabulario_14-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u15/Contrasena_Vocabulario_15-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u15/Contrasena_Vocabulario_15-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u16/Contrasena_Vocabulario_16-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u16/Contrasena_Vocabulario_16-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u17/Contrasena_Vocabulario_17-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u17/Contrasena_Vocabulario_17-2.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u18/Contrasena_Vocabulario_18-1.html
+https://contrasena.s3.us-east-2.amazonaws.com/ADA/u18/Contrasena_Vocabulario_18-2.html
