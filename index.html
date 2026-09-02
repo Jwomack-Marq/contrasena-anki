@@ -575,6 +575,10 @@
   #card.mode-conj .face { font-size: 1.6rem; margin-bottom: 0.5rem; }
   /* Direction is meaningless in conjugation mode — greyed out in Options. */
   .radio-group.disabled { opacity: 0.5; pointer-events: none; }
+  /* A single option that doesn't apply to the selected deck, greyed in place so
+     it stays discoverable rather than vanishing. */
+  .radio-group label.opt-unavailable { opacity: 0.4; cursor: not-allowed; }
+  .opt-note { margin-top: 0.4rem; font-size: 0.8rem; color: var(--muted); }
   #cardarea .hint {
     position: absolute;
     bottom: 1rem;
@@ -746,7 +750,8 @@
           <label><input type="radio" name="mode" value="flashcard" checked><span>Flashcard (flip)</span></label>
           <label><input type="radio" name="mode" value="typing"><span>Typing (recall)</span></label>
           <label><input type="radio" name="mode" value="conjugation"><span>Conjugation drill</span></label>
-        </div></div>
+        </div>
+        <div class="opt-note" id="modeNote"></div></div>
       <div class="field"><div class="check-group">
         <label><input type="checkbox" id="shuffle" checked><span>Shuffle cards within each set</span></label>
         <label><input type="checkbox" id="strictAccents"><span>Typing: require correct accents</span></label>
@@ -782,7 +787,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-02T21-03-04-745Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-02T21-11-31-462Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -832,7 +837,7 @@
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-02T21-03-04-745Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-02T21-11-31-462Z</span></span>
   </div>
 </section>
 
@@ -1062,39 +1067,70 @@ let selectedEntry = null;
 function openDeckPreview(entry) {
   selectedEntry = entry;
   state.loadedPath = entry.relPath;
-  const cards = entry.cards;
   const name = entry.relPath.includes('/') ? entry.relPath.slice(entry.relPath.lastIndexOf('/') + 1) : entry.relPath;
   previewTitle.textContent = name;
-  const lessons = new Set(cards.map(c => c.lesson));
-  const sections = new Set(cards.map(c => c.lesson + '/' + c.section));
-  previewMeta.textContent = `${cards.length} cards · ${lessons.size} lesson${lessons.size===1?'':'s'} · ${sections.size} section${sections.size===1?'':'s'}`;
-
-  // Section dropdown: aggregate distinct section names with counts.
-  const counts = new Map();
-  for (const c of cards) counts.set(c.section, (counts.get(c.section) || 0) + 1);
-  previewSectionSel.innerHTML = '';
-  const allOpt = document.createElement('option');
-  allOpt.value = '__ALL__';
-  allOpt.textContent = `All sections (${cards.length} cards)`;
-  previewSectionSel.appendChild(allOpt);
-  for (const [s, n] of [...counts.entries()].sort()) {
-    const o = document.createElement('option');
-    o.value = s; o.textContent = `${s} (${n})`; previewSectionSel.appendChild(o);
-  }
-
-  renderPreviewTable();
+  updateModeAvailability();
+  renderPreviewControls();
 
   deckPreview.classList.remove('field-hidden');
   deckPreview.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   statusEl.classList.remove('err');
-  statusEl.textContent = `${name} ready — pick a section and confirm.`;
+  statusEl.textContent = conjModeActive()
+    ? `${name} ready — pick a verb and confirm.`
+    : `${name} ready — pick a section and confirm.`;
   saveSetup();
+}
+
+// Rebuild the meta line + section dropdown. Re-run on mode change because the
+// drill lists verbs where the card modes list sections.
+function renderPreviewControls() {
+  if (!selectedEntry) return;
+  const cards = selectedEntry.cards;
+  const lessons = new Set(cards.map(c => c.lesson));
+  const lessonBit = `${lessons.size} lesson${lessons.size===1?'':'s'}`;
+  const prev = previewSectionSel.value;
+  previewSectionSel.innerHTML = '';
+  const addOpt = (value, text) => {
+    const o = document.createElement('option');
+    o.value = value; o.textContent = text;
+    previewSectionSel.appendChild(o);
+  };
+
+  if (conjModeActive()) {
+    const paradigms = buildParadigmQueue(cards).sort((a, b) => a.lemma.localeCompare(b.lemma));
+    previewMeta.textContent =
+      `${paradigms.length} verb${paradigms.length===1?'':'s'} · ${cards.length} forms · ${lessonBit}`;
+    addOpt('__ALL__', `All verbs (${paradigms.length})`);
+    for (const p of paradigms) addOpt(p.section, `${p.lemma} (${p.rows.length} forms)`);
+  } else {
+    const sections = new Set(cards.map(c => c.lesson + '/' + c.section));
+    previewMeta.textContent =
+      `${cards.length} cards · ${lessonBit} · ${sections.size} section${sections.size===1?'':'s'}`;
+    const counts = new Map();
+    for (const c of cards) counts.set(c.section, (counts.get(c.section) || 0) + 1);
+    addOpt('__ALL__', `All sections (${cards.length} cards)`);
+    for (const [sec, n] of [...counts.entries()].sort()) addOpt(sec, `${sec} (${n})`);
+  }
+  if (prev && [...previewSectionSel.options].some(o => o.value === prev)) previewSectionSel.value = prev;
+  renderPreviewTable();
 }
 
 // Rebuild the preview table for the currently-selected section.
 function renderPreviewTable() {
   if (!selectedEntry) return;
   const sectionVal = previewSectionSel.value;
+  if (conjModeActive()) {
+    const paradigms = buildParadigmQueue(selectedEntry.cards)
+      .filter(p => sectionVal === '__ALL__' || p.section === sectionVal)
+      .sort((a, b) => a.lemma.localeCompare(b.lemma));
+    previewBody.innerHTML =
+      '<table class="cards"><thead><tr><th></th><th>Verb</th><th>Forms</th></tr></thead><tbody>' +
+      paradigms.map((p, i) =>
+        `<tr><td class="num">${i+1}</td><td>${escapeHtml(p.lemma)}</td><td class="section">${p.rows.length}</td></tr>`
+      ).join('') +
+      '</tbody></table>';
+    return;
+  }
   const cards = sectionVal === '__ALL__'
     ? selectedEntry.cards
     : selectedEntry.cards.filter(c => c.section === sectionVal);
@@ -1109,6 +1145,7 @@ function renderPreviewTable() {
 cancelPreviewBtn.addEventListener('click', () => {
   deckPreview.classList.add('field-hidden');
   selectedEntry = null;
+  updateModeAvailability();
   document.querySelectorAll('.lib-item.selected').forEach(n => n.classList.remove('selected'));
 });
 confirmBtn.addEventListener('click', startStudyFromSelection);
@@ -1214,6 +1251,38 @@ $('strictAccents').addEventListener('change', saveSetup);
 document.querySelectorAll('input[name=dir], input[name=chunk], input[name=mode]')
   .forEach(el => el.addEventListener('change', saveSetup));
 
+// The drill only works on verb-paradigm decks: grammar-sourced, and with no
+// group so large it's really a vocab section masquerading as a paradigm. Same
+// test startStudyFromSelection used to enforce after the fact.
+function supportsConjugation(entry) {
+  if (!entry || !isGrammarEntry(entry)) return false;
+  const paradigms = buildParadigmQueue(entry.cards);
+  return paradigms.length > 0 && !paradigms.some(p => p.rows.length > 12);
+}
+
+// True when the drill is both selected and usable for the current deck.
+function conjModeActive() {
+  return document.querySelector('input[name=mode]:checked')?.value === 'conjugation'
+    && supportsConjugation(selectedEntry);
+}
+
+// Offer the drill only for decks it can actually run on — greyed out elsewhere
+// instead of failing on Confirm.
+function updateModeAvailability() {
+  const radio = document.querySelector('input[name=mode][value=conjugation]');
+  if (!radio) return;
+  const ok = supportsConjugation(selectedEntry);
+  radio.disabled = !ok;
+  radio.closest('label')?.classList.toggle('opt-unavailable', !ok);
+  if (!ok && radio.checked) {
+    document.querySelector('input[name=mode][value=flashcard]').checked = true;
+    updateDirectionAvailability();
+  }
+  $('modeNote').textContent = ok
+    ? ''
+    : 'Conjugation drill needs a verb deck — pick one from the Grammar tab.';
+}
+
 // Direction has no meaning in conjugation mode (the prompt is always the
 // infinitive, the answer always the Spanish forms) — grey it out.
 function updateDirectionAvailability() {
@@ -1223,10 +1292,14 @@ function updateDirectionAvailability() {
   $('direction').classList.toggle('disabled', disabled);
 }
 document.querySelectorAll('input[name=mode]')
-  .forEach(el => el.addEventListener('change', updateDirectionAvailability));
+  .forEach(el => el.addEventListener('change', () => {
+    updateDirectionAvailability();
+    renderPreviewControls();
+  }));
 
 restoreSetup();
 updateDirectionAvailability();
+updateModeAvailability();
 
 // ---------- Service worker registration ----------
 // Only register on http(s) origins — file:// double-clicks still work without it.
@@ -1282,7 +1355,12 @@ function expandDirection(cards, dir) {
 // drill regroups them so each queue item is a whole paradigm.
 function parseConjLabel(english) {
   const parts = String(english).split(/\s+—\s+/);
-  if (parts.length >= 2) return { lemma: parts[0].trim(), person: parts.slice(1).join(' — ').trim() };
+  if (parts.length >= 2) {
+    // Some grammar pages label a paradigm by conjugation class ("-AR verbs
+    // revelar") rather than the bare infinitive — keep the verb, drop the class.
+    const lemma = parts[0].trim().replace(/^-?[a-z]{2}\s+verbs?\s+/i, '');
+    return { lemma, person: parts.slice(1).join(' — ').trim() };
+  }
   return { lemma: null, person: String(english).trim() };
 }
 
