@@ -266,6 +266,9 @@
     touch-action: manipulation;
     -webkit-tap-highlight-color: var(--tap-highlight);
   }
+  /* A set button at the end of its range stays visible but reads as a boundary
+     rather than a dead control. */
+  #topbar button:disabled { opacity: 0.4; cursor: not-allowed; }
   #topbar button:hover { border-color: var(--accent-text); color: var(--accent-text); }
   #topbar button:active { background: var(--accent-soft); }
   /* Every event the user fires inside a button MUST target the button itself
@@ -779,7 +782,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-08-31T19-09-01-076Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-02T21-03-04-745Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -795,6 +798,7 @@
       <button id="topPlayBtn" title="Play Spanish pronunciation (P)" aria-label="Play pronunciation"><span aria-hidden="true">🔊 Play<span class="kbd-hint"> (P)</span></span></button>
       <button id="swapDirBtn" title="Swap direction (S)"><span aria-hidden="true">⇄ Swap<span class="kbd-hint"> (S)</span></span></button>
       <button id="reshuffle" title="Shuffle this set (R)"><span aria-hidden="true">Shuffle<span class="kbd-hint"> (R)</span></span></button>
+      <button id="prevSetBtn" title="Previous set (B)"><span aria-hidden="true">← Prev set<span class="kbd-hint"> (B)</span></span></button>
       <button id="nextSetBtn" title="Next set (N)"><span aria-hidden="true">Next set<span class="kbd-hint"> (N)</span> →</span></button>
       <button id="toSetup" title="Back to setup (Esc)"><span aria-hidden="true">Setup<span class="kbd-hint"> (Esc)</span></span></button>
     </div>
@@ -822,13 +826,13 @@
     </div>
     <button id="nextBtn" class="nav-arrow" type="button" title="Next card (→)" aria-label="Next card">→</button>
     <div class="hint" id="hint">
-      <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>N</kbd> next set · <kbd>Esc</kbd> setup</span>
+      <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>B</kbd>/<kbd>N</kbd> prev/next set · <kbd>Esc</kbd> setup</span>
       <span class="hint-mobile">Tap to flip · Swipe ← → card · Swipe ↑ next set · Swipe ↓ prev set</span>
     </div>
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-08-31T19-09-01-076Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-02T21-03-04-745Z</span></span>
   </div>
 </section>
 
@@ -866,6 +870,7 @@ const libVocab = $('libVocab');
 const libGrammar = $('libGrammar');
 const statusEl = $('status');
 const nextSetBtn = $('nextSetBtn');
+const prevSetBtn = $('prevSetBtn');
 const card = $('card');
 const face = $('face');
 const sideLabel = $('sideLabel');
@@ -1455,6 +1460,7 @@ function render() {
   $('crumbCardLabel').textContent = isConj ? 'verb' : 'card';
   $('crumbCard').textContent = `${state.cardIndex + 1} / ${size}`;
   $('crumbSet').textContent = `${state.setIndex + 1} / ${setCount}`;
+  prevSetBtn.disabled = state.setIndex === 0;
   $('swapDirBtn').style.display = isConj ? 'none' : '';
   // Conjugation cards are paradigms with no MP3 — audio is per-row TTS, plus
   // the top button speaking the infinitive. The in-card button stays hidden.
@@ -1824,10 +1830,10 @@ const HINT_DESKTOP_DEFAULT = hintDesktopEl.innerHTML;
 const HINT_MOBILE_DEFAULT = hintMobileEl.innerHTML;
 function updateHint(isConj) {
   hintDesktopEl.innerHTML = isConj
-    ? '<kbd>Enter</kbd> next blank / check / next verb · <kbd>Tab</kbd> rows · <kbd>?</kbd> reveal · <kbd>P</kbd> play infinitive · <kbd>N</kbd> next set · <kbd>Esc</kbd> setup'
+    ? '<kbd>Enter</kbd> next blank / check / next verb · <kbd>Tab</kbd> rows · <kbd>?</kbd> reveal · <kbd>P</kbd> play infinitive · <kbd>B</kbd>/<kbd>N</kbd> prev/next set · <kbd>Esc</kbd> setup'
     : HINT_DESKTOP_DEFAULT;
   hintMobileEl.innerHTML = isConj
-    ? 'Fill in the forms, then Check · 🔊 plays each form'
+    ? 'Fill in the forms, then Check · 🔊 plays each form · Prev/Next set above'
     : HINT_MOBILE_DEFAULT;
 }
 
@@ -2023,9 +2029,9 @@ function animateAndThen(direction, action) {
 }
 
 cardareaEl.addEventListener('touchstart', (e) => {
-  if (state.setup?.mode !== 'flashcard') return;   // swipes fight text inputs
+  if (!state.setup) return;
   if (e.touches.length !== 1) return;
-  if (e.target.closest('button, input, #typingWrap, #conjWrap')) return;
+  if (e.target.closest('button, input, #typingWrap')) return;
   const t = e.touches[0];
   // Skip iOS edge back-swipe zone so we don't fight the OS gesture.
   if (t.clientX < 20) return;
@@ -2044,6 +2050,7 @@ cardareaEl.addEventListener('touchend', (e) => {
   const absY = Math.abs(dy);
   // Horizontal swipe — change cards.
   if (absX > 40 && absX > absY * 1.5) {
+    if (state.setup.mode !== 'flashcard') return;   // would skip an unsubmitted answer
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
     if (dx < 0) animateAndThen('left', next);
@@ -2052,6 +2059,7 @@ cardareaEl.addEventListener('touchend', (e) => {
   }
   // Upward swipe — advance to the next set.
   if (dy < -60 && absY > absX * 1.5) {
+    if (!cardScrolledTo('bottom')) return;
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
     showSwipeToast('↑ Next set');
@@ -2060,6 +2068,7 @@ cardareaEl.addEventListener('touchend', (e) => {
   }
   // Downward swipe — step back to the previous set.
   if (dy > 60 && absY > absX * 1.5) {
+    if (!cardScrolledTo('top')) return;
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
     if (state.setIndex > 0) {
@@ -2075,6 +2084,16 @@ cardareaEl.addEventListener('touchend', (e) => {
 
 cardareaEl.addEventListener('touchcancel', () => { swipeStart = null; }, { passive: true });
 
+// The conjugation card scrolls on small screens (six rows + software keyboard).
+// A vertical swipe should scroll it first and only change sets once it's at the
+// edge, so the two gestures don't fight.
+function cardScrolledTo(edge) {
+  if (card.scrollHeight <= card.clientHeight + 1) return true;   // not scrollable
+  return edge === 'top'
+    ? card.scrollTop <= 2
+    : card.scrollTop + card.clientHeight >= card.scrollHeight - 2;
+}
+
 // ---------- Swipe toast ----------
 const swipeToast = $('swipeToast');
 let swipeToastTimer = null;
@@ -2089,6 +2108,7 @@ $('backArrow').addEventListener('click', () => backToSetup());
 $('toSetup').addEventListener('click', () => backToSetup());
 $('reshuffle').addEventListener('click', reshuffle);
 nextSetBtn.addEventListener('click', (e) => { e.stopPropagation(); nextSet(); });
+prevSetBtn.addEventListener('click', (e) => { e.stopPropagation(); prevSet(); });
 $('swapDirBtn').addEventListener('click', (e) => { e.stopPropagation(); swapDirection(); });
 // Belt-and-braces propagation handling — stop the event at every phase a
 // mobile browser might use to trigger the card's flip handler. Some Android
@@ -2191,6 +2211,11 @@ document.addEventListener('keydown', (e) => {
     case 'N':
       e.preventDefault();
       nextSet();
+      break;
+    case 'b':
+    case 'B':
+      e.preventDefault();
+      if (!prevSet()) showSwipeToast('Already at first set');
       break;
     case 's':
     case 'S':
