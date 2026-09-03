@@ -181,7 +181,7 @@
 
   /* ---------- Deck chooser: tabs + lists ---------- */
   .tabs { margin: 0.5rem 0 0; }
-  .tab-bar { display: flex; gap: 0.25rem; border-bottom: 2px solid var(--border); }
+  .tab-bar { display: flex; flex-wrap: wrap; gap: 0.25rem; border-bottom: 2px solid var(--border); }
   .tab-btn {
     appearance: none; background: none; border: none; cursor: pointer;
     padding: 0.5rem 0.9rem; font: inherit; color: var(--muted);
@@ -716,6 +716,7 @@
     <div class="tab-bar" role="tablist">
       <button type="button" class="tab-btn active" data-tab="vocab" role="tab" id="tab-vocab" aria-controls="panel-vocab" aria-selected="true">Vocabulary</button>
       <button type="button" class="tab-btn" data-tab="grammar" role="tab" id="tab-grammar" aria-controls="panel-grammar" aria-selected="false">Grammar</button>
+      <button type="button" class="tab-btn" data-tab="conj" role="tab" id="tab-conj" aria-controls="panel-conj" aria-selected="false">Conjugation</button>
       <button type="button" class="tab-btn" data-tab="options" role="tab" id="tab-options" aria-controls="panel-options" aria-selected="false">Options</button>
     </div>
 
@@ -729,6 +730,12 @@
       <div class="field"><label class="lbl" for="unitGrammar">Unit</label>
         <select id="unitGrammar"></select></div>
       <div id="libGrammar" class="deck-list"><div class="lib-empty">Loading…</div></div>
+    </div>
+
+    <div class="tab-panel" data-panel="conj" role="tabpanel" id="panel-conj" aria-labelledby="tab-conj">
+      <div class="field"><label class="lbl" for="unitConj">Unit</label>
+        <select id="unitConj"></select></div>
+      <div id="libConj" class="deck-list"><div class="lib-empty">Loading…</div></div>
     </div>
 
     <div class="tab-panel" data-panel="options" role="tabpanel" id="panel-options" aria-labelledby="tab-options">
@@ -787,7 +794,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-03T12-31-39-678Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-03T13-05-44-213Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -837,7 +844,7 @@
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T12-31-39-678Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T13-05-44-213Z</span></span>
   </div>
 </section>
 
@@ -870,9 +877,11 @@ const fileInput = $('file');
 const folderInput = $('folder');
 const deckTabs = $('deckTabs');
 const unitVocabSel = $('unitVocab');
+const unitConjSel = $('unitConj');
 const unitGrammarSel = $('unitGrammar');
 const libVocab = $('libVocab');
 const libGrammar = $('libGrammar');
+const libConj = $('libConj');
 const statusEl = $('status');
 const nextSetBtn = $('nextSetBtn');
 const prevSetBtn = $('prevSetBtn');
@@ -926,6 +935,10 @@ function parseTSV(text) {
 }
 
 // ---------- Setup wiring: tabs, unit filter, deck lists ----------
+// Set while restoreSetup() replays a saved session, so the Conjugation tab's
+// "pick the drill for me" behaviour doesn't override a deliberately saved mode.
+let restoringSetup = false;
+
 function setupTabs() {
   deckTabs.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -935,6 +948,10 @@ function setupTabs() {
         b.setAttribute('aria-selected', String(b === btn));
       });
       deckTabs.querySelectorAll('.tab-panel').forEach(p => p.classList.toggle('active', p.dataset.panel === tab));
+      if (tab === 'conj') {
+        const drill = document.querySelector('input[name=mode][value=conjugation]');
+        if (drill && !drill.disabled) { drill.checked = true; updateDirectionAvailability(); renderPreviewControls(); }
+      }
       saveSetup();
     });
   });
@@ -949,8 +966,23 @@ function unitOf(lesson) {
 const unitLabel = (u) => u === 'all' ? 'All units' : u === 'other' ? 'Other' : 'Unit ' + u.slice(1);
 const entryUnits = (e) => new Set(e.cards.map(c => unitOf(c.lesson)));
 const isGrammarEntry = (e) => /grammar/i.test(e.relPath);
+
+const drillCache = new WeakMap();
+function isDrillEntry(e) {
+  if (!isGrammarEntry(e)) return false;
+  if (drillCache.has(e)) return drillCache.get(e);
+  const ps = buildParadigmQueue(e.cards);
+  const full = ps.filter(p => new Set(p.rows.filter(r => r.canon >= 0).map(r => r.canon)).size >= 4);
+  const ok = ps.length > 0 && !ps.some(p => p.rows.length > 12) && full.length / ps.length >= 0.5;
+  drillCache.set(e, ok);
+  return ok;
+}
+
 const categoryEntries = (cat) =>
-  bundledEntries.filter(e => cat === 'grammar' ? isGrammarEntry(e) : !isGrammarEntry(e));
+  bundledEntries.filter(e =>
+    cat === 'conj'    ? isDrillEntry(e)
+  : cat === 'grammar' ? (isGrammarEntry(e) && !isDrillEntry(e))
+  :                     !isGrammarEntry(e));
 
 function populateUnitDropdown(sel, entries) {
   const units = new Set();
@@ -970,8 +1002,8 @@ function populateUnitDropdown(sel, entries) {
 }
 
 function renderDeckList(cat) {
-  const container = cat === 'grammar' ? libGrammar : libVocab;
-  const sel = cat === 'grammar' ? unitGrammarSel : unitVocabSel;
+  const container = cat === 'conj' ? libConj : cat === 'grammar' ? libGrammar : libVocab;
+  const sel = cat === 'conj' ? unitConjSel : cat === 'grammar' ? unitGrammarSel : unitVocabSel;
   const unit = sel.value || 'all';
   const entries = categoryEntries(cat).sort((a, b) => {     // combined files first, then path
     const ac = /contrasena_all|all units/i.test(a.relPath) ? 0 : 1;
@@ -987,7 +1019,8 @@ function renderDeckList(cat) {
   });
   container.innerHTML = '';
   if (!shown.length) {
-    container.innerHTML = `<div class="lib-empty">No ${cat === 'grammar' ? 'grammar' : 'vocabulary'} decks for this unit.</div>`;
+    const what = cat === 'conj' ? 'conjugation' : cat === 'grammar' ? 'grammar' : 'vocabulary';
+    container.innerHTML = `<div class="lib-empty">No ${what} decks for this unit.</div>`;
     return;
   }
   for (const e of shown) container.appendChild(makeLibItem(e));
@@ -996,11 +1029,14 @@ function renderDeckList(cat) {
 function renderDeckTabs() {
   populateUnitDropdown(unitVocabSel, categoryEntries('vocab'));
   populateUnitDropdown(unitGrammarSel, categoryEntries('grammar'));
+  populateUnitDropdown(unitConjSel, categoryEntries('conj'));
   renderDeckList('vocab');
   renderDeckList('grammar');
+  renderDeckList('conj');
 }
 unitVocabSel.addEventListener('change', () => { renderDeckList('vocab'); saveSetup(); });
 unitGrammarSel.addEventListener('change', () => { renderDeckList('grammar'); saveSetup(); });
+unitConjSel.addEventListener('change', () => { renderDeckList('conj'); saveSetup(); });
 
 // Disk fallbacks (collapsible <details>) — preserved for non-bundled TSVs.
 fileInput.addEventListener('change', async (e) => {
@@ -1070,6 +1106,11 @@ function openDeckPreview(entry) {
   const name = entry.relPath.includes('/') ? entry.relPath.slice(entry.relPath.lastIndexOf('/') + 1) : entry.relPath;
   previewTitle.textContent = name;
   updateModeAvailability();
+  // Picking a deck from the Conjugation tab means you want the drill.
+  if (!restoringSetup && deckTabs.querySelector('.tab-btn.active')?.dataset.tab === 'conj') {
+    const drill = document.querySelector('input[name=mode][value=conjugation]');
+    if (drill && !drill.disabled && !drill.checked) { drill.checked = true; updateDirectionAvailability(); }
+  }
   renderPreviewControls();
 
   deckPreview.classList.remove('field-hidden');
@@ -1184,6 +1225,7 @@ function saveSetup() {
       tab: activeTab,
       unitVocab: unitVocabSel.value || 'all',
       unitGrammar: unitGrammarSel.value || 'all',
+      unitConj: unitConjSel.value || 'all',
       tsvPath: selectedEntry ? state.loadedPath : null,
       section: selectedEntry ? previewSectionSel.value : null,
       direction: dirRadio ? dirRadio.value : null,
@@ -1216,6 +1258,9 @@ function restoreSetup() {
   }
   if (saved.unitGrammar && [...unitGrammarSel.options].some(o => o.value === saved.unitGrammar)) {
     unitGrammarSel.value = saved.unitGrammar; renderDeckList('grammar');
+  }
+  if (saved.unitConj && [...unitConjSel.options].some(o => o.value === saved.unitConj)) {
+    unitConjSel.value = saved.unitConj; renderDeckList('conj');
   }
 
   // Active tab.
@@ -1255,9 +1300,7 @@ document.querySelectorAll('input[name=dir], input[name=chunk], input[name=mode]'
 // group so large it's really a vocab section masquerading as a paradigm. Same
 // test startStudyFromSelection used to enforce after the fact.
 function supportsConjugation(entry) {
-  if (!entry || !isGrammarEntry(entry)) return false;
-  const paradigms = buildParadigmQueue(entry.cards);
-  return paradigms.length > 0 && !paradigms.some(p => p.rows.length > 12);
+  return !!entry && isDrillEntry(entry);
 }
 
 // True when the drill is both selected and usable for the current deck.
@@ -1297,7 +1340,9 @@ document.querySelectorAll('input[name=mode]')
     renderPreviewControls();
   }));
 
+restoringSetup = true;
 restoreSetup();
+restoringSetup = false;
 updateDirectionAvailability();
 updateModeAvailability();
 
@@ -1436,7 +1481,7 @@ function startStudyFromSelection() {
   // The drill only makes sense on paradigm-shaped decks (one card per form,
   // sectioned by verb). Vocab decks would produce one giant "paradigm" per
   // section — refuse those instead of rendering a 30-input wall.
-  if (mode === 'conjugation' && (!isGrammarEntry(selectedEntry) || queue.some(p => p.rows.length > 12))) {
+  if (mode === 'conjugation' && !supportsConjugation(selectedEntry)) {
     statusEl.classList.add('err');
     statusEl.textContent = 'Conjugation drill needs a verb-paradigm deck — pick one from the Grammar tab.';
     return;
