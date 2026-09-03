@@ -116,3 +116,69 @@ writeFileSync('output_grammar/grammar_12_imperfect_review.tsv',
 
 console.log(`preterite: ${PRETERITE.length} verbs, ${PRETERITE.length*6} cards`);
 console.log(`imperfect: ${IMPERFECT.length} verbs, ${IMPERFECT.length*6} cards`);
+
+// ---------- present tense ----------
+const PRES_END = {
+  ar: ['o', 'as', 'a', 'amos', 'áis', 'an'],
+  er: ['o', 'es', 'e', 'emos', 'éis', 'en'],
+  ir: ['o', 'es', 'e', 'imos', 'ís', 'en'],
+};
+// Regular everywhere except the yo form (-go, -zco, and friends).
+const yoIrr = (inf, yo) => {
+  const s = inf.slice(0, -2), E = PRES_END[inf.slice(-2)];
+  return [yo, s + E[1], s + E[2], s + E[3], s + E[4], s + E[5]];
+};
+// Boot/shoe pattern: the stem changes everywhere except nosotros and vosotros.
+const boot = (inf, alt) => {
+  const s = inf.slice(0, -2), E = PRES_END[inf.slice(-2)];
+  return [alt + E[0], alt + E[1], alt + E[2], s + E[3], s + E[4], alt + E[5]];
+};
+
+const PRESENT = [
+  // --- fully irregular ---
+  ['ser',       ['soy',   'eres',  'es',    'somos',      'sois',    'son']],
+  ['estar',     ['estoy', 'estás', 'está',  'estamos',    'estáis',  'están']],
+  ['ir',        ['voy',   'vas',   'va',    'vamos',      'vais',    'van']],
+  ['haber',     ['he',    'has',   'ha',    'hemos',      'habéis',  'han']],
+  ['tener',     ['tengo', 'tienes','tiene', 'tenemos',    'tenéis',  'tienen']],
+  ['venir',     ['vengo', 'vienes','viene', 'venimos',    'venís',   'vienen']],
+  ['decir',     ['digo',  'dices', 'dice',  'decimos',    'decís',   'dicen']],
+  ['oír',       ['oigo',  'oyes',  'oye',   'oímos',      'oís',     'oyen']],
+  // seguir drops the u before o — "sigo", not "siguo"
+  ['seguir',    ['sigo',  'sigues','sigue', 'seguimos',   'seguís',  'siguen']],
+  ['construir', ['construyo','construyes','construye','construimos','construís','construyen']],
+  // dar and ver take unaccented vosotros forms, so they're spelled out
+  ['dar',       ['doy',   'das',   'da',    'damos',      'dais',    'dan']],
+  ['ver',       ['veo',   'ves',   've',    'vemos',      'veis',    'ven']],
+  // --- irregular yo form only ---
+  ['hacer',    yoIrr('hacer',    'hago')],
+  ['poner',    yoIrr('poner',    'pongo')],
+  ['salir',    yoIrr('salir',    'salgo')],
+  ['traer',    yoIrr('traer',    'traigo')],
+  ['caer',     yoIrr('caer',     'caigo')],
+  ['saber',    yoIrr('saber',    'sé')],
+  ['conocer',  yoIrr('conocer',  'conozco')],
+  ['conducir', yoIrr('conducir', 'conduzco')],
+  // --- stem-changing e -> ie ---
+  ['pensar',   boot('pensar',   'piens')],
+  ['querer',   boot('querer',   'quier')],
+  ['entender', boot('entender', 'entiend')],
+  ['empezar',  boot('empezar',  'empiez')],
+  ['preferir', boot('preferir', 'prefier')],
+  // --- stem-changing o -> ue ---
+  ['poder',    boot('poder',    'pued')],
+  ['volver',   boot('volver',   'vuelv')],
+  ['dormir',   boot('dormir',   'duerm')],
+  ['contar',   boot('contar',   'cuent')],
+  ['almorzar', boot('almorzar', 'almuerz')],
+  // --- stem-changing u -> ue ---
+  ['jugar',    boot('jugar',    'jueg')],
+  // --- stem-changing e -> i ---
+  ['pedir',    boot('pedir',    'pid')],
+  ['servir',   boot('servir',   'sirv')],
+  ['repetir',  boot('repetir',  'repit')],
+];
+
+writeFileSync('output_grammar/grammar_7_present_irregulars_review.tsv',
+  build(PRESENT, 'grammar_7_present_irregulars_review'), 'utf8');
+console.log(`present:   ${PRESENT.length} verbs, ${PRESENT.length*6} cards`);
