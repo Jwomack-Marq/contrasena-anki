@@ -524,6 +524,17 @@
     align-items: center;
   }
   .conj-person { text-align: right; color: var(--muted); font-size: 0.92rem; }
+  /* Accent helpers for desktop typing. Hidden on phones, where the software
+     keyboard already offers accents on a long press. */
+  .accent-bar { display: flex; flex-wrap: wrap; gap: 0.3rem; justify-content: center; margin-top: 0.6rem; }
+  .accent-bar button {
+    min-width: 2.1rem; padding: 0.3rem 0.5rem; font: inherit; font-size: 1rem;
+    background: var(--surface); color: var(--fg);
+    border: 1px solid var(--border); border-radius: 6px; cursor: pointer;
+    user-select: none; -webkit-user-select: none; touch-action: manipulation;
+  }
+  .accent-bar button:hover { border-color: var(--accent-text); color: var(--accent-text); }
+  .accent-bar .combo { display: block; font-size: 0.62rem; color: var(--muted); line-height: 1.1; }
   .conj-input {
     width: 100%;
     min-width: 0;
@@ -697,6 +708,9 @@
     #card.mode-conj .face { font-size: 1.35rem; }
     #cardarea .hint { bottom: 0.4rem; font-size: 0.78rem; padding: 0 0.5rem; }
 
+    /* Phones already offer accents on a long press. */
+    .accent-bar { display: none; }
+
     .hint-desktop { display: none; }
     .hint-mobile  { display: inline; }
   }
@@ -794,7 +808,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-03T13-29-12-007Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-03T13-58-39-498Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -827,6 +841,7 @@
         <div id="feedback" aria-live="polite"></div>
         <button id="showAnswerBtn" type="button">Show answer (?)</button>
       </div>
+      <div id="accentBar" class="accent-bar hidden" role="group" aria-label="Insert accented character"></div>
       <div id="conjWrap" class="hidden">
         <div id="conjGrid"></div>
         <div id="conjSummary" aria-live="polite"></div>
@@ -844,7 +859,7 @@
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T13-29-12-007Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T13-58-39-498Z</span></span>
   </div>
 </section>
 
@@ -1566,6 +1581,7 @@ function render() {
     card.classList.toggle('flipped', state.flipped);
   }
 
+  accentBar.classList.toggle('hidden', !(isTyping || isConj));
   $('crumbLesson').textContent = state.setup.lesson;
   const sectionLabel = state.setup.section === '__ALL__' ? '(all sections)' : state.setup.section;
   $('crumbSection').textContent = state.setup.skipped
@@ -2348,6 +2364,98 @@ document.addEventListener('keydown', (e) => {
       break;
   }
 });
+
+// ---------- Accent input ----------
+// Spanish answers need a e i o u with acutes, plus n-tilde, u-diaeresis and
+// the inverted marks. Two keyboard routes, because neither is universal:
+//   Alt + letter        -- the usual combo
+//   ; then letter       -- a dead key, for browsers that swallow Alt+letter
+//                          (Alt+E and Alt+F open the Chrome menu on Windows)
+// Keyed on e.code, not e.key: holding Option on a Mac rewrites e.key, so
+// Alt+a arrives as "a-ring" there but is always KeyA.
+const ACCENT_BY_CODE = {
+  KeyA: "á", KeyE: "é", KeyI: "í", KeyO: "ó", KeyU: "ú",
+  KeyN: "ñ", KeyD: "ü", Slash: "¿", Digit1: "¡",
+};
+const accentBar = $("accentBar");
+let accentTarget = null;     // last focused answer field
+let accentPending = false;   // the ; dead key is armed
+
+const isAnswerField = (el) =>
+  !!el && (el.id === "typingInput" || (el.classList && el.classList.contains("conj-input")));
+
+document.addEventListener("focusin", (e) => { if (isAnswerField(e.target)) accentTarget = e.target; });
+
+// Insert at the caret, replacing any selection, and leave the caret after it.
+function insertAccent(ch, field) {
+  // Fall back to whichever field is on screen, so the buttons work even if
+  // nothing has been focused yet.
+  let t = field || accentTarget;
+  if (!t || t.disabled) {
+    t = typingWrap.classList.contains("hidden")
+      ? conjWrap.querySelector(".conj-input:not(:disabled)") || conjWrap.querySelector(".conj-input")
+      : typingInput;
+  }
+  if (!t || t.disabled) return;
+  const start = typeof t.selectionStart === "number" ? t.selectionStart : String(t.value).length;
+  const end = typeof t.selectionEnd === "number" ? t.selectionEnd : start;
+  t.value = String(t.value).slice(0, start) + ch + String(t.value).slice(end);
+  if (t.setSelectionRange) t.setSelectionRange(start + ch.length, start + ch.length);
+  if (t.focus) t.focus();
+}
+
+// Capture phase so the drill grid and the typing box never see these keys.
+document.addEventListener("keydown", (e) => {
+  if (!isAnswerField(e.target)) { accentPending = false; return; }
+  const upper = e.shiftKey;
+  const mapped = ACCENT_BY_CODE[e.code];
+
+  if (e.altKey && !e.ctrlKey && !e.metaKey && mapped) {
+    e.preventDefault();
+    accentPending = false;
+    insertAccent(upper ? mapped.toUpperCase() : mapped, e.target);
+    return;
+  }
+  if (e.altKey || e.ctrlKey || e.metaKey) return;
+
+  if (accentPending) {
+    accentPending = false;
+    if (mapped) { e.preventDefault(); insertAccent(upper ? mapped.toUpperCase() : mapped, e.target); return; }
+    if (e.code === "Semicolon") { e.preventDefault(); insertAccent(";", e.target); return; }
+    return;   // anything else: forget the dead key, type the character normally
+  }
+  // Semicolon never appears in an answer, so it is free to act as a dead key.
+  if (e.code === "Semicolon" && !upper) { e.preventDefault(); accentPending = true; }
+}, true);
+
+document.addEventListener("focusout", () => { accentPending = false; });
+
+// Clickable fallback: works regardless of what the browser does with Alt.
+function buildAccentBar() {
+  const items = [
+    ["á", "Alt+A"], ["é", "Alt+E"], ["í", "Alt+I"],
+    ["ó", "Alt+O"], ["ú", "Alt+U"], ["ñ", "Alt+N"],
+    ["ü", "Alt+D"], ["¿", "Alt+/"], ["¡", "Alt+1"],
+  ];
+  accentBar.innerHTML = "";
+  for (const pair of items) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.title = pair[0] + "  (" + pair[1] + ", or ; then the letter)";
+    const glyph = document.createElement("span");
+    glyph.textContent = pair[0];
+    const combo = document.createElement("span");
+    combo.className = "combo";
+    combo.textContent = pair[1];
+    b.appendChild(glyph);
+    b.appendChild(combo);
+    // mousedown default would blur the field and lose the caret position
+    b.addEventListener("mousedown", (ev) => ev.preventDefault());
+    b.addEventListener("click", (ev) => { ev.stopPropagation(); insertAccent(pair[0]); });
+    accentBar.appendChild(b);
+  }
+}
+buildAccentBar();
 
 // ---------- Boot ----------
 // Runs last on purpose: renderDeckTabs() reaches buildParadigmQueue, which

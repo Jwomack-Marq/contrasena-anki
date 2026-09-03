@@ -39,7 +39,10 @@ class El {
   get innerHTML() { return this._html; }
   set innerHTML(v) { this._html = String(v); this.children.length = 0; }
   appendChild(c) { c.parent = this; this.children.push(c); return c; }
-  addEventListener() {} removeEventListener() {} scrollIntoView() {} focus() {} click() {}
+  addEventListener(type, fn) { (this._on || (this._on = {}))[type] = ((this._on[type]) || []).concat(fn); }
+  removeEventListener() {} scrollIntoView() {}
+  focus() { focused = this; }
+  click() { fire(this, 'click', {}); }
   setAttribute(k, v) { if (k === 'id') this.id = v; this['attr_' + k] = v; }
   getAttribute(k) { return this['attr_' + k]; }
   closest(sel) { let n = this; while (n) { if (matches(n, sel)) return n; n = n.parent; } return null; }
@@ -47,6 +50,19 @@ class El {
   querySelectorAll(sel) { return query(descendants(this), sel); }
 }
 const descendants = (el) => el.children.flatMap(c => [c, ...descendants(c)]);
+
+// Focus tracking + a dispatcher good enough for delegated document handlers.
+let focused = null;
+const docListeners = {};
+function fire(target, type, props) {
+  const ev = Object.assign({ type, target, defaultPrevented: false,
+    preventDefault() { this.defaultPrevented = true; },
+    stopPropagation() {} }, props || {});
+  for (const fn of docListeners[type] || []) fn(ev);
+  let n = target;
+  while (n) { for (const fn of ((n._on || {})[type] || [])) fn(ev); n = n.parent; }
+  return ev;
+}
 
 // Supports exactly the selector shapes index.html uses.
 function matches(el, sel) {
@@ -121,7 +137,9 @@ const document = {
   querySelector: (s) => query(descendants(root), s)[0] || null,
   querySelectorAll: (s) => query(descendants(root), s),
   createElement: (t) => new El(t),
-  addEventListener() {}, body: root, documentElement: new El('html'),
+  addEventListener: (t, fn) => { (docListeners[t] || (docListeners[t] = [])).push(fn); },
+  body: root, documentElement: new El('html'),
+  get activeElement() { return focused; },
 };
 const store = new Map();
 const ctx = {
@@ -168,5 +186,73 @@ for (const pair of sels) {
   ok(n > 1, pair[1] + ' unit dropdown has ' + n + ' options');
 }
 
-console.log(fail ? '\n' + fail + ' app-boot check(s) FAILED.' : '\nAll app-boot checks passed.');
+
+console.log('\n=== accent input ===');
+{
+  const field = byId.get('typingInput');
+  field.selectionStart = field.selectionEnd = 0;
+  const type = (props) => {
+    const ev = fire(field, 'keydown', Object.assign({ code: '', key: '', altKey: false,
+      ctrlKey: false, metaKey: false, shiftKey: false }, props));
+    field.selectionStart = field.selectionEnd = String(field.value).length;
+    return ev;
+  };
+  const reset = () => { field.value = ''; field.selectionStart = field.selectionEnd = 0; };
+
+  reset(); type({ code: 'KeyE', altKey: true });
+  ok(field.value === '\u00e9', 'Alt+E inserts e-acute  (got "' + field.value + '")');
+
+  reset(); type({ code: 'KeyN', altKey: true });
+  ok(field.value === '\u00f1', 'Alt+N inserts n-tilde  (got "' + field.value + '")');
+
+  reset(); type({ code: 'KeyD', altKey: true });
+  ok(field.value === '\u00fc', 'Alt+D inserts u-diaeresis  (got "' + field.value + '")');
+
+  reset(); type({ code: 'Slash', altKey: true });
+  ok(field.value === '\u00bf', 'Alt+/ inserts inverted question mark  (got "' + field.value + '")');
+
+  reset(); type({ code: 'Digit1', altKey: true });
+  ok(field.value === '\u00a1', 'Alt+1 inserts inverted exclamation  (got "' + field.value + '")');
+
+  reset(); type({ code: 'KeyO', altKey: true, shiftKey: true });
+  ok(field.value === '\u00d3', 'Shift+Alt+O inserts capital O-acute  (got "' + field.value + '")');
+
+  // dead key: ; then the letter
+  reset();
+  const semi = type({ code: 'Semicolon' });
+  ok(semi.defaultPrevented && field.value === '', 'semicolon arms the dead key and types nothing');
+  type({ code: 'KeyA' });
+  ok(field.value === '\u00e1', 'then A gives a-acute  (got "' + field.value + '")');
+
+  // a second semicolon yields a literal one
+  reset(); type({ code: 'Semicolon' }); type({ code: 'Semicolon' });
+  ok(field.value === ';', 'two semicolons give a literal semicolon  (got "' + field.value + '")');
+
+  // an unmapped key just cancels, and is typed normally by the browser
+  reset(); type({ code: 'Semicolon' });
+  const after = type({ code: 'KeyZ' });
+  ok(!after.defaultPrevented && field.value === '', 'dead key + unmapped letter cancels cleanly');
+
+  // insertion respects the caret rather than always appending
+  field.value = 'hxbl'; field.selectionStart = field.selectionEnd = 1;
+  type({ code: 'KeyA', altKey: true });
+  ok(field.value === 'h\u00e1xbl', 'inserts at the caret  (got "' + field.value + '")');
+
+  // keys outside an answer field are left alone
+  const other = byId.get('libVocab');
+  const ev = fire(other, 'keydown', { code: 'Semicolon', altKey: false, ctrlKey: false, metaKey: false, shiftKey: false });
+  ok(!ev.defaultPrevented, 'keys outside an answer field are untouched');
+}
+
+console.log('\n=== accent bar ===');
+{
+  const bar = byId.get('accentBar');
+  ok(bar.children.length === 9, 'accent bar offers ' + bar.children.length + ' buttons');
+  const field = byId.get('typingInput');
+  field.value = ''; field.selectionStart = field.selectionEnd = 0;
+  fire(bar.children[0], 'click', {});
+  ok(field.value === '\u00e1', 'clicking the first button inserts a-acute  (got "' + field.value + '")');
+}
+
+console.log(fail ? '\n' + fail + ' check(s) FAILED.' : '\nAll accent checks passed.');
 process.exit(fail ? 1 : 0);
