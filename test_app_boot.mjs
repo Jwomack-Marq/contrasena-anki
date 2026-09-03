@@ -254,5 +254,9 @@ console.log('\n=== accent bar ===');
   ok(field.value === '\u00e1', 'clicking the first button inserts a-acute  (got "' + field.value + '")');
 }
 
+
+console.log('\n=== verb meaning switch ===');
+ok(!!byId.get('showGloss'), 'Options has a "show verb meaning" checkbox');
+ok(!!byId.get('verbGloss'), 'the card has a slot for the meaning');
 console.log(fail ? '\n' + fail + ' check(s) FAILED.' : '\nAll accent checks passed.');
 process.exit(fail ? 1 : 0);

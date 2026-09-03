@@ -11,7 +11,7 @@
     "grab:pdfs": "node grab_pdfs.mjs --urls pdf_urls.txt",
     "backfill": "node backfill_audio.mjs --build-map",
     "backfill:apply": "node backfill_audio.mjs --apply",
-    "test": "node test_extract.mjs && node test_grammar_extract.mjs && node test_pdf_extract.mjs && node test_install.mjs && node test_backfill.mjs && node test_app_boot.mjs"
+    "test": "node test_extract.mjs && node test_grammar_extract.mjs && node test_pdf_extract.mjs && node test_install.mjs && node test_backfill.mjs && node test_app_boot.mjs && node test_verb_gloss.mjs"
   },
   "dependencies": {
     "pdfjs-dist": "^4.10.38"

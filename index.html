@@ -530,6 +530,7 @@
   .conj-person { text-align: right; color: var(--muted); font-size: 0.92rem; }
   /* Accent helpers for desktop typing. Hidden on phones, where the software
      keyboard already offers accents on a long press. */
+  .verb-gloss { margin-top: -0.25rem; margin-bottom: 0.4rem; color: var(--muted); font-size: 0.95rem; font-style: italic; }
   .accent-bar { display: flex; flex-wrap: wrap; gap: 0.3rem; justify-content: center; margin-top: 0.6rem; }
   .accent-bar button {
     min-width: 2.1rem; padding: 0.3rem 0.5rem; font: inherit; font-size: 1rem;
@@ -781,6 +782,7 @@
       <div class="field"><div class="check-group">
         <label><input type="checkbox" id="shuffle" checked><span>Shuffle cards within each set</span></label>
         <label><input type="checkbox" id="strictAccents"><span>Typing: require correct accents</span></label>
+        <label><input type="checkbox" id="showGloss"><span>Conjugation: show verb meaning</span></label>
       </div></div>
     </div>
   </div>
@@ -813,7 +815,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-03T14-08-13-498Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-03T19-58-51-849Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -846,6 +848,7 @@
         <div id="feedback" aria-live="polite"></div>
         <button id="showAnswerBtn" type="button">Show answer (?)</button>
       </div>
+      <div id="verbGloss" class="verb-gloss hidden"></div>
       <div id="accentBar" class="accent-bar hidden" role="group" aria-label="Insert accented character"></div>
       <div id="conjWrap" class="hidden">
         <div id="conjGrid"></div>
@@ -864,7 +867,7 @@
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T14-08-13-498Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T19-58-51-849Z</span></span>
   </div>
 </section>
 
@@ -1185,9 +1188,9 @@ function renderPreviewTable() {
       .filter(p => sectionVal === '__ALL__' || p.section === sectionVal)
       .sort((a, b) => a.lemma.localeCompare(b.lemma));
     previewBody.innerHTML =
-      '<table class="cards"><thead><tr><th></th><th>Verb</th><th>Forms</th></tr></thead><tbody>' +
+      '<table class="cards"><thead><tr><th></th><th>Verb</th><th>Meaning</th><th>Forms</th></tr></thead><tbody>' +
       paradigms.map((p, i) =>
-        `<tr><td class="num">${i+1}</td><td>${escapeHtml(p.lemma)}</td><td class="section">${p.rows.length}</td></tr>`
+        `<tr><td class="num">${i+1}</td><td>${escapeHtml(p.lemma)}</td><td class="section">${escapeHtml(glossFor(p.lemma))}</td><td class="section">${p.rows.length}</td></tr>`
       ).join('') +
       '</tbody></table>';
     return;
@@ -1250,6 +1253,7 @@ function saveSetup() {
       mode: modeRadio ? modeRadio.value : null,
       shuffle: !!$('shuffle').checked,
       strictAccents: !!$('strictAccents').checked,
+      showGloss: !!$('showGloss').checked,
     }));
   } catch (_) { /* private mode / quota: silent */ }
 }
@@ -1268,6 +1272,7 @@ function restoreSetup() {
   }
   if (typeof saved.shuffle === 'boolean') $('shuffle').checked = saved.shuffle;
   if (typeof saved.strictAccents === 'boolean') $('strictAccents').checked = saved.strictAccents;
+  if (typeof saved.showGloss === 'boolean') $('showGloss').checked = saved.showGloss;
 
   // Unit dropdowns + filtered lists.
   if (saved.unitVocab && [...unitVocabSel.options].some(o => o.value === saved.unitVocab)) {
@@ -1310,6 +1315,10 @@ function restoreSetup() {
 // Save on any meaningful change to the options form.
 $('shuffle').addEventListener('change', saveSetup);
 $('strictAccents').addEventListener('change', saveSetup);
+$('showGloss').addEventListener('change', () => {
+  saveSetup();
+  if (studyEl.classList.contains('active')) render(); else renderPreviewControls();
+});
 document.querySelectorAll('input[name=dir], input[name=chunk], input[name=mode]')
   .forEach(el => el.addEventListener('change', saveSetup));
 
@@ -1410,6 +1419,76 @@ function expandDirection(cards, dir) {
 // Grammar decks store one card per conjugated form: spanish = the form,
 // english = "<infinitive> — <person label>", section = the verb lemma. The
 // drill regroups them so each queue item is a whole paradigm.
+// English for every infinitive that appears in a drill deck. Keyed on the
+// lemma the card shows, so it covers the scraped decks and the review decks
+// alike. Shown only when "Show verb meaning" is on.
+const VERB_GLOSS = {
+  almorzar: "to have lunch",
+  asistir: "to attend",
+  buscar: "to look for",
+  caer: "to fall",
+  comenzar: "to begin",
+  comer: "to eat",
+  conducir: "to drive",
+  conocer: "to know (a person or place); to meet",
+  construir: "to build",
+  contar: "to count; to tell",
+  creer: "to believe",
+  dar: "to give",
+  decir: "to say, to tell",
+  defender: "to defend",
+  definir: "to define",
+  divertirse: "to have fun",
+  dormir: "to sleep",
+  empezar: "to begin",
+  encontrar: "to find",
+  entender: "to understand",
+  escribir: "to write",
+  estar: "to be (state or location)",
+  estudiar: "to study",
+  haber: "to have (auxiliary); there to be",
+  hablar: "to speak, to talk",
+  hacer: "to do, to make",
+  ir: "to go",
+  jugar: "to play",
+  leer: "to read",
+  llegar: "to arrive",
+  mentir: "to lie",
+  montar: "to ride",
+  "oír": "to hear",
+  pagar: "to pay",
+  pedir: "to ask for, to request",
+  pensar: "to think",
+  poder: "to be able to, can",
+  poner: "to put, to place",
+  preferir: "to prefer",
+  preguntar: "to ask (a question)",
+  preparar: "to prepare",
+  pretender: "to intend, to seek",
+  proteger: "to protect",
+  quedar: "to stay; to be left",
+  querer: "to want; to love",
+  regresar: "to return, to go back",
+  "reír": "to laugh",
+  repetir: "to repeat",
+  revelar: "to reveal",
+  saber: "to know (facts); to find out",
+  sacar: "to take out",
+  salir: "to leave, to go out",
+  seguir: "to follow; to continue",
+  sentir: "to feel",
+  ser: "to be (essence)",
+  servir: "to serve",
+  tener: "to have",
+  terminar: "to finish",
+  traer: "to bring",
+  venir: "to come",
+  ver: "to see",
+  vivir: "to live",
+  volver: "to return, to come back",
+};
+const glossFor = (lemma) => VERB_GLOSS[String(lemma || "").trim().toLowerCase()] || "";
+
 function parseConjLabel(english) {
   const parts = String(english).split(/\s+—\s+/);
   if (parts.length >= 2) {
@@ -1586,6 +1665,9 @@ function render() {
     card.classList.toggle('flipped', state.flipped);
   }
 
+  const gloss = isConj && $('showGloss').checked ? glossFor(c.lemma) : '';
+  verbGloss.textContent = gloss;
+  verbGloss.classList.toggle('hidden', !gloss);
   accentBar.classList.toggle('hidden', !(isTyping || isConj));
   $('crumbLesson').textContent = state.setup.lesson;
   const sectionLabel = state.setup.section === '__ALL__' ? '(all sections)' : state.setup.section;
@@ -2383,6 +2465,7 @@ const ACCENT_BY_CODE = {
   KeyN: "ñ", KeyD: "ü", Slash: "¿", Digit1: "¡",
 };
 const accentBar = $("accentBar");
+const verbGloss = $("verbGloss");
 let accentTarget = null;     // last focused answer field
 let accentPending = false;   // the ; dead key is armed
 
