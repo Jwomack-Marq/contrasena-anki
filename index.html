@@ -794,7 +794,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-03T13-05-44-213Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-03T13-29-12-007Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -844,7 +844,7 @@
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T13-05-44-213Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T13-29-12-007Z</span></span>
   </div>
 </section>
 
@@ -1209,9 +1209,6 @@ function loadBundled() {
   bundledEntries = bundle.map(b => makeEntry(b.path, b.content)).filter(e => e.cardCount > 0);
   renderDeckTabs();
 }
-setupTabs();
-loadBundled();
-
 // ---------- Persistence ----------
 const STORAGE_KEY = 'contrasena-flashcards:setup-v1';
 
@@ -1340,11 +1337,6 @@ document.querySelectorAll('input[name=mode]')
     renderPreviewControls();
   }));
 
-restoringSetup = true;
-restoreSetup();
-restoringSetup = false;
-updateDirectionAvailability();
-updateModeAvailability();
 
 // ---------- Service worker registration ----------
 // Only register on http(s) origins — file:// double-clicks still work without it.
@@ -2356,6 +2348,19 @@ document.addEventListener('keydown', (e) => {
       break;
   }
 });
+
+// ---------- Boot ----------
+// Runs last on purpose: renderDeckTabs() reaches buildParadigmQueue, which
+// reads CONJ_PERSONS, and restoreSetup() reopens the last deck. Both touch
+// consts declared throughout this script, so booting any earlier throws a
+// temporal-dead-zone ReferenceError that kills the whole file.
+setupTabs();
+loadBundled();
+restoringSetup = true;
+restoreSetup();
+restoringSetup = false;
+updateDirectionAvailability();
+updateModeAvailability();
 </script>
 </body>
 </html>
