@@ -339,6 +339,10 @@
     transition: transform 80ms;
   }
   #card:active { transform: scale(0.99); }
+  /* Only flashcard mode flips on a press, so only it should animate one.
+     Typing and drill modes put inputs and the accent buttons inside the card,
+     and pressing those was squashing the whole card. */
+  #card.mode-typing:active, #card.mode-conj:active { transform: none; }
   /* Swipe-out animations — the card slides off-screen in the swipe direction
      before next()/prev() rerenders. The new card then slides in from the
      opposite side, like a card-stack/carousel. */
@@ -534,6 +538,7 @@
     user-select: none; -webkit-user-select: none; touch-action: manipulation;
   }
   .accent-bar button:hover { border-color: var(--accent-text); color: var(--accent-text); }
+  .accent-bar button:active { background: var(--accent-soft); }
   .accent-bar .combo { display: block; font-size: 0.62rem; color: var(--muted); line-height: 1.1; }
   .conj-input {
     width: 100%;
@@ -808,7 +813,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-03T13-58-39-498Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-03T14-08-13-498Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -859,7 +864,7 @@
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T13-58-39-498Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T14-08-13-498Z</span></span>
   </div>
 </section>
 
