@@ -101,6 +101,30 @@ npm run backfill:apply  # write the map into output_pdfs/*.tsv (idempotent)
 Cards that still lack a URL fall back to synthesized Spanish speech in the app
 (marked with a dotted play button).
 
+### If audio stops working mid-set
+
+Press **⟲ Reset audio** at the bottom of the study screen (or the `A` key). It rebuilds the
+audio player and leaves your deck, set, and position untouched — unlike reloading the page,
+which reshuffles everything.
+
+The app keeps exactly **one** `<audio>` element and releases it (`removeAttribute('src')` +
+`load()`) between cards. That matters: a `new Audio()` per card leaked a media resource
+every play, and Android caps how many a tab may hold, so playback died partway through a
+set with `MediaError` code 3. If a play does fail, recovery escalates cheapest-first —
+rebuild the player and retry, and only if that fails evict the cached MP3 and retry from
+the network.
+
+## Verb meanings in the conjugation drill
+
+Each drillable infinitive has an English meaning in the `VERB_GLOSS` table in
+[index.html](index.html). In the drill, tap the **meaning?** line under the verb (or press
+`M`) to reveal it; it hides again on the next verb. Tick *Conjugation: show verb meaning*
+in Options to have every verb start revealed instead.
+
+[test_verb_gloss.mjs](test_verb_gloss.mjs) fails if any verb in `output_grammar/*.tsv`
+lacks a gloss, or if a gloss exists for a verb in no deck — so adding or removing a verb
+from a deck requires the matching `VERB_GLOSS` edit.
+
 GitHub Pages publishes within a minute. The service worker (stale-while-revalidate) will deliver the new build on the **second** open after a deploy.
 
 ## Enabling GitHub Pages (one-time)

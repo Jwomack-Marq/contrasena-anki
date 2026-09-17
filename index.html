@@ -530,7 +530,16 @@
   .conj-person { text-align: right; color: var(--muted); font-size: 0.92rem; }
   /* Accent helpers for desktop typing. Hidden on phones, where the software
      keyboard already offers accents on a long press. */
-  .verb-gloss { margin-top: -0.25rem; margin-bottom: 0.4rem; color: var(--muted); font-size: 0.95rem; font-style: italic; }
+  .verb-gloss {
+    margin-top: -0.25rem; margin-bottom: 0.4rem;
+    color: var(--muted); font-size: 0.95rem; font-style: italic;
+    display: block; width: 100%;
+    background: none; border: 0; padding: 0.3rem 0.5rem;
+    font-family: inherit; text-align: center; cursor: pointer;
+  }
+  /* Unrevealed: a quiet prompt, deliberately easy to ignore while drilling. */
+  .verb-gloss.ask { opacity: 0.6; text-decoration: underline dotted; }
+  .verb-gloss.ask:hover, .verb-gloss:focus-visible { opacity: 1; }
   .accent-bar { display: flex; flex-wrap: wrap; gap: 0.3rem; justify-content: center; margin-top: 0.6rem; }
   .accent-bar button {
     min-width: 2.1rem; padding: 0.3rem 0.5rem; font: inherit; font-size: 1rem;
@@ -631,6 +640,24 @@
   .audio-status:empty { display: none; }
   .audio-status.ok  { background: var(--ok-bg); color: var(--ok); }
   .audio-status.err { background: var(--err-bg); color: var(--err); }
+  /* Always available, but stays quiet until audio actually misbehaves. */
+  .audio-reset {
+    font-size: 0.78rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    opacity: 0.55;
+  }
+  .audio-reset:hover, .audio-reset:focus-visible { opacity: 1; }
+  .audio-reset.urgent {
+    opacity: 1;
+    background: var(--err-bg);
+    color: var(--err);
+    border-color: var(--err);
+  }
   .build-tag-bottom { font-size: 0.78rem; color: var(--muted); }
   kbd {
     font-family: ui-monospace, Consolas, monospace;
@@ -815,7 +842,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-03T19-58-51-849Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-17T13-46-32-098Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -848,7 +875,7 @@
         <div id="feedback" aria-live="polite"></div>
         <button id="showAnswerBtn" type="button">Show answer (?)</button>
       </div>
-      <div id="verbGloss" class="verb-gloss hidden"></div>
+      <button id="verbGloss" class="verb-gloss hidden" type="button" aria-live="polite"></button>
       <div id="accentBar" class="accent-bar hidden" role="group" aria-label="Insert accented character"></div>
       <div id="conjWrap" class="hidden">
         <div id="conjGrid"></div>
@@ -861,13 +888,16 @@
     </div>
     <button id="nextBtn" class="nav-arrow" type="button" title="Next card (→)" aria-label="Next card">→</button>
     <div class="hint" id="hint">
-      <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>S</kbd> swap · <kbd>B</kbd>/<kbd>N</kbd> prev/next set · <kbd>Esc</kbd> setup</span>
+      <span class="hint-desktop">Click card to flip · <kbd>←</kbd> prev · <kbd>→</kbd> next · <kbd>⟳</kbd> reshuffles at end of set · <kbd>Space</kbd> flip · <kbd>P</kbd> play · <kbd>A</kbd> reset audio · <kbd>S</kbd> swap · <kbd>B</kbd>/<kbd>N</kbd> prev/next set · <kbd>Esc</kbd> setup</span>
       <span class="hint-mobile">Tap to flip · Swipe ← → card · Swipe ↑ next set · Swipe ↓ prev set</span>
     </div>
   </div>
   <div id="bottombar">
     <span id="audioStatus" class="audio-status" aria-live="polite"></span>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-03T19-58-51-849Z</span></span>
+    <button id="audioResetBtn" class="audio-reset" type="button"
+            title="Reset audio (A) — fixes stuck playback without losing your place"
+            aria-label="Reset audio"><span aria-hidden="true">⟲ Reset audio<span class="kbd-hint"> (A)</span></span></button>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-17T13-46-32-098Z</span></span>
   </div>
 </section>
 
@@ -886,10 +916,16 @@ const state = {
   conj: { submitted: false, results: [], builtFor: null },
 };
 
+// Whether the verb meaning is showing for the card on screen right now. Starts
+// from the "show verb meaning" option and resets on every card change, so the
+// next verb is hidden again unless you asked for it to always show.
+let glossRevealed = false;
+
 function resetCardState() {
   state.flipped = false;
   state.typing = { submitted: false, correct: false, accent: false };
   state.conj = { submitted: false, results: [], builtFor: null };
+  glossRevealed = !!$('showGloss')?.checked;
 }
 
 // ---------- DOM ----------
@@ -932,7 +968,19 @@ const playBtn = $('playBtn');
 const topPlayBtn = $('topPlayBtn');
 const prevBtn = $('prevBtn');
 const nextBtn = $('nextBtn');
-let currentAudio = null;   // tracks the <Audio> currently playing so we can cancel
+// The single reusable <audio> element. Android caps how many media resources a
+// tab may hold, and a paused element still holds its decoder slot — building a
+// fresh `new Audio()` per card leaked one every play and hit that cap midway
+// through a set (MediaError code 3). See getPlayer/releasePlayer below.
+let audioPlayer = null;
+let audioToken = 0;        // bumped on every play/reset so stale events are ignored
+let audioSrc = null;       // URL currently loaded into the player
+let audioAttempt = 0;      // failures against audioSrc so far; drives onAudioError
+// True only between starting a play and its terminal event. Tearing the player
+// down (removeAttribute('src') + load()) makes browsers fire a spurious error
+// event; without this guard every card advance would look like a playback
+// failure and could start evicting cached audio for no reason.
+let audioPlaying = false;
 
 // ---------- TSV parsing ----------
 function parseTSV(text) {
@@ -1317,6 +1365,7 @@ $('shuffle').addEventListener('change', saveSetup);
 $('strictAccents').addEventListener('change', saveSetup);
 $('showGloss').addEventListener('change', () => {
   saveSetup();
+  glossRevealed = !!$('showGloss').checked;
   if (studyEl.classList.contains('active')) render(); else renderPreviewControls();
 });
 document.querySelectorAll('input[name=dir], input[name=chunk], input[name=mode]')
@@ -1488,6 +1537,32 @@ const VERB_GLOSS = {
   volver: "to return, to come back",
 };
 const glossFor = (lemma) => VERB_GLOSS[String(lemma || "").trim().toLowerCase()] || "";
+
+// glossRevealed is declared with the rest of the per-card state above.
+// Paint #verbGloss for the given conjugation card, or hide it entirely for a
+// non-drill card / a lemma with no gloss (e.g. the "Common ending" summary
+// group in grammar_10_2, which is not a verb).
+function renderGloss(card) {
+  const gloss = card ? glossFor(card.lemma) : '';
+  if (!gloss) {
+    verbGloss.classList.add('hidden');
+    verbGloss.textContent = '';
+    return;
+  }
+  verbGloss.classList.remove('hidden');
+  verbGloss.classList.toggle('ask', !glossRevealed);
+  verbGloss.textContent = glossRevealed ? gloss : 'meaning?';
+  verbGloss.title = glossRevealed ? 'Hide the English meaning' : 'Show the English meaning';
+  verbGloss.setAttribute('aria-expanded', glossRevealed ? 'true' : 'false');
+}
+
+function toggleGloss() {
+  if (state.setup?.mode !== 'conjugation') return;
+  const c = currentCard();
+  if (!c || !glossFor(c.lemma)) return;
+  glossRevealed = !glossRevealed;
+  renderGloss(c);
+}
 
 function parseConjLabel(english) {
   const parts = String(english).split(/\s+—\s+/);
@@ -1665,9 +1740,7 @@ function render() {
     card.classList.toggle('flipped', state.flipped);
   }
 
-  const gloss = isConj && $('showGloss').checked ? glossFor(c.lemma) : '';
-  verbGloss.textContent = gloss;
-  verbGloss.classList.toggle('hidden', !gloss);
+  renderGloss(isConj ? c : null);
   accentBar.classList.toggle('hidden', !(isTyping || isConj));
   $('crumbLesson').textContent = state.setup.lesson;
   const sectionLabel = state.setup.section === '__ALL__' ? '(all sections)' : state.setup.section;
@@ -1693,7 +1766,7 @@ function render() {
   topPlayBtn.title = playBtn.title;
   topPlayBtn.classList.remove('playing');
   updateHint(isConj);
-  if (currentAudio) { try { currentAudio.pause(); } catch (_) {} currentAudio = null; }
+  releasePlayer();   // free the media resource, don't just pause it
   stopTts();
 
   // Arrow state: hide ← on first card; turn → into ⟳ (reshuffle) on the last.
@@ -1720,6 +1793,10 @@ function audioStatus(msg, kind /* 'info' | 'ok' | 'err' */) {
   if (!el) return;
   el.textContent = msg;
   el.className = 'audio-status ' + (kind || 'info');
+  // Highlight the reset button whenever audio is failing, so the way out is
+  // obvious at the moment it's needed.
+  const reset = $('audioResetBtn');
+  if (reset) reset.classList.toggle('urgent', kind === 'err');
   console.log('[audio]', kind || 'info', msg);
 }
 
@@ -1791,11 +1868,69 @@ function playCurrentAudio() {
     return;
   }
   stopTts();
-  playMp3(c.audioUrl, false);
+  playMp3(c.audioUrl);
 }
 
 // Must match AUDIO_CACHE in service-worker.js.
 const AUDIO_CACHE = 'contrasena-audio-v2';
+
+// --- The audio player ------------------------------------------------------
+// One element, reused forever. `new Audio()` per play used to leak a media
+// resource on every card (pause() alone does NOT release one), and Android
+// Chrome caps how many a tab may hold — crossing it made every later card fail
+// to decode with MediaError code 3 partway through a set. Reloading the page
+// was the only cure, which reshuffled the deck. Now there is exactly one.
+function getPlayer() {
+  if (audioPlayer) return audioPlayer;
+  const a = new Audio();
+  a.preload = 'auto';
+  // Listeners attach once, for the life of the element, so everything they
+  // need about the current play lives in module state (audioToken, audioSrc).
+  a.addEventListener('canplay', () => {
+    audioStatus('Loaded ' + (Math.round(a.duration * 10) / 10) + 's', 'info');
+  });
+  a.addEventListener('playing', () => audioStatus('Playing ▶', 'ok'));
+  a.addEventListener('ended', () => { audioStatus('Done ✓', 'ok'); clearPlayingUi(); });
+  a.addEventListener('error', () => {
+    if (!audioPlaying) return;   // teardown noise, not a real playback failure
+    onAudioError(a.error && a.error.code);
+  });
+  audioPlayer = a;
+  return a;
+}
+
+// The real teardown. Clearing src and calling load() is what actually hands
+// the media resource back to the browser; pause() on its own does not.
+function releasePlayer() {
+  const a = audioPlayer;
+  if (!a) return;
+  audioToken++;               // any event still in flight is now stale
+  audioPlaying = false;       // silence the error the teardown itself provokes
+  try {
+    a.pause();
+    a.removeAttribute('src');
+    a.load();
+  } catch (_) {}
+}
+
+function clearPlayingUi() {
+  audioPlaying = false;
+  playBtn.classList.remove('playing');
+  topPlayBtn.classList.remove('playing');
+}
+
+// Recovery primitive: drop the player entirely so the next play builds a fresh
+// one, and stop any speech. Touches no queue, set, or shuffle state — that is
+// the whole point, it fixes audio without costing you your place in the deck.
+function resetAudioEngine(quiet) {
+  stopTts();
+  releasePlayer();
+  audioPlayer = null;
+  audioSrc = null;
+  audioAttempt = 0;
+  clearPlayingUi();
+  if (!quiet) audioStatus('Audio reset — press play to try again.', 'info');
+}
 
 // The service worker caches MP3s forever, so a broken download or an S3 error
 // page stored there makes the same card fail on every play (decode error
@@ -1806,44 +1941,62 @@ async function evictCachedAudio(url) {
   catch (_) { return false; }
 }
 
-function playMp3(srcUrl, isRetry) {
-  if (currentAudio) { try { currentAudio.pause(); } catch (_) {} currentAudio = null; }
-  audioStatus('Loading: …' + srcUrl.slice(-30), 'info');
+// audioSrc / audioAttempt are declared with the rest of the audio state above.
+// Escalation for a failed play lives in onAudioError below.
+function playMp3(srcUrl) {
+  if (srcUrl !== audioSrc) audioAttempt = 0;
+  audioSrc = srcUrl;
+  playAudioSrc(srcUrl);
+}
 
-  const a = new Audio();
-  a.preload = 'auto';
-  a.src = srcUrl;
-  currentAudio = a;
+function playAudioSrc(srcUrl) {
+  const a = getPlayer();
+  const token = ++audioToken;
+  audioStatus('Loading: …' + srcUrl.slice(-30), 'info');
   playBtn.classList.add('playing');
   topPlayBtn.classList.add('playing');
-  const clear = () => {
-    playBtn.classList.remove('playing');
-    topPlayBtn.classList.remove('playing');
-    if (currentAudio === a) currentAudio = null;
-  };
-  a.addEventListener('canplay', () => audioStatus('Loaded ' + (Math.round(a.duration*10)/10) + 's', 'info'));
-  a.addEventListener('playing', () => audioStatus('Playing ▶', 'ok'));
-  a.addEventListener('ended', () => { audioStatus('Done ✓', 'ok'); clear(); });
-  a.addEventListener('error', () => {
-    const code = a.error && a.error.code;
-    const isCurrent = currentAudio === a;  // user may have moved to another card
-    clear();
-    // 3 = decode, 4 = src unsupported: bad data, almost always a poisoned
-    // cache entry. Evict it and retry once from the network.
-    if (isCurrent && !isRetry && (code === 3 || code === 4)) {
-      audioStatus('Bad audio data (code=' + code + ') — clearing cached copy and retrying…', 'info');
-      evictCachedAudio(srcUrl).then(() => { if (currentAudio === null) playMp3(srcUrl, true); });
-      return;
-    }
-    audioStatus('audio error: code=' + code, 'err');
-  });
+  audioPlaying = true;
+  a.src = srcUrl;
   const playResult = a.play();
   if (playResult && playResult.catch) {
     playResult.catch((err) => {
+      if (token !== audioToken) return;   // superseded by another play/reset
       audioStatus('play() rejected: ' + (err && err.name) + ' — ' + (err && err.message), 'err');
-      clear();
+      clearPlayingUi();
     });
   }
+}
+
+// Escalating recovery for a failed play. Ordered by how likely each cause is,
+// cheapest first — the previous version went straight to evicting the cached
+// MP3, which under a decoder shortage threw away a good file and still failed.
+//   3 = decode, 4 = src unsupported.
+function onAudioError(code) {
+  clearPlayingUi();
+  const srcUrl = audioSrc;
+  if (!srcUrl || (code !== 3 && code !== 4)) {
+    audioStatus('audio error: code=' + code, 'err');
+    return;
+  }
+  audioAttempt++;
+  if (audioAttempt === 1) {
+    // Most likely: the player itself is wedged (media resources exhausted).
+    // Rebuild it and retry. Costs nothing if the guess is wrong.
+    audioStatus('Audio glitch (code=' + code + ') — resetting the player and retrying…', 'info');
+    resetAudioEngine(true);
+    audioSrc = srcUrl;
+    audioAttempt = 1;
+    setTimeout(() => { if (audioSrc === srcUrl) playAudioSrc(srcUrl); }, 0);
+    return;
+  }
+  if (audioAttempt === 2) {
+    // Still failing, so now suspect the data: the service worker caches opaque
+    // responses it cannot inspect, so an S3 error page can be stored as an MP3.
+    audioStatus('Bad audio data (code=' + code + ') — clearing cached copy and retrying…', 'info');
+    evictCachedAudio(srcUrl).then(() => { if (audioSrc === srcUrl) playAudioSrc(srcUrl); });
+    return;
+  }
+  audioStatus('audio error: code=' + code + ' — try ⟲ Reset audio, or check your connection.', 'err');
 }
 
 function directionLabel(dir) {
@@ -2048,10 +2201,10 @@ const HINT_DESKTOP_DEFAULT = hintDesktopEl.innerHTML;
 const HINT_MOBILE_DEFAULT = hintMobileEl.innerHTML;
 function updateHint(isConj) {
   hintDesktopEl.innerHTML = isConj
-    ? '<kbd>Enter</kbd> next blank / check / next verb · <kbd>Tab</kbd> rows · <kbd>?</kbd> reveal · <kbd>P</kbd> play infinitive · <kbd>B</kbd>/<kbd>N</kbd> prev/next set · <kbd>Esc</kbd> setup'
+    ? '<kbd>Enter</kbd> next blank / check / next verb · <kbd>Tab</kbd> rows · <kbd>?</kbd> reveal · tap the meaning line for the English · <kbd>P</kbd> play infinitive · <kbd>B</kbd>/<kbd>N</kbd> prev/next set · <kbd>Esc</kbd> setup'
     : HINT_DESKTOP_DEFAULT;
   hintMobileEl.innerHTML = isConj
-    ? 'Fill in the forms, then Check · 🔊 plays each form · Prev/Next set above'
+    ? 'Fill in the forms, then Check · tap “meaning?” for the English · 🔊 plays each form · Prev/Next set above'
     : HINT_MOBILE_DEFAULT;
 }
 
@@ -2186,13 +2339,13 @@ function backToSetup(msg) {
 // Helper: refuse to treat a click as flip/advance if it originated on (or
 // inside) the play button. Belt-and-braces in addition to stopPropagation on
 // the button itself — some mobile browsers route synthesized clicks oddly.
-function clickFromPlayBtn(e) {
-  return !!(e.target && e.target.closest && e.target.closest('#playBtn, #topPlayBtn'));
+function clickFromCardControl(e) {
+  return !!(e.target && e.target.closest && e.target.closest('#playBtn, #topPlayBtn, #verbGloss'));
 }
 
 card.addEventListener('click', (e) => {
   if (swipeJustHappened) return;
-  if (clickFromPlayBtn(e)) return;
+  if (clickFromCardControl(e)) return;
   if (state.setup?.mode !== 'flashcard') return;   // only flip mode is tap-to-flip
   flip();
 });
@@ -2337,6 +2490,7 @@ $('swapDirBtn').addEventListener('click', (e) => { e.stopPropagation(); swapDire
 playBtn.addEventListener('click', (e) => { e.preventDefault(); playCurrentAudio(); });
 // Topbar mirror — outside #card so it can't possibly trigger flip.
 topPlayBtn.addEventListener('click', (e) => { e.stopPropagation(); playCurrentAudio(); });
+$('audioResetBtn').addEventListener('click', (e) => { e.stopPropagation(); resetAudioEngine(); });
 
 showAnswerBtn.addEventListener('click', (e) => { e.stopPropagation(); revealAnswer(); });
 
@@ -2445,6 +2599,15 @@ document.addEventListener('keydown', (e) => {
       e.preventDefault();
       playCurrentAudio();
       break;
+    case 'a':
+    case 'A':
+      e.preventDefault();
+      resetAudioEngine();
+      break;
+    case 'm':
+    case 'M':
+      if (state.setup.mode === 'conjugation') { e.preventDefault(); toggleGloss(); }
+      break;
     case '?':
       if (state.setup.mode === 'typing') { e.preventDefault(); revealAnswer(); }
       else if (state.setup.mode === 'conjugation') { e.preventDefault(); revealConj(); }
@@ -2466,6 +2629,10 @@ const ACCENT_BY_CODE = {
 };
 const accentBar = $("accentBar");
 const verbGloss = $("verbGloss");
+// Bound here, not with the other buttons above: `verbGloss` is a const declared
+// on this line, so touching it any earlier is a temporal-dead-zone
+// ReferenceError that kills the whole script at boot.
+verbGloss.addEventListener('click', (e) => { e.stopPropagation(); toggleGloss(); });
 let accentTarget = null;     // last focused answer field
 let accentPending = false;   // the ; dead key is armed
 

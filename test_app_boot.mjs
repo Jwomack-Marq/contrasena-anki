@@ -16,6 +16,9 @@ const script = html.match(/<script(?![^>]*application\/json)[^>]*>([\s\S]*?)<\/s
 let fail = 0;
 const ok = (c, m) => { console.log((c ? '  ok   ' : '  FAIL ') + m); if (!c) fail++; };
 
+const audioInstances = [];   // every Audio the app has constructed
+const evictedAudio = [];     // every URL the app deleted from the audio cache
+
 class El {
   constructor(tag, attrs) {
     attrs = attrs || {};
@@ -154,7 +157,30 @@ const ctx = {
   speechSynthesis: { getVoices: () => [], speak() {}, cancel() {}, addEventListener() {} },
   setTimeout: () => 0, clearTimeout() {}, setInterval: () => 0, clearInterval() {},
   fetch: () => Promise.reject(new Error('no network in test')),
-  Audio: function () { return { play: () => Promise.resolve(), pause() {} }; },
+  // Fake media element. Records every instance so a test can assert the app
+  // reuses one player instead of leaking one per card, and lets a test fire a
+  // decode error with a chosen MediaError code.
+  Audio: function () {
+    const el = {
+      _on: {},
+      src: '', preload: '', duration: 1, error: null,
+      play: () => Promise.resolve(),
+      pause() {},
+      load() { this.loaded = (this.loaded || 0) + 1; },
+      removeAttribute(k) { if (k === 'src') this.src = ''; },
+      addEventListener(t, fn) { (this._on[t] = this._on[t] || []).push(fn); },
+      emit(t) { (this._on[t] || []).forEach(fn => fn()); },
+      fail(code) { this.error = { code }; this.emit('error'); },
+    };
+    audioInstances.push(el);
+    return el;
+  },
+  // Cache Storage stub: records which audio URLs the app evicted.
+  caches: {
+    open: () => Promise.resolve({
+      delete: (u) => { evictedAudio.push(u); return Promise.resolve(true); },
+    }),
+  },
 };
 ctx.window = Object.assign({ addEventListener() {}, matchMedia: () => ({ matches: false, addEventListener() {} }) }, ctx);
 ctx.globalThis = ctx;
@@ -258,5 +284,104 @@ console.log('\n=== accent bar ===');
 console.log('\n=== verb meaning switch ===');
 ok(!!byId.get('showGloss'), 'Options has a "show verb meaning" checkbox');
 ok(!!byId.get('verbGloss'), 'the card has a slot for the meaning');
+// The meaning used to be a <div> driven only by the setup checkbox, so there
+// was no way to ask for it from inside the drill.
+ok(/<button[^>]*id="verbGloss"/.test(html), 'the meaning is a button you can press');
+ok(typeof ctx.toggleGloss === 'function', 'pressing it has something to call (toggleGloss)');
+ok((byId.get('verbGloss')._on || {}).click, 'the meaning button has a click handler bound');
+{
+  // renderGloss is the whole of what the card shows. Unrevealed it must offer
+  // the prompt, never the answer — the drill would be pointless otherwise.
+  const g = byId.get('verbGloss');
+  ctx.renderGloss({ lemma: 'hablar' });
+  ok(g.textContent === 'meaning?' && !g.classList.contains('hidden'),
+     'a glossed verb offers the prompt, not the meaning  (got "' + g.textContent + '")');
+  ok(g.classList.contains('ask'), 'the prompt is styled as unrevealed');
+  // "Common ending" in grammar_10_2 is a summary group, not a verb.
+  ctx.renderGloss({ lemma: 'common ending' });
+  ok(g.classList.contains('hidden'), 'a non-verb shows no meaning control at all');
+  // Non-drill modes pass null.
+  ctx.renderGloss(null);
+  ok(g.classList.contains('hidden'), 'flashcard and typing modes show no meaning control');
+
+  // Revealed state. Ticking the option is the other way to set the same flag
+  // the tap sets, so this exercises the branch the button reaches.
+  const box = byId.get('showGloss');
+  box.checked = true;
+  fire(box, 'change', {});
+  ctx.renderGloss({ lemma: 'hablar' });
+  ok(g.textContent === 'to speak, to talk',
+     'revealed, it shows the English meaning  (got "' + g.textContent + '")');
+  ok(!g.classList.contains('ask'), 'revealed, it drops the prompt styling');
+  box.checked = false;
+  fire(box, 'change', {});
+  ctx.renderGloss({ lemma: 'hablar' });
+  ok(g.textContent === 'meaning?', 'unticking hides it again');
+}
+
+console.log('\n=== audio player ===');
+{
+  const URL_A = 'https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/a.mp3';
+  const URL_B = 'https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/b.mp3';
+  // The retry path defers through setTimeout; the shim's is a no-op, so run
+  // callbacks inline for this section only.
+  const realTimeout = ctx.setTimeout;
+  ctx.setTimeout = (fn) => { fn(); return 0; };
+
+  ok(/<button[^>]*id="audioResetBtn"/.test(html), 'the study screen has a Reset audio button');
+  ok(typeof ctx.resetAudioEngine === 'function', 'Reset audio has something to call');
+
+  // The bug: a new Audio() per play leaked a media resource every card until
+  // Android ran out of decoders and every later card failed with code 3.
+  audioInstances.length = 0;
+  for (let i = 0; i < 12; i++) ctx.playMp3(i % 2 ? URL_A : URL_B);
+  ok(audioInstances.length === 1,
+     '12 plays build 1 player, not 12  (built ' + audioInstances.length + ')');
+
+  // Escalation: a decode error is far more often a wedged player than a bad
+  // file, so the cheap fix comes first and the cached MP3 is left alone.
+  ctx.resetAudioEngine(true);          // drop the player from the previous case
+  audioInstances.length = 0; evictedAudio.length = 0;
+  ctx.playMp3(URL_A);
+  audioInstances[0].fail(3);
+  ok(evictedAudio.length === 0, 'first code-3 does not throw away the cached file');
+  ok(audioInstances.length === 2, 'first code-3 rebuilds the player and retries');
+
+  // Only once that has not helped do we suspect the data itself.
+  audioInstances[audioInstances.length - 1].fail(3);
+  await Promise.resolve(); await Promise.resolve(); await Promise.resolve();
+  ok(evictedAudio.length === 1 && evictedAudio[0] === URL_A,
+     'second code-3 evicts the cached file and retries');
+
+  // A fresh URL starts the escalation over rather than inheriting the failures.
+  evictedAudio.length = 0;
+  ctx.playMp3(URL_B);
+  audioInstances[audioInstances.length - 1].fail(3);
+  ok(evictedAudio.length === 0, 'a different card starts from a clean slate');
+  ctx.resetAudioEngine(true);
+
+  // After a reset the next play must work again from a fresh player — that is
+  // what the button promises, without the page reload that reshuffles the deck.
+  ctx.resetAudioEngine();
+  audioInstances.length = 0;
+  ctx.playMp3(URL_A);
+  ok(audioInstances.length === 1, 'after Reset audio the next play builds a fresh player');
+
+  // Releasing a player (every card advance does this) makes real browsers fire
+  // an error event. That must not read as a playback failure, or advancing
+  // through a deck would start evicting cached audio on its own.
+  evictedAudio.length = 0;
+  const abandoned = audioInstances[audioInstances.length - 1];
+  ctx.resetAudioEngine(true);
+  abandoned.fail(4);
+  await Promise.resolve(); await Promise.resolve(); await Promise.resolve();
+  ok(evictedAudio.length === 0, 'a torn-down player firing error is ignored');
+  ok(!/error/i.test(byId.get('audioStatus').textContent),
+     'tearing down a player shows no error to the user  (status: "' +
+     byId.get('audioStatus').textContent + '")');
+
+  ctx.setTimeout = realTimeout;
+}
+
 console.log(fail ? '\n' + fail + ' check(s) FAILED.' : '\nAll accent checks passed.');
 process.exit(fail ? 1 : 0);
