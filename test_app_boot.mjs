@@ -333,6 +333,28 @@ ok((byId.get('verbGloss')._on || {}).click, 'the meaning button has a click hand
   ok(g.textContent === 'meaning?', 'unticking hides it again');
 }
 
+console.log('\n=== drill scrolling vs. set swipes ===');
+{
+  // The conjugation grid is taller than a phone screen with the keyboard up.
+  // Scrolling it must not be read as "next set" — that discarded typed answers.
+  ok(typeof ctx.swipeCanChangeSet === 'function', 'set swipes go through a guard');
+  ok(ctx.swipeCanChangeSet() === false,
+     'the guard refuses when no flashcard session is running');
+  const swipeSrc = html.slice(html.indexOf('cardareaEl.addEventListener(\'touchend\''));
+  const upward = swipeSrc.slice(swipeSrc.indexOf('Upward swipe'), swipeSrc.indexOf('Downward swipe'));
+  const downward = swipeSrc.slice(swipeSrc.indexOf('Downward swipe'), swipeSrc.indexOf('Downward swipe') + 600);
+  ok(/swipeCanChangeSet\(\)/.test(upward), 'the upward (next set) swipe checks the guard');
+  ok(/swipeCanChangeSet\(\)/.test(downward), 'the downward (prev set) swipe checks the guard');
+  // A touch starting in the grid should not arm a swipe at all, same as typing.
+  ok(/closest\('button, input, #typingWrap, #conjWrap'\)/.test(html),
+     'a touch starting inside the drill grid never arms a swipe');
+  // touch-action on an ancestor vetoes panning, so #cardarea has to relax it.
+  ok(/#cardarea\.allow-scroll\s*\{[^}]*touch-action:\s*pan-y/.test(html),
+     'the browser is allowed to pan the card when the drill is on screen');
+  ok(/allow-scroll'?,\s*isConj\)/.test(String(ctx.render)),
+     'render turns panning on for the drill and off everywhere else');
+}
+
 console.log('\n=== audio player ===');
 {
   const URL_A = 'https://s3.us-east-2.amazonaws.com/contrasena/audio/u1/a.mp3';

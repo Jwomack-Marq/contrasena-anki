@@ -288,11 +288,15 @@
     position: relative;
     /* touch-action: none claims all touch gestures (horizontal and vertical)
        so the browser doesn't show/hide its URL bar or scroll while we're
-       interpreting swipes. The page itself has no scrollable content inside
-       #cardarea so we lose nothing. */
+       interpreting swipes. Safe while nothing inside #cardarea scrolls — but
+       the conjugation grid does (see #card.mode-conj below), and with a
+       software keyboard open the last forms sit off-screen. There, .allow-scroll
+       hands vertical panning back to the browser so the card can be scrolled;
+       an ancestor's touch-action: none would otherwise veto it. */
     touch-action: none;
     overflow: hidden;
   }
+  #cardarea.allow-scroll { touch-action: pan-y; }
   .nav-arrow {
     flex: 0 0 3rem;
     width: 3rem;
@@ -742,7 +746,7 @@
     #card .face { font-size: 1.5rem; }
     .conj-row { grid-template-columns: 5.5rem 1fr 2.2rem; }
     /* Six rows + software keyboard: let the card scroll rather than overflow. */
-    #card.mode-conj { max-height: calc(100dvh - 9rem); overflow-y: auto; }
+    #card.mode-conj { max-height: calc(100dvh - 9rem); overflow-y: auto; touch-action: pan-y; }
     #card.mode-conj .face { font-size: 1.35rem; }
     #cardarea .hint { bottom: 0.4rem; font-size: 0.78rem; padding: 0 0.5rem; }
 
@@ -847,7 +851,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-18T16-39-56-472Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-18T16-47-36-717Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -902,7 +906,7 @@
     <button id="audioResetBtn" class="audio-reset" type="button"
             title="Reset audio (A) — fixes stuck playback without losing your place"
             aria-label="Reset audio"><span aria-hidden="true">⟲ Reset audio<span class="kbd-hint"> (A)</span></span></button>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-18T16-39-56-472Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-18T16-47-36-717Z</span></span>
   </div>
 </section>
 
@@ -1747,6 +1751,9 @@ function render() {
 
   renderGloss(isConj ? c : null);
   accentBar.classList.toggle('hidden', !(isTyping || isConj));
+  // The drill grid is the only thing in here that scrolls; let the browser pan
+  // it rather than claiming the gesture for set navigation.
+  $('cardarea').classList.toggle('allow-scroll', isConj);
   $('crumbLesson').textContent = state.setup.lesson;
   const sectionLabel = state.setup.section === '__ALL__' ? '(all sections)' : state.setup.section;
   $('crumbSection').textContent = state.setup.skipped
@@ -2418,7 +2425,7 @@ function animateAndThen(direction, action) {
 cardareaEl.addEventListener('touchstart', (e) => {
   if (!state.setup) return;
   if (e.touches.length !== 1) return;
-  if (e.target.closest('button, input, #typingWrap')) return;
+  if (e.target.closest('button, input, #typingWrap, #conjWrap')) return;
   const t = e.touches[0];
   // Skip iOS edge back-swipe zone so we don't fight the OS gesture.
   if (t.clientX < 20) return;
@@ -2446,6 +2453,7 @@ cardareaEl.addEventListener('touchend', (e) => {
   }
   // Upward swipe — advance to the next set.
   if (dy < -60 && absY > absX * 1.5) {
+    if (!swipeCanChangeSet()) return;
     if (!cardScrolledTo('bottom')) return;
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
@@ -2455,6 +2463,7 @@ cardareaEl.addEventListener('touchend', (e) => {
   }
   // Downward swipe — step back to the previous set.
   if (dy > 60 && absY > absX * 1.5) {
+    if (!swipeCanChangeSet()) return;
     if (!cardScrolledTo('top')) return;
     swipeJustHappened = true;
     setTimeout(() => { swipeJustHappened = false; }, 500);
@@ -2474,6 +2483,15 @@ cardareaEl.addEventListener('touchcancel', () => { swipeStart = null; }, { passi
 // The conjugation card scrolls on small screens (six rows + software keyboard).
 // A vertical swipe should scroll it first and only change sets once it's at the
 // edge, so the two gestures don't fight.
+// Only flashcards navigate sets by swiping. The drill modes hold answers you
+// have typed but not submitted, and the conjugation grid is taller than a phone
+// screen once the keyboard is up — so scrolling down to read the nosotros /
+// vosotros / ellos rows used to jump to another set and throw the work away.
+// Both modes keep the explicit Prev/Next set buttons in the top bar.
+function swipeCanChangeSet() {
+  return state.setup?.mode === 'flashcard';
+}
+
 function cardScrolledTo(edge) {
   if (card.scrollHeight <= card.clientHeight + 1) return true;   // not scrollable
   return edge === 'top'
