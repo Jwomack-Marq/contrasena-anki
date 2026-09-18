@@ -287,6 +287,20 @@ ok(!!byId.get('verbGloss'), 'the card has a slot for the meaning');
 // The meaning used to be a <div> driven only by the setup checkbox, so there
 // was no way to ask for it from inside the drill.
 ok(/<button[^>]*id="verbGloss"/.test(html), 'the meaning is a button you can press');
+// This sheet has no global .hidden rule, so a block-level button carrying the
+// class still lays out a full-width strip — and being a <button> it is skipped
+// by both the swipe handler and the card click handler. That shipped once as an
+// invisible band inside every card that swallowed gestures.
+ok(/#verbGloss\.hidden\s*\{[^}]*display:\s*none/.test(html),
+   'hiding the meaning actually removes it from layout (no gesture dead zone)');
+// Card changes must not pay for a decoder teardown: calling the full
+// releasePlayer() from render() stalled every swipe until the clip that was
+// playing had been torn down, which read as "the app waits for the audio".
+{
+  const src = String(ctx.render);
+  ok(/stopPlayback\(\)/.test(src) && !/releasePlayer\(\)/.test(src),
+     'a card change only stops playback, it never calls releasePlayer/load()');
+}
 ok(typeof ctx.toggleGloss === 'function', 'pressing it has something to call (toggleGloss)');
 ok((byId.get('verbGloss')._on || {}).click, 'the meaning button has a click handler bound');
 {

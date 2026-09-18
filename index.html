@@ -530,6 +530,11 @@
   .conj-person { text-align: right; color: var(--muted); font-size: 0.92rem; }
   /* Accent helpers for desktop typing. Hidden on phones, where the software
      keyboard already offers accents on a long press. */
+  /* No global .hidden rule exists in this sheet, so say it explicitly: an empty
+     block-level button still lays out a full-width strip, and because it is a
+     <button> both the swipe handler and the card click handler skip over it —
+     an invisible band inside the card that ate gestures. */
+  #verbGloss.hidden { display: none; }
   .verb-gloss {
     margin-top: -0.25rem; margin-bottom: 0.4rem;
     color: var(--muted); font-size: 0.95rem; font-style: italic;
@@ -842,7 +847,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-09-17T13-46-32-098Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-09-18T16-39-56-472Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -897,7 +902,7 @@
     <button id="audioResetBtn" class="audio-reset" type="button"
             title="Reset audio (A) — fixes stuck playback without losing your place"
             aria-label="Reset audio"><span aria-hidden="true">⟲ Reset audio<span class="kbd-hint"> (A)</span></span></button>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-17T13-46-32-098Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-09-18T16-39-56-472Z</span></span>
   </div>
 </section>
 
@@ -1766,7 +1771,7 @@ function render() {
   topPlayBtn.title = playBtn.title;
   topPlayBtn.classList.remove('playing');
   updateHint(isConj);
-  releasePlayer();   // free the media resource, don't just pause it
+  stopPlayback();    // cheap: never block a card change on a decoder teardown
   stopTts();
 
   // Arrow state: hide ← on first card; turn → into ⟳ (reshuffle) on the last.
@@ -1899,15 +1904,26 @@ function getPlayer() {
   return a;
 }
 
-// The real teardown. Clearing src and calling load() is what actually hands
-// the media resource back to the browser; pause() on its own does not.
-function releasePlayer() {
+// Stop whatever is playing. This is all a card change needs: there is only ever
+// one element, so nothing accumulates between cards. Deliberately cheap —
+// calling the full releasePlayer() here made every swipe wait on load() tearing
+// down a live decoder, which is a visible stutter on a phone.
+function stopPlayback() {
   const a = audioPlayer;
   if (!a) return;
   audioToken++;               // any event still in flight is now stale
   audioPlaying = false;       // silence the error the teardown itself provokes
+  try { a.pause(); } catch (_) {}
+}
+
+// The full teardown, for when we are actually discarding the player (the reset
+// button, and the retry path). Clearing src and calling load() is what hands
+// the media resource back to the browser; pause() on its own does not.
+function releasePlayer() {
+  const a = audioPlayer;
+  if (!a) return;
+  stopPlayback();
   try {
-    a.pause();
     a.removeAttribute('src');
     a.load();
   } catch (_) {}
