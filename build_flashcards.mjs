@@ -4,6 +4,7 @@
 //
 //   node build_flashcards.mjs
 //   node build_flashcards.mjs --root ./output_full   # narrower scope
+//   node build_flashcards.mjs --check                # exit 1 if index.html is stale; writes nothing
 
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -15,6 +16,7 @@ const { values } = parseArgs({
     html:   { type: 'string', default: './index.html' },
     sw:     { type: 'string', default: './service-worker.js' },
     skip:   { type: 'string', default: '.git,node_modules,output_test' },
+    check:  { type: 'boolean', default: false },
   },
 });
 
@@ -30,7 +32,9 @@ function walk(dir, root) {
     else if (name.toLowerCase().endsWith('.tsv')) {
       out.push({
         path: relative(root, p).split(/[\\/]/).join('/'),
-        content: readFileSync(p, 'utf8'),
+        // LF always: git may check TSVs out as CRLF on Windows, and the bundle
+        // must come out identical everywhere for --check to mean anything.
+        content: readFileSync(p, 'utf8').replace(/\r\n/g, '\n'),
       });
     }
   }
@@ -58,6 +62,18 @@ const json = JSON.stringify(tsvs).replace(/<\//g, '<\\/');
 const re = /<script id="bundled-tsvs" type="application\/json">[\s\S]*?<\/script>/;
 if (!re.test(html)) {
   console.error('FAIL: could not find <script id="bundled-tsvs"> placeholder in ' + values.html);
+  process.exit(1);
+}
+
+// --check: the deploy publishes index.html as committed, so a deck edited
+// without a rebuild would ship the old cards. Compare instead of writing.
+if (values.check) {
+  const bundled = html.match(re)[0];
+  if (bundled === `<script id="bundled-tsvs" type="application/json">${json}</script>`) {
+    console.log(`ok   ${values.html} bundles the current ${tsvs.length} TSV files`);
+    process.exit(0);
+  }
+  console.error(`FAIL ${values.html} is stale: a TSV changed since the last build. Run: node build_flashcards.mjs`);
   process.exit(1);
 }
 

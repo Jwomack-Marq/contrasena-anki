@@ -31,6 +31,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # Classmates get whatever lands here, so a broken build (like the one that
+      # left every deck list stuck on "Loading...") must fail before upload.
+      # npm test also fails if index.html wasn't rebuilt after a TSV changed.
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:

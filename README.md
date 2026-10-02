@@ -1,5 +1,16 @@
 # Contraseña → Anki / Flashcards
 
+## For classmates
+
+Open **<https://jwomack-marq.github.io/contrasena-anki/>** on your phone or laptop. That's it; no account, nothing to download.
+
+- **How to use:** the app shows a short guide the first time; reopen it any time with **How to use** at the top.
+- **Add it to your home screen** (Chrome: menu ⋮ → *Add to Home screen*; iPhone Safari: Share → *Add to Home Screen*) and it works offline.
+- **✓ Know it** hides cards you've mastered. Wrong answers in Typing and Conjugation modes are remembered, and **★ Cards I've missed** in the section list reviews only those.
+- Your hidden cards and misses are saved **on your device only**. To move them to another device, use **Options → Export progress / Import progress**.
+
+---
+
 Tooling around the Contraseña Spanish vocabulary lessons:
 
 - **[grab_all.mjs](grab_all.mjs)** — bulk-downloads lesson data from the Contraseña S3 bucket and writes Anki-compatible TSVs (raw `output_full/u*_*.tsv` + a combined file; see *Deck naming* below).
@@ -24,9 +35,22 @@ Live site: **<https://jwomack-marq.github.io/contrasena-anki/>**
 2. Click the install icon in the URL bar (or menu → Apps → Install).
 3. The app opens in its own window. Pin to taskbar / dock if you want.
 
-### Settings persist
+### Settings and progress persist
 
-The last-used TSV / lesson / section / direction / chunk / mode is saved to `localStorage` on each device. Re-open and pick up where you left off.
+Everything lives in `localStorage` on each device; nothing leaves it.
+
+| Key | Holds |
+|---|---|
+| `contrasena-flashcards:setup-v1` | last-used deck, section, direction, chunk, mode, options |
+| `contrasena-flashcards:hidden-v1` | cards/verbs hidden with **✓ Know it** |
+| `contrasena-flashcards:stats-v1` | `{miss, streak}` per card that was ever missed; a card counts as *missed* until it is right twice in a row |
+| `contrasena-flashcards:help-seen-v1` | the how-to guide was closed |
+
+**How cards are identified.** A card is keyed by lesson + section + Spanish + English (direction-independent); a drill verb by lesson + section. The key never mentions the deck file, so the combined decks (`All Units Vocab.tsv`, `contrasena_grammar_all.tsv`) share keys with the per-unit decks: hiding a card in one hides it in the other. If a card's text is corrected, its old hidden/missed state no longer applies to it.
+
+Only the first answer to a card in a session is recorded. Without that, looping a set would let a miss clear itself seconds after the answer was shown.
+
+**Options → Export progress** downloads all of this as JSON, and **Import progress** replaces a device's progress with such a file. Imported setup values are whitelisted (`sanitizeSetup`), because they end up inside `querySelector` strings.
 
 ## Deck naming
 
@@ -58,7 +82,9 @@ Whenever you want to pull new lessons or fix the bundle:
 
 ```bash
 node grab_all.mjs --ids output_full/found_ids.txt --out ./output_full   # re-fetch API decks
+node gen_conjugation_decks.mjs   # regenerate the hand-authored grammar decks
 node build_flashcards.mjs        # bundle TSVs into index.html + stamp service-worker.js
+npm test                         # the deploy runs this too, and refuses to publish on failure
 git add -A && git commit -m "refresh content" && git push
 ```
 
@@ -125,11 +151,34 @@ in Options to have every verb start revealed instead.
 lacks a gloss, or if a gloss exists for a verb in no deck — so adding or removing a verb
 from a deck requires the matching `VERB_GLOSS` edit.
 
-GitHub Pages publishes within a minute. The service worker (stale-while-revalidate) will deliver the new build on the **second** open after a deploy.
+## Hand-authored grammar decks
+
+[gen_conjugation_decks.mjs](gen_conjugation_decks.mjs) writes every grammar deck that isn't scraped, including Unit 15's:
+
+| Deck | Tab | What it drills |
+|---|---|---|
+| `grammar_15_participles.tsv` | Grammar | infinitive → past participle: regular, the textbook's irregular list, compounds (*descrito, expuesto*), accented *-ído* |
+| `grammar_15_participle_agreement.tsv` | Grammar | participles as adjectives (*las ventanas ___* → *cerradas*) |
+| `grammar_15_present_perfect.tsv` / `grammar_15_past_perfect.tsv` | Conjugation | full paradigms (*he hablado*, *había hablado*), built as haber + participle |
+| `grammar_15_perfect_in_context.tsv` | Grammar | fill-in sentences mixing both tenses |
+
+The generator checks its own output: agreement answers must be the participle with the right ending, and every sentence answer must be a real form of its tense. Labels must read `verb — rest` with one dash, because the app takes the verb from before it.
+
+When one verb appears in several paradigms, the section name carries the tense (`hablar_past_perfect`). The drill shows it as a tag under the infinitive and in the verb list; paradigms still identical after that get the lesson added ("Unit 16 · Grammar 1").
+
+Grammar-tab decks open in **En → Sp**, so you see the clue and type the Spanish.
+
+> **Hand fix to re-apply after a grammar re-scrape:** `grammar_15_2` (and its rows in `contrasena_grammar_all.tsv`) puts haber's present and imperfect in one `haber` section, which the drill interleaved as yo/yo/tú/tú…. They were split by hand into `haber_present` and `haber_imperfect`. Re-running `grab_grammar.mjs` undoes this.
+
+## Deploying
+
+Every push to `main` runs [.github/workflows/static.yml](.github/workflows/static.yml): `npm ci`, `npm test`, then publish to GitHub Pages. A failing test blocks the deploy, so classmates never get a broken build. `npm test` includes `node build_flashcards.mjs --check`, which fails if a TSV changed without `index.html` being rebuilt (the workflow publishes the committed `index.html`; it does not build).
+
+GitHub Pages publishes within a minute. Pages are fetched network-first, so the next open while online gets the new build. The new service worker then reloads the page once.
 
 ## Enabling GitHub Pages (one-time)
 
-Repo Settings → Pages → Source: **Deploy from a branch** → branch `main`, folder `/ (root)` → Save. First publish takes ~1 minute.
+Repo Settings → Pages → Source: **GitHub Actions**. The workflow above does the rest; the first publish takes about a minute.
 
 ## Local testing
 
