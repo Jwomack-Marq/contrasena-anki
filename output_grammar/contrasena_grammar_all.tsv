@@ -291,18 +291,18 @@ veíais	ver — vosotros/vosotras (you all, informal)	Contrasena::lessons::gramm
 iban	ir — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ir	
 eran	ser — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ser	
 veían	ver — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_12_1 Contrasena::sections::ver	
-he	haber — yo (I)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-has	haber — tú (you, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-ha	haber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-hemos	haber — nosotros/nosotras (we)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-habéis	haber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-han	haber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-había	haber — yo (I)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-habías	haber — tú (you, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-había	haber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-habíamos	haber — nosotros/nosotras (we)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-habíais	haber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
-habían	haber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber	
+he	haber — yo (I)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_present	
+has	haber — tú (you, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_present	
+ha	haber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_present	
+hemos	haber — nosotros/nosotras (we)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_present	
+habéis	haber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_present	
+han	haber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_present	
+había	haber — yo (I)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_imperfect	
+habías	haber — tú (you, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_imperfect	
+había	haber — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_imperfect	
+habíamos	haber — nosotros/nosotras (we)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_imperfect	
+habíais	haber — vosotros/vosotras (you all, informal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_imperfect	
+habían	haber — ellos/ellas; Uds. (they; you, formal)	Contrasena::lessons::grammar_15_2 Contrasena::sections::haber_imperfect	
 hablaré	Hablar — yo (I)	Contrasena::lessons::grammar_16_1 Contrasena::sections::hablar	
 hablarás	Hablar — tú (you, informal)	Contrasena::lessons::grammar_16_1 Contrasena::sections::hablar	
 hablará	Hablar — él/ella; Ud. (he/she/it; you, formal)	Contrasena::lessons::grammar_16_1 Contrasena::sections::hablar	
