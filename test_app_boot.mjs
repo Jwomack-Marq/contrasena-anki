@@ -185,6 +185,14 @@ const ctx = {
 ctx.window = Object.assign({ addEventListener() {}, matchMedia: () => ({ matches: false, addEventListener() {} }) }, ctx);
 ctx.globalThis = ctx;
 
+// Corrupt saved progress (a crash mid-write, a hand-edited value) must not
+// stop the app from booting. setup-v1 is left unset on purpose: the shim's
+// stub selects have no .options for restoreSetup to walk.
+const HIDDEN_KEY = 'contrasena-flashcards:hidden-v1';
+const STATS_KEY = 'contrasena-flashcards:stats-v1';
+store.set(HIDDEN_KEY, '{not json');
+store.set(STATS_KEY, '[1, 2');
+
 console.log('=== boot index.html ===');
 try {
   vm.createContext(ctx);
@@ -210,6 +218,27 @@ for (const pair of sels) {
   const el = byId.get(pair[0]);
   const n = el ? el.children.length : 0;
   ok(n > 1, pair[1] + ' unit dropdown has ' + n + ' options');
+}
+
+console.log('\n=== first run, hiding, progress ===');
+{
+  ok(true, 'booted with corrupt hidden/stats data in storage');
+  const overlay = byId.get('helpOverlay');
+  ok(overlay && !overlay.classList.contains('field-hidden'), 'a brand-new device opens the how-to guide');
+  fire(root, 'keydown', { key: 'Escape', code: 'Escape' });
+  ok(overlay.classList.contains('field-hidden'), 'Escape closes the guide');
+  ok(store.get('contrasena-flashcards:help-seen-v1') === '1', 'closing it remembers the guide was seen');
+  ok(((byId.get('helpBtn')._on || {}).click || []).length > 0, 'the How to use button reopens it');
+  ok(((byId.get('shareBtn')._on || {}).click || []).length > 0, 'the Share app button is wired');
+
+  ok(((byId.get('knowBtn')._on || {}).click || []).length > 0, 'the Know it button has a click handler');
+  fire(root, 'keydown', { key: 'k', code: 'KeyK' });
+  ok(store.get(HIDDEN_KEY) === '{not json', 'K on the setup screen hides nothing');
+  ok(/hidden/.test(byId.get('progressSummary').textContent) || /Nothing/.test(byId.get('progressSummary').textContent),
+     'the Options tab shows a progress summary  ("' + byId.get('progressSummary').textContent + '")');
+  for (const id of ['exportProgressBtn', 'resetProgressBtn'])
+    ok(((byId.get(id)._on || {}).click || []).length > 0, id + ' is wired');
+  ok(((byId.get('importProgressFile')._on || {}).change || []).length > 0, 'importProgressFile is wired');
 }
 
 
