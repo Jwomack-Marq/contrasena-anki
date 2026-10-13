@@ -8,6 +8,7 @@
 //   grammar_15_participle_agreement.tsv     (participle-as-adjective fill-ins)
 //   grammar_15_perfect_in_context.tsv       (perfect tenses in sentences)
 //   grammar_16_future_review.tsv            (13 verbs, drill)
+//   grammar_16_conditional_review.tsv       (13 verbs, drill)
 // Regular forms are derived; irregulars are transcribed from the textbook
 // tables. Run: node gen_conjugation_decks.mjs && node build_flashcards.mjs
 
@@ -363,29 +364,34 @@ writeFileSync('output_grammar/grammar_15_perfect_in_context.tsv',
     [ans, `${inf} — ${sentence} (${en})`, sec]), 'grammar_15_perfect_in_context'), 'utf8');
 console.log(`in context: ${IN_CONTEXT.length} cards`);
 
-// ---------- Unit 16: future tense ----------
-// The endings go on the whole infinitive, or on the irregular stem from the
-// textbook's table (decir -> dir-, salir -> saldr-, ...).
-const FUT_END = ['é', 'ás', 'á', 'emos', 'éis', 'án'];
-const future = (stem) => FUT_END.map(e => stem + e);
+// ---------- Unit 16: future and conditional ----------
+// Both put their endings on the whole infinitive, or on the same irregular
+// stem from the textbook's tables (Resumen gramatical 16-1 and 16-2).
+const FUT_END  = ['é', 'ás', 'á', 'emos', 'éis', 'án'];
+const COND_END = ['ía', 'ías', 'ía', 'íamos', 'íais', 'ían'];
 
-const FUTURE = [
-  // one regular model per conjugation class
-  ['hablar', future('hablar')],
-  ['comer',  future('comer')],
-  ['vivir',  future('vivir')],
-  // irregular stems (textbook table)
-  ['decir',  future('dir')],
-  ['haber',  future('habr')],
-  ['hacer',  future('har')],
-  ['poder',  future('podr')],
-  ['poner',  future('pondr')],
-  ['querer', future('querr')],
-  ['saber',  future('sabr')],
-  ['salir',  future('saldr')],
-  ['tener',  future('tendr')],
-  ['venir',  future('vendr')],
+// [infinitive, stem]: one regular model per conjugation class, then the
+// irregular stems.
+const STEMS_16 = [
+  ['hablar', 'hablar'],
+  ['comer',  'comer'],
+  ['vivir',  'vivir'],
+  ['decir',  'dir'],
+  ['haber',  'habr'],
+  ['hacer',  'har'],
+  ['poder',  'podr'],
+  ['poner',  'pondr'],
+  ['querer', 'querr'],
+  ['saber',  'sabr'],
+  ['salir',  'saldr'],
+  ['tener',  'tendr'],
+  ['venir',  'vendr'],
 ];
+const FUTURE      = STEMS_16.map(([inf, stem]) => [inf, FUT_END.map(e => stem + e)]);
+const CONDITIONAL = STEMS_16.map(([inf, stem]) => [inf, COND_END.map(e => stem + e)]);
 writeFileSync('output_grammar/grammar_16_future_review.tsv',
   build(FUTURE, 'grammar_16_future_review', '_future'), 'utf8');
+writeFileSync('output_grammar/grammar_16_conditional_review.tsv',
+  build(CONDITIONAL, 'grammar_16_conditional_review', '_conditional'), 'utf8');
 console.log(`future:    ${FUTURE.length} verbs, ${FUTURE.length*6} cards`);
+console.log(`conditional: ${CONDITIONAL.length} verbs, ${CONDITIONAL.length*6} cards`);
