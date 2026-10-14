@@ -9,6 +9,7 @@
 //   grammar_15_perfect_in_context.tsv       (perfect tenses in sentences)
 //   grammar_16_future_review.tsv            (13 verbs, drill)
 //   grammar_16_conditional_review.tsv       (13 verbs, drill)
+//   grammar_16_irregular_stems.tsv          (10 stem cards: decir -> dir-)
 // Regular forms are derived; irregulars are transcribed from the textbook
 // tables. Run: node gen_conjugation_decks.mjs && node build_flashcards.mjs
 
@@ -395,3 +396,28 @@ writeFileSync('output_grammar/grammar_16_conditional_review.tsv',
   build(CONDITIONAL, 'grammar_16_conditional_review', '_conditional'), 'utf8');
 console.log(`future:    ${FUTURE.length} verbs, ${FUTURE.length*6} cards`);
 console.log(`conditional: ${CONDITIONAL.length} verbs, ${CONDITIONAL.length*6} cards`);
+
+// Just the irregular stems, one card each, for learning them without typing
+// all twelve forms. Grouped by the spelling pattern they follow. Built from
+// STEMS_16, so the cards can't drift from the drills.
+const STEM_GROUP = {
+  haber: 'drops_the_e', poder: 'drops_the_e', querer: 'drops_the_e', saber: 'drops_the_e',
+  poner: 'd_replaces_the_vowel', salir: 'd_replaces_the_vowel',
+  tener: 'd_replaces_the_vowel', venir: 'd_replaces_the_vowel',
+  decir: 'shortened', hacer: 'shortened',
+};
+const STEM_MEANING = {
+  haber: 'to have, as a helper verb', poder: 'to be able to', querer: 'to want', saber: 'to know',
+  poner: 'to put', salir: 'to leave', tener: 'to have', venir: 'to come',
+  decir: 'to say', hacer: 'to do; to make',
+};
+const IRREGULAR_STEMS = STEMS_16.filter(([inf, stem]) => stem !== inf);
+for (const [inf] of IRREGULAR_STEMS)
+  if (!STEM_GROUP[inf] || !STEM_MEANING[inf]) throw new Error('stem card needs a group and meaning: ' + inf);
+const groupOrder = ['drops_the_e', 'd_replaces_the_vowel', 'shortened'];
+writeFileSync('output_grammar/grammar_16_irregular_stems.tsv',
+  buildList(IRREGULAR_STEMS
+    .sort((a, b) => groupOrder.indexOf(STEM_GROUP[a[0]]) - groupOrder.indexOf(STEM_GROUP[b[0]]))
+    .map(([inf, stem]) => [stem + '-', `${inf} — future & conditional stem (${STEM_MEANING[inf]})`, STEM_GROUP[inf]]),
+    'grammar_16_irregular_stems'), 'utf8');
+console.log(`stems:     ${IRREGULAR_STEMS.length} cards`);

@@ -301,6 +301,9 @@ console.log('\n=== accent input ===');
 
 console.log('\n=== accent bar ===');
 {
+  // render() hides the strip in flashcard mode by class; with no rule for the
+  // class it stayed on screen under every flashcard.
+  ok(/#accentBar\.hidden\s*\{[^}]*display:\s*none/.test(html), 'flashcard mode actually hides the accent buttons');
   const bar = byId.get('accentBar');
   ok(bar.children.length === 9, 'accent bar offers ' + bar.children.length + ' buttons');
   const field = byId.get('typingInput');

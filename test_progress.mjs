@@ -23,10 +23,11 @@ const NAMES = ['parseTSV', 'parseConjLabel', 'conjPersonIndex', 'buildParadigmQu
   'cardKey', 'paradigmKey', 'itemKey', 'isStruggling', 'applyResult', 'selectCards',
   'sectionOrder', 'dropKeyFromQueue', 'positionAfterDrop', 'sanitizeHidden', 'sanitizeStats',
   'sanitizeSetup', 'buildProgressExport', 'parseProgressImport', 'shareUrlFor', 'lessonTag',
-  'paradigmTags', 'deckHiddenKeys'];
+  'paradigmTags', 'deckHiddenKeys', 'normalizeAnswer', 'checkMatch', 'conjNorm', 'checkMatchStrict'];
 const app = new Function([
   src.match(/const CONJ_PERSONS = \[[^\]]*\];/)[0],
   src.match(/const KEY_SEP = [^;]+;/)[0],
+  src.match(/const COMBINING = [^;]+;/)[0],
   ...NAMES.map(n => grab(new RegExp('function ' + n + '\\('))),
 ].join('\n') + ';return {' + NAMES.join(',') + ', KEY_SEP};')();
 
@@ -203,6 +204,19 @@ console.log('\n=== export / import ===');
   ok(r.hidden.length === 1 && r.hidden[0] === 'ok', 'only string keys survive in hidden');
   ok(Object.keys(r.stats).join(',') === 'good' && Object.getPrototypeOf(r.stats) === null,
      'stats keep only well-formed entries and never touch __proto__');
+}
+
+console.log('\n=== typing a stem ===');
+{
+  // Stem cards show the book's "dir-"; nobody should have to type the hyphen.
+  for (const [guess, want] of [['dir', true], ['dir-', true], ['Dir', true], ['di', false], ['diré', false]])
+    ok(app.checkMatch(guess, 'dir-') === want, `"${guess}" against "dir-" is ${want ? 'right' : 'wrong'}`);
+  ok(app.checkMatchStrict('saldr', 'saldr-') && !app.checkMatchStrict('sald', 'saldr-'),
+     'strict-accent mode treats the hyphen the same way');
+  // Every stem card in the deck accepts its stem without the hyphen.
+  const stems = deck('output_grammar/grammar_16_irregular_stems.tsv');
+  ok(stems.length === 10 && stems.every(c => c.spanish.endsWith('-') && app.checkMatch(c.spanish.slice(0, -1), c.spanish)),
+     `all ${stems.length} stem cards take the bare stem`);
 }
 
 console.log('\n=== share link ===');
