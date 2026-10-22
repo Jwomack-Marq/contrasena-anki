@@ -33,9 +33,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-      # ubuntu-latest ships the Android SDK with its licenses accepted.
+      # ubuntu-latest ships the Android SDK with its licenses accepted, but
+      # Bubblewrap only accepts an SDK with bin/ (or tools/) directly inside,
+      # where the runner has cmdline-tools/latest/bin. It also wants one exact
+      # build-tools version (BUILD_TOOLS_VERSION in its AndroidSdkTools.ts),
+      # installed here so it never runs its own sdkmanager.
       - name: Configure Bubblewrap
         run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --install "build-tools;36.1.0" > /dev/null
+          ln -sfn "$ANDROID_HOME/cmdline-tools/latest/bin" "$ANDROID_HOME/bin"
           mkdir -p ~/.bubblewrap
           printf '{"jdkPath": "%s", "androidSdkPath": "%s"}\n' "$JAVA_HOME" "$ANDROID_HOME" > ~/.bubblewrap/config.json
       # Bubblewrap deletes and regenerates the project in its working directory,
