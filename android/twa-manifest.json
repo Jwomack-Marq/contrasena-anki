@@ -1,0 +1,43 @@
+{
+  "packageId": "io.github.jwomack_marq.contrasena",
+  "host": "jwomack-marq.github.io",
+  "name": "Contraseña Flashcards",
+  "launcherName": "Contraseña",
+  "display": "standalone",
+  "orientation": "default",
+  "themeColor": "#7C3483",
+  "themeColorDark": "#17141d",
+  "navigationColor": "#000000",
+  "navigationColorDark": "#000000",
+  "navigationDividerColor": "#00000000",
+  "navigationDividerColorDark": "#00000000",
+  "backgroundColor": "#f7f5fb",
+  "enableNotifications": false,
+  "startUrl": "/contrasena-anki/",
+  "fullScopeUrl": "https://jwomack-marq.github.io/contrasena-anki/",
+  "webManifestUrl": "https://jwomack-marq.github.io/contrasena-anki/manifest.webmanifest",
+  "iconUrl": "https://jwomack-marq.github.io/contrasena-anki/icon-512.png",
+  "maskableIconUrl": "https://jwomack-marq.github.io/contrasena-anki/icon-512.png",
+  "splashScreenFadeOutDuration": 300,
+  "signingKey": {
+    "path": "./android.keystore",
+    "alias": "android"
+  },
+  "appVersion": "1",
+  "appVersionName": "1",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "fallbackType": "customtabs",
+  "features": {},
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "isMetaQuest": false,
+  "minSdkVersion": 21,
+  "fingerprints": [],
+  "additionalTrustedOrigins": [],
+  "retainedBundles": []
+}

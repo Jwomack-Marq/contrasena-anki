@@ -5,7 +5,8 @@
 Open **<https://jwomack-marq.github.io/contrasena-anki/>** on your phone or laptop. That's it; no account, nothing to download.
 
 - **How to use:** the app shows a short guide the first time; reopen it any time with **How to use** at the top.
-- **Add it to your home screen** (Chrome: menu ⋮ → *Add to Home screen*; iPhone Safari: Share → *Add to Home Screen*) and it works offline.
+- **Install it like an app** and it works offline. On Android or a computer, tap **Install app** at the top. On an iPhone, open it in Safari, then Share → *Add to Home Screen*.
+- **Sharing it with the class:** [share.html](https://jwomack-marq.github.io/contrasena-anki/share.html) is a page with a QR code and the install steps, made to be projected. **Share app** on a computer opens it.
 - **✓ Know it** hides cards you've mastered. Wrong answers in Typing and Conjugation modes are remembered, and **★ Cards I've missed** in the section list reviews only those.
 - Your hidden cards and misses are saved **on your device only**. To move them to another device, use **Options → Export progress / Import progress**.
 
@@ -18,6 +19,9 @@ Tooling around the Contraseña Spanish vocabulary lessons:
 - **[bookmarklet.js](bookmarklet.js) / [bulk_bookmarklet.js](bulk_bookmarklet.js) / [install.html](install.html)** — browser bookmarklets for one-off / bulk exports on a Contraseña show_hide page.
 - **[index.html](index.html)** — installable flashcard PWA (Spanish drill app) with all current TSVs bundled inline.
 - **[build_flashcards.mjs](build_flashcards.mjs)** — re-bundles every `*.tsv` in the repo into `index.html` and stamps a fresh cache version into `service-worker.js`.
+- **[build_site.mjs](build_site.mjs)** — copies just the files the live site needs into `_site/` for the Pages deploy (see *Deploying*).
+- **[make_icons.mjs](make_icons.mjs)** — renders `icon.svg` to the PNG icons phones need and writes `qr.svg` for [share.html](share.html). The outputs are committed; re-run it only if the icon or URL changes, and on Windows, since the "C" is drawn in Segoe UI.
+- **[android/twa-manifest.json](android/twa-manifest.json)** — the Android app's definition (see *Android app*).
 
 ## Use the flashcard app
 
@@ -26,13 +30,18 @@ Live site: **<https://jwomack-marq.github.io/contrasena-anki/>**
 ### Install on Android
 
 1. Open the URL in Chrome.
-2. Tap the menu (⋮) → **Install app** (or **Add to Home Screen** on older Chromes).
+2. Tap **Install app** at the top of the app (or menu ⋮ → **Install app**).
 3. Launch from the home-screen icon. It opens full-screen, works offline once cached.
+
+### Install on iPhone
+
+1. Open the URL in Safari.
+2. Share → **Add to Home Screen**. (**Install app** in the app shows these steps.)
 
 ### Install on desktop (Chrome / Edge)
 
 1. Open the URL.
-2. Click the install icon in the URL bar (or menu → Apps → Install).
+2. Click **Install app** at the top of the app, or the install icon in the URL bar.
 3. The app opens in its own window. Pin to taskbar / dock if you want.
 
 ### Settings and progress persist
@@ -172,9 +181,21 @@ Grammar-tab decks open in **En → Sp**, so you see the clue and type the Spanis
 
 ## Deploying
 
-Every push to `main` runs [.github/workflows/static.yml](.github/workflows/static.yml): `npm ci`, `npm test`, then publish to GitHub Pages. A failing test blocks the deploy, so classmates never get a broken build. `npm test` includes `node build_flashcards.mjs --check`, which fails if a TSV changed without `index.html` being rebuilt (the workflow publishes the committed `index.html`; it does not build).
+Every push to `main` runs [.github/workflows/static.yml](.github/workflows/static.yml): `npm ci`, `npm test`, `node build_site.mjs`, then publish `_site/` to GitHub Pages. A failing test blocks the deploy, so classmates never get a broken build. `npm test` includes `node build_flashcards.mjs --check`, which fails if a TSV changed without `index.html` being rebuilt (the workflow publishes the committed `index.html`; it does not build).
+
+Only the files listed in `SITE_FILES` in [build_site.mjs](build_site.mjs) are published. Before it existed the whole checkout went up, including the `node_modules` that `npm ci` had just installed (~73 MB), and a publish timed out. A new asset has to be added to that list: the script fails if a page, the service worker's `ASSETS` or the manifest's `icons` point at a file that isn't on it.
+
+The repo is public, so Pages and Actions cost nothing here and don't count against the account's Actions minutes.
 
 GitHub Pages publishes within a minute. Pages are fetched network-first, so the next open while online gets the new build. The new service worker then reloads the page once.
+
+## Android app
+
+`contrasena-flashcards.apk` is a [Trusted Web Activity](https://developer.chrome.com/docs/android/trusted-web-activity): a thin Android shell, built by Google's Bubblewrap, that opens the live site full-screen. It loads the site like Chrome does, so new decks reach it without a rebuild. Progress is shared with Chrome on the same phone and survives uninstalling the app.
+
+- **Build:** Actions → *Build Android app* → Run workflow ([android.yml](.github/workflows/android.yml)). It attaches the APK to a release tagged `android-v<appVersionCode>`. Rebuild only when [android/twa-manifest.json](android/twa-manifest.json) changes, and bump `appVersionCode` first, or phones won't take the update.
+- **Signing key:** `C:\Users\3536womackj\contrasena-android-signing\` (deliberately outside the repo; its `README.txt` explains each file). It reaches the workflow as the secrets `ANDROID_KEYSTORE_B64` and `ANDROID_KEYSTORE_PASSWORD`. If the key is lost, a new APK can't update installed copies.
+- **Full-screen:** Android only drops the browser address bar if `https://jwomack-marq.github.io/.well-known/assetlinks.json` lists the key's SHA-256 fingerprint. That file has to be at the domain root, so it lives in the separate [jwomack-marq.github.io](https://github.com/Jwomack-Marq/jwomack-marq.github.io) repo, not here.
 
 ## Enabling GitHub Pages (one-time)
 

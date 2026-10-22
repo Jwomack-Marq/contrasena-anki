@@ -2,7 +2,7 @@
 // `CACHE_VERSION` is rewritten on every `node build_flashcards.mjs` so each
 // rebuild invalidates the app cache and clients pick up new content within
 // two opens (first open: stale, background refresh; second open: fresh).
-const CACHE_VERSION = '2026-10-14T16-14-45-155Z';
+const CACHE_VERSION = '2026-10-22T14-57-02-302Z';
 const CACHE_NAME = 'contrasena-flashcards-' + CACHE_VERSION;
 // Long-lived, content-addressed by URL — audio never changes, so we keep
 // this cache across rebuilds. Must match AUDIO_CACHE in index.html.
@@ -15,6 +15,11 @@ const ASSETS = [
   './index.html',
   './manifest.webmanifest',
   './icon.svg',
+  './icon-180.png',
+  './icon-192.png',
+  './icon-512.png',
+  './share.html',
+  './qr.svg',
 ];
 
 self.addEventListener('install', (event) => {

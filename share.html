@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#7C3483">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./icon-180.png">
+<title>Get Contraseña Flashcards</title>
+<!-- Made to be projected in class or posted on the course page: a phone scans
+     the code, opens the app, and the steps below install it. -->
+<style>
+  :root {
+    color-scheme: light;
+    --accent: #7C3483;
+    --accent-dark: #5c2562;
+    --accent-text: #7C3483;
+    --bg: #f7f5fb;
+    --fg: #1c1c22;
+    --muted: #5f5f6d;
+    --card-bg: #ffffff;
+    --border: #e2dcef;
+    --shadow-card: 0 1px 2px rgba(28, 28, 34, 0.05), 0 6px 24px rgba(124, 52, 131, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --accent-dark: #93459a;
+      --accent-text: #c795cd;
+      --bg: #17141d;
+      --fg: #ece8f2;
+      --muted: #a79fb5;
+      --card-bg: #221c2b;
+      --border: #3b3349;
+      --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 28px rgba(0, 0, 0, 0.45);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font: 16px/1.5 system-ui, -apple-system, Segoe UI, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+  }
+  main {
+    max-width: 44rem;
+    margin: 2rem auto;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+  h1 { margin: 0 0 0.25rem; font-size: 2rem; color: var(--accent-text); }
+  .lede { margin: 0 0 1.5rem; color: var(--muted); }
+  /* The code stays dark on white in both themes; scanners struggle with inverted codes. */
+  .qr {
+    display: inline-block;
+    background: #ffffff;
+    padding: 0.75rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+  }
+  .qr img { display: block; width: min(60vh, 78vw, 420px); height: auto; image-rendering: pixelated; }
+  .url {
+    margin: 1.25rem 0 0.5rem;
+    font-size: clamp(1.1rem, 3.6vw, 1.6rem);
+    font-weight: 600;
+    overflow-wrap: anywhere;
+  }
+  .open {
+    display: inline-block;
+    margin: 0.5rem 0 2rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    background: var(--accent);
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .open:hover { background: var(--accent-dark); }
+  .steps {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    text-align: left;
+  }
+  .step {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: var(--shadow-card);
+  }
+  .step h2 { margin: 0 0 0.35rem; font-size: 1.05rem; color: var(--accent-text); }
+  .step p { margin: 0; }
+  .fine { margin-top: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Contraseña Flashcards</h1>
+  <p class="lede">Vocabulary, grammar and conjugation practice for every unit. Free, no account.</p>
+
+  <div class="qr"><img src="./qr.svg" alt="QR code that opens the flashcard app"></div>
+  <p class="url">jwomack-marq.github.io/contrasena-anki</p>
+  <a class="open" href="./">Open the app</a>
+
+  <div class="steps">
+    <section class="step">
+      <h2>iPhone</h2>
+      <p>Open it in Safari, tap Share, then <b>Add to Home Screen</b>.</p>
+    </section>
+    <section class="step">
+      <h2>Android</h2>
+      <p>Open it in Chrome and tap <b>Install app</b> at the top of the app.</p>
+    </section>
+    <section class="step">
+      <h2>Computer</h2>
+      <p>In Chrome or Edge, click <b>Install app</b>, or just bookmark it.</p>
+    </section>
+  </div>
+
+  <p class="fine">Once installed it opens like any app and works offline. Your progress stays on your own device.</p>
+</main>
+</body>
+</html>

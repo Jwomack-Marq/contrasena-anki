@@ -1,0 +1,70 @@
+# Builds the Android app (a Trusted Web Activity: a thin shell that opens the
+# live site full-screen) and attaches the APK to a GitHub Release, so
+# classmates can download it from
+#   https://github.com/Jwomack-Marq/contrasena-anki/releases/latest/download/contrasena-flashcards.apk
+#
+# Manual only. The APK loads the live site, so new decks reach it without a
+# rebuild; rerun this only when android/twa-manifest.json changes (name, icon,
+# colors). Bump appVersionCode there first, or Android won't offer the update.
+#
+# Needs repository secrets ANDROID_KEYSTORE_B64 (the base64 of android.keystore)
+# and ANDROID_KEYSTORE_PASSWORD. The keystore lives outside the repo; see
+# README "Android app".
+name: Build Android app
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # ubuntu-latest ships the Android SDK with its licenses accepted.
+      - name: Configure Bubblewrap
+        run: |
+          mkdir -p ~/.bubblewrap
+          printf '{"jdkPath": "%s", "androidSdkPath": "%s"}\n' "$JAVA_HOME" "$ANDROID_HOME" > ~/.bubblewrap/config.json
+      # Bubblewrap deletes and regenerates the project in its working directory,
+      # so it runs in a scratch folder rather than the checkout.
+      - name: Build signed APK
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+          BUBBLEWRAP_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          BUBBLEWRAP_KEY_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          if [ -z "$KEYSTORE_B64" ]; then echo "::error::Secret ANDROID_KEYSTORE_B64 is not set"; exit 1; fi
+          work="$RUNNER_TEMP/twa"
+          mkdir -p "$work"
+          cp android/twa-manifest.json "$work/"
+          cd "$work"
+          echo "$KEYSTORE_B64" | base64 -d > android.keystore
+          yes | npx --yes @bubblewrap/cli@1.27.0 update --skipVersionUpgrade
+          yes | npx --yes @bubblewrap/cli@1.27.0 build
+          cp app-release-signed.apk "$GITHUB_WORKSPACE/contrasena-flashcards.apk"
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          code=$(jq -r .appVersionCode android/twa-manifest.json)
+          tag="android-v$code"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" contrasena-flashcards.apk --clobber
+          else
+            gh release create "$tag" contrasena-flashcards.apk --latest \
+              --title "Android app v$code" \
+              --notes "Install on Android: download contrasena-flashcards.apk on your phone and open it. Android will ask you to allow installs from your browser; that's expected for apps from outside the Play Store. The app opens the live flashcard site, so new units show up without reinstalling."
+          fi

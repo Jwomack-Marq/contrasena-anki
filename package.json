@@ -16,5 +16,9 @@
   },
   "dependencies": {
     "pdfjs-dist": "^4.10.38"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "qrcode": "^1.5.4"
   }
 }

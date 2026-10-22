@@ -17,6 +17,11 @@ const SITE_FILES = [
   'service-worker.js',
   'manifest.webmanifest',
   'icon.svg',
+  'icon-180.png',
+  'icon-192.png',
+  'icon-512.png',
+  'share.html',
+  'qr.svg',
   'install.html',   // bookmarklet installer; its live URL predates this whitelist
 ];
 

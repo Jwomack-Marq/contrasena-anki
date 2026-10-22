@@ -182,7 +182,11 @@ const ctx = {
     }),
   },
 };
-ctx.window = Object.assign({ addEventListener() {}, matchMedia: () => ({ matches: false, addEventListener() {} }) }, ctx);
+const winListeners = {};
+ctx.window = Object.assign({
+  addEventListener: (t, fn) => { (winListeners[t] || (winListeners[t] = [])).push(fn); },
+  matchMedia: () => ({ matches: false, addEventListener() {} }),
+}, ctx);
 ctx.globalThis = ctx;
 
 // Corrupt saved progress (a crash mid-write, a hand-edited value) must not
@@ -239,6 +243,18 @@ console.log('\n=== first run, hiding, progress ===');
   for (const id of ['exportProgressBtn', 'resetProgressBtn'])
     ok(((byId.get(id)._on || {}).click || []).length > 0, id + ' is wired');
   ok(((byId.get('importProgressFile')._on || {}).change || []).length > 0, 'importProgressFile is wired');
+}
+
+console.log('\n=== install button ===');
+{
+  const btn = byId.get('installBtn');
+  ok(btn.classList.contains('field-hidden'), 'Install app stays hidden until the browser offers an install');
+  let prompted = 0;
+  (winListeners.beforeinstallprompt || []).forEach((fn) => fn({ prompt() { prompted++; } }));
+  ok(!btn.classList.contains('field-hidden'), 'beforeinstallprompt shows Install app');
+  btn.click();
+  ok(prompted === 1, 'clicking it opens the browser\'s install prompt');
+  ok(btn.classList.contains('field-hidden'), 'a used prompt hides the button again');
 }
 
 

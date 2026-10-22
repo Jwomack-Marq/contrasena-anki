@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="Contraseña">
 <link rel="manifest" href="./manifest.webmanifest">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="./icon.svg">
+<link rel="apple-touch-icon" href="./icon-180.png">
 <title>Contraseña Flashcards</title>
 <style>
   :root {
@@ -823,6 +823,7 @@
   <div class="setup-actions">
     <button type="button" id="helpBtn">How to use</button>
     <button type="button" id="shareBtn">Share app</button>
+    <button type="button" id="installBtn" class="field-hidden">Install app</button>
   </div>
   <p class="hint">Pick a deck to preview it, choose your options, then Confirm to start studying.</p>
 
@@ -923,7 +924,7 @@
   </details>
 
   <div id="status" aria-live="polite">No deck selected yet.</div>
-  <div class="build-tag">Build <span id="buildStamp">2026-10-14T16-14-45-155Z</span></div>
+  <div class="build-tag">Build <span id="buildStamp">2026-10-22T14-57-02-302Z</span></div>
 </section>
 
 <!-- Brief floating label shown when a swipe gesture fires. -->
@@ -966,8 +967,8 @@
     <p><kbd>Space</kbd> flip · <kbd>←</kbd> <kbd>→</kbd> cards · <kbd>N</kbd> / <kbd>B</kbd> next / previous set · <kbd>P</kbd> play audio · <kbd>K</kbd> know it · <kbd>?</kbd> show the answer · <kbd>Esc</kbd> back to setup.
       Accents: <kbd>Alt</kbd> + the letter, or <kbd>;</kbd> then the letter (<kbd>;</kbd> <kbd>e</kbd> → é, <kbd>;</kbd> <kbd>n</kbd> → ñ). There are also accent buttons under the answer box.</p>
 
-    <h3>Install it like an app</h3>
-    <p><b>Android (Chrome):</b> menu ⋮ → <i>Add to Home screen</i>. <b>iPhone (Safari):</b> Share → <i>Add to Home Screen</i>. <b>Computer (Chrome or Edge):</b> the install icon in the address bar. After the first visit it works offline, except recordings you haven't played yet.</p>
+    <h3 id="helpInstall">Install it like an app</h3>
+    <p><b>Android (Chrome):</b> tap <b>Install app</b> at the top, or menu ⋮ → <i>Add to Home screen</i>. <b>iPhone (Safari):</b> Share → <i>Add to Home Screen</i>. <b>Computer (Chrome or Edge):</b> <b>Install app</b> at the top, or the install icon in the address bar. After the first visit it works offline, except recordings you haven't played yet.</p>
 
     <h3>Your progress</h3>
     <p>Hidden cards and misses stay on this device; nobody else sees them. To move them to another device, use <b>Options → Export progress</b>, then <b>Import progress</b> on the other one. On an iPhone, the home-screen app and Safari keep separate progress.</p>
@@ -1026,7 +1027,7 @@
     <button id="audioResetBtn" class="audio-reset" type="button"
             title="Reset audio (A) — fixes stuck playback without losing your place"
             aria-label="Reset audio"><span aria-hidden="true">⟲ Reset audio<span class="kbd-hint"> (A)</span></span></button>
-    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-10-14T16-14-45-155Z</span></span>
+    <span class="build-tag-bottom">Build <span id="buildStampBottom">2026-10-22T14-57-02-302Z</span></span>
   </div>
 </section>
 
@@ -3320,6 +3321,14 @@ $('shareBtn').addEventListener('click', () => {
       navigator.clipboard.writeText(url).then(() => showShareUrl(url, true), () => showShareUrl(url, false));
     } else showShareUrl(url, false);
   };
+  // A computer (mouse or trackpad) is likely the one projecting in class:
+  // copy the link, then open the QR-code page that phones in the room can
+  // scan. Copy first, because opening a tab uses up the click's user gesture.
+  if (!window.matchMedia('(pointer: coarse)').matches) {
+    copy();
+    window.open('./share.html', '_blank');
+    return;
+  }
   // share() has to be the first thing the click does, or the browser no longer
   // counts it as a user gesture.
   if (navigator.share) {
@@ -3328,6 +3337,31 @@ $('shareBtn').addEventListener('click', () => {
     return;
   }
   copy();
+});
+
+// ---------- Install ----------
+// Chrome and Edge hand over an install prompt. Safari has no such API, so on
+// an iPhone the button opens the guide's Add to Home Screen steps instead.
+const installBtn = $('installBtn');
+let installPrompt = null;
+const isInstalled = () => window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+// iPadOS reports itself as a Mac; the touch points give it away.
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
+              (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+const showInstall = (show) => installBtn.classList.toggle('field-hidden', !show);
+showInstall(isIOS && !isInstalled());
+window.addEventListener('beforeinstallprompt', (e) => {
+  installPrompt = e;
+  showInstall(true);
+});
+window.addEventListener('appinstalled', () => { installPrompt = null; showInstall(false); });
+installBtn.addEventListener('click', () => {
+  if (!installPrompt) { openHelp(); $('helpInstall').scrollIntoView(); return; }
+  // A prompt can be shown once. If it's dismissed, Chrome fires a fresh
+  // beforeinstallprompt later, which brings the button back.
+  installPrompt.prompt();
+  installPrompt = null;
+  showInstall(false);
 });
 
 // ---------- Boot ----------
