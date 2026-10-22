@@ -5,7 +5,7 @@
 Open **<https://jwomack-marq.github.io/contrasena-anki/>** on your phone or laptop. That's it; no account, nothing to download.
 
 - **How to use:** the app shows a short guide the first time; reopen it any time with **How to use** at the top.
-- **Install it like an app** and it works offline. On Android or a computer, tap **Install app** at the top. On an iPhone, open it in Safari, then Share → *Add to Home Screen*.
+- **Install it like an app** and it works offline. On Android or a computer, tap **Install app** at the top. On an iPhone, open it in Safari, then Share → *Add to Home Screen*. Android users can also download the **[Android app](https://github.com/Jwomack-Marq/contrasena-anki/releases/latest/download/contrasena-flashcards.apk)** (Android asks you to allow the install, since it isn't from the Play Store; new units show up without reinstalling).
 - **Sharing it with the class:** [share.html](https://jwomack-marq.github.io/contrasena-anki/share.html) is a page with a QR code and the install steps, made to be projected. **Share app** on a computer opens it.
 - **✓ Know it** hides cards you've mastered. Wrong answers in Typing and Conjugation modes are remembered, and **★ Cards I've missed** in the section list reviews only those.
 - Your hidden cards and misses are saved **on your device only**. To move them to another device, use **Options → Export progress / Import progress**.
