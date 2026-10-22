@@ -43,6 +43,10 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
+      # Copies only the app's files into _site/. Uploading '.' shipped the
+      # node_modules that npm ci just installed (~73 MB) and timed out a publish.
+      - name: Assemble site
+        run: node build_site.mjs
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -53,8 +57,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
